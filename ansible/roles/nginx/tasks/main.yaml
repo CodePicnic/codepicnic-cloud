@@ -1,0 +1,7 @@
+- name: add nginx repo key
+  copy src=nginx_signing.key dest=/tmp/nginx_signing.key 
+- name: add nginx repo list 
+  copy src=nginx.list dest=/etc/apt/source.list.d/nginx.list
+- name: add nginx repo key
+  shell apt-key add /tmp/nginx_signing.key 
+
