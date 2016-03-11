@@ -1,0 +1,15 @@
+- hosts: ansible
+  connection: local
+  tasks:
+  roles:
+- hosts: app
+  roles:
+      #- base
+      #- nginx
+      #- ruby 
+      #- nodejs
+  remote_user: ubuntu 
+  become: yes
+  become_user: root
+  become_method: sudo
+

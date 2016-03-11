@@ -1,0 +1,12 @@
+[ansible]
+127.0.0.1
+
+[app]
+10.1.0.124 ansible_ssh_private_key_file=/var/lib/jenkins/keys/codepicnic.pem
+
+
+
+[codepicnic-dev:children]
+ansible
+app
+
