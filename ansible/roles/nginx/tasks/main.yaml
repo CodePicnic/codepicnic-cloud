@@ -4,4 +4,6 @@
     copy: src=nginx.list dest=/etc/apt/sources.list.d/nginx.list
   - name: add nginx repo key
     shell: apt-key add /tmp/nginx_signing.key 
+  - name: install nginx
+    apt: name=nginx state=present update_cache=yes 
 
