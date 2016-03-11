@@ -5,7 +5,7 @@
 - hosts: app
   roles:
       #- base
-      #- nginx
+      - nginx
       #- ruby 
       #- nodejs
   remote_user: ubuntu 
