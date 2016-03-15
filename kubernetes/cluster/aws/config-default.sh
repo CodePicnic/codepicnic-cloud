@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ZONE=${KUBE_AWS_ZONE:-us-west-2a}
+ZONE=${KUBE_AWS_ZONE:-us-east-1a}
 MASTER_SIZE=${MASTER_SIZE:-t2.micro}
-MINION_SIZE=${MINION_SIZE:-t2.micro}
-NUM_MINIONS=${NUM_MINIONS:-4}
+MINION_SIZE=${MINION_SIZE:-t2.small}
+NUM_MINIONS=${NUM_MINIONS:-2}
 
 # Optional: Set AWS_S3_BUCKET to the name of an S3 bucket to use for uploading binaries
 # (otherwise a unique bucket name will be generated for you)
-#  AWS_S3_BUCKET=kubernetes-artifacts
+AWS_S3_BUCKET=codepicnic-kubernetes-artifacts
 
 # Because regions are globally named, we want to create in a single region; default to us-east-1
 AWS_S3_REGION=${AWS_S3_REGION:-us-east-1}
@@ -57,7 +57,10 @@ MASTER_IP_RANGE="${MASTER_IP_RANGE:-10.246.0.0/24}"
 # If set to Elastic IP, master instance will be associated with this IP.
 # If set to auto, a new Elastic IP will be acquired
 # Otherwise amazon-given public ip will be used (it'll change with reboot).
-MASTER_RESERVED_IP="${MASTER_RESERVED_IP:-}"
+MASTER_RESERVED_IP="${MASTER_RESERVED_IP:-52.87.1.111}"
+
+ENABLE_MINION_OPEN_SG="${ENABLE_MINION_OPEN_SG:-true}"
+ENABLE_MINION_EBS_OPTIMIZED="${ENABLE_MINION_EBS_OPTIMIZED:-false}"
 
 # Optional: Cluster monitoring to setup as part of the cluster bring up:
 #   none     - No cluster monitoring setup
@@ -82,6 +85,9 @@ ENABLE_CLUSTER_DNS="${KUBE_ENABLE_CLUSTER_DNS:-true}"
 DNS_SERVER_IP="10.0.0.10"
 DNS_DOMAIN="cluster.local"
 DNS_REPLICAS=1
+
+CLUSTER_DOMAIN="codepicnic.com"
+CLUSTER_SUBDOMAIN="kube"
 
 # Optional: Install Kubernetes UI
 ENABLE_CLUSTER_UI="${KUBE_ENABLE_CLUSTER_UI:-true}"

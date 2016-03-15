@@ -909,6 +909,11 @@ function kube-up {
   else
     public_ip_option="--no-associate-public-ip-address"
   fi
+  if [[ "${ENABLE_MINION_EBS_OPTIMIZED}" == "true" ]]; then
+    ebs_optimized_option="--ebs-optimized"
+  else
+    ebs_optimized_option="--no-ebs-optimized"
+  fi
   ${AWS_ASG_CMD} create-launch-configuration \
       --launch-configuration-name ${ASG_NAME} \
       --image-id $KUBE_MINION_IMAGE \
@@ -918,6 +923,7 @@ function kube-up {
       --security-groups ${MINION_SG_ID} \
       ${public_ip_option} \
       --block-device-mappings "${MINION_BLOCK_DEVICE_MAPPINGS}" \
+      ${ebs_optimized_option} \
       --user-data "file://${KUBE_TEMP}/minion-user-data"
 
   echo "Creating autoscaling group"
@@ -955,6 +961,19 @@ function kube-up {
     attempt=$(($attempt+1))
     sleep 10
   done
+
+  echo "Creating DNS records for the minions"
+  nodes_ips=$(aws ec2 describe-instances --region us-east-1 --filters "Name=tag:Name,Values=kubernetes-minion"  --query 'Reservations[].Instances[].[PublicIpAddress,PrivateIpAddress]' --output text)
+  echo "$nodes_ips" > /tmp/nodes_ips
+  while read PUBLIC_IP PRIVATE_IP;
+  do
+    echo $PUBLIC_IP 
+    echo $PRIVATE_IP
+    LAST_OCTET=`echo $PRIVATE_IP | cut -d . -f 4`
+    echo $LAST_OCTET 
+    /usr/local/bin/cli53 rrcreate $CLUSTER_DOMAIN "$LAST_OCTET.$CLUSTER_SUBDOMAIN 60 A $PUBLIC_IP'"
+  done < /tmp/nodes_ips
+  rm /tmp/nodes_ips
 
   detect-master > $LOG
   detect-minions > $LOG
@@ -1240,6 +1259,10 @@ function test-setup {
   # Open up the NodePort range
   # TODO(justinsb): Move to main setup, if we decide whether we want to do this by default.
   authorize-security-group-ingress "${MINION_SG_ID}" "--protocol all --port 30000-32767 --cidr 0.0.0.0/0"
+
+  if [[ "${ENABLE_MINION_OPEN_SG}" == "true" ]]; then
+    authorize-security-group-ingress "${MINION_SG_ID}" "--protocol all --port 1-65535 --cidr 0.0.0.0/0"
+  fi
 
   echo "test-setup complete"
 }
