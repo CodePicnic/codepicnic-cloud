@@ -1,0 +1,3 @@
+  - name: yum update 
+    apt: name=* state=latest 
+
