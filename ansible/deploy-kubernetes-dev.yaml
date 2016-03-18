@@ -1,6 +1,6 @@
 - hosts: master 
   roles:
-      - kubernetes-registry 
+      #    - kubernetes-registry 
   remote_user: ubuntu 
   become: yes
   become_user: root
@@ -8,7 +8,7 @@
 
 - hosts: minion 
   roles:
-      - kubernetes-registry-proxy
+      #- kubernetes-registry-proxy
       - kubernetes-nginx 
   remote_user: ubuntu
   become: yes

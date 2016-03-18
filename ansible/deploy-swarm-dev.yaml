@@ -1,0 +1,24 @@
+- hosts: manager 
+  roles:
+      - docker-swarm 
+  remote_user: ubuntu 
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- hosts: consul 
+  roles:
+      - docker-swarm 
+  remote_user: ubuntu 
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- hosts: node 
+  roles:
+      - docker-swarm 
+  remote_user: ubuntu 
+  become: yes
+  become_user: root
+  become_method: sudo
+
