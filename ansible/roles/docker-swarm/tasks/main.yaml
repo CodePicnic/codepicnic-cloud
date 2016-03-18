@@ -7,7 +7,7 @@
   - name:  docker sysconfig
     copy: src=docker.sysconfig dest=/etc/sysconfig/docker
   - name: start docker
-    service: name=docker enabled=yes state=restarted
+    service: name=docker enabled=yes state=started
   - name: add user 
     shell: usermod -aG docker ec2-user
 

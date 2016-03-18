@@ -1,16 +1,7 @@
-- hosts: manager 
-  roles:
-      - docker-swarm
-      #"- docker-manager
-  remote_user: ec2-user 
-  become: yes
-  become_user: root
-  become_method: sudo
-
 - hosts: consul 
   roles:
       - docker-swarm
-      #- docker-consul
+      - docker-consul
   remote_user: ec2-user
   become: yes
   become_user: root
@@ -19,8 +10,15 @@
 - hosts: node 
   roles:
       - docker-swarm
-        #- docker-node 
+      - docker-node 
   remote_user: ec2-user
+  become: yes
+  become_user: root
+  become_method: sudo
+- hosts: manager 
+  roles:
+      - docker-manager
+  remote_user: ec2-user 
   become: yes
   become_user: root
   become_method: sudo

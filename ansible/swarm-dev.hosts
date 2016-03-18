@@ -3,6 +3,7 @@
 
 [manager]
 ec2-54-174-138-67.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+[replica]
 ec2-52-205-253-210.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 
 [consul]
@@ -17,3 +18,4 @@ ansible
 node
 manager
 consul
+replica
