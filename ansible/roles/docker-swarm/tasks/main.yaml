@@ -7,5 +7,5 @@
   - name:  docker sysconfig
     file: src=docker.sysconfig dst=/etc/sysconfig/docker
   - name: start docker
-    servicece: name=docker enabled=yes state=started
+    service: name=docker enabled=yes state=started
 
