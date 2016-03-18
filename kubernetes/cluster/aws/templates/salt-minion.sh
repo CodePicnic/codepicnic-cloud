@@ -34,9 +34,7 @@ EOF
 # we'd like to use EC2 instance-id, but currently the kubelet health-check assumes the name
 # is resolvable, although that check should be going away entirely (#7092)
 if [[ -z "${HOSTNAME_OVERRIDE}" ]]; then
-  LOCAL_IPV4=`curl --silent http://169.254.169.254/2007-01-19/meta-data/local-ipv4`
-  LAST_IPV4=$(cut -d. -f4 <<<$LOCAL_IPV4)
-  HOSTNAME_OVERRIDE=node$LAST_IPV4.kube
+  HOSTNAME_OVERRIDE=`curl --silent curl http://169.254.169.254/2007-01-19/meta-data/local-hostname`
 fi
 
 if [[ -n "${HOSTNAME_OVERRIDE}" ]]; then

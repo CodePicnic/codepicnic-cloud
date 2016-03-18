@@ -963,7 +963,7 @@ function kube-up {
   done
 
   echo "Creating DNS records for the minions"
-  nodes_ips=$(aws ec2 describe-instances --region us-east-1 --filters "Name=tag:Name,Values=kubernetes-minion"  --query 'Reservations[].Instances[].[PublicIpAddress,PrivateIpAddress]' --output text)
+  nodes_ips=$(aws ec2 describe-instances --region us-east-1 --filters "Name=tag:Name,Values=kubernetes-minion" "Name=instance-state-name,Values=running"  --query 'Reservations[].Instances[].[PublicIpAddress,PrivateIpAddress]' --output text)
   echo "$nodes_ips" > /tmp/nodes_ips
   while read PUBLIC_IP PRIVATE_IP;
   do
@@ -971,7 +971,7 @@ function kube-up {
     echo $PRIVATE_IP
     LAST_OCTET=`echo $PRIVATE_IP | cut -d . -f 4`
     echo $LAST_OCTET 
-    /usr/local/bin/cli53 rrcreate $CLUSTER_DOMAIN "$LAST_OCTET.$CLUSTER_SUBDOMAIN 60 A $PUBLIC_IP'"
+    /usr/local/bin/cli53 rrcreate codeground.xyz "node$LAST_OCTET 60 A $PUBLIC_IP" 
   done < /tmp/nodes_ips
   rm /tmp/nodes_ips
 
