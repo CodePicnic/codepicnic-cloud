@@ -1,0 +1,17 @@
+- hosts: master 
+  roles:
+      - kubernetes-registry 
+  remote_user: admin 
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- hosts: minion 
+  roles:
+      - kubernetes-registry-proxy
+      - kubernetes-nginx 
+  remote_user: admin 
+  become: yes
+  become_user: root
+  become_method: sudo
+

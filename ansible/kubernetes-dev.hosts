@@ -1,0 +1,15 @@
+[ansible]
+127.0.0.1
+
+[master]
+ ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
+
+[minion]
+ ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
+
+
+[kubernetes-dev:children]
+ansible
+master
+nodes
+

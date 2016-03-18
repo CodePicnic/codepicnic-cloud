@@ -1,0 +1,3 @@
+  - name: install base 
+    apt: name=git,gcc state=present update_cache=yes 
+
