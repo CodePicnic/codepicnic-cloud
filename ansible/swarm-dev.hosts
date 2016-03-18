@@ -14,5 +14,6 @@ ec2-54-84-222-220.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/
 
 [swarm-dev:children]
 ansible
-master
 node
+manager
+consul
