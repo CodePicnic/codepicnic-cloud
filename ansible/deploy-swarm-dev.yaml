@@ -1,6 +1,7 @@
 - hosts: manager 
   roles:
-      - docker-swarm 
+      #- docker-swarm
+      - docker-manger
   remote_user: ec2-user 
   become: yes
   become_user: root
@@ -8,8 +9,8 @@
 
 - hosts: consul 
   roles:
-      - docker-swarm
-      - docker-consul
+      #- docker-swarm
+        #- docker-consul
   remote_user: ec2-user
   become: yes
   become_user: root
@@ -17,7 +18,7 @@
 
 - hosts: node 
   roles:
-      - docker-swarm 
+      #- docker-swarm 
   remote_user: ec2-user
   become: yes
   become_user: root
