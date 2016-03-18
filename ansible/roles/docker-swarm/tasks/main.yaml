@@ -4,4 +4,6 @@
     get_url: url=https://get.docker.com dest=/tmp/getdocker.sh mode=0755
   - name: install docker
     shell: /tmp/getdocker.sh 
+  - name:  docker daemon
+    shell: docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock 
 
