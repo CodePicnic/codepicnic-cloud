@@ -1,7 +1,7 @@
 - hosts: master 
   roles:
       - kubernetes-registry 
-  remote_user: admin 
+  remote_user: ubuntu 
   become: yes
   become_user: root
   become_method: sudo
@@ -10,7 +10,7 @@
   roles:
       - kubernetes-registry-proxy
       - kubernetes-nginx 
-  remote_user: admin 
+  remote_user: ubuntu
   become: yes
   become_user: root
   become_method: sudo
