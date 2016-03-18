@@ -2,11 +2,11 @@
 127.0.0.1
 
 [master]
-52.21.56.114 ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
+52.87.111.19 ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
 
 [minion]
-54.174.224.29 ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
-54.84.126.213 ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
+node35.codeground.xyz ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
+node34.codeground.xyz ansible_ssh_private_key_file=/var/lib/jenkins/keys/kube_aws_rsa
 
 
 [kubernetes-dev:children]
