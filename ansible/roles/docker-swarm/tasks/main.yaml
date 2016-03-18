@@ -5,7 +5,7 @@
   #- name: install docker
   #  shell: /tmp/getdocker.sh 
   - name:  docker sysconfig
-    file: src=docker.sysconfig dst=/etc/sysconfig/docker
+    file: src=docker.sysconfig dest=/etc/sysconfig/docker
   - name: start docker
     service: name=docker enabled=yes state=started
 
