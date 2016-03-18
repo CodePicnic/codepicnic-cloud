@@ -1,0 +1,6 @@
+  - name: registry dir 
+    file: path="/etc/kubernetes/registry" state=directory owner=root
+  - name: copy registry rc 
+    copy: src=registry-rc.yaml dest=/etc/kubernetes/addons/registry/
+  - name: copy registry svc 
+    copy: src=registry-svc.yaml dest=/etc/kubernetes/addons/registry/

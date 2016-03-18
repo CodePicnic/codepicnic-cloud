@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: nginx-main
+  namespace: default
+spec:
+      containers:
+      - name: nginx-main
+        image: nginx
+        ports:
+          - name: http
+            containerPort: 80
+            hostPort: 80
+          - name: https
+            containerPort: 443
+            hostPort: 443
+        volumeMounts:
+          - mountPath: "/etc/nginx/conf.d"
+            name: etc-nginx-confd
+      volumes:
+        - hostPath:
+            path: "/etc/nginx/conf.d"
+          name: etc-nginx-confd
+

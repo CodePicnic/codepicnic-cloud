@@ -1,0 +1,6 @@
+  - name: nginx dir 
+    file: path="/etc/nginx/conf.d" state=directory owner=root
+  - name: copy backend configuration 
+    copy: src=backend.conf dest=/etc/nginx/conf.d/
+  - name: copy manifest 
+    copy: src=nginx-main.yaml dest=/etc/kubernetes/manifests/
