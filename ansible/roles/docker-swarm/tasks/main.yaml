@@ -1,3 +1,7 @@
   - name: yum update 
     yum: name=* state=latest 
+  - name: download docker 
+    get_url: url=https://getdocker.com dest=/tmp/getdocker.sh mode=0755
+  - name: install docker
+    shell: /tmp/getdocker.sh 
 
