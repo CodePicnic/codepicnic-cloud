@@ -1,7 +1,7 @@
 - hosts: manager 
   roles:
       #- docker-swarm
-      - docker-manger
+      - docker-manager
   remote_user: ec2-user 
   become: yes
   become_user: root
