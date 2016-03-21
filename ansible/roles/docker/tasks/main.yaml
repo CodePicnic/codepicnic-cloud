@@ -5,7 +5,7 @@
   - name: add key
     apt_key: id=58118E89F3A912897C070ADBF76221572C52609D keyserver=hkp://p80.pool.sks-keyservers.net:80
   - name: copy docker repo
-    copy: src=docker.list dest=/etc/apt/sources.list.d/
+    copy: src=docker.list dest=/etc/apt/sources.list.d
   - name: apt-get update
     apt: update_cache=yes
   - name: apt-get purge lxc-docker 
@@ -18,3 +18,7 @@
     apt: name=apparmor state=latest 
   - name: apt-get install docker 
     apt: name=docker-engine state=latest 
+  - name: start docker
+    service: name=docker enabled=yes state=started
+  - name: add user
+    shell: usermod -aG docker ec2-user

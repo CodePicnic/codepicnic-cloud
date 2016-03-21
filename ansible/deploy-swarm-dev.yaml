@@ -1,7 +1,7 @@
 - hosts: manager 
   roles:
       - docker
-        #- swarm
+      - swarm
         #- swarm-manager
   remote_user: ubuntu 
   become: yes
@@ -20,7 +20,7 @@
 - hosts: node 
   roles:
       - docker
-        #- swarm
+      - swarm
         #- swarm-node 
   remote_user: ubuntu
   become: yes
