@@ -1,2 +1,5 @@
   - name: run consul 
-    shell: docker run -d -p 8500:8500 --name=consul progrium/consul -server -bootstrap 
+    shell: docker run -d -p 8500:8500 --name=consul progrium/consul -server -bootstrap
+    register: result_consul
+    failed_when: 
+    - "'already exists' not in result_consult.stderr"
