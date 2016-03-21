@@ -8,3 +8,13 @@
     copy: src=docker.list dest=/etc/apt/sources.list.d
   - name: apt-get update
     apt: update_cache=yes
+  - name: apt-get purge lxc-docker 
+    apt: name=lxc-docker state=absent purge=yes
+  - name: apt-cache policy docker-engine 
+    shell: apt-cache policy docker-engine 
+  - name: apt-get image extra
+    apt: name=linux-image-extra-{{ ansible_kernel }} state=latest 
+  - name: apt-get apparmor 
+    apt: name=apparmor state=latest 
+  - name: apt-get install docker 
+    apt: name=docker-engine state=latest 
