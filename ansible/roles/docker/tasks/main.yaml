@@ -21,4 +21,4 @@
   - name: start docker
     service: name=docker enabled=yes state=started
   - name: add user
-    shell: usermod -aG docker ec2-user
+    shell: usermod -aG docker ubuntu 
