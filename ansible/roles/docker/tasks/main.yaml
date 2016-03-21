@@ -3,7 +3,7 @@
   - name: apt-get install reqs 
     apt: name=apt-transport-https,ca-certificates state=present
   - name: add key
-    apt_key: id=58118E89F3A912897C070ADBF76221572C52609D url=hkp://p80.pool.sks-keyservers.net:80
+    apt_key: id=58118E89F3A912897C070ADBF76221572C52609D keyserver=hkp://p80.pool.sks-keyservers.net:80
   - name: copy docker repo
     copy: src=docker.list dest=/etc/apt/sources.list.d
   - name: apt-get update
