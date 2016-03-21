@@ -1,8 +1,8 @@
 - hosts: manager 
   roles:
       - docker
-      - swarm
-      - swarm-manager
+        #- swarm
+        #- swarm-manager
   remote_user: ubuntu 
   become: yes
   become_user: root
@@ -10,8 +10,8 @@
 - hosts: consul 
   roles:
       - docker
-      - swarm
-      - swarm-consul
+        #- swarm
+        #- swarm-consul
   remote_user: ubuntu
   become: yes
   become_user: root
@@ -20,8 +20,8 @@
 - hosts: node 
   roles:
       - docker
-      - swarm
-      - swarm-node 
+        #- swarm
+        #- swarm-node 
   remote_user: ubuntu
   become: yes
   become_user: root

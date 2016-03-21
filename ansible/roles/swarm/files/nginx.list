@@ -1,0 +1,2 @@
+deb http://nginx.org/packages/debian/ trusty nginx
+deb-src http://nginx.org/packages/debian/ trusty nginx

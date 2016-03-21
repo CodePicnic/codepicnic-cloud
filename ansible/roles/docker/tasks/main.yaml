@@ -1,0 +1,5 @@
+  - name: apt-get update
+    apt: update_cache=yes
+  - name: apt-get install reqs 
+    apt: name=apt-transport-https,ca-certificates state=present
+

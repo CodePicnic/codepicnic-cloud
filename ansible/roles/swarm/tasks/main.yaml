@@ -1,0 +1,13 @@
+  - name: yum update 
+    yum: name=* state=latest 
+  - name: download docker 
+    get_url: url=https://get.docker.com dest=/tmp/getdocker.sh mode=0755
+  #- name: install docker
+  #  shell: /tmp/getdocker.sh 
+  - name:  docker sysconfig
+    copy: src=docker.sysconfig dest=/etc/sysconfig/docker
+  - name: start docker
+    service: name=docker enabled=yes state=started
+  - name: add user 
+    shell: usermod -aG docker ec2-user
+
