@@ -1,4 +1,4 @@
   - name: Gather facts
     action: ec2_facts
   - name: run consul 
-    shell: "docker run -d -p 4000:4000 swarm manage -H :4000 --replication --advertise {{ ansible_ec2_local_ipv4 }}:4000 consul://{{ consul_ip }}"
+  shell: "docker run -d -p 4000:4000 swarm manage -H :4000 --replication --advertise {{ ansible_ec2_local_ipv4 }}:4000 consul://{{ consul_ip }}:8500"
