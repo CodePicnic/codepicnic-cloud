@@ -8,6 +8,13 @@
        - wildcard.crt
        - wildcard.key
   - name: run manager 
-    shell: "docker run -d -p 4000:4000 --name swarm-manager swarm manage -H :4000 --replication --advertise {{ ansible_ec2_local_ipv4 }}:4000 consul://{{ consul_ip }}:8500"
-    register: result_manager
-    failed_when: "'is already in use' not in result_manager.stderr and 'port is already allocated' not in result_manager.stderr"
+    #shell: "docker run -d -p 4000:4000 --name swarm-manager swarm manage -H :4000 --replication --advertise {{ ansible_ec2_local_ipv4 }}:4000 consul://{{ consul_ip }}:8500"
+    docker:
+      name: swarm-manager
+      image: swarm
+      state: started
+      command: "manage -H :4000 --replication --advertise {{ ansible_ec2_local_ipv4 }}:4000 consul://{{ consul_ip }}:8500"
+      detach: True
+      ports:
+      - "8500:8500"
+

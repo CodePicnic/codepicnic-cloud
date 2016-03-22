@@ -1,5 +1,17 @@
   - name: run registry
-    shell: "docker run -v /certs:/certs -v /mnt/registry:/var/lib/registry -d -p 5000:5000 -e REGISTRY_HTTP_ADDR=:5000 -e REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/var/lib/registry  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/wildcard.crt -e REGISTRY_HTTP_TLS_KEY=/certs/wildcard.key --name registry registry:2"
-    register: result_registry
-    failed_when: "'is already in use' not in result_registry.stderr and 'port is already allocated' not in result_registry.stderr and result_registry.stdout_lines.exists == False"
-
+  #shell: "docker run -v /certs:/certs -v /mnt/registry:/var/lib/registry -d -p 5000:5000 -e REGISTRY_HTTP_ADDR=:5000 -e REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/var/lib/registry  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/wildcard.crt -e REGISTRY_HTTP_TLS_KEY=/certs/wildcard.key --name registry registry:2"
+    docker:
+      name: registry 
+      image: registry:2
+      state: started
+      detach: True
+      ports:
+      - "5000:5000"
+      volumes:
+      - /certs:/certs
+      - /mnt/registry:/var/lib/registry
+      env:
+      - REGISTRY_HTTP_ADDR: ":5000"
+      - REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: "/var/lib/registry"
+      - REGISTRY_HTTP_TLS_CERTIFICATE: "/certs/wildcard.crt"
+      - REGISTRY_HTTP_TLS_KEY: "/certs/wildcard.key"

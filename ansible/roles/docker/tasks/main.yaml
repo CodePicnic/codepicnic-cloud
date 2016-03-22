@@ -22,3 +22,5 @@
     service: name=docker enabled=yes state=started
   - name: add user
     shell: usermod -aG docker ubuntu 
+  - name: install docker-py
+    pip: name=docker-py
