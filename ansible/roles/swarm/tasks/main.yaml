@@ -1,4 +1,3 @@
   - name:  docker opts 
     copy: src=docker.sysconfig dest=/etc/default/docker
     notify: docker-restart
-
