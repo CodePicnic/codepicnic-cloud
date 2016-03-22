@@ -11,7 +11,7 @@
       - /certs:/certs
       - /mnt/registry:/var/lib/registry
       env:
-      - REGISTRY_HTTP_ADDR: ":5000"
-      - REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: "/var/lib/registry"
-      - REGISTRY_HTTP_TLS_CERTIFICATE: "/certs/wildcard.crt"
-      - REGISTRY_HTTP_TLS_KEY: "/certs/wildcard.key"
+        REGISTRY_HTTP_ADDR: ":5000"
+        REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: "/var/lib/registry"
+        REGISTRY_HTTP_TLS_CERTIFICATE: "/certs/wildcard.crt"
+        REGISTRY_HTTP_TLS_KEY: "/certs/wildcard.key"
