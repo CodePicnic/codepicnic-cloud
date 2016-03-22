@@ -1,7 +1,7 @@
   - name: Gather facts
     action: ec2_facts
   - name: run swarm node 
-    shell: "docker run -d swarm join --advertise={{ ansible_ec2_local_ipv4 }}:2375 consul://{{ consul_ip }}:8500"
+  shell: "docker run -d swarm join --advertise={{ ansible_ec2_local_ipv4 }}:2375 consul://{{ consul_ip }}:8500 --name swarm-{{ ansible_ec2_local_hostname }}"
     register: result_node
     #failed_when: "'is already in use' not in result_node.stderr and result_node.stdout_lines.exists == False"
     ignore_errors: true
