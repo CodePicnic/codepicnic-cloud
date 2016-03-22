@@ -1,7 +1,7 @@
   - name: apt-get update
     apt: update_cache=yes
   - name: apt-get install reqs 
-    apt: name=apt-transport-https,ca-certificates state=present
+    apt: name=apt-transport-https,ca-certificates,python-pip state=present
   - name: add key
     apt_key: id=58118E89F3A912897C070ADBF76221572C52609D keyserver=hkp://p80.pool.sks-keyservers.net:80
   - name: copy docker repo
