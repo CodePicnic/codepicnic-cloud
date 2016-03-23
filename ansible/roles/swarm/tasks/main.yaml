@@ -1,4 +1,4 @@
   - name:  docker opts 
     copy: src=docker.sysconfig dest=/etc/default/docker
   - name: start docker
-    service: name=docker enabled=yes state=started
+    service: name=docker enabled=yes state=restarted
