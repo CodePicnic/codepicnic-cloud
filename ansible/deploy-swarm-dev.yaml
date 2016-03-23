@@ -24,9 +24,6 @@
       - docker
       - swarm
       - swarm-node 
-  handlers:
-      - name: docker-restart 
-        service: name=docker state=restarted
   remote_user: ubuntu
   become: yes
   become_user: root
