@@ -8,7 +8,44 @@
       state: started
       command: "join --advertise={{ ansible_ec2_local_ipv4 }}:2375 consul://{{ consul_ip }}:8500"
       detach: True
+      restart_policy: always
   #- name: run swarm overlay network (open udp/icmp port in security group)
   #  shell: "docker network create --driver overlay --subnet=172.18.0.0/16 net-swarm-01"
   #  register: result_overlay
   #  run_once: true
+  - name: nginx conf dir 
+    file: path=/etc/nginx/conf.d state=directory mode=0755
+  - name: copy nginx conf 
+    copy: src="{{ item }}" dest=/etc/nginx/conf.d
+    with_items:
+       - backend.conf 
+       - nginx.crt
+       - nginx.key
+  - name: run swarm nginx
+    #shell: "docker run --net net-swarm-01 --restart=always -d -p 443:443 -p 80:80 --expose 80 --expose 443 --name nginx-main-02 nginx" 
+    docker:
+      name: nginx-{{ ansible_ec2_local_hostname }}
+      image: nginx 
+      state: started
+      detach: True
+      restart_policy: always
+      net: net-swarm-01
+      ports:
+      - 80:80
+      - 443:443
+      volumes:
+      - /etc/nginx/conf.d:/etc/nginx/conf.d
+  - name: run swarm cadvisor
+    docker:
+      name: cadvisor-{{ ansible_ec2_local_hostname }}
+      image: google/cadvisor:latest
+      state: started
+      detach: True
+      restart_policy: always
+      net: net-swarm-01
+      ports:
+      - 3200:8080
+      volumes:
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
