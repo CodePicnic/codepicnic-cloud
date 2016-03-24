@@ -18,7 +18,7 @@
           volume_size: "500"
       exact_count: "{{ count_swarm_nodes }}" 
       count_tag:
-        Name: "{{ node_swarm_name }}"
+        Name: "{{ name_swarm_node }}"
         Project: "{{ cluster_swarm }}"
       vpc_subnet_id : "{{ subnet_swarm }}"
       assign_public_ip: yes
