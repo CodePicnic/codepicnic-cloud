@@ -1,3 +1,11 @@
+  - name: Gather facts
+    action: ec2_facts
+  - name: format device
+    filesystem: fstype=xfs dev="/dev/sdf"
+  - name: docker dir
+    file: path=/var/lib/docker state=directory
+  - name: mount device
+    mount: name="/var/lib/docker" src="/dev/sdf" fstype=xfs opts=defaults,noatime state=present
   - name: apt-get update
     apt: update_cache=yes
   - name: apt-get install reqs 
