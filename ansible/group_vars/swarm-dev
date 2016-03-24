@@ -1,6 +1,6 @@
 ---
 consul_ip: 172.21.0.113
-key_swarm_name: key_swarm_rsa 
+key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
 type_swarm_node: t2.small 
 ami_swarm: ami-fce3c696
