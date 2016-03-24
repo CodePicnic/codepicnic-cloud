@@ -6,8 +6,6 @@
     file: path=/var/lib/docker state=directory
   - name: mount device
     mount: name="/var/lib/docker" src="/dev/sdf" fstype=xfs opts=defaults,noatime state=present
-  - name: apt-get update
-    apt: update_cache=yes
   - name: apt-get install reqs 
     apt: name=apt-transport-https,ca-certificates,python-pip state=present
   - name: add key
