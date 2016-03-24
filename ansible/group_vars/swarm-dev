@@ -1,2 +1,12 @@
 ---
-consul_ip: 172.21.0.113 
+consul_ip: 172.21.0.113
+key_swarm_name: key_swarm_rsa 
+sg_swarm_name: sg_swarm
+type_swarm_node: t2.small 
+ami_swarm: ami-fce3c696
+name_swarm_node: swarm-node
+cluster_swarm: swarm-cluster-01
+aws_region: us-east-1
+ebs_optimized_swarm: no 
+count_swarm_nodes: 1 
+subnet_swarm: subnet-5a9d2e70 
