@@ -1,7 +1,7 @@
   - name: Gather facts
     action: ec2_facts
   - name: format device
-    filesystem: fstype=xfs dev="/dev/sdf"
+    filesystem: fstype=xfs dev="/dev/xvdf"
   - name: docker dir
     file: path=/var/lib/docker state=directory
   - name: mount device
