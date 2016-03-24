@@ -1,3 +1,4 @@
-  - name: install base 
-    apt: name=git,gcc state=present update_cache=yes 
-
+  - name: apt-get update
+    apt: name=* state=latest
+  - name: install tools
+    apt: name=iftop,apachetop,mlocate,s3cmd,htop,xfsprogs,telnet,dsniff state=latest 

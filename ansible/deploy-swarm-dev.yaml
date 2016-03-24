@@ -21,6 +21,7 @@
 
 - hosts: node 
   roles:
+      - base
       - docker
       - swarm
       - swarm-node 
