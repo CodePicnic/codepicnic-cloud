@@ -5,7 +5,8 @@ key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
 type_swarm_node: t2.small 
 #ami_swarm: ami-fce3c696
-ami_swarm: ami-632c2209 
+#ami_swarm: ami-632c2209 
+ami_swarm: ami-d92b25b3 
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
