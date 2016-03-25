@@ -28,10 +28,10 @@
       - /var/run:/var/run:rw
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
-  - name: run swarm overlay network (open udp/icmp port in security group)
-    shell: "docker -H {{ consul_ip }}:4000 network create --driver overlay --subnet=172.18.0.0/16 net-swarm-01"
-    register: result_overlay
-    run_once: true
+    #  - name: run swarm overlay network (open udp/icmp port in security group)
+    #shell: "docker -H {{ consul_ip }}:4000 network create --driver overlay --subnet=172.18.0.0/16 net-swarm-01"
+    #register: result_overlay
+    #run_once: true
   - name: run swarm nginx
     #shell: "docker run --net net-swarm-01 --restart=always -d -p 443:443 -p 80:80 --expose 80 --expose 443 --name nginx-main-02 nginx" 
     docker:
