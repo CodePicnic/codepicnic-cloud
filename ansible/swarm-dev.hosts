@@ -2,15 +2,15 @@
 127.0.0.1
 
 [manager]
-172.21.2.121 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.0.212 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 
 [replica]
 
 [consul]
 
 [node]
-172.21.2.122 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
-172.21.2.123 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.0.213 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.0.214 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 
 [swarm-dev:children]
 ansible

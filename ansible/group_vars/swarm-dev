@@ -1,5 +1,5 @@
 ---
-consul_ip: 172.21.0.113
+consul_ip: 172.21.0.212 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
 type_swarm_node: t2.small 
