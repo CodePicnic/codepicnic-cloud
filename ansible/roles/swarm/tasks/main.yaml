@@ -1,5 +1,5 @@
   - name:  docker opts 
-    copy: src=docker.sysconfig dest=/etc/default/docker
+    template: src=docker.sysconfig dest=/etc/default/docker
   - name: hosts for registry 
     copy: src=hosts dest=/etc/hosts
   - name: start docker
