@@ -1,5 +1,6 @@
 - hosts: manager 
   roles:
+      - base
       - docker
       - swarm
       - swarm-consul
