@@ -11,7 +11,7 @@
         Cluster: "{{ cluster_swarm }}"
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ebs_optimized_swarm }}"
-      volumes:
+      #volumes:
           #  - device_name: /dev/xvda
           #    volume_size: "20"
           #  - device_name: /dev/xvdf
