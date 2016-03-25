@@ -11,6 +11,9 @@
         Cluster: "{{ cluster_swarm }}"
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ebs_optimized_swarm }}"
+      user_data: |
+               #!/bin/sh
+               docker run --name swarm-$(curl http://169.254.169.254/latest/meta-data/local-hostname) -d swarm join --advertise=eth0:2375 consul://172.21.1.135:8500 
       #volumes:
           #  - device_name: /dev/xvda
           #    volume_size: "20"

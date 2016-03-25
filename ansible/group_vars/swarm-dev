@@ -9,7 +9,9 @@ type_swarm_node: t2.small
 #with docker
 #ami_swarm: ami-d92b25b3 
 #with docker + images
-ami_swarm: ami-c22826a8
+#ami_swarm: ami-c22826a8
+#with swarm 
+ami_swarm: ami-b92729d3 
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
