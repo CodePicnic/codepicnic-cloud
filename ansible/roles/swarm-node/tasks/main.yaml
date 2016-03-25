@@ -22,7 +22,6 @@
       state: started
       detach: True
       restart_policy: always
-      net: net-swarm-01
       ports:
       - 3200:8080
       volumes:
