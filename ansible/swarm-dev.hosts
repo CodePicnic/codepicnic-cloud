@@ -8,12 +8,16 @@
 
 [consul]
 
-[node]
-172.21.3.129 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+[node-ami]
+#172.21.3.129 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+[node-swarm]
+172.21.2.33 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 
 [swarm-dev:children]
 ansible
 node
+node-ami
+node-swarm
 manager
 consul
 replica

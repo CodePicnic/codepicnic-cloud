@@ -24,10 +24,25 @@
   roles:
       - base
       - docker
-        #    - swarm
-        #    - swarm-node 
+      - swarm
+      - swarm-node 
   remote_user: ubuntu
   become: yes
   become_user: root
   become_method: sudo
-
+- hosts: node-ami 
+  roles:
+      - base
+      - docker
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+- hosts: node-swarm
+  roles:
+      - swarm
+      - swarm-node 
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
