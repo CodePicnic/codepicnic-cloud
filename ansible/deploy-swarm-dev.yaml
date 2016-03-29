@@ -40,7 +40,7 @@
   become_method: sudo
 - hosts: node-swarm
   roles:
-      - swarm
+      #- swarm
       - swarm-node 
   remote_user: ubuntu
   become: yes
