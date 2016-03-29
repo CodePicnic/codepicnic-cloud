@@ -3,7 +3,7 @@ consul_ip: 172.21.1.135
 master_ip: 172.21.1.135 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
-type_swarm_node: t2.small
+type_swarm_node: m4.xlarge
 #ubuntu trusty 
 ami_swarm: ami-fce3c696
 #ami_swarm: ami-632c2209 
@@ -16,6 +16,6 @@ ami_swarm: ami-fce3c696
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
-ebs_optimized_swarm: no 
+ebs_optimized_swarm: yes 
 count_swarm_nodes: 1 
 subnet_swarm: subnet-5a9d2e70 
