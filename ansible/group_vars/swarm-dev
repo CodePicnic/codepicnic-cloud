@@ -5,14 +5,14 @@ key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
 type_swarm_node: m4.xlarge
 #ubuntu trusty 
-#ami_swarm: ami-fce3c696
+ami_swarm: ami-fce3c696
 #ami_swarm: ami-632c2209 
 #with docker
 #ami_swarm: ami-d92b25b3 
 #with docker + images
 #ami_swarm: ami-c22826a8
 #with swarm 
-ami_swarm: ami-b92729d3 
+#ami_swarm: ami-b92729d3 
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
