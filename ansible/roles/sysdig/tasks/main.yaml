@@ -7,5 +7,5 @@
   - name: Install Linux Headers
     apt: name="linux-headers-{{ ansible_kernel }}" update_cache=yes
 
-##  - name: Install Sysdig 
-#    apt: pkg=sysdig update_cache=yes cache_valid_time=30 latest
+  - name: Install Sysdig 
+    apt: name=sysdig update_cache=yes
