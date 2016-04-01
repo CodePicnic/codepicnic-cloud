@@ -1,0 +1,17 @@
+  - name: newrelic repo 
+    copy: src=newrelic.list  dest=/etc/apt/sources.list.d/newrelic.list mode=0644
+
+  - name: apt-key newrelic
+    apt_key: url="https://download.newrelic.com/548C16BF.gp" state=present
+
+  - name: Install newrelic 
+    apt: name=newrelic-sysmond update_cache=yes
+
+  - name: Install newrelic license
+    shell: nrsysmond-config --set license_key={{ newrelic_license }}
+
+  - name: add user
+    shell: usermod -aG docker newrelic 
+
+  - name: start newrelic
+    service: name=newrelic-sysmond enabled=yes state=started
