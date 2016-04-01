@@ -29,7 +29,7 @@
        - redis_20160107
        - mariadb_20160325  
   - name: tag images 
-    shell: docker tag registry.codepinic.com:5000/codepicnic/{{ item }} codepicnic/{{ item }}
+    shell: docker tag registry.codepicnic.com:5000/codepicnic/{{ item }} codepicnic/{{ item }}
     with_items:
        - base_20151201
        - mono_20160107
