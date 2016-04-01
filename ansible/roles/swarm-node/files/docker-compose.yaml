@@ -5,7 +5,7 @@ services:
     container_name: swarm-${NODE_NAME}
     command: join --advertise=${NODE_IP}:2375 consul://${CONSUL_IP}:8500
     network_mode: bridge
-    restart_policy: always
+    restart: always
   cadvisor:
     image: google/cadvisor:latest
     ports:
@@ -15,16 +15,18 @@ services:
     - "/sys:/sys:ro"
     - "/var/lib/docker/:/var/lib/docker:ro"
     container_name: cadvisor-${NODE_NAME}
-    restart_policy: always
+    network_mode: bridge
+    restart: always
   nginx:
     container_name: nginx-${NODE_NAME}
     image: nginx
-    restart_policy: always
-    net: net-swarm-01
+    restart: always
     ports:
     - "80:80"
     - "443:443"
     volumes:
     - "/etc/nginx/conf.d:/etc/nginx/conf.d"
-
-
+networks:
+  default:
+    external:
+       name: net-swarm-01
