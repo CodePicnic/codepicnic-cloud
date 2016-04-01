@@ -11,7 +11,7 @@
   - name: copy docker-compose.yaml 
     copy: src="docker-compose.yaml" dest=/opt/docker-compose.yaml
   - name: pull images 
-    shell: docker pull registry.codepicnic.com:5000:codepicnic/{{ item }}
+    shell: docker pull registry.codepicnic.com:5000/codepicnic/{{ item }}
     with_items:
        - base_20151201
        - mono_20160107
