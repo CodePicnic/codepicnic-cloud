@@ -1,11 +1,14 @@
 - hosts: manager 
   roles:
       - base
+      - sysdig
+      - newrelic
       - docker
       - swarm
       - swarm-consul
       - swarm-manager
       - swarm-registry
+      #- tuna
   remote_user: ubuntu 
   become: yes
   become_user: root
