@@ -1,0 +1,12 @@
+  - name: run tuna
+    #docker run -d -p 80:80 --name tuna -e DOCKER_HOST=172.21.1.135:4000 registry.codepicnic.com:5000/codepicnic/tuna_20160327 
+    docker:
+      name: tuna 
+      image: registry.codepicnic.com:5000/codepicnic/tuna_20160327
+      state: started
+      detach: True
+      restart_policy: always
+      ports:
+      - "80:80"
+      env:
+        DOCKER_HOST: "{{ master_ip:4000 }}"
