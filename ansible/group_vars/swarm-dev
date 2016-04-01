@@ -3,9 +3,9 @@ consul_ip: 172.21.1.135
 master_ip: 172.21.1.135 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
-#type_swarm_node: m4.xlarge
+type_swarm_node: m4.xlarge
 #type_swarm_node: r3.xlarge
-type_swarm_node: c4.2xlarge
+#type_swarm_node: c4.2xlarge
 #ubuntu trusty 
 ami_swarm: ami-fce3c696
 #ami_swarm: ami-632c2209 
