@@ -5,7 +5,7 @@
     get_url: url="http://download.draios.com/stable/deb/draios.list"  dest=/etc/apt/sources.list.d/draios.list mode=0644
 
   - name: Install Linux Headers
-    apt: pkg=linux-headers-{{ ansible_kernel }} update_cache=yes cache_valid_time=30 state=latest
+    apt: name="linux-headers-{{ ansible_kernel }}" update_cache=yes cache_valid_time=30 state=latest
 
   - name: Install Sysdig 
     apt: pkg=sysdig update_cache=yes cache_valid_time=30 latest
