@@ -1,8 +1,8 @@
   - name: apt-key sysdig 
     apt_key: url="https://s3.amazonaws.com/download.draios.com/DRAIOS-GPG-KEY.public" state=present
 
-#  - name: Get Sysdig repo 
-#    get_url: url="http://download.draios.com/stable/deb/draios.list"  dest=/etc/apt/sources.list.d/draios.list mode=0644
+  - name: Get Sysdig repo 
+    get_url: url="http://download.draios.com/stable/deb/draios.list"  dest=/etc/apt/sources.list.d/draios.list mode=0644
 
 #  - name: Install Linux Headers
 #    apt: name="linux-headers-{{ ansible_kernel }}" update_cache=yes
