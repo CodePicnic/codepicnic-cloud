@@ -15,12 +15,12 @@
           #!/bin/sh
           #docker run --name swarm-$(curl http://169.254.169.254/latest/meta-data/local-hostname) -d swarm join --advertise=$(curl http://169.254.169.254/latest/meta-data/local-ipv4):2375 consul://172.21.1.135:8500 
           #docker run --name swarm-$(curl http://169.254.169.254/latest/meta-data/local-hostname) -d swarm join --advertise=$(curl http://169.254.169.254/latest/meta-data/local-ipv4):2375 consul://172.21.1.135:8500 
-      #volumes:
+      volumes:
           #  - device_name: /dev/xvda
           #    volume_size: "20"
-          #  - device_name: /dev/xvdf
-          #   volume_type: "gp2"
-          #    volume_size: "500"
+          - device_name: /dev/xvdf
+            volume_type: "gp2"
+            volume_size: "500"
       exact_count: "{{ count_swarm_nodes }}" 
       count_tag:
         Name: "{{ name_swarm_node }}"
