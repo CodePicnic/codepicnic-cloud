@@ -27,8 +27,8 @@
   roles:
       - base
       - sysdig
-      - newrelic
       - docker
+      - newrelic
       - swarm
       - swarm-node 
   remote_user: ubuntu
