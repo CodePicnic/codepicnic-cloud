@@ -2,7 +2,7 @@
     copy: src=newrelic.list  dest=/etc/apt/sources.list.d/newrelic.list mode=0644
 
   - name: apt-key newrelic
-    apt_key: url="https://download.newrelic.com/548C16BF.gp" state=present
+    apt_key: url="https://download.newrelic.com/548C16BF.gpg" state=present
 
   - name: Install newrelic 
     apt: name=newrelic-sysmond update_cache=yes
