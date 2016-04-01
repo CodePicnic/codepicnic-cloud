@@ -18,4 +18,5 @@ cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
 ebs_optimized_swarm: yes 
 count_swarm_nodes: 1 
-subnet_swarm: subnet-5a9d2e70 
+subnet_swarm: subnet-5a9d2e70
+docker_fs: xfs 
