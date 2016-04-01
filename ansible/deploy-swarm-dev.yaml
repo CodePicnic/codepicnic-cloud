@@ -2,8 +2,8 @@
   roles:
       - base
       - sysdig
-      - newrelic
       - docker
+      - newrelic
       - swarm
       - swarm-consul
       - swarm-manager
