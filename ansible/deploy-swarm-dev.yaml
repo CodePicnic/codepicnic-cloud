@@ -23,6 +23,7 @@
 - hosts: node 
   roles:
       - base
+      - sysdig
       - docker
       - swarm
       - swarm-node 
