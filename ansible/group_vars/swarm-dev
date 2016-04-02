@@ -19,7 +19,7 @@ cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
 ebs_optimized_swarm: no 
 count_swarm_nodes: 1 
-ec2_iam_role: docker-swarm-node
+ec2_iam_role: docker-swarm
 #ec2_iam_role: arn:aws:iam::740698317528:instance-profile/docker-swam-node
 subnet_swarm: subnet-5a9d2e70
 docker_fs: xfs 
