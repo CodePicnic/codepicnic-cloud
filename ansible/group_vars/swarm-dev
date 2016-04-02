@@ -9,16 +9,18 @@ sg_swarm_name: sg_swarm
 #type_swarm_node: r3.xlarge
 #type_swarm_node: c4.2xlarge
 ###master=c4.large
-type_swarm_node: m4.xlarge 
+type_swarm_node: t2.micro
 #ubuntu trusty 
-ami_swarm: ami-fce3c696
-#ami wiht swarm
-#ami_swarm: 
+#ami_swarm: ami-fce3c696
+#ami wiht swarm (w/o newrelic)
+ami_swarm: ami-33d4de59 
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
-ebs_optimized_swarm: yes 
-count_swarm_nodes: 2 
+ebs_optimized_swarm: no 
+count_swarm_nodes: 1 
+ec2_iam_role:docker-swarm-node
+
 subnet_swarm: subnet-5a9d2e70
 docker_fs: xfs 
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1

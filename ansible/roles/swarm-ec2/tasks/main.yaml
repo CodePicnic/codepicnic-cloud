@@ -27,5 +27,6 @@
         Project: "{{ cluster_swarm }}"
       vpc_subnet_id : "{{ subnet_swarm }}"
       assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
     register: ec2
 
