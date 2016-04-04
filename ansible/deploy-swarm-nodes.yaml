@@ -1,5 +1,6 @@
 - hosts: ansible
   connection: local
   roles:
-      - swarm-ec2
+      - swarm-autoscaling
+      #- swarm-ec2
 

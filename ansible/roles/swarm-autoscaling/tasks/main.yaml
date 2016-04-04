@@ -1,0 +1,24 @@
+  - name: create launch-configuration-group 
+    ec2_lc:
+      name: "{{ lc_swarm_name }}"
+      key_name: "{{ key_swarm_name }}"
+      security_groups: ['{{ sg_swarm_name }}']
+      instance_type: "{{ type_swarm_node }}"
+      image_id: "{{ ami_swarm }}"
+      instance_tags:
+        Name: "{{ name_swarm_node }}"
+        Cluster: "{{ cluster_swarm }}"
+      region: "{{ aws_region }}"
+      ebs_optimized: "{{ ebs_optimized_swarm }}"
+      user_data: |
+          #!/bin/sh
+          cd /opt
+          NODE_NAME=$(curl http://169.254.169.254/latest/meta-data/local-hostname) CONSUL_IP=172.21.2.90 NODE_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4) docker-compose up -d
+      volumes:
+          - device_name: /dev/xvdf
+            volume_type: "gp2"
+            volume_size: "500"
+            snapshot_id: "snap-809541ea"
+      #vpc_subnet_id : "{{ subnet_swarm }}"
+      assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
