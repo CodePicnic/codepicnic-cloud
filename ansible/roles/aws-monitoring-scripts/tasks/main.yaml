@@ -4,3 +4,5 @@
     get_url: url="http://aws-cloudwatch.s3.amazonaws.com/downloads/CloudWatchMonitoringScripts-1.2.1.zip"  dest=/opt/CloudWatchMonitoringScripts-1.2.1.zip mode=0755
   - name: unzip scripts
     unarchive: src=/opt/CloudWatchMonitoringScripts-1.2.1.zip dest=/opt/ copy=no 
+  - name: crontab
+    cron: name="aws-monitorign-scripts" minute="*/1" job=" /opt/aws-scripts-mon/mon-put-instance-data.pl --mem-used --mem-avail -disk-path=/ --disk-path=/var/lib/docker --disk-space-util --from-cron"
