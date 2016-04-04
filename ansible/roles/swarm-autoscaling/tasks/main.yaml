@@ -39,9 +39,37 @@
       name: "asp-lowmemory"
       adjustment_type: "ChangeInCapacity"
       asg_name: "{{ asg_swarm_name }}" 
-      scaling_adjustment: -1
-      min_adjustment_step: 1
+      scaling_adjustment: 1 
+      cooldown: 300 
+    register: asp-down
+  - name: print as policy
+    debug: var=asp-down
+  - name: create as policy
+    ec2_scaling_policy:
+      state: present
+      region: "{{ aws_region }}"
+      name: "asp-highmemory"
+      adjustment_type: "ChangeInCapacity"
+      asg_name: "{{ asg_swarm_name }}" 
+      scaling_adjustment: -1 
       cooldown: 300 
     register: asp
   - name: print as policy
     debug: var=asp
+  - name: create alarm
+    ec2_metric_alarm:
+      state: present
+      region: "{{ aws_region }}"
+      name: "alarm-lowmemory"
+      metric: "UsedMemoryPercent"
+      namespace: "System/Linux"
+      statistic: Average
+      comparison: ">="
+      threshold: 75 
+      period: 300
+      evaluation_periods: 2 
+      #unit: "Percent"
+      #description: "This will alarm when a bamboo slave's cpu usage average is lower than 5% for 15 minutes "
+      dimensions: {'AutoScalingGroupName':'asg-swarm-01'}
+      alarm_actions: ["arn:aws:autoscaling:us-east-1:740698317528:scalingPolicy:3c4852ff-482f-407c-bdfa-9be031f0ead8:autoScalingGroupName/asg-swarm-01:policyName/asp-lowmemory"]
+
