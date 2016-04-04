@@ -29,5 +29,3 @@
        max_size: 10
        desired_capacity: 2 
        vpc_zone_identifier: [ 'subnet-5a9d2e70' ]
-       tags:
-         Cluster: "{{ cluster_swarm }}"
