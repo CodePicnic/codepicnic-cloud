@@ -42,3 +42,6 @@
       scaling_adjustment: -1
       min_adjustment_step: 1
       cooldown: 300 
+    register: asp
+  - name: print as policy
+    debug: var=asp
