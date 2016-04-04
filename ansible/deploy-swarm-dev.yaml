@@ -1,6 +1,7 @@
 - hosts: manager 
   roles:
       - base
+      - aws-monitoring-scripts
       - sysdig
       - docker
       - newrelic
@@ -26,6 +27,7 @@
 - hosts: node 
   roles:
       - base
+      - aws-monitoring-scripts
       - sysdig
       - docker
       - newrelic

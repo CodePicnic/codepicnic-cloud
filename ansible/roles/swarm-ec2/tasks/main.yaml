@@ -29,4 +29,5 @@
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
     register: ec2
-
+  - name: print ec2
+    debug: var=ec2 
