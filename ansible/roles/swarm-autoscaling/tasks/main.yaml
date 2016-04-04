@@ -21,11 +21,12 @@
       instance_profile_name: "{{ ec2_iam_role }}"
   - name: create asg  
     ec2_asg:
-       name: "{{ asg_swarm_name }}"
-       load_balancers: [ 'elb-swarm-01']
-       availability_zones: [ 'us-east-1a' ]
-       launch_config_name: "{{ lc_swarm_name }}" 
-       min_size: 2
-       max_size: 10
-       desired_capacity: 2 
-       vpc_zone_identifier: [ 'subnet-5a9d2e70' ]
+      name: "{{ asg_swarm_name }}"
+      load_balancers: [ 'elb-swarm-01']
+      availability_zones: [ 'us-east-1a' ]
+      launch_config_name: "{{ lc_swarm_name }}" 
+      min_size: 2
+      max_size: 10
+      desired_capacity: 2 
+      vpc_zone_identifier: [ 'subnet-5a9d2e70' ]
+      region: "{{ aws_region }}"
