@@ -2,7 +2,7 @@
     ec2_lc:
       name: "{{ lc_swarm_name }}"
       key_name: "{{ key_swarm_name }}"
-      security_groups: ['{{ sg_swarm_name }}']
+      security_groups: ['sg-33871c4b']
       instance_type: "{{ type_swarm_node }}"
       image_id: "{{ ami_swarm }}"
       region: "{{ aws_region }}"
