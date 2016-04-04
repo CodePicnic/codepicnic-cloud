@@ -61,7 +61,7 @@
       state: present
       region: "{{ aws_region }}"
       name: "alarm-lowmemory"
-      metric: "UsedMemoryPercent"
+      metric: "MemoryUtilization"
       namespace: "System/Linux"
       statistic: Average
       comparison: ">="
