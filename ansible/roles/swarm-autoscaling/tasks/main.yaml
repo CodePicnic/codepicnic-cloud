@@ -28,7 +28,6 @@
        min_size: 2
        max_size: 10
        desired_capacity: 2 
-    vpc_zone_identifier: [ 'subnet-abcd1234', 'subnet-1a2b3c4d' ]
-    tags:
-      - environment: production
-        propagate_at_launch: no
+       vpc_zone_identifier: [ 'subnet-5a9d2e70' ]
+       tags:
+         Cluster: "{{ cluster_swarm }}"
