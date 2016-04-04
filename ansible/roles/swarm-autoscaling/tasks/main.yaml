@@ -5,9 +5,6 @@
       security_groups: ['{{ sg_swarm_name }}']
       instance_type: "{{ type_swarm_node }}"
       image_id: "{{ ami_swarm }}"
-      instance_tags:
-        Name: "{{ name_swarm_node }}"
-        Cluster: "{{ cluster_swarm }}"
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ebs_optimized_swarm }}"
       user_data: |
