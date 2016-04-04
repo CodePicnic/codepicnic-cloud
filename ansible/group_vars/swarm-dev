@@ -14,7 +14,7 @@ type_swarm_node: t2.micro
 #ubuntu trusty 
 #ami_swarm: ami-fce3c696
 #ami wiht swarm (w/o newrelic)
-ami_swarm: ami-33d4de59 
+ami_swarm: ami-93fce8f9
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
