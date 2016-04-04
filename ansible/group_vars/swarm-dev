@@ -3,7 +3,8 @@ consul_ip: 172.21.2.90
 master_ip: 172.21.2.90 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
-lc_swarm_name: lc-swarm-06
+lc_swarm_name: lc-swarm-01
+asg_swarm_name: asg-swarm-01
 
 ###node=m4.xlarge
 #type_swarm_node: m4.xlarge
