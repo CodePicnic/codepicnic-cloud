@@ -11,7 +11,7 @@ asg_swarm_name: asg-swarm-01
 #type_swarm_node: r3.xlarge
 #type_swarm_node: c4.2xlarge
 ###master=c4.large
-type_swarm_node: t2.micro
+type_swarm_node: m4.xlarge 
 #ubuntu trusty 
 #ami_swarm: ami-fce3c696
 #ami wiht swarm (w/o newrelic)
