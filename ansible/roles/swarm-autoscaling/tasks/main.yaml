@@ -71,5 +71,5 @@
       #unit: "Percent"
       #description: "This will alarm when a bamboo slave's cpu usage average is lower than 5% for 15 minutes "
       dimensions: {'AutoScalingGroupName':'asg-swarm-01'}
-      alarm_actions: ["arn:aws:autoscaling:us-east-1:740698317528:scalingPolicy:3531aaac-af7b-48f1-887d-a372a84c2d8a:autoScalingGroupName/asg-swarm-01:policyName/asp-highmemory"]
+      alarm_actions: ["{{ asp.arn }}"]
 
