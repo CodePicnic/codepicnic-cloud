@@ -5,4 +5,4 @@
   - name: unzip scripts
     unarchive: src=/opt/CloudWatchMonitoringScripts-1.2.1.zip dest=/opt/ copy=no 
   - name: crontab
-    cron: name="aws-monitorign-scripts" minute="*/1" job=" /opt/aws-scripts-mon/mon-put-instance-data.pl --mem-used --mem-avail -disk-path=/ --disk-path=/var/lib/docker --disk-space-util --from-cron"
+    cron: name="aws-monitorign-scripts" minute="*/1" job="/opt/aws-scripts-mon/mon-put-instance-data.pl --mem-util -disk-path=/ --disk-path=/var/lib/docker --disk-space-util --from-cron --auto-scaling"

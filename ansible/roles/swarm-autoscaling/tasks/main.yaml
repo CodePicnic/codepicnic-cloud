@@ -10,6 +10,7 @@
       user_data: |
           #!/bin/sh
           rm /etc/docker/key.json
+          rm -rf /var/tmp/aws-mon/
           service docker restart
           cd /opt
           NODE_NAME=$(curl http://169.254.169.254/latest/meta-data/local-hostname) CONSUL_IP=172.21.2.90 NODE_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4) docker-compose up -d
@@ -17,7 +18,7 @@
           - device_name: /dev/xvdf
             volume_type: "gp2"
             volume_size: "500"
-            snapshot_id: "snap-809541ea"
+            snapshot_id: "{{ snapshot_docker }}"
       #vpc_subnet_id : "{{ subnet_swarm }}"
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
@@ -65,11 +66,10 @@
       namespace: "System/Linux"
       statistic: Average
       comparison: ">="
-      threshold: 75.0
-      period: 300
+      threshold: 65.0
+      period: 60
       evaluation_periods: 2
       #unit: "Percent"
       #description: "This will alarm when a bamboo slave's cpu usage average is lower than 5% for 15 minutes "
       dimensions: {'AutoScalingGroupName':'asg-swarm-01'}
       alarm_actions: ["{{ asp_lowmemory.arn }}"]
-
