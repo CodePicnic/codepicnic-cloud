@@ -41,9 +41,9 @@
       asg_name: "{{ asg_swarm_name }}" 
       scaling_adjustment: 1 
       cooldown: 300 
-    register: asp-down
+    register: asp-lowmemory
   - name: print as policy
-    debug: var=asp-down
+    debug: var=asp-lowmemory
   - name: create as policy
     ec2_scaling_policy:
       state: present
@@ -71,5 +71,5 @@
       #unit: "Percent"
       #description: "This will alarm when a bamboo slave's cpu usage average is lower than 5% for 15 minutes "
       dimensions: {'AutoScalingGroupName':'asg-swarm-01'}
-      alarm_actions: ["{{ asp.arn }}"]
+      alarm_actions: ["{{ asp-lowmemory.arn }}"]
 
