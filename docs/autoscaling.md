@@ -20,7 +20,7 @@ Ansible role [swarm-autoscaling](https://github.com/CodePicnic/codepicnic-cloud/
 
 * Auto Scaling Policy (asp-lowmemory)
 
-The "Low Memory" auto scaling policy determines that the ASG should scale out with steps of 1 instance when the Cloudwatch alarm associated with this policy is triggered.  In this case, the ASG will launch a new instance with the settings defined in the Launch Configuration.
+  The "Low Memory" auto scaling policy determines that the ASG should scale out with steps of 1 instance when the Cloudwatch alarm associated with this policy is triggered.  In this case, the ASG will launch a new instance with the settings defined in the Launch Configuration.
 
 * Cloudwatch Alarm  (alarm-lowmemory)
 
