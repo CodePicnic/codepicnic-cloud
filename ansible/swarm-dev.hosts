@@ -1,5 +1,5 @@
 [ansible]
-127.0.0.1
+#127.0.0.1
 
 [manager]
 #172.21.2.90 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
@@ -10,10 +10,13 @@
 
 [node]
 
-172.21.0.252 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 #172.21.3.129 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 [node-swarm]
 [node-ami]
+[codepicnic]
+ec2-107-20-191-224.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/codepicnic.pem
+ec2-54-225-199-157.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/codepicnic.pem
+ec2-54-221-193-136.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/codepicnic.pem
 
 [swarm-dev:children]
 ansible
@@ -23,3 +26,4 @@ node-swarm
 manager
 consul
 replica
+codepicnic

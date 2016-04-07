@@ -23,7 +23,6 @@
   become: yes
   become_user: root
   become_method: sudo
-
 - hosts: node 
   roles:
       - base
@@ -37,18 +36,9 @@
   become: yes
   become_user: root
   become_method: sudo
-- hosts: node-ami 
+- hosts: codepicnic 
   roles:
-      - base
-      - docker
-  remote_user: ubuntu
-  become: yes
-  become_user: root
-  become_method: sudo
-- hosts: node-swarm
-  roles:
-      #- swarm
-      - swarm-node 
+      - newrelic 
   remote_user: ubuntu
   become: yes
   become_user: root
