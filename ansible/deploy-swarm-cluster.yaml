@@ -38,7 +38,8 @@
   become_method: sudo
 - hosts: codepicnic 
   roles:
-      - newrelic 
+      - sysdig
+        #- newrelic 
   remote_user: ubuntu
   become: yes
   become_user: root
