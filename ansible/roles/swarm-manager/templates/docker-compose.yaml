@@ -1,0 +1,27 @@
+version: '2'
+services:
+  cadvisor:
+    image: google/cadvisor:latest
+    ports:
+    - "3200:8080"
+    volumes:
+    - "/var/run:/var/run:rw"
+    - "/sys:/sys:ro"
+    - "/var/lib/docker/:/var/lib/docker:ro"
+    container_name: cadvisor-${NODE_NAME}
+    network_mode: bridge
+    restart: always
+  tuna:
+    container_name: tuna 
+    image: tuna_20160406
+    restart: always
+    ports:
+    - "80:80"
+    - "443:443"
+    env:
+    - "DOCKER_HOST={{ master_ip }}"
+networks:
+  default:
+    external:
+       name: net-swarm-01
+
