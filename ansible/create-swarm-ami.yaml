@@ -12,6 +12,7 @@
       - newrelic
       - swarm
       - swarm-node
+      - create-ami
   remote_user: ubuntu
   become: yes
   become_user: root
