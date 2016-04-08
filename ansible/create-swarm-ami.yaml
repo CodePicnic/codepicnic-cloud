@@ -5,13 +5,13 @@
 - hosts: node-swarm-ami 
   roles:
       - base
+      - reboot 
       - aws-monitoring-scripts
       - sysdig
       - docker
       - newrelic
       - swarm
       - swarm-node
-      - reboot 
   remote_user: ubuntu
   become: yes
   become_user: root
