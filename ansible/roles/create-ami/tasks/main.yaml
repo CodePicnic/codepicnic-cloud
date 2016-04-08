@@ -17,6 +17,7 @@
   - name: ami result
     debug: var=swarm_ami.results
   - name: terminate instance 
+    sudo : no
     local_action:
       module: ec2
       state: 'absent'
