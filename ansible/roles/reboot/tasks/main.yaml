@@ -2,7 +2,7 @@
     action: ec2_facts
   - name: restart machine
     shell: sleep 2 && shutdown -r now "Ansible updates triggered"
-    async: 1
+    async: 3 
     poll: 0
     ignore_errors: true
   - name: Wait for SSH to come up
