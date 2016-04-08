@@ -10,6 +10,7 @@
         size: 500 
         delete_on_termination: false
         volume_type: gp2
+      region: "{{ aws_region }}"
     register: swarm_ami
     #with_items: "{{ hostvars['127.0.0.1']['var_ec2'].instances }}"
 
@@ -20,3 +21,4 @@
       module: ec2
       state: 'absent'
       instance_ids: "{{ ansible_ec2_instance_id  }}"
+      region: "{{ aws_region }}"
