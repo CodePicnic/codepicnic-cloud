@@ -14,9 +14,6 @@
         - device_name: /dev/xvdf
           volume_type: "gp2"
           volume_size: "500"
-      exact_count: "1" 
-      count_tag:
-        Name: "swarm-ami"
       vpc_subnet_id : "{{ subnet_swarm }}"
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
