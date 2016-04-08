@@ -1,13 +1,22 @@
-  - name: run swarm ami 
-    ec2_ami:
-      instance_id: "{{ item.id }}"
+  - name: run swarm ami
+    sudo : no
+    local_action:
+      module: ec2_ami
+      #instance_id: "{{ item.id }}"
+      instance_id: "{{ ansible_ec2_instance_id }}"
       name: "{{ new_ami_name }}"
       device_mapping:
       - device_name: /dev/sdb
         size: 500 
         delete_on_termination: false
         volume_type: gp2
-      register: swarm_ami
-    with_items: "{{ hostvars['127.0.0.1']['var_ec2'].instances }}"
+    register: swarm_ami
+    #with_items: "{{ hostvars['127.0.0.1']['var_ec2'].instances }}"
+
   - name: ami result
     debug: var=swarm_ami.results
+  - name: terminate instance 
+    local_action:
+      module: ec2
+      state: 'absent'
+      instance_ids: "{{ ansible_ec2_instance_id  }}"
