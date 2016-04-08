@@ -2,3 +2,18 @@
   connection: local
   roles:
       - swarm-ec2-ami
+- hosts: node-swarm-ami 
+  roles:
+      - base
+      - aws-monitoring-scripts
+      - sysdig
+      - docker
+      - newrelic
+      - swarm
+      - swarm-node
+      - reboot 
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+

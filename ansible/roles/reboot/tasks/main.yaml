@@ -1,0 +1,11 @@
+  - name: Gather facts
+    action: ec2_facts
+  - name: restart machine
+    shell: sleep 2 && shutdown -r now "Ansible updates triggered"
+    async: 1
+    poll: 0
+    sudo: true
+    ignore_errors: true
+  - name: Wait for SSH to come up
+    wait_for: host={{ ansible_ec2_local_ipv4 }} port=22 delay=60 timeout=320 state=started
+    connection: local
