@@ -1,4 +1,4 @@
 - hosts: ansible
   connection: local
   roles:
-      - swarm-ami-ec2
+      - swarm-ec2-ami
