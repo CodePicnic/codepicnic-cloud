@@ -11,15 +11,17 @@
         delete_on_termination: false
         volume_type: gp2
       region: "{{ aws_region }}"
+      wait: yes
+      state: present
     register: swarm_ami
     #with_items: "{{ hostvars['127.0.0.1']['var_ec2'].instances }}"
 
   - name: ami result
     debug: var=swarm_ami
-  - name: terminate instance 
-    sudo : no
-    local_action:
-      module: ec2
-      state: 'absent'
-      instance_ids: "{{ ansible_ec2_instance_id  }}"
-      region: "{{ aws_region }}"
+    #  - name: terminate instance 
+    #sudo : no
+    #local_action:
+    #  module: ec2
+    #  state: 'absent'
+    #  instance_ids: "{{ ansible_ec2_instance_id  }}"
+    #  region: "{{ aws_region }}"
