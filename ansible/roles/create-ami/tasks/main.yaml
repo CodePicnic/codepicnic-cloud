@@ -15,7 +15,7 @@
     #with_items: "{{ hostvars['127.0.0.1']['var_ec2'].instances }}"
 
   - name: ami result
-    debug: var=swarm_ami.results
+    debug: var=swarm_ami
   - name: terminate instance 
     sudo : no
     local_action:
