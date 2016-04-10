@@ -27,7 +27,10 @@
        - rails_20160107
        - mongodb_20160107
        - redis_20160107
-       - mariadb_20160325  
+       - mariadb_20160325
+       - nginx
+       - google/cadvisor
+       - swarm 
   - name: tag images 
     shell: docker tag registry.codepicnic.com:5000/codepicnic/{{ item }} codepicnic/{{ item }}
     with_items:
@@ -45,3 +48,6 @@
        - rails_20160107
        - mongodb_20160107
        - redis_20160107
+       - nginx
+       - google/cadvisor
+       - swarm 

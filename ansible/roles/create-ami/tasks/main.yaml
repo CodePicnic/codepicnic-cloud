@@ -5,11 +5,11 @@
       #instance_id: "{{ item.id }}"
       instance_id: "{{ ansible_ec2_instance_id }}"
       name: "{{ new_ami_name }}"
-      device_mapping:
-      - device_name: /dev/sdb
-        size: 500 
-        delete_on_termination: false
-        volume_type: gp2
+      #device_mapping:
+      #- device_name: /dev/xvdf
+      #  size: 500 
+      #  delete_on_termination: false
+      #  volume_type: gp2
       region: "{{ aws_region }}"
       wait: yes
       state: present
