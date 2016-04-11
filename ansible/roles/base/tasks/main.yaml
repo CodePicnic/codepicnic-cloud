@@ -4,3 +4,6 @@
     apt: name=iftop,apachetop,mlocate,s3cmd,htop,xfsprogs,telnet,dsniff,iotop,dstat,tcpdump,schedtool state=latest
   - name: upgrade ubuntu
     apt: upgrade=dist update_cache=yes 
+  - name: add sysctl 
+    sysctl: name="{{ item.name }}" value="{{ item.value }}" state=present
+    with_items: sysctl_options
