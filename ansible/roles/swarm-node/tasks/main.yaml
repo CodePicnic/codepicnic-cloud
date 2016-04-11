@@ -28,6 +28,9 @@
        - mongodb_20160107
        - redis_20160107
        - mariadb_20160325
+  - name: pull images 
+    shell: docker pull registry.codepicnic.com:5000/codepicnic/{{ item }}
+    with_items:
        - nginx
        - google/cadvisor
        - swarm 
@@ -48,6 +51,3 @@
        - rails_20160107
        - mongodb_20160107
        - redis_20160107
-       - nginx
-       - google/cadvisor
-       - swarm 
