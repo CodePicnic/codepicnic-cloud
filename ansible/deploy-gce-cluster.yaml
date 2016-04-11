@@ -25,7 +25,6 @@
 - hosts: node 
   roles:
       - base
-      - aws-monitoring-scripts
       - sysdig
       - docker
       - newrelic
