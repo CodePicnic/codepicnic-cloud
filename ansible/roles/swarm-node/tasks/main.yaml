@@ -12,22 +12,7 @@
     copy: src="docker-compose.yaml" dest=/opt/docker-compose.yaml
   - name: pull images 
     shell: docker pull registry.codepicnic.com:5000/codepicnic/{{ item }}
-    with_items:
-       - base_20151201
-       - mono_20160107
-       - elixir_20160107
-       - elixir12_20160108
-       - go_20160107
-       - php_20160107
-       - php7_20160112
-       - python350_20160305
-       - ruby23_20160107
-       - laravel_20160107
-       - phoenix_20160107
-       - rails_20160107
-       - mongodb_20160107
-       - redis_20160107
-       - mariadb_20160325
+    with_items: "{{ base_images }}"
   - name: pull images 
     shell: docker pull {{ item }}
     with_items:
@@ -36,18 +21,4 @@
        - swarm 
   - name: tag images 
     shell: docker tag registry.codepicnic.com:5000/codepicnic/{{ item }} codepicnic/{{ item }}
-    with_items:
-       - base_20151201
-       - mono_20160107
-       - elixir_20160107
-       - elixir12_20160108
-       - go_20160107
-       - php_20160107
-       - php7_20160112
-       - python350_20160305
-       - ruby23_20160107
-       - laravel_20160107
-       - phoenix_20160107
-       - rails_20160107
-       - mongodb_20160107
-       - redis_20160107
+    with_items: "{{ base_images }}"

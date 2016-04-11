@@ -59,4 +59,7 @@ sysctl_options:
      value: 0
    -
      name: net.ipv4.tcp_tw_reuse 
-     value: 1 
+     value: 1
+
+base_images:
+       - base_20151201

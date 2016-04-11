@@ -58,4 +58,21 @@ systcl_options:
      value: 0
    -
      name: net.ipv4.tcp_tw_reuse 
-     value: 1 
+     value: 1
+base_images:
+       - base_20151201
+       - mono_20160107
+       - elixir_20160107
+       - elixir12_20160108
+       - go_20160107
+       - php_20160107
+       - php7_20160112
+       - python350_20160305
+       - ruby23_20160107
+       - laravel_20160107
+       - phoenix_20160107
+       - rails_20160107
+       - mongodb_20160107
+       - redis_20160107
+       - mariadb_20160325
+ 
