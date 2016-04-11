@@ -19,7 +19,11 @@
   - name: apt-cache policy docker-engine 
     shell: apt-cache policy docker-engine 
   - name: apt-get image extra
-    apt: name=linux-image-extra-{{ ansible_kernel }} state=latest 
+    apt: name=linux-image-extra-{{ ansible_kernel }},linux-image-extra-virtual state=latest
+  - name: modprobe aufs
+    modprobe: name=aufs state=present
+  - name: modprobe overlayfs 
+    modprobe: name=overlayfs state=present
   - name: apt-get apparmor 
     apt: name=apparmor state=latest 
   - name: apt-get install docker 
