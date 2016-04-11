@@ -1,5 +1,6 @@
 ---
 consul_ip: 10.142.0.2 
+consul_network: 10.142.0.2:8500
 master_ip: 10.142.0.2
 ansible_ec2_local_ipv4: 10.142.0.2 
 key_swarm_name: key_swarm

@@ -1,5 +1,6 @@
 ---
 consul_ip: 172.21.2.90
+consul_network: 172.21.2.90:8501
 master_ip: 172.21.2.90 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
