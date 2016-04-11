@@ -1,0 +1,59 @@
+---
+consul_ip: 10.142.0.2 
+master_ip: 10.142.0.2 
+key_swarm_name: key_swarm
+sg_swarm_name: sg_swarm
+lc_swarm_name: lc-swarm-01
+asg_swarm_name: asg-swarm-01
+
+###node=m4.xlarge
+#type_swarm_node: m4.xlarge
+#type_swarm_node: r3.xlarge
+#type_swarm_node: c4.2xlarge
+###master=c4.large
+type_swarm_node: m4.xlarge 
+#ubuntu trusty 
+#ami_swarm: ami-fce3c696
+#ami wiht swarm (w/o newrelic)
+ami_swarm: ami-09b9a963 
+snapshot_docker: snap-caba4edd 
+name_swarm_node: swarm-node
+cluster_swarm: swarm-cluster-01
+aws_region: us-east-1
+ebs_optimized_swarm: yes 
+count_swarm_nodes: 1 
+ec2_iam_role: swarm-node
+#ec2_iam_role: arn:aws:iam::740698317528:instance-profile/docker-swam-node
+subnet_swarm: subnet-5a9d2e70
+#docker_fs: xfs 
+docker_fs: ext4 
+newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
+
+systcl_options:
+   -
+     name: net.core.somaxconn 
+     value: 1000
+   -
+     name: net.core.netdev_max_backlog 
+     value: 5000
+   -
+     name: net.core.rmem_max 
+     value: 16777216
+   -
+     name: net.core.wmem_max 
+     value: 16777216
+   -
+     name: net.ipv4.tcp_wmem 
+     value: 4096 12582912 16777216
+   -
+     name: net.ipv4.tcp_rmem 
+     value: 4096 12582912 16777216
+   -
+     name: net.ipv4.tcp_max_syn_backlog 
+     value: 8096
+   -
+     name: net.ipv4.tcp_slow_start_after_idle 
+     value: 0
+   -
+     name: net.ipv4.tcp_tw_reuse 
+     value: 1 

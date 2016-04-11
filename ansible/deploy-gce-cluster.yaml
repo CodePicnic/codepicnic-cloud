@@ -1,0 +1,45 @@
+- hosts: manager 
+  roles:
+      - base
+      - sysdig
+      - docker
+      - newrelic
+      - swarm
+      - swarm-consul
+      - swarm-manager
+      - swarm-registry
+      #- tuna
+  remote_user: ubuntu 
+  become: yes
+  become_user: root
+  become_method: sudo
+- hosts: consul 
+  roles:
+      - docker
+        #- swarm
+        #- swarm-consul
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+- hosts: node 
+  roles:
+      - base
+      - aws-monitoring-scripts
+      - sysdig
+      - docker
+      - newrelic
+      - swarm
+      - swarm-node 
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+- hosts: codepicnic 
+  roles:
+      - sysdig
+        #- newrelic 
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
