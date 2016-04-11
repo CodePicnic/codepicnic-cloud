@@ -1,11 +1,11 @@
   - name: Gather facts
     action: ec2_facts
   - name: format device
-    filesystem: fstype="{{ docker_fs }}" dev="/dev/xvdf"
+    filesystem: fstype="{{ docker_fs }}" dev="{{ docker_disk }}"
   - name: docker dir
     file: path=/var/lib/docker state=directory
   - name: mount device
-    mount: name="/var/lib/docker" src="/dev/xvdf" fstype="{{ docker_fs }}" opts=defaults,noatime state=mounted
+    mount: name="/var/lib/docker" src="{{ docker_disk }}" fstype="{{ docker_fs }}" opts=defaults,noatime state=mounted
   - name: apt-get install reqs 
     apt: name=apt-transport-https,ca-certificates,python-pip state=present
   - name: add key

@@ -26,7 +26,8 @@ ec2_iam_role: swarm-node
 #ec2_iam_role: arn:aws:iam::740698317528:instance-profile/docker-swam-node
 subnet_swarm: subnet-5a9d2e70
 #docker_fs: xfs 
-docker_fs: ext4 
+docker_fs: ext4
+docker_disk: /dev/xvdf 
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
 
 systcl_options:
