@@ -29,7 +29,7 @@ ec2_iam_role: swarm-node
 subnet_swarm: subnet-5a9d2e70
 #docker_fs: xfs 
 docker_fs: ext4
-docker_disk: /dev/sdc
+docker_disk: /dev/sdb
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
 
 sysctl_options:
