@@ -29,7 +29,7 @@ subnet_swarm: subnet-5a9d2e70
 docker_fs: ext4 
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
 
-systcl_options:
+sysctl_options:
    -
      name: net.core.somaxconn 
      value: 1000
