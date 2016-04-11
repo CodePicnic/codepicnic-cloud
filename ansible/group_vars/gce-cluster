@@ -1,6 +1,7 @@
 ---
 consul_ip: 10.142.0.2 
-master_ip: 10.142.0.2 
+master_ip: 10.142.0.2
+ansible_ec2_local_ipv4: 10.142.0.2 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
 lc_swarm_name: lc-swarm-01
