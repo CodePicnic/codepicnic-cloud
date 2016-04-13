@@ -16,8 +16,8 @@ type_swarm_node: m4.xlarge
 #ubuntu trusty 
 #ami_swarm: ami-fce3c696
 #ami wiht swarm (w/o newrelic)
-ami_swarm: snap-243ab126 
-snapshot_docker: snap-caba4edd 
+ami_swarm: ami-bed9cbd4 
+snapshot_docker: snap-243ab126 
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
