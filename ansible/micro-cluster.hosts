@@ -1,0 +1,13 @@
+[ansible]
+127.0.0.1
+
+[manager]
+172.21.0.163 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+
+[node]
+##104.196.122.147 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+
+[micro-cluster:children]
+ansible
+node
+manager

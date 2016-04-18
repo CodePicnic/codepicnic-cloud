@@ -1,8 +1,9 @@
 ---
-consul_ip: 172.21.2.90
-consul_network: 172.21.2.90:8501
-master_ip: 172.21.2.90 
-registry_ip: 172.21.2.90 
+consul_ip: 172.21.0.163 
+consul_network: 172.21.0.163:8500
+master_ip: 172.21.0.163
+registry_ip: 172.21.2.90
+#ansible_ec2_local_ipv4: 10.142.0.2 
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
 lc_swarm_name: lc-swarm-01
@@ -17,8 +18,8 @@ type_swarm_node: m4.xlarge
 #ubuntu trusty 
 #ami_swarm: ami-fce3c696
 #ami wiht swarm (w/o newrelic)
-ami_swarm: ami-bed9cbd4 
-snapshot_docker: snap-243ab126 
+ami_swarm: ami-09b9a963 
+snapshot_docker: snap-caba4edd 
 name_swarm_node: swarm-node
 cluster_swarm: swarm-cluster-01
 aws_region: us-east-1
@@ -29,7 +30,7 @@ ec2_iam_role: swarm-node
 subnet_swarm: subnet-5a9d2e70
 #docker_fs: xfs 
 docker_fs: ext4
-docker_disk: /dev/xvdf 
+docker_disk: /dev/xvdf
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
 
 sysctl_options:
@@ -60,6 +61,7 @@ sysctl_options:
    -
      name: net.ipv4.tcp_tw_reuse 
      value: 1
+
 base_images:
        - base_20151201
        - mono_20160107
@@ -77,4 +79,4 @@ base_images:
        - mongodb_20160107
        - redis_20160107
        - mariadb_20160325
- 
+
