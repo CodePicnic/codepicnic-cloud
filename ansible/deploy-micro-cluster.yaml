@@ -1,8 +1,8 @@
 - hosts: manager 
   roles:
-      - base
-      - reboot
-      - sysdig
+      #- base
+      #- reboot
+      #- sysdig
       - docker
       - newrelic
       - swarm

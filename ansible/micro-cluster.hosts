@@ -5,7 +5,8 @@
 172.21.0.163 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 
 [node]
-##104.196.122.147 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.3.210 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.3.211 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
 
 [micro-cluster:children]
 ansible
