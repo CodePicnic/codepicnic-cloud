@@ -68,6 +68,7 @@ base_images:
        - php_20160107
        - php7_20160112
        - python350_20160305
+       - ruby_20160107
        - ruby23_20160107
        - laravel_20160107
        - phoenix_20160107
