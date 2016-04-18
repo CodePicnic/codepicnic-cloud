@@ -10,8 +10,8 @@
   - name: Install newrelic license
     shell: nrsysmond-config --set license_key={{ newrelic_license }}
 
-  - name: add user
-    shell: usermod -aG docker newrelic 
+#  - name: add user
+#    shell: usermod -aG docker newrelic 
 
   - name: start newrelic
     service: name=newrelic-sysmond enabled=yes state=started
