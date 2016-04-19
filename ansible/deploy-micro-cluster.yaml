@@ -3,11 +3,11 @@
       #- base
       #- reboot
       #- sysdig
-      - docker
-      - newrelic
-      - swarm
-      - swarm-consul
-      - swarm-manager
+      #- docker
+      #- newrelic
+      #- swarm
+      #- swarm-consul
+      #- swarm-manager
       #- swarm-registry
       #- tuna
   remote_user: ubuntu 
@@ -16,12 +16,13 @@
   become_method: sudo
 - hosts: node 
   roles:
-      - base
-      - sysdig
-      - docker
-      - newrelic
-      - swarm
-      - swarm-node 
+      #- base
+      - ssh-keys
+      #- sysdig
+      #- docker
+      #- newrelic
+      #- swarm
+      #- swarm-node 
   remote_user: ubuntu
   become: yes
   become_user: root

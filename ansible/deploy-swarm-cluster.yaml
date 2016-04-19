@@ -25,14 +25,14 @@
   become_method: sudo
 - hosts: node 
   roles:
-      #- base
+      - base
       - ssh-keys
-        #- aws-monitoring-scripts
-        #- sysdig
-        #- docker
-        #- newrelic
-        #- swarm
-        #- swarm-node 
+      - aws-monitoring-scripts
+      - sysdig
+      - docker
+      - newrelic
+      - swarm
+      - swarm-node 
   remote_user: ubuntu
   become: yes
   become_user: root
