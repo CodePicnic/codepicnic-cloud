@@ -1,0 +1,7 @@
+  - name: set keys
+    authorized_key: user=ubuntu
+                    key="{{ item }}"
+    with_file:
+     - gustavo.pub 
+     - alvaro.pub 
+     - hector.pub 
