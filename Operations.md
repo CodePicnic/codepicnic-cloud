@@ -2,13 +2,11 @@
 
 * Get information about Docker Swarm: running and stopped containers and status of the nodes (healthy, unhealthy, pending, etc.) . We are using Overcommit on docker swarm 
 
-    docker -H :4000 info
+	docker -H :4000 info
     
 * Get information about containers (running and stopped) on Docker Swarm. **ps** will check all the nodes for containers. Verify if the nginx containers are running in each node.
 
-
-    docker -H :4000 ps
-    
+    docker -H :4000 ps    
     docker -H :4000 ps --all
     
 * Get information about containers on the Swarm Master. Verify that the following containers are running: tuna, registry, swarm-manager and consul.
@@ -17,10 +15,10 @@
     
 * Restart the docker daemon.
 
-    service docker restart
+	service docker restart
 
 
-** Consul (container)
+## Consul (container)
 
 * Check consul logs.
 
@@ -28,10 +26,28 @@
     
 * Sometimes, after the docker daemon restarts consul get a different ip address. The following errors appear on consul:
 
-    2016/04/14 14:51:44 [ERR] raft: Failed to make RequestVote RPC to 172.17.0.3:8300: dial tcp 172.17.0.3:8300: connection refused
+	2016/04/14 14:51:44 [ERR] raft: Failed to make RequestVote RPC to 172.17.0.3:8300: dial tcp 172.17.0.3:8300: connection refused
 
-  Verify the new ip address of consul
+Verify the new ip address of consul:
   
-    docker inspect consul | grep IPAddress
-  
-  
+	docker inspect consul | grep IPAddress
+
+Check the peers list on the consul container:
+
+    docker exec -it consul cat /data/raft/peers.json
+    
+Remove the old IP addres on the peers.json file and restart the consul container.
+
+* After consul restarts, wait 1 minute for the swarm manager to be recognized as leader by consul
+
+## Tuna (container)
+
+* Verify if tuna is running.
+
+	passenger-status
+    
+    
+    
+    
+
+
