@@ -1,6 +1,6 @@
-** Swarm Master
+### Swarm Master
 
-* Get information about Docker Swarm: running and stopped containers and status of the nodes (healthy, unhealthy, pending, etc.) . Because we are using [Overcommit.md](overcommit), status of Reserved CPUs/Memory is not real.
+* Get information about Docker Swarm: running and stopped containers and status of the nodes (healthy, unhealthy, pending, etc.) . Because we are using [Overcommit](overcommit), status of Reserved CPUs/Memory is not real.
 
     docker -H :4000 info
     
