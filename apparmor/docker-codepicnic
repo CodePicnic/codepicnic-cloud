@@ -10,9 +10,9 @@ profile docker-default flags=(attach_disconnected,mediate_deleted) {
   network inet udp,
   network inet icmp,
 
-  deny network raw,
+  #deny network raw,
 
-  deny network packet,
+  #deny network packet,
 
   file,
   umount,
@@ -51,12 +51,13 @@ profile docker-default flags=(attach_disconnected,mediate_deleted) {
   #deny capability kill,
   #deny capability setgid,
   #deny capability setuid,
-  deny capability setpcap,
   #deny capability linux_immutable,
-  deny capability net_bind_service,
-  deny capability net_broadcast,
+  deny capability setpcap,
+  #needed por basketrunner cx with nginx
+  #deny capability net_bind_service,
+  #deny capability net_broadcast,
+  #deny capability net_raw,
   deny capability net_admin,
-  deny capability net_raw,
   deny capability ipc_lock,
   deny capability ipc_owner,
   deny capability sys_module,
@@ -69,7 +70,7 @@ profile docker-default flags=(attach_disconnected,mediate_deleted) {
   deny capability sys_nice,
   deny capability sys_resource,
   deny capability sys_time,
-  deny capability sys_tty_config,
+  #deny capability sys_tty_config,
   deny capability mknod,
   deny capability lease,
   #deny capability audit_write,
