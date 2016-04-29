@@ -1,0 +1,43 @@
+- hosts: ansible
+  connection: local
+  vars:
+    aws_regions: 
+    - us-east-1
+      #- us-west-1
+      #- us-west-2
+    aws_profile: default 
+  tasks:
+  - name: create dirs
+    file: path="{{ inv_dir }}/{{ item }}" state=directory
+    with_items: "{{ aws_regions }}"
+  - name: describe-instances
+    shell: "aws ec2 describe-instances --profile {{ aws_profile }}  --region {{ item }} |  jq '.Reservations|=sort_by(.ReservationId)|.Reservations[].Instances|=sort_by(.InstanceId)|.Reservations[].Instances[].NetworkInterfaces|=map(del(.Association.IpOwnerId))' > {{ inv_dir }}/{{ item }}/instances.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-groups
+    shell: "aws ec2 describe-security-groups --profile {{ aws_profile }} --region {{ item }} | jq '.SecurityGroups|=sort_by(.GroupId)|.SecurityGroups[].IpPermissions|=sort_by(.FromPort)|.SecurityGroups[].IpPermissions[].IpRanges|=sort_by(.CidrIp)|.SecurityGroups[].IpPermissions[].UserIdGroupPairs|=sort_by(.GroupId)' > {{ inv_dir }}/{{ item }}/groups.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-volumes
+    shell: "aws ec2 describe-volumes --profile {{ aws_profile }} --region {{ item }} | jq '.Volumes|=sort_by(.CreateTime)' > {{ inv_dir }}/{{ item }}/volumes.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-elb
+    shell: "aws elb describe-load-balancers --profile {{ aws_profile }} --region {{ item }} |  jq '.LoadBalancerDescriptions|=sort_by(.CreatedTime)'  > {{ inv_dir }}/{{ item }}/elbs.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-vpcs
+    shell: "aws ec2 describe-vpcs --profile {{ aws_profile }} --region {{ item }} |  jq '.Vpcs|=sort_by(.VpcId)'  > {{ inv_dir }}/{{ item }}/vpcs.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-subnets
+    shell: "aws ec2 describe-subnets --profile {{ aws_profile }} --region {{ item }} |  jq '.Subnets|=sort_by(.SubnetId)' > {{ inv_dir }}/{{ item }}/subnets.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-dynamodb
+    shell: "aws dynamodb --profile {{ aws_profile }} --region {{ item }} list-tables > {{ inv_dir }}/{{ item }}/dynamodb.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-elasticache
+    shell: "aws elasticache --profile {{ aws_profile }}  --region {{ item }} describe-cache-clusters | jq '.CacheClusters|=sort_by(.CacheClusterId)' > {{ inv_dir }}/{{ item }}/elasticache.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-rds
+    shell: "aws rds --profile {{ aws_profile }} --region {{ item }} describe-db-instances | jq '.DBInstances|=sort_by(.DBInstanceIdentifier)|.DBInstances|map(del(.LatestRestorableTime))' > {{ inv_dir }}/{{ item }}/rds.json"
+    with_items: "{{ aws_regions }}"
+  - name: describe-s3
+    shell: "aws s3 ls > {{ inv_dir }}/s3.json"
+    with_items: "{{ aws_regions }}"
+
