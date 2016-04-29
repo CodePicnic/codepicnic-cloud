@@ -1,0 +1,1263 @@
+{
+  "SecurityGroups": [
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-1 created 2016-03-14T10:52:41.978-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "190.234.105.195/32"
+            },
+            {
+              "CidrIp": "190.234.105.230/32"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "181.64.233.98/32"
+            },
+            {
+              "CidrIp": "190.234.105.194/32"
+            },
+            {
+              "CidrIp": "190.234.105.217/32"
+            },
+            {
+              "CidrIp": "190.234.105.223/32"
+            },
+            {
+              "CidrIp": "190.234.105.229/32"
+            },
+            {
+              "CidrIp": "190.234.105.232/32"
+            },
+            {
+              "CidrIp": "190.234.105.240/32"
+            },
+            {
+              "CidrIp": "190.234.105.246/32"
+            },
+            {
+              "CidrIp": "201.230.158.108/32"
+            },
+            {
+              "CidrIp": "201.230.158.98/32"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 3100,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 3100,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 4567,
+          "IpRanges": [
+            {
+              "CidrIp": "190.234.105.223/32"
+            }
+          ],
+          "ToPort": 4567,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 8083,
+          "IpRanges": [
+            {
+              "CidrIp": "190.234.105.223/32"
+            }
+          ],
+          "ToPort": 8086,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 8089,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            },
+            {
+              "CidrIp": "190.234.105.229/32"
+            }
+          ],
+          "ToPort": 8089,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "launch-wizard-1",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-0671fe7e"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "quick-create-1 created on Thursday, March 17, 2016 at 9:46:51 AM UTC-5",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "kubernetes-elb",
+      "VpcId": "vpc-f4dfe890",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-2148de59"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "default VPC security group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-256bd95d"
+            }
+          ],
+          "PrefixListIds": []
+        }
+      ],
+      "GroupName": "default",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-256bd95d"
+    },
+    {
+      "IpPermissionsEgress": [],
+      "Description": "AbuID",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "172.149.12.15/24"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "AbuID",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-2e6c8644"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-2 created 2016-03-21T15:08:03.861-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": -1,
+          "IpRanges": [],
+          "ToPort": -1,
+          "IpProtocol": "icmp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-33871c4b"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "10.1.0.124/32"
+            },
+            {
+              "CidrIp": "10.1.0.84/32"
+            },
+            {
+              "CidrIp": "201.230.158.116/32"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-33871c4b"
+            },
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-5e31ab26"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [],
+          "ToPort": 65535,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-33871c4b"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "190.234.105.223/32"
+            },
+            {
+              "CidrIp": "201.230.158.78/32"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 3200,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 3200,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 4000,
+          "IpRanges": [
+            {
+              "CidrIp": "162.243.136.160/32"
+            },
+            {
+              "CidrIp": "52.73.90.228/32"
+            }
+          ],
+          "ToPort": 4000,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 4567,
+          "IpRanges": [
+            {
+              "CidrIp": "190.234.105.223/32"
+            }
+          ],
+          "ToPort": 4567,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 5000,
+          "IpRanges": [
+            {
+              "CidrIp": "104.196.52.75/32"
+            },
+            {
+              "CidrIp": "107.20.191.224/32"
+            },
+            {
+              "CidrIp": "54.221.193.136/32"
+            },
+            {
+              "CidrIp": "54.225.199.157/32"
+            }
+          ],
+          "ToPort": 5000,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_swarm",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-33871c4b"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "default VPC security group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-338a114b"
+            }
+          ],
+          "PrefixListIds": []
+        }
+      ],
+      "GroupName": "default",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-338a114b"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "quick-create-1 created on Saturday, March 19, 2016 at 6:53:19 PM UTC-5",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_swarm_elb",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-392fb341"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-2 created 2016-03-18T04:27:50.757-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "10.1.0.84/32"
+            },
+            {
+              "CidrIp": "201.230.158.75/32"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-3cdc4f44"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "10.1.0.84/32"
+            },
+            {
+              "CidrIp": "201.230.158.77/32"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-392fb341"
+            }
+          ]
+        }
+      ],
+      "GroupName": "sg_docker_swarm",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-3cdc4f44"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "default VPC security group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-3d78c045"
+            }
+          ],
+          "PrefixListIds": []
+        }
+      ],
+      "GroupName": "default",
+      "VpcId": "vpc-f4dfe890",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-3d78c045"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-1 created 2016-03-11T09:17:36.427-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_web_001",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-3f921447"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "quick-create-1 created on Tuesday, March 22, 2016 at 3:30:40 PM UTC-5",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_codepicnic_elb",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-59533721"
+    },
+    {
+      "IpPermissionsEgress": [],
+      "Description": "Description",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "77.247.181.162/24"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "ZoiExt",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-5aba4d30"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "quick-create-1 created on Tuesday, March 22, 2016 at 4:11:29 AM UTC-5",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_swarm_elb",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-5e31ab26"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-1 created 2015-06-26T12:48:55.456-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "CodePicnicSecurityVPC",
+      "VpcId": "vpc-23663e46",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-74c72d13"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "Docker Machine",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 2376,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 2376,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "docker-machine",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-7525b30d"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-1 created 2016-03-07T11:20:21.547-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 8080,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 8080,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 8089,
+          "IpRanges": [
+            {
+              "CidrIp": "201.230.158.110/32"
+            }
+          ],
+          "ToPort": 8089,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_dep_001",
+      "VpcId": "vpc-6e685d0a",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-7552e00d"
+    },
+    {
+      "IpPermissionsEgress": [],
+      "Description": "default group",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": -1,
+          "IpRanges": [],
+          "ToPort": -1,
+          "IpProtocol": "icmp",
+          "UserIdGroupPairs": [
+            {
+              "GroupName": "default",
+              "UserId": "740698317528",
+              "GroupId": "sg-9ce06af4"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "GroupName": "default",
+              "UserId": "740698317528",
+              "GroupId": "sg-9ce06af4"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [],
+          "ToPort": 65535,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": [
+            {
+              "GroupName": "default",
+              "UserId": "740698317528",
+              "GroupId": "sg-9ce06af4"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "default",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-9ce06af4"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "Kubernetes security group applied to master nodes",
+      "Tags": [
+        {
+          "Value": "kubernetes",
+          "Key": "KubernetesCluster"
+        }
+      ],
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9dd447e5"
+            },
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9fd447e7"
+            }
+          ],
+          "PrefixListIds": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "kubernetes-master-kubernetes",
+      "VpcId": "vpc-f4dfe890",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-9dd447e5"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "Kubernetes security group applied to minion nodes",
+      "Tags": [
+        {
+          "Value": "kubernetes",
+          "Key": "KubernetesCluster"
+        }
+      ],
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9dd447e5"
+            },
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9fd447e7"
+            }
+          ],
+          "PrefixListIds": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 80,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 80,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "kubernetes-minion-kubernetes",
+      "VpcId": "vpc-f4dfe890",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-9fd447e7"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "launch-wizard-2 created 2016-03-21T14:54:19.302-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "10.1.0.84/32"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "sg_swarm_master",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-a58813dd"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "default VPC security group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-d8fa86bc"
+            }
+          ],
+          "PrefixListIds": []
+        }
+      ],
+      "GroupName": "default",
+      "VpcId": "vpc-23663e46",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-d8fa86bc"
+    },
+    {
+      "IpPermissionsEgress": [],
+      "Description": "launch-wizard-5 created 2015-04-10T17:55:18.071-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 0,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "CodePicnicSecurity",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-fbe35296"
+    }
+  ]
+}

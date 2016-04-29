@@ -1,0 +1,68 @@
+{
+  "Subnets": [
+    {
+      "VpcId": "vpc-bdfdf9d9",
+      "Tags": [
+        {
+          "Value": "sn-swarm-01",
+          "Key": "Name"
+        }
+      ],
+      "CidrBlock": "172.21.0.0/22",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1a",
+      "SubnetId": "subnet-5a9d2e70",
+      "AvailableIpAddressCount": 1005
+    },
+    {
+      "VpcId": "vpc-23663e46",
+      "Tags": [
+        {
+          "Value": "CodePicnicA",
+          "Key": "Name"
+        }
+      ],
+      "CidrBlock": "10.0.0.0/16",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1a",
+      "SubnetId": "subnet-5f813274",
+      "AvailableIpAddressCount": 65529
+    },
+    {
+      "VpcId": "vpc-6e685d0a",
+      "Tags": [
+        {
+          "Value": "aws-sn-01",
+          "Key": "Name"
+        }
+      ],
+      "CidrBlock": "10.1.0.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1a",
+      "SubnetId": "subnet-7902a153",
+      "AvailableIpAddressCount": 247
+    },
+    {
+      "VpcId": "vpc-f4dfe890",
+      "Tags": [
+        {
+          "Value": "kubernetes",
+          "Key": "KubernetesCluster"
+        }
+      ],
+      "CidrBlock": "172.20.0.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1a",
+      "SubnetId": "subnet-b626919c",
+      "AvailableIpAddressCount": 250
+    }
+  ]
+}
