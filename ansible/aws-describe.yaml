@@ -1,4 +1,4 @@
-- hosts: ansible
+- hosts: all 
   connection: local
   vars:
     aws_regions: 
