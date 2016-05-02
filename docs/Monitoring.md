@@ -9,7 +9,7 @@
 ## Docker
 
 **CAdvisor**
-Check Swarm Nodes on [Servers](Servers.md) and use this url: http://swarm_node:3100 .
+Check Swarm Nodes on [Servers](Servers.md) and use this url: http://swarm_node_public_ip:3100 .
 
 
 
