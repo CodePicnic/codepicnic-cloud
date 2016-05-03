@@ -1,0 +1,6 @@
+  - name: add docker profile 
+    copy: src=docker dest=/etc/apparmor.d/docker
+  - name: add docker-system profile 
+    copy: src=docker-system dest=/etc/apparmor.d/docker-system
+  - name: parse apparmor profile
+    shell: /sbin/apparmor_parser -r -W /etc/apparmord.d/docker-codepicnic 
