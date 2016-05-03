@@ -9,6 +9,7 @@
       - aws-monitoring-scripts
       - sysdig
       - docker
+      - docker-apparmor
       - newrelic
       - swarm
       - swarm-node
