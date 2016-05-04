@@ -455,6 +455,15 @@
                 "VolumeId": "vol-d958ea07",
                 "AttachTime": "2016-03-14T15:53:16.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-ffc7e62e",
+                "AttachTime": "2016-05-04T15:14:31.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
@@ -1076,15 +1085,6 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-47adeeee",
                 "AttachTime": "2016-03-04T15:46:29.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/sdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-dac78a73",
-                "AttachTime": "2016-03-04T21:38:14.000Z"
               }
             }
           ],
