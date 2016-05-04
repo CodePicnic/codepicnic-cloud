@@ -77,4 +77,18 @@ base_images:
        - mongodb_20160107
        - redis_20160107
        - mariadb_20160325
- 
+       - base_20160503
+       - mono_20160503
+       - elixir_20160503
+       - elixir12_20160503
+       - go_20160503
+       - php_20160503
+       - php7_20160503
+       - python350_20160503
+       - ruby_20160503
+       - ruby23_20160503
+       - laravel_20160503
+       - phoenix_20160503
+       - rails_20160503
+       - mongodb_20160503
+       - redis_20160503
