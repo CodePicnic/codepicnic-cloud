@@ -154,45 +154,6 @@
       "Size": 2047
     },
     {
-      "AvailabilityZone": "us-east-1b",
-      "Attachments": [],
-      "Tags": [
-        {
-          "Value": "EBSSauvignon05",
-          "Key": "Name"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-ccacef65",
-      "State": "available",
-      "Iops": 10000,
-      "SnapshotId": "snap-83ddccc2",
-      "CreateTime": "2016-03-04T15:44:32.863Z",
-      "Size": 4094
-    },
-    {
-      "AvailabilityZone": "us-east-1b",
-      "Attachments": [
-        {
-          "AttachTime": "2016-03-04T21:38:14.000Z",
-          "InstanceId": "i-2f72ccab",
-          "VolumeId": "vol-dac78a73",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdf"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-dac78a73",
-      "State": "in-use",
-      "Iops": 3141,
-      "SnapshotId": "",
-      "CreateTime": "2016-03-04T21:37:20.622Z",
-      "Size": 1047
-    },
-    {
       "AvailabilityZone": "us-east-1a",
       "Attachments": [],
       "Encrypted": false,
@@ -213,24 +174,6 @@
       "SnapshotId": "",
       "CreateTime": "2016-03-07T16:32:12.485Z",
       "Size": 20
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Tags": [
-        {
-          "Value": "kubernetes-registry",
-          "Key": "Name"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-cac01d14",
-      "State": "available",
-      "Iops": 600,
-      "SnapshotId": "",
-      "CreateTime": "2016-03-09T20:18:44.482Z",
-      "Size": 200
     },
     {
       "AvailabilityZone": "us-east-1a",
@@ -631,41 +574,11 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-05-04T14:51:11.000Z",
-          "InstanceId": "i-d15f244c",
-          "VolumeId": "vol-05e3c2d4",
-          "State": "attached",
-          "DeleteOnTermination": true,
-          "Device": "/dev/sda1"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-05e3c2d4",
-      "State": "in-use",
-      "Iops": 24,
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-05-04T14:51:11.022Z",
-      "Size": 8
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-05-04T14:51:11.000Z",
-          "InstanceId": "i-d15f244c",
-          "VolumeId": "vol-04e3c2d5",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/xvdf"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-04e3c2d5",
-      "State": "in-use",
+      "State": "available",
       "Iops": 1500,
       "SnapshotId": "",
       "CreateTime": "2016-05-04T14:51:11.129Z",
