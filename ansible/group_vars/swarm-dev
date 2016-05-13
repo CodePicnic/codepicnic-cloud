@@ -62,21 +62,6 @@ sysctl_options:
      value: 1
 base_images:
        - base_20151201
-       - mono_20160107
-       - elixir_20160107
-       - elixir12_20160108
-       - go_20160107
-       - php_20160107
-       - php7_20160112
-       - python350_20160305
-       - ruby_20160107
-       - ruby23_20160107
-       - laravel_20160107
-       - phoenix_20160107
-       - rails_20160107
-       - mongodb_20160107
-       - redis_20160107
-       - mariadb_20160325
        - base_20160503
        - mono_20160503
        - elixir_20160503
@@ -92,3 +77,7 @@ base_images:
        - rails_20160503
        - mongodb_20160503
        - redis_20160503
+       - r_20160504
+       - mysql_20160511
+       - mariadb_20160511
+       - django_20160511

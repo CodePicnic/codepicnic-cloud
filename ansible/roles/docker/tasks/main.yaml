@@ -27,8 +27,8 @@
   - name: apt-get apparmor 
     apt: name=apparmor state=latest 
   - name: apt-get install docker 
-    #apt: name="docker-engine=1.10.3-0~trusty" state=present
-    apt: name=docker-engine state=present
+    apt: name="docker-engine=1.10.3-0~trusty" state=present
+    #apt: name=docker-engine state=present
   - name: start docker
     service: name=docker enabled=yes state=started
   - name: add user
