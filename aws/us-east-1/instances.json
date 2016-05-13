@@ -656,6 +656,126 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-34aae097",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2016-05-13T20:41:59.000Z",
+          "PublicIpAddress": "52.87.245.111",
+          "PrivateIpAddress": "172.21.3.6",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-c4152459",
+          "ImageId": "ami-fce3c696",
+          "PrivateDnsName": "ip-172-21-3-6.ec2.internal",
+          "KeyName": "key_swarm",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_swarm",
+              "GroupId": "sg-33871c4b"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-5a9d2e70",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:01:ab:4e:43:fb",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "52.87.245.111",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-d8b826ff",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "52.87.245.111",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.3.6"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-85ea9475",
+                "AttachTime": "2016-05-13T20:41:59.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_swarm",
+                  "GroupId": "sg-33871c4b"
+                }
+              ],
+              "SubnetId": "subnet-5a9d2e70",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.3.6"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-8116f451",
+                "AttachTime": "2016-05-13T20:42:00.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-3611f3e6",
+                "AttachTime": "2016-05-13T20:42:00.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "swarm-ami",
+              "Key": "Name"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-3e390797",
       "Groups": [
         {
@@ -1107,6 +1227,120 @@
               "Key": "Name"
             }
           ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
+      "ReservationId": "r-b495df17",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2016-05-13T20:40:16.000Z",
+          "PublicIpAddress": "54.86.12.201",
+          "PrivateIpAddress": "172.21.2.31",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-c313225e",
+          "ImageId": "ami-fce3c696",
+          "PrivateDnsName": "ip-172-21-2-31.ec2.internal",
+          "KeyName": "key_swarm",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_swarm",
+              "GroupId": "sg-33871c4b"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-5a9d2e70",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:b3:ee:04:36:35",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.86.12.201",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-50851b77",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.86.12.201",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.2.31"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-3cef91cc",
+                "AttachTime": "2016-05-13T20:40:16.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_swarm",
+                  "GroupId": "sg-33871c4b"
+                }
+              ],
+              "SubnetId": "subnet-5a9d2e70",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.2.31"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-2d13f1fd",
+                "AttachTime": "2016-05-13T20:40:16.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-ec10f23c",
+                "AttachTime": "2016-05-13T20:40:16.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
           "AmiLaunchIndex": 0
         }
       ]
