@@ -66,7 +66,7 @@ base_images:
        - mono_20160503
        - elixir_20160503
        - elixir12_20160503
-       - go_20160503
+       - golang_20160503
        - php_20160503
        - php7_20160503
        - python350_20160503
