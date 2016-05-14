@@ -656,57 +656,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-34aae097",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-13T20:41:59.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-05-14 12:54:54 GMT)",
-          "InstanceId": "i-c4152459",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-ami",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-3e390797",
       "Groups": [
         {
@@ -898,57 +847,6 @@
           "Tags": [
             {
               "Value": "swarm-micro-master",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-58a7edfb",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-13T21:00:58.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-05-14 12:54:54 GMT)",
-          "InstanceId": "i-420b3adf",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-ami",
               "Key": "Name"
             }
           ],
@@ -1209,51 +1107,6 @@
               "Key": "Name"
             }
           ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-b495df17",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-13T20:40:16.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-05-14 12:54:54 GMT)",
-          "InstanceId": "i-c313225e",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
           "AmiLaunchIndex": 0
         }
       ]
