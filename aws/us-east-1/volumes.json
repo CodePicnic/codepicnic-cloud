@@ -571,54 +571,6 @@
       "SnapshotId": "",
       "CreateTime": "2016-04-18T19:14:48.629Z",
       "Size": 40
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-04e3c2d5",
-      "State": "available",
-      "Iops": 1500,
-      "SnapshotId": "",
-      "CreateTime": "2016-05-04T14:51:11.129Z",
-      "Size": 500
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-ec10f23c",
-      "State": "available",
-      "Iops": 1500,
-      "SnapshotId": "",
-      "CreateTime": "2016-05-13T20:40:16.908Z",
-      "Size": 500
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-3611f3e6",
-      "State": "available",
-      "Iops": 1500,
-      "SnapshotId": "",
-      "CreateTime": "2016-05-13T20:42:00.053Z",
-      "Size": 500
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-db77950b",
-      "State": "available",
-      "Iops": 1500,
-      "SnapshotId": "",
-      "CreateTime": "2016-05-13T21:00:58.895Z",
-      "Size": 500
     }
   ]
 }
