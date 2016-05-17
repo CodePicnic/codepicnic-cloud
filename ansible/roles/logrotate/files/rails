@@ -1,0 +1,12 @@
+/home/saul/app/log/production.log {
+  daily
+  missingok
+  rotate 30
+  dateext 
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+  su saul saul
+}
+
