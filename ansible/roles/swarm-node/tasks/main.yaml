@@ -8,6 +8,7 @@
        - backend.conf 
        - nginx.crt
        - nginx.key
+       - 502.html
   - name: copy docker-compose.yaml 
     copy: src="docker-compose.yaml" dest=/opt/docker-compose.yaml
   - name: pull images 
