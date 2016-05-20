@@ -139,9 +139,10 @@
             "State": "disabled"
           },
           "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 64,
+            "Name": "stopping"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-04-18T19:14:48.000Z",
@@ -149,7 +150,7 @@
           "PrivateIpAddress": "172.21.3.210",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2016-05-20 22:55:41 GMT)",
           "InstanceId": "i-099c3c94",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-3-210.ec2.internal",
@@ -232,7 +233,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
