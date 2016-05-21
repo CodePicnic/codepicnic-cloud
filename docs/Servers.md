@@ -8,5 +8,5 @@
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
 | Swarm Node  | 172.21.3.210  |  54.165.226.2  | i-099c3c94
-| Swarm Node  | 172.21.3.211  |  52.87.237.107  | i-0a9c3c97
+| Swarm Node  | 172.21.3.211  |  54.173.126.11  | i-0a9c3c97
 | Swarm Master  | 172.21.0.163  |  54.165.145.232  | i-5e9a3ac3
