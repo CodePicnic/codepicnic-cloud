@@ -1,7 +1,7 @@
 #!/bin/bash
 DIFFPATH="/var/lib/docker/aufs/diff"
 touch /tmp/mount.txt
-#du -s $DIFFPATH/* | grep -v init > /tmp/diff.txt 
+du -s $DIFFPATH/* | grep -v init > /tmp/diff.txt 
 while read -r mount_size mount_dir; do
    if (( $mount_size > 500000 )); then
       mount_file=$(basename $mount_dir)
