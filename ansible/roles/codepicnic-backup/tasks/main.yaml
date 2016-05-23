@@ -1,5 +1,5 @@
 - name: Gather facts
-  roles/docker/tasks/main.yaml:    action: ec2_facts
+  action: ec2_facts
 
 - name: run swarm ami
     sudo : no
