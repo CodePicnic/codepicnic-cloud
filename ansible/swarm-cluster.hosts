@@ -19,6 +19,14 @@
 #ec2-54-225-199-157.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/codepicnic.pem
 #ec2-54-221-193-136.compute-1.amazonaws.com ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/codepicnic.pem
 162.243.136.160 ansible_ssh_port=30000 ansible_ssh_user=picneer ansible_ssh_private_key_file=/home/hdanniel/codepicnic/codepicnic.pem
+[backup]
+#172.21.2.90 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+#172.21.0.51 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+#172.21.2.52 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.0.63 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.3.210 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+172.21.3.211 ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+
 [swarm-dev:children]
 ansible
 node
@@ -29,3 +37,4 @@ consul
 replica
 codepicnic
 node-swarm-ami
+backup
