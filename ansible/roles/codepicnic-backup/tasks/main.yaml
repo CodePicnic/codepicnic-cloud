@@ -2,8 +2,8 @@
   action: ec2_facts
 
 - name: run swarm ami
-    sudo : no
-    local_action:
+  sudo : no
+  local_action:
       module: ec2_ami
       instance_id: "{{ ansible_ec2_instance_id }}"
       name: "{{ ansible_ec2_instance_id }}-{{ansible_date_time.date}}T{{ansible_date_time.time}}"
@@ -11,4 +11,4 @@
       wait: yes
       state: present
       no_reboot: yes
-    register: swarm_ami
+  register: swarm_ami
