@@ -6,7 +6,7 @@
   local_action:
       module: ec2_ami
       instance_id: "{{ ansible_ec2_instance_id }}"
-      name: "{{ ansible_ec2_instance_id }}-{{ansible_date_time.date}}T{{ansible_date_time.time}}"
+      name: "{{ ansible_ec2_instance_id }}-{{ansible_date_time.date}}"
       region: "{{ aws_region }}"
       wait: yes
       state: present
