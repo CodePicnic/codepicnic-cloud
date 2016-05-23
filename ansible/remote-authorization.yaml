@@ -13,7 +13,7 @@
     command: curl -4 ip.opstage.com
     register: remote_ip 
   - name: security group
-    command: aws ec2 authorize-security-group-ingress --group-id "{{ item.id }}" --protocol tcp --port 1025-65535 --cidr "{{ remote_ip.stdout }}/32" --region "{{ aws_region }}" --profile "{{ aws_profile }}"
+    command: aws ec2 authorize-security-group-ingress --group-id "{{ item.id }}" --protocol tcp --port 21-65535 --cidr "{{ remote_ip.stdout }}/32" --region "{{ aws_region }}" --profile "{{ aws_profile }}"
     with_items:
     - "{{ security_groups }}"
     ignore_errors: yes
