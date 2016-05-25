@@ -656,61 +656,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-36ae9095",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-25T19:15:24.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-05-25 19:31:43 GMT)",
-          "InstanceId": "i-6011e5fc",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_codepicnic",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "codepicnic-prod",
-              "Key": "Project"
-            },
-            {
-              "Value": "aws-codepicnic-app-01",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-3e390797",
       "Groups": [
         {
@@ -782,61 +727,6 @@
           "Tags": [
             {
               "Value": "Sauvignon03b",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-50af91f3",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-25T19:15:56.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-05-25 19:31:43 GMT)",
-          "InstanceId": "i-ca13e756",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_codepicnic",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "codepicnic-prod",
-              "Key": "Project"
-            },
-            {
-              "Value": "aws-codepicnic-db-01",
               "Key": "Name"
             }
           ],
