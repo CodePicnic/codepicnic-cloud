@@ -9,7 +9,8 @@
 - hosts: app 
   roles:
       - base
-      - sysdig 
+      - sysdig
+      - newrelic 
       #- nginx
       #- passenger
       #- rails
@@ -20,7 +21,9 @@
   become_method: sudo
 - hosts: db 
   roles:
-      #- base 
+      - base
+      - sysdig
+      - newrelic 
       #- redis 
       #- mysql
       #- codepicnic-db 

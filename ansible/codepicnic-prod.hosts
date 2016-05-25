@@ -5,6 +5,7 @@
 172.21.4.52 ansible_ssh_private_key=/var/lib/jenkins/workspace/deploy-codepicnic-env/ansible/roles/aws-keys/files/key_codepicnic.id_rsa
 
 [db]
+172.21.4.34 ansible_ssh_private_key=/var/lib/jenkins/workspace/deploy-codepicnic-env/ansible/roles/aws-keys/files/key_codepicnic.id_rsa
 
 [codepicnic-prod:children]
 ansible

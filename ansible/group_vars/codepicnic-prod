@@ -20,6 +20,7 @@ db_sg: sg_codepicnic_db
 web_sg: sg_codepicnic_web
 
 aws_region: us-east-1
+newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
  
 elb_name: elb-codepicnic-prod-01
 elb_subnets:
