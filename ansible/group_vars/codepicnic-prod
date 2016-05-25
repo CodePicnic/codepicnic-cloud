@@ -26,8 +26,6 @@ elb_name: elb-codepicnic-prod-01
 elb_subnets:
  - subnet-04b7cb2e
 
-cron
-
 sysctl_options:
    -
      name: net.core.somaxconn
