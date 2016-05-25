@@ -656,6 +656,148 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-36ae9095",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2016-05-25T19:15:24.000Z",
+          "PublicIpAddress": "54.197.15.163",
+          "PrivateIpAddress": "172.21.4.167",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-6011e5fc",
+          "ImageId": "ami-fce3c696",
+          "PrivateDnsName": "ip-172-21-4-167.ec2.internal",
+          "KeyName": "key_codepicnic",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_codepicnic_app",
+              "GroupId": "sg-9ca20be7"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-04b7cb2e",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:61:37:2a:46:59",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.197.15.163",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-92010db5",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.197.15.163",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.4.167"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-4b374590",
+                "AttachTime": "2016-05-25T19:15:24.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_codepicnic_app",
+                  "GroupId": "sg-9ca20be7"
+                }
+              ],
+              "SubnetId": "subnet-04b7cb2e",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.4.167"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-e0be0e30",
+                "AttachTime": "2016-05-25T19:15:25.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvda",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-95be0e45",
+                "AttachTime": "2016-05-25T19:15:25.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-e1be0e31",
+                "AttachTime": "2016-05-25T19:15:25.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdg",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-81be0e51",
+                "AttachTime": "2016-05-25T19:15:25.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAIGSEJJ6DWKBJJ76CA",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "codepicnic-prod",
+              "Key": "Project"
+            },
+            {
+              "Value": "aws-codepicnic-app-01",
+              "Key": "Name"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-3e390797",
       "Groups": [
         {
@@ -730,6 +872,138 @@
               "Key": "Name"
             }
           ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
+      "ReservationId": "r-50af91f3",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 0,
+            "Name": "pending"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2016-05-25T19:15:56.000Z",
+          "PublicIpAddress": "54.86.48.181",
+          "PrivateIpAddress": "172.21.4.141",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-ca13e756",
+          "ImageId": "ami-fce3c696",
+          "PrivateDnsName": "ip-172-21-4-141.ec2.internal",
+          "KeyName": "key_codepicnic",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_codepicnic_db",
+              "GroupId": "sg-92a20be9"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-04b7cb2e",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:29:84:c3:8e:09",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.86.48.181",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-85070ba2",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.86.48.181",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.4.141"
+                }
+              ],
+              "Attachment": {
+                "Status": "attaching",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-8c374557",
+                "AttachTime": "2016-05-25T19:15:56.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_codepicnic_db",
+                  "GroupId": "sg-92a20be9"
+                }
+              ],
+              "SubnetId": "subnet-04b7cb2e",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.4.141"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attaching",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-2bbe0efb",
+                "AttachTime": "2016-05-25T19:15:57.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvda",
+              "Ebs": {
+                "Status": "attaching",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-dabf0f0a",
+                "AttachTime": "2016-05-25T19:15:57.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attaching",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-fabf0f2a",
+                "AttachTime": "2016-05-25T19:15:57.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdg",
+              "Ebs": {
+                "Status": "attaching",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-fbbf0f2b",
+                "AttachTime": "2016-05-25T19:15:57.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAIGSEJJ6DWKBJJ76CA",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
           "AmiLaunchIndex": 0
         }
       ]
