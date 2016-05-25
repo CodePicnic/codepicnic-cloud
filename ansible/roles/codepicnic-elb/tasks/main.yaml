@@ -5,7 +5,7 @@
        listeners:
        - protocol: http # options are http, https, ssl, tcp
          load_balancer_port: 80
-         instance_port: 8080
+         instance_port: 80
        health_check:
          ping_protocol: tcp 
          ping_port: 80
