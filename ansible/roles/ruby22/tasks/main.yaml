@@ -5,7 +5,7 @@
 - name: apt-get update
   apt: update_cache=yes
 - name: install ruby
-  apt: name=ruby2.2 ruby2.2-dev state=latest
+  apt: name=ruby2.2,ruby2.2-dev state=latest
 - name: update alternatives
   shell: update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.2 191
 #alternatives: name="{{ item.name }}" path="{{ item.path }}"
