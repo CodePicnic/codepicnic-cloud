@@ -2,7 +2,7 @@
   connection: local
   roles:
       - aws-keys
-        #- aws-sg 
+      - aws-sg 
 - hosts: app 
   roles:
       #- base 

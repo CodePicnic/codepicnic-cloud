@@ -55,8 +55,8 @@
   register: var_sg_db
 - name: security group app 
   ec2_group:
-    name: "{{ db_app }}"
-    description: "{{ db_app }}"
+    name: "{{ app_sg }}"
+    description: "{{ app_sg }}"
     region: "{{ aws_region }}"
     profile: "{{ aws_profile }}"
     vpc_id: "{{ vpc_id }}"

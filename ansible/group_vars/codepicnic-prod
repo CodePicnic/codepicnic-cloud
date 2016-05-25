@@ -15,7 +15,7 @@ app_count: 1
 db_count: 1
 app_sg: sg_codepicnic_app
 db_sg: sg_codepicnic_db
-
+web_sh: sg_codepicnic_web
 
 aws_region: us-east-1
  
