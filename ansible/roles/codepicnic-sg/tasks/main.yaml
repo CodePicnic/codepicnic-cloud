@@ -58,7 +58,6 @@
     name: "{{ app_sg }}"
     description: "{{ app_sg }}"
     region: "{{ aws_region }}"
-    profile: "{{ aws_profile }}"
     vpc_id: "{{ vpc_id }}"
     purge_rules: "false"
     rules:
@@ -76,7 +75,6 @@
     name: "{{ db_sg }}"
     description: "{{ db_sg }}"
     region: "{{ aws_region }}"
-    profile: "{{ aws_profile }}"
     vpc_id: "{{ vpc_id }}"
     purge_rules: "false"
     rules:
