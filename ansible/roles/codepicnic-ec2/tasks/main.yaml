@@ -56,7 +56,7 @@
             volume_type: "gp2"
             volume_size: "20"
           #redis
-          - device_name: /dev/xvdg
+          - device_name: /dev/xvdh
             volume_type: "gp2"
             volume_size: "10"
       exact_count: "{{ db_count }}" 

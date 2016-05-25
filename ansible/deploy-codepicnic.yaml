@@ -8,11 +8,12 @@
       - codepicnic-ec2 
 - hosts: app 
   roles:
+      - codepicnic-base
       - base
       - sysdig
       - newrelic
       - ruby22
-      - passenger 
+      - passenger
       #- nginx
       #- passenger
       #- rails
@@ -23,6 +24,7 @@
   become_method: sudo
 - hosts: db 
   roles:
+      - codepicnic-base
       - base
       - sysdig
       - newrelic 

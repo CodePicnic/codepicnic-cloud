@@ -55,4 +55,20 @@ sysctl_options:
      name: net.ipv4.tcp_tw_reuse
      value: 1
 
-
+app_vols:
+   -
+     device: /dev/xvdf
+     mountpoint: /var/log
+   - 
+     device: /dev/xvdg
+     mountpoint: /home/app/codepicnic 
+db_vols:
+   -
+     device: /dev/xvdf
+     mountpoint: /var/log
+   - 
+     device: /dev/xvdg
+     mountpoint: /var/lib/mysql
+   - 
+     device: /dev/xvdh
+     mountpoint: /var/lib/redis
