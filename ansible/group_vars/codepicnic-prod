@@ -3,7 +3,7 @@ ec2_key: key_codepicnic
 ec2_key_file: key_codepicnic.id_rsa.pub
 ec2_type: t2.micro
 ec2_ami: ami-fce3c696
-ec2_iam_role: codepicnic-node
+ec2_iam_role: iam-codepicnic-node
 ec2_ebs_optimized: no
 
 ec2_tag_project: codepicnic-prod

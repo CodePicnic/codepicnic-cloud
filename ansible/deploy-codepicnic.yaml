@@ -2,6 +2,7 @@
   connection: local
   roles:
       - aws-keys
+      - aws-iam
       - codepicnic-sg
       - codepicnic-elb
       - codepicnic-ec2 
