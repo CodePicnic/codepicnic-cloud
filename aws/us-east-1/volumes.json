@@ -609,7 +609,7 @@
           "AttachTime": "2016-05-25T19:15:57.000Z",
           "InstanceId": "i-ca13e756",
           "VolumeId": "vol-dabf0f0a",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvda"
         }
@@ -629,7 +629,7 @@
           "AttachTime": "2016-05-25T19:15:57.000Z",
           "InstanceId": "i-ca13e756",
           "VolumeId": "vol-2bbe0efb",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": true,
           "Device": "/dev/sda1"
         }
@@ -650,7 +650,7 @@
           "AttachTime": "2016-05-25T19:15:57.000Z",
           "InstanceId": "i-ca13e756",
           "VolumeId": "vol-fabf0f2a",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
         }
@@ -670,7 +670,7 @@
           "AttachTime": "2016-05-25T19:15:57.000Z",
           "InstanceId": "i-ca13e756",
           "VolumeId": "vol-fbbf0f2b",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdg"
         }
