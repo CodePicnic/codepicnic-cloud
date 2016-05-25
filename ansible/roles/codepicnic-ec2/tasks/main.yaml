@@ -8,6 +8,7 @@
       wait_timeout: 500
       instance_tags:
         Name: "{{ app_name }}"
+        Project: "{{ ec2_tag_project }}"
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ec2_ebs_optimized }}"
       volumes:
@@ -15,14 +16,15 @@
             volume_size: "20"
           #log
           - device_name: /dev/xvdf
-            volume_size: "40"
+            volume_size: "20"
           #home
           - device_name: /dev/xvdg
             volume_type: "gp2"
-            volume_size: "20"
+            volume_size: "40"
       exact_count: "{{ app_count }}" 
       count_tag:
         Name: "{{ app_name }}"
+        Project: "{{ ec2_tag_project }}"
       vpc_subnet_id : "{{ vpc_subnet }}"
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
@@ -40,6 +42,7 @@
       wait_timeout: 500
       instance_tags:
         Name: "{{ db_name }}"
+        Project: "{{ ec2_tag_project }}"
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ec2_ebs_optimized }}"
       volumes:
@@ -51,7 +54,7 @@
           #mysql
           - device_name: /dev/xvdg
             volume_type: "gp2"
-            volume_size: "10"
+            volume_size: "20"
           #redis
           - device_name: /dev/xvdg
             volume_type: "gp2"
@@ -59,6 +62,7 @@
       exact_count: "{{ db_count }}" 
       count_tag:
         Name: "{{ db_name }}"
+        Project: "{{ ec2_tag_project }}"
       vpc_subnet_id : "{{ vpc_subnet }}"
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"

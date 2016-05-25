@@ -6,6 +6,8 @@ ec2_ami: ami-fce3c696
 ec2_iam_role: codepicnic-node
 ebs_optimized: no
 
+ec2_tag_project: codepicnic-prod
+
 vpc_id: vpc-bdfdf9d9
 vpc_subnet: subnet-04b7cb2e
 
