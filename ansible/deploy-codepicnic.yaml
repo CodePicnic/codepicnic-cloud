@@ -8,7 +8,8 @@
       - codepicnic-ec2 
 - hosts: app 
   roles:
-      #- base 
+      - base
+      - sysdig 
       #- nginx
       #- passenger
       #- rails
