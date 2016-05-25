@@ -10,7 +10,9 @@
   roles:
       - base
       - sysdig
-      - newrelic 
+      - newrelic
+      - ruby22
+      - passenger 
       #- nginx
       #- passenger
       #- rails
