@@ -2,7 +2,8 @@
   connection: local
   roles:
       - aws-keys
-      - codepicnic-sg 
+      - codepicnic-sg
+      - codepicnic-elb 
 - hosts: app 
   roles:
       #- base 
