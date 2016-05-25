@@ -1,0 +1,65 @@
+- name: run codepicnic-app 
+  ec2:
+      key_name: "{{ ec2_key }}"
+      group: "{{ app_sg }}"
+      instance_type: "{{ ec2_type }}"
+      image: "{{ ec2_ami }}"
+      wait: yes
+      wait_timeout: 500
+      instance_tags:
+        Name: "{{ app_name }}"
+      region: "{{ aws_region }}"
+      ebs_optimized: "{{ ec2_ebs_optimized }}"
+      volumes:
+          - device_name: /dev/xvda
+            volume_size: "20"
+          #log
+          - device_name: /dev/xvdf
+            volume_size: "40"
+          #home
+          - device_name: /dev/xvdg
+            volume_type: "gp2"
+            volume_size: "20"
+      exact_count: "{{ app_count }}" 
+      count_tag:
+        Name: "{{ app_name }}"
+      vpc_subnet_id : "{{ vpc_subnet }}"
+      assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
+    register: ec2
+  - name: print ec2
+    debug: var=ec2 
+
+- name: run codepicnic-db
+  ec2:
+      key_name: "{{ ec2_key }}"
+      group: "{{ db_sg }}"
+      instance_type: "{{ ec2_type }}"
+      image: "{{ ec2_ami }}"
+      wait: yes
+      wait_timeout: 500
+      instance_tags:
+        Name: "{{ db_name }}"
+      region: "{{ aws_region }}"
+      ebs_optimized: "{{ ec2_ebs_optimized }}"
+      volumes:
+          - device_name: /dev/xvda
+            volume_size: "20"
+          #log
+          - device_name: /dev/xvdf
+            volume_size: "20"
+          #mysql
+          - device_name: /dev/xvdg
+            volume_type: "gp2"
+            volume_size: "10"
+          #redis
+          - device_name: /dev/xvdg
+            volume_type: "gp2"
+            volume_size: "10"
+      exact_count: "{{ db_count }}" 
+      count_tag:
+        Name: "{{ db_name }}"
+      vpc_subnet_id : "{{ vpc_subnet }}"
+      assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
+    register: ec2

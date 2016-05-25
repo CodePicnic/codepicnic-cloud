@@ -1,0 +1,6 @@
+  - name: upload key pair
+    ec2_key:
+      name: "{{ ec2_key }}"
+      key_material: "{{ item }}"
+      region: "{{ aws_region }}"
+    with_file: "{{ ec2_key_file }}" 

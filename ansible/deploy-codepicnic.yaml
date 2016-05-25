@@ -1,0 +1,26 @@
+- hosts: ansible
+  connection: local
+  roles:
+      - codepicnic-elb
+      - codepicnic-ec2
+- hosts: app 
+  roles:
+      - base 
+      - nginx
+      - passenger
+      - rails
+      - codepicnic-app
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+- hosts: db 
+  roles:
+      - base 
+      - redis 
+      - mysql
+      - codepicnic-db 
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo

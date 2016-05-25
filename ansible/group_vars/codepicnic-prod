@@ -1,0 +1,22 @@
+---
+ec2_key: key_codepicnic
+ec2_key_file: key_codepicnic.id_rsa
+ec2_type: t2.micro
+ec2_ami: ami-fce3c696
+ec2_iam_role: codepicnic-node
+ebs_optimized: no
+
+vpc_id: vpc-bdfdf9d9
+vpc_subnet: subnet-04b7cb2e
+
+app_name: aws-codepicnic-app-01 
+db_name: aws-codepicnic-db-01
+app_count: 1 
+db_count: 1
+app_sg: sg_codepicnic_app
+db_sg: sg_codepicnic_db
+
+
+aws_region: us-east-1
+ 
+

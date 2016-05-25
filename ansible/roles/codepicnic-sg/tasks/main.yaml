@@ -1,0 +1,92 @@
+- name: security group web 
+  ec2_group:
+    name: "{{ web_sg }}"
+    description: "{{ web_sg }}" 
+    region: "{{ aws_region }}" 
+    vpc_id: "{{ vpc_id }}"  
+    purge_rules: "false"
+    rules:
+      - proto: tcp
+        from_port: 80
+        to_port: 80
+        cidr_ip: 0.0.0.0/0 
+      - proto: tcp
+        from_port: 443 
+        to_port: 443
+        cidr_ip: 0.0.0.0/0 
+  register: var_sg_web
+- name: security group app 
+  ec2_group:
+    name: "{{ app_sg }}"
+    description: "{{app_sg }}" 
+    region: "{{ aws_region }}" 
+    vpc_id: "{{ vpc_id }}"  
+    purge_rules: "false"
+    rules:
+      - proto: tcp
+        from_port: 22
+        to_port: 22
+        cidr_ip: 10.1.0.84/32 
+      - proto: tcp
+        from_port: 80
+        to_port: 80
+        group_id: "{{ var_sg_web.group_id }}"
+  register: var_sg_app
+- name: security group bd 
+  ec2_group:
+    name: "{{ db_sg }}"
+    description: "{{db_sg }}" 
+    region: "{{ aws_region }}" 
+    vpc_id: "{{ vpc_id }}"  
+    purge_rules: "false"
+    rules:
+      - proto: tcp
+        from_port: 22
+        to_port: 22
+        cidr_ip: 10.1.0.84/32 
+      - proto: tcp
+        from_port: 3306 
+        to_port: 3306 
+        group_id: "{{ var_sg_app.group_id }}"
+      - proto: tcp
+        from_port: 6379 
+        to_port: 6379 
+        group_id: "{{ var_sg_app.group_id }}"
+  register: var_sg_db
+- name: security group app 
+  ec2_group:
+    name: "{{ db_app }}"
+    description: "{{ db_app }}"
+    region: "{{ aws_region }}"
+    profile: "{{ aws_profile }}"
+    vpc_id: "{{ vpc_id }}"
+    purge_rules: "false"
+    rules:
+      - proto: tcp
+        from_port : 0
+        to_port:  65535
+        group_id: "{{ var_sg_app.group_id }}"
+      - proto: udp
+        from_port : 0
+        to_port:  65535
+        group_id: "{{ var_sg_app.group_id }}"
+  register: var_sg_app
+- name: security group db 
+  ec2_group:
+    name: "{{ db_sg }}"
+    description: "{{ db_sg }}"
+    region: "{{ aws_region }}"
+    profile: "{{ aws_profile }}"
+    vpc_id: "{{ vpc_id }}"
+    purge_rules: "false"
+    rules:
+      - proto: tcp
+        from_port : 0
+        to_port:  65535
+        group_id: "{{ var_sg_db.group_id }}"
+      - proto: udp
+        from_port : 0
+        to_port:  65535
+        group_id: "{{ var_sg_db.group_id }}"
+  register: var_sg_db
+
