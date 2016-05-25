@@ -1,5 +1,5 @@
 - name: add app user
-  user: name=app comment="John Doe" group=app
+  user: name=app comment="Application"
 - name: enable passenger repo
   apt_repository: repo='deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main' state=present 
 - name: add key
