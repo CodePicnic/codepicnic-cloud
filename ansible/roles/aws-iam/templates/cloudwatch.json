@@ -2,6 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
+            "Sid": "Stmt1459601691000",
             "Effect": "Allow",
             "Action": [
                 "cloudwatch:GetMetricData",

@@ -9,4 +9,4 @@
     iam_name: "{{ ec2_iam_role }}"
     policy_name: "pol_{{ ec2_iam_role }}_cloudwatch"
     state: present
-    policy_json: " {{ lookup( 'template', 'cloudwatch.json') }} "
+    policy_json: "{{ lookup( 'template', 'cloudwatch.json') }}"
