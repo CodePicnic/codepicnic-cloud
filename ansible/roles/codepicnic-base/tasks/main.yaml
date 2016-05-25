@@ -1,0 +1,20 @@
+  - name: add app user
+    user: name=app comment="Application"
+  - name: format device
+    filesystem: fstype=xfs dev="{{ item.device }}"
+    with_items: "{{ app_vols }}"
+    when: "'app' in group_names"
+  - name: mount device
+    mount: name="{{ item.mountpoint }}" src="{{ item.device }}" fstype=xfs opts=defaults,noatime state=mounted
+    with_items: "{{ app_vols}}"
+    when: "'app' in group_names"
+  - name: format device
+    filesystem: fstype=xfs dev="{{ item.device }}"
+    with_items: "{{ db_vols }}"
+    when: "'db' in group_names"
+  - name: mount device
+    mount: name="{{ item.mountpoint }}" src="{{ item.device }}" fstype=xfs opts=defaults,noatime state=mounted
+    with_items: "{{ db_vols}}"
+    when: "'db' in group_names"
+  - name: ensure rsyslog is running (and enable it at boot)
+    service: name=rsyslog state=restarted enabled=yes
