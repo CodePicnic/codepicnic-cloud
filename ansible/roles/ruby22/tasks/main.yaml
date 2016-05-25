@@ -1,5 +1,5 @@
 - name: enable ruby repo
-  apt_repository: repo='deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main' state=present filename='brightbox'
+  apt_repository: repo='deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main' state=present
 - name: add key
   apt_key: keyserver=keyserver.ubuntu.com id=C3173AA6
 - name: apt-get update
