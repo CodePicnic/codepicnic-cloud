@@ -1,0 +1,5 @@
+- name: Create two new IAM users with API keys
+  iam:
+    iam_type: role 
+    name: "{{ ec2_iam_role }}"
+    state: present
