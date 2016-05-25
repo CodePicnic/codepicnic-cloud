@@ -3,7 +3,8 @@
   roles:
       - aws-keys
       - codepicnic-sg
-      - codepicnic-elb 
+      - codepicnic-elb
+      - codepicnic-ec2 
 - hosts: app 
   roles:
       #- base 
