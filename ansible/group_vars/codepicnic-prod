@@ -1,6 +1,6 @@
 ---
 ec2_key: key_codepicnic
-ec2_key_file: key_codepicnic.id_rsa
+ec2_key_file: key_codepicnic.id_rsa.pub
 ec2_type: t2.micro
 ec2_ami: ami-fce3c696
 ec2_iam_role: codepicnic-node
