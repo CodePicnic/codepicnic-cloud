@@ -12,7 +12,7 @@
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ec2_ebs_optimized }}"
       volumes:
-          - device_name: /dev/xvda
+          - device_name: /dev/sda1
             volume_size: "20"
           #log
           - device_name: /dev/xvdf
@@ -46,7 +46,7 @@
       region: "{{ aws_region }}"
       ebs_optimized: "{{ ec2_ebs_optimized }}"
       volumes:
-          - device_name: /dev/xvda
+          - device_name: /dev/sda1
             volume_size: "20"
           #log
           - device_name: /dev/xvdf
