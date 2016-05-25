@@ -317,6 +317,53 @@
         "OwnerAlias": "740698317528",
         "GroupName": "sg_swarm_elb"
       }
+    },
+    {
+      "Subnets": [
+        "subnet-04b7cb2e"
+      ],
+      "CanonicalHostedZoneNameID": "Z3DZXE0Q79N41H",
+      "CanonicalHostedZoneName": "elb-codepicnic-prod-01-1442117671.us-east-1.elb.amazonaws.com",
+      "ListenerDescriptions": [
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "LoadBalancerPort": 80,
+            "Protocol": "HTTP",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": []
+        }
+      ],
+      "HealthCheck": {
+        "HealthyThreshold": 10,
+        "Interval": 30,
+        "Target": "TCP:80",
+        "Timeout": 5,
+        "UnhealthyThreshold": 2
+      },
+      "VPCId": "vpc-bdfdf9d9",
+      "BackendServerDescriptions": [],
+      "Instances": [],
+      "DNSName": "elb-codepicnic-prod-01-1442117671.us-east-1.elb.amazonaws.com",
+      "SecurityGroups": [
+        "sg-9fa20be4"
+      ],
+      "Policies": {
+        "LBCookieStickinessPolicies": [],
+        "AppCookieStickinessPolicies": [],
+        "OtherPolicies": []
+      },
+      "LoadBalancerName": "elb-codepicnic-prod-01",
+      "CreatedTime": "2016-05-25T17:59:44.190Z",
+      "AvailabilityZones": [
+        "us-east-1a"
+      ],
+      "Scheme": "internet-facing",
+      "SourceSecurityGroup": {
+        "OwnerAlias": "740698317528",
+        "GroupName": "sg_codepicnic_web"
+      }
     }
   ]
 }
