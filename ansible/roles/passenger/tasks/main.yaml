@@ -6,4 +6,5 @@
   apt_key: keyserver=keyserver.ubuntu.com id=561F9B9CAC40B2F7
 - name: apt-get update
   apt: update_cache=yes
-
+- name: apt-get install passenger 
+  apt: name=passenger,nginx-extras state=latest 
