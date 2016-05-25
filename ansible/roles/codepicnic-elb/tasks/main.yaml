@@ -1,0 +1,20 @@
+  - name: create elb
+    ec2_elb_lb:
+       name: "{{ elb_name }}"
+       state: present
+       listeners:
+       - protocol: http # options are http, https, ssl, tcp
+         load_balancer_port: 80
+         instance_port: 8080
+       health_check:
+         ping_protocol: tcp 
+         ping_port: 80
+         response_timeout: 5 # seconds
+         interval: 30 # seconds
+         unhealthy_threshold: 2
+         healthy_threshold: 10
+       region : "{{ aws_region }}"
+       subnets : "{{ elb_subnets }}"
+       security_group_ids : "{{ var_sg_web.group_id }}"
+    register: elb
+    until: elb|success

@@ -1,8 +1,8 @@
 - hosts: ansible
   connection: local
   roles:
-      - codepicnic-elb
-      - codepicnic-ec2
+      - aws-keys
+      - aws-sg 
 - hosts: app 
   roles:
       - base 
