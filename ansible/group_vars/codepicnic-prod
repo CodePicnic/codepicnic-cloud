@@ -19,7 +19,7 @@ web_sg: sg_codepicnic_web
 
 aws_region: us-east-1
  
-elb_name: elb-codepicnic-01
+elb_name: elb-codepicnic-prod-01
 elb_subnets:
  - subnet-04b7cb2e
 
