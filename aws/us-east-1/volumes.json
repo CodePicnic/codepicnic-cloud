@@ -55,24 +55,6 @@
       "Size": 4094
     },
     {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Tags": [
-        {
-          "Value": "Recover",
-          "Key": "Name"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-d96c8233",
-      "State": "available",
-      "Iops": 300,
-      "SnapshotId": "snap-4e3c6d2b",
-      "CreateTime": "2015-06-25T01:03:03.613Z",
-      "Size": 100
-    },
-    {
       "AvailabilityZone": "us-east-1b",
       "Attachments": [
         {
@@ -152,28 +134,6 @@
       "SnapshotId": "snap-e73aadaa",
       "CreateTime": "2016-03-04T15:44:25.256Z",
       "Size": 2047
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "standard",
-      "VolumeId": "vol-82a96a5c",
-      "State": "available",
-      "SnapshotId": "",
-      "CreateTime": "2016-03-07T16:22:12.253Z",
-      "Size": 20
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "standard",
-      "VolumeId": "vol-8ab97a54",
-      "State": "available",
-      "SnapshotId": "",
-      "CreateTime": "2016-03-07T16:32:12.485Z",
-      "Size": 20
     },
     {
       "AvailabilityZone": "us-east-1a",
@@ -287,18 +247,6 @@
       "Iops": 24,
       "SnapshotId": "snap-3993de76",
       "CreateTime": "2016-03-18T09:15:22.519Z",
-      "Size": 8
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-1c88e4c2",
-      "State": "available",
-      "Iops": 24,
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-03-21T20:09:08.573Z",
       "Size": 8
     },
     {
