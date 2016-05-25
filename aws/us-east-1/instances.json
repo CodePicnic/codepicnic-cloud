@@ -887,8 +887,8 @@
           },
           "PublicDnsName": "",
           "State": {
-            "Code": 0,
-            "Name": "pending"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-05-25T19:15:56.000Z",
@@ -934,7 +934,7 @@
                 }
               ],
               "Attachment": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeviceIndex": 0,
                 "DeleteOnTermination": true,
                 "AttachmentId": "eni-attach-8c374557",
@@ -962,7 +962,7 @@
             {
               "DeviceName": "/dev/sda1",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": true,
                 "VolumeId": "vol-2bbe0efb",
                 "AttachTime": "2016-05-25T19:15:57.000Z"
@@ -971,7 +971,7 @@
             {
               "DeviceName": "/dev/xvda",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-dabf0f0a",
                 "AttachTime": "2016-05-25T19:15:57.000Z"
@@ -980,7 +980,7 @@
             {
               "DeviceName": "/dev/xvdf",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-fabf0f2a",
                 "AttachTime": "2016-05-25T19:15:57.000Z"
@@ -989,7 +989,7 @@
             {
               "DeviceName": "/dev/xvdg",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-fbbf0f2b",
                 "AttachTime": "2016-05-25T19:15:57.000Z"
@@ -1004,6 +1004,16 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "codepicnic-prod",
+              "Key": "Project"
+            },
+            {
+              "Value": "aws-codepicnic-db-01",
+              "Key": "Name"
+            }
+          ],
           "AmiLaunchIndex": 0
         }
       ]
