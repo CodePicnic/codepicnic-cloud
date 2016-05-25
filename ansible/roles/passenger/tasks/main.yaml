@@ -1,5 +1,5 @@
 - name: enable ruby repo
-  apt_repository: repo='deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main' state=present filename='passenger'
+  apt_repository: repo='deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main' state=present 
 - name: add key
   apt_key: keyserver=keyserver.ubuntu.com id=561F9B9CAC40B2F7
 - name: apt-get update
