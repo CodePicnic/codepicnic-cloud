@@ -85,7 +85,7 @@ codepicnic_dbs:
   - 
     name: db_codepicnic_prod
 
-codepicinic_db_privs:
+codepicnic_db_privs:
   -
     database: "db_codepicnic_prod"
     user: "u_codepicnic_prod"
