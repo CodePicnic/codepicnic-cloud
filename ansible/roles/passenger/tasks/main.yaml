@@ -8,8 +8,8 @@
   apt: name=passenger,nginx-extras state=latest 
 - name: apt-get install nodejs 
   apt: name=passenger,nginx-extras,nodejs state=latest 
-- name: node 
-  shell: ln -s /usr/bin/nodejs /usr/bin/node
+- name: node
+  file: src=/usr/bin/nodejs dest=/usr/bin/node state=link 
 - name: nginx conf
   template: src=nginx.conf dest=/etc/nginx/nginx.conf
   notify:
