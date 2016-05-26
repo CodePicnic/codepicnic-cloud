@@ -344,7 +344,11 @@
       },
       "VPCId": "vpc-bdfdf9d9",
       "BackendServerDescriptions": [],
-      "Instances": [],
+      "Instances": [
+        {
+          "InstanceId": "i-6c0efaf0"
+        }
+      ],
       "DNSName": "elb-codepicnic-prod-01-1442117671.us-east-1.elb.amazonaws.com",
       "SecurityGroups": [
         "sg-9fa20be4"
