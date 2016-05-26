@@ -15,10 +15,6 @@
       - ruby22
       - passenger
       - codepicnic-app
-      #- nginx
-      #- passenger
-      #- rails
-      #- codepicnic-app
   remote_user: ubuntu
   become: yes
   become_user: root
@@ -31,7 +27,6 @@
       - newrelic
       - mariadb 
       #- redis 
-      #- mysql
       #- codepicnic-db 
   remote_user: ubuntu
   become: yes
