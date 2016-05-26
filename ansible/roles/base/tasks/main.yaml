@@ -1,7 +1,7 @@
   - name: apt-get update
     apt: update_cache=yes 
   - name: install tools
-    apt: name=iftop,apachetop,mlocate,s3cmd,htop,xfsprogs,telnet,dsniff,iotop,dstat,tcpdump,schedtool state=latest
+    apt: name=iftop,apachetop,mlocate,s3cmd,htop,xfsprogs,telnet,dsniff,iotop,dstat,tcpdump,schedtool,python-pip state=latest
   - name: upgrade ubuntu
     apt: upgrade=dist update_cache=yes 
   - name: add sysctl 
