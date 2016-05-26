@@ -1164,67 +1164,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-aa38f279",
-      "Groups": [
-        {
-          "GroupName": "CodePicnicSecurity",
-          "GroupId": "sg-fbe35296"
-        }
-      ],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2015-12-14T00:34:02.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-04-18 15:52:35 GMT)",
-          "InstanceId": "i-df1a8469",
-          "ImageId": "ami-731fac18",
-          "PrivateDnsName": "",
-          "KeyName": "codepicnic",
-          "SecurityGroups": [
-            {
-              "GroupName": "CodePicnicSecurity",
-              "GroupId": "sg-fbe35296"
-            }
-          ],
-          "ClientToken": "Hotan1450052651189",
-          "InstanceType": "m3.2xlarge",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1b"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "Sauvignon04b",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-b15ab341",
       "Groups": [],
       "Instances": [
