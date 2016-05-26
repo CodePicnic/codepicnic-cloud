@@ -13,3 +13,5 @@
   apt: update_cache=yes
 - name: install mariadb-server 
   apt: name=software-properties-common,mariadb-server state=latest
+- name: install mysqldb
+  pip: name=MySQL-python
