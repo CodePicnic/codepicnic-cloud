@@ -19,6 +19,9 @@ app_sg: sg_codepicnic_app
 db_sg: sg_codepicnic_db
 web_sg: sg_codepicnic_web
 
+app_vhost_main: 2.codepicnic.com
+app_vhost_alias: codepicnic.com
+
 aws_region: us-east-1
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
  
@@ -69,6 +72,6 @@ db_vols:
    - 
      device: /dev/xvdg
      mountpoint: /var/lib/mysql
-   - 
-     device: /dev/xvdh
-     mountpoint: /var/lib/redis
+#   - 
+#     device: /dev/xvdh
+#     mountpoint: /var/lib/redis

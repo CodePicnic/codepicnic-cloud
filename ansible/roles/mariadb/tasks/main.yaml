@@ -1,0 +1,15 @@
+#Here are the commands to run to install MariaDB on your Ubuntu system:
+#sudo apt-get install software-properties-common
+#sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
+#sudo add-apt-repository 'deb [arch=amd64,i386] http://mirror.edatel.net.co/mariadb/repo/10.0/ubuntu trusty main'
+#Once the key is imported and the repository added you can install MariaDB with:
+#sudo apt-get update
+#sudo apt-get install mariadb-server
+- name: enable mariadb repo
+  apt_repository: repo='deb [arch=amd64,i386] http://mirror.edatel.net.co/mariadb/repo/10.0/ubuntu trusty main' state=present
+- name: add key
+  apt_key: keyserver=keyserver.ubuntu.com id=0xcbcb082a1bb943db
+- name: apt-get update
+  apt: update_cache=yes
+- name: install ruby
+  apt: name=software-properties-common,mariadb-server state=latest

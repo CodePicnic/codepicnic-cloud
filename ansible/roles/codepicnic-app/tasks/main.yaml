@@ -1,0 +1,4 @@
+- name: codepicnic conf
+  template: src=codepicnic.conf dest=/etc/nginx/sites-enabled/codepicnic.conf
+  notify:
+  - restart nginx    

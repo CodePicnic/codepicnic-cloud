@@ -6,3 +6,11 @@
   apt: update_cache=yes
 - name: apt-get install passenger 
   apt: name=passenger,nginx-extras state=latest 
+- name: apt-get install nodejs 
+  apt: name=passenger,nginx-extras,nodejs state=latest 
+- name: node 
+  shell: ln -s /usr/bin/nodejs /usr/bin/node
+- name: nginx conf
+  template: src=nginx.conf dest=/etc/nginx/nginx.conf
+  notify:
+  - restart nginx    

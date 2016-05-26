@@ -2,6 +2,8 @@
     apt: update_cache=yes 
   - name: install tools
     apt: name=iftop,apachetop,mlocate,s3cmd,htop,xfsprogs,telnet,dsniff,iotop,dstat,tcpdump,schedtool state=latest
+  - name: install dev-tools
+    apt: name=git,g++,libmysqlclient-dev,libmagick++-dev,libmagickcore-dev,imagemagick,libmagickwand-dev,libxml2-dev,libxslt1-dev,zlib1g-dev state=latest
   - name: upgrade ubuntu
     apt: upgrade=dist update_cache=yes 
   - name: add sysctl 
