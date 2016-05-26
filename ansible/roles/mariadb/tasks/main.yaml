@@ -17,3 +17,7 @@
   apt: name=software-properties-common,mariadb-server,libmariadbd-dev state=latest
 - name: install mysqldb
   pip: name=MySQL-python
+- name: my.cnf 
+  template: src=my.cnf dest=/etc/mysql/my.cnf
+  notify:
+  - restart mariadb 
