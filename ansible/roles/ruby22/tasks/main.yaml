@@ -1,3 +1,5 @@
+- name: install dev-tools
+  apt: name=git,g++,libmysqlclient-dev,libmagick++-dev,libmagickcore-dev,imagemagick,libmagickwand-dev,libxml2-dev,libxslt1-dev,zlib1g-dev state=latest
 - name: enable ruby repo
   apt_repository: repo='deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main' state=present
 - name: add key
