@@ -1,0 +1,7 @@
+  - name: create db
+    mysql_db : name="{{ item.name }}" state=present login_host="{{ db_host }}" login_user="{{ db_root }}"  login_password="{{ db_password }}"
+    with_items: "{{ codepicnic_dbs }}"
+  - name: create users 
+    mysql_user : name="{{ item.user}}" password="{{ item.password }}" host="{{ item.host }}" state="present" priv="{{ item.privs }}" login_host="{{ db_host }}" login_user="{{ db_root }}"  login_password="{{ db_password }}"
+    with_items: "{{ codepicnic_db_privs }}"
+

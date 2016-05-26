@@ -75,3 +75,21 @@ db_vols:
 #   - 
 #     device: /dev/xvdh
 #     mountpoint: /var/lib/redis
+
+db_host: "127.0.0.1"
+db_root: "root"
+db_password: ""
+
+
+codepicnic_dbs:
+  - 
+    name: db_codepicnic_prod
+
+codepicinic_db_privs:
+  -
+    database: "db_codepicnic_prod"
+    user: "u_codepicnic_prod"
+    password: "ahdae4yah1Xooc" 
+    host: "172.21.4.%"
+    privs: "db_codepicnic_prod.*:ALL"
+

@@ -11,5 +11,5 @@
   apt_key: keyserver=keyserver.ubuntu.com id=0xcbcb082a1bb943db
 - name: apt-get update
   apt: update_cache=yes
-- name: install ruby
+- name: install mariadb-server 
   apt: name=software-properties-common,mariadb-server state=latest

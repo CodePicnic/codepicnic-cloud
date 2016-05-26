@@ -27,7 +27,7 @@
       - newrelic
       - mariadb 
       #- redis 
-      #- codepicnic-db 
+      - codepicnic-db 
   remote_user: ubuntu
   become: yes
   become_user: root
