@@ -58,60 +58,6 @@
       "AvailabilityZone": "us-east-1b",
       "Attachments": [
         {
-          "AttachTime": "2015-12-14T00:33:36.000Z",
-          "InstanceId": "i-df1a8469",
-          "VolumeId": "vol-d7077236",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sda1"
-        }
-      ],
-      "Tags": [
-        {
-          "Value": "OriginalServer S04",
-          "Key": "Name"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-d7077236",
-      "State": "in-use",
-      "Iops": 6141,
-      "SnapshotId": "snap-400bab08",
-      "CreateTime": "2015-08-20T18:29:32.179Z",
-      "Size": 2047
-    },
-    {
-      "AvailabilityZone": "us-east-1b",
-      "Attachments": [
-        {
-          "AttachTime": "2015-12-14T00:33:48.000Z",
-          "InstanceId": "i-df1a8469",
-          "VolumeId": "vol-c7730626",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdf"
-        }
-      ],
-      "Tags": [
-        {
-          "Value": "EBSSauvignon04",
-          "Key": "Name"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-c7730626",
-      "State": "in-use",
-      "Iops": 10000,
-      "SnapshotId": "",
-      "CreateTime": "2015-08-20T18:50:12.182Z",
-      "Size": 4096
-    },
-    {
-      "AvailabilityZone": "us-east-1b",
-      "Attachments": [
-        {
           "AttachTime": "2016-03-04T15:46:29.000Z",
           "InstanceId": "i-2f72ccab",
           "VolumeId": "vol-47adeeee",
