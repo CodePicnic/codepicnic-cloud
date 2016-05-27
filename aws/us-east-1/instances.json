@@ -1270,6 +1270,127 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-d0c5c473",
+      "Groups": [],
+      "RequesterId": "226008221399",
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": true,
+          "LaunchTime": "2016-05-27T22:57:38.000Z",
+          "PublicIpAddress": "54.210.73.149",
+          "PrivateIpAddress": "172.21.0.186",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-3b8d75a7",
+          "ImageId": "ami-bed9cbd4",
+          "PrivateDnsName": "ip-172-21-0-186.ec2.internal",
+          "KeyName": "key_swarm",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_swarm",
+              "GroupId": "sg-33871c4b"
+            }
+          ],
+          "ClientToken": "f3f8549a-4226-4bee-aab9-7249dad88011_subnet-5a9d2e70_1",
+          "SubnetId": "subnet-5a9d2e70",
+          "InstanceType": "m4.xlarge",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:f4:e0:dd:00:0b",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.210.73.149",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-e94a50ce",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.210.73.149",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.0.186"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-29450af2",
+                "AttachTime": "2016-05-27T22:57:38.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_swarm",
+                  "GroupId": "sg-33871c4b"
+                }
+              ],
+              "SubnetId": "subnet-5a9d2e70",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.0.186"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-3e66e7ee",
+                "AttachTime": "2016-05-27T22:57:39.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-6a66e7ba",
+                "AttachTime": "2016-05-27T22:57:39.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "asg-swarm-01",
+              "Key": "aws:autoscaling:groupName"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-f5f7805e",
       "Groups": [],
       "Instances": [

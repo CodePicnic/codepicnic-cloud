@@ -35,6 +35,9 @@
         },
         {
           "InstanceId": "i-32aa64af"
+        },
+        {
+          "InstanceId": "i-3b8d75a7"
         }
       ],
       "DNSName": "elb-swarm-01-1620764318.us-east-1.elb.amazonaws.com",
