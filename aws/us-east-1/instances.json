@@ -15,7 +15,7 @@
             "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2016-04-01T21:41:57.000Z",
+          "LaunchTime": "2016-05-31T09:10:50.000Z",
           "PublicIpAddress": "52.200.53.168",
           "PrivateIpAddress": "172.21.2.90",
           "ProductCodes": [],
@@ -33,7 +33,7 @@
           ],
           "ClientToken": "",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "c4.large",
+          "InstanceType": "c4.xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
