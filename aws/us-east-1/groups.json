@@ -333,7 +333,11 @@
         {
           "PrefixListIds": [],
           "FromPort": 0,
-          "IpRanges": [],
+          "IpRanges": [
+            {
+              "CidrIp": "172.21.0.186/32"
+            }
+          ],
           "ToPort": 65535,
           "IpProtocol": "udp",
           "UserIdGroupPairs": [
