@@ -531,48 +531,6 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-05-31T08:29:28.000Z",
-          "InstanceId": "i-bb1bd527",
-          "VolumeId": "vol-037defd3",
-          "State": "attached",
-          "DeleteOnTermination": true,
-          "Device": "/dev/sda1"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-037defd3",
-      "State": "in-use",
-      "Iops": 24,
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-05-31T08:29:28.795Z",
-      "Size": 8
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-05-31T08:29:28.000Z",
-          "InstanceId": "i-bb1bd527",
-          "VolumeId": "vol-d062f000",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/xvdf"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-d062f000",
-      "State": "in-use",
-      "Iops": 1500,
-      "SnapshotId": "",
-      "CreateTime": "2016-05-31T08:29:28.915Z",
-      "Size": 500
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
           "AttachTime": "2016-05-31T08:32:24.000Z",
           "InstanceId": "i-bc17d920",
           "VolumeId": "vol-2c61f3fc",
@@ -633,22 +591,14 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-05-31T08:37:53.000Z",
-          "InstanceId": "i-be10de22",
-          "VolumeId": "vol-1768fac7",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/xvdf"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
-      "VolumeType": "standard",
-      "VolumeId": "vol-1768fac7",
-      "State": "in-use",
-      "SnapshotId": "snap-3d74ccd9",
-      "CreateTime": "2016-05-31T08:37:53.425Z",
+      "VolumeType": "gp2",
+      "VolumeId": "vol-b0ee7060",
+      "State": "available",
+      "Iops": 1500,
+      "SnapshotId": "",
+      "CreateTime": "2016-05-31T19:25:52.271Z",
       "Size": 500
     }
   ]
