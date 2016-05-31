@@ -206,11 +206,20 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
+      "Attachments": [
+        {
+          "AttachTime": "2016-05-31T08:48:57.000Z",
+          "InstanceId": "i-be10de22",
+          "VolumeId": "vol-cc5a8d1d",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/xvdg"
+        }
+      ],
       "Encrypted": false,
       "VolumeType": "standard",
       "VolumeId": "vol-cc5a8d1d",
-      "State": "available",
+      "State": "in-use",
       "SnapshotId": "snap-243ab126",
       "CreateTime": "2016-04-13T20:48:06.586Z",
       "Size": 500

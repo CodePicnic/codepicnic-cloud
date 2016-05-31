@@ -1260,6 +1260,15 @@
                 "VolumeId": "vol-1768fac7",
                 "AttachTime": "2016-05-31T08:37:53.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/xvdg",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-cc5a8d1d",
+                "AttachTime": "2016-05-31T08:48:57.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
