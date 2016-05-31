@@ -11,6 +11,8 @@
        - 502.html
   - name: copy docker-compose.yaml 
     copy: src="docker-compose.yaml" dest=/opt/docker-compose.yaml
+  - name: copy ipt.sh 
+    copy: src="ipt.sh" dest=/opt/ipt.sh
   - name: pull images 
     shell: docker pull registry.codepicnic.com:5000/codepicnic/{{ item }}
     with_items: "{{ base_images }}"
