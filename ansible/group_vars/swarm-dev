@@ -79,4 +79,8 @@ base_images:
        - r_20160523
        - mysql_20160523
        - mariadb_20160523
+       - netcore_20160523
+       - perfect_20160523
        - django_20160523
+       - swift-dev_20160524
+       - tensorflow_20160524
