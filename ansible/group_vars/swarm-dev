@@ -83,4 +83,4 @@ base_images:
        - perfect_20160523
        - django_20160523
        - swift-dev_20160524
-       - tensorflow_20160524
+       - tensorflow_20160523
