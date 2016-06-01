@@ -63,6 +63,9 @@
             },
             {
               "CidrIp": "190.234.105.212/32"
+            },
+            {
+              "CidrIp": "190.234.105.238/32"
             }
           ],
           "ToPort": 65535,
@@ -346,6 +349,18 @@
               "GroupId": "sg-33871c4b"
             }
           ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 21,
+          "IpRanges": [
+            {
+              "CidrIp": "190.234.105.238/32"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
         },
         {
           "PrefixListIds": [],
