@@ -1171,7 +1171,7 @@
           },
           "PublicDnsName": "",
           "State": {
-            "Code": 16,
+            "Code": 272,
             "Name": "running"
           },
           "EbsOptimized": false,
