@@ -1,5 +1,5 @@
   - name: install build-essential 
-    apt: name=buid-essential,tcl8.5 state=latest
+    apt: name=build-essential,tcl8.5 state=latest
   - name: Get redis 
     get_url: url="http://download.redis.io/releases/redis-stable.tar.gz"  dest=/opt/redis-stable.tar.gz mode=0644
   - name: unzip redis 
