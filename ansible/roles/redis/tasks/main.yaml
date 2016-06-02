@@ -5,7 +5,7 @@
   - name: unzip redis 
     unarchive: src=/opt/redis-stable.tar.gz dest=/opt/ copy=no 
   - name: build redis
-    command: {{ item }} chdir="/opt/redis-stable"
+    command: "{{ item }}" chdir="/opt/redis-stable"
     with_items:
     - make
     - make install
