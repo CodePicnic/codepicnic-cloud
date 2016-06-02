@@ -13,7 +13,7 @@
       volumes:
         - device_name: /dev/xvdf
           volume_type: "gp2"
-          volume_size: "500"
+          volume_size: "400"
       vpc_subnet_id : "{{ subnet_swarm }}"
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
