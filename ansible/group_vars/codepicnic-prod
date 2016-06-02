@@ -93,3 +93,6 @@ codepicnic_db_privs:
     host: "172.21.4.%"
     privs: "db_codepicnic_prod.*:ALL"
 
+deployment_user: ubuntu
+deployment_dir: /home/app/app
+deployment_home: /home/ubuntu

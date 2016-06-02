@@ -2,3 +2,9 @@
   template: src=codepicnic.conf dest=/etc/nginx/sites-enabled/codepicnic.conf
   notify:
   - restart nginx    
+- name: upstart workers 
+  template: src=workers.conf dest=/etc/init/workers.conf
+  notify:
+  - restart workers
+- name: start workers 
+  service: name=workers state=started
