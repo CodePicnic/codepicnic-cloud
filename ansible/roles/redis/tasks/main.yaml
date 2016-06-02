@@ -12,3 +12,10 @@
     shell: 'make install chdir=/opt/redis-stable'
   - name: build redis
     shell: 'echo -n | /opt/redis-stable/utils/install_server.sh'
+  - name: start redis 
+    service: name=redis_6379 state=started enabled=yes
+  - name: 6379.conf
+    template: src=6379.conf dest=/etc/redis/6379.conf
+    notify:
+    - restart redis 
+
