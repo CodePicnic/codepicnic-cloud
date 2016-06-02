@@ -8,5 +8,7 @@
     shell: chdir=/opt/redis-stable "{{ item }}" 
     with_items:
     - "make"
-    - "make install"
-    - "echo -n | utils/install_server.sh"
+  - name: build redis
+    shell: 'make install chdir=/opt/redis-stable'
+  - name: build redis
+    shell: 'echo -n | /opt/redis-stable/utils/install_server.sh'
