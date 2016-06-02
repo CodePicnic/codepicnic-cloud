@@ -26,7 +26,7 @@
       - sysdig
       - newrelic
       - mariadb 
-      #- redis 
+      - redis 
       - codepicnic-db 
   remote_user: ubuntu
   become: yes
