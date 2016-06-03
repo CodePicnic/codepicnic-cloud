@@ -1511,58 +1511,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-d0c5c473",
-      "Groups": [],
-      "RequesterId": "226008221399",
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2016-05-27T22:57:38.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-06-03 09:30:30 GMT)",
-          "InstanceId": "i-3b8d75a7",
-          "ImageId": "ami-bed9cbd4",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "f3f8549a-4226-4bee-aab9-7249dad88011_subnet-5a9d2e70_1",
-          "InstanceType": "m4.xlarge",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-f5f7805e",
       "Groups": [],
       "Instances": [
