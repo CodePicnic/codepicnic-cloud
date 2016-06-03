@@ -333,18 +333,6 @@
             "InstanceProtocol": "HTTP"
           },
           "PolicyNames": []
-        },
-        {
-          "Listener": {
-            "InstancePort": 80,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
-            "LoadBalancerPort": 443,
-            "Protocol": "HTTPS",
-            "InstanceProtocol": "HTTP"
-          },
-          "PolicyNames": [
-            "ELBSecurityPolicy-2015-05"
-          ]
         }
       ],
       "HealthCheck": {
