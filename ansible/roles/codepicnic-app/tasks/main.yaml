@@ -4,6 +4,10 @@
   - restart nginx 
 - name: Add app user 
   action: user name={{ app_user }}
+- name: add ubuntu to main group
+  user: name={{ deployment_user }} 
+        groups={{ app_user }}
+        append=yes
 - name: docker dir
   file: path=/home/codepicnic/.ssh state=directory mode=700 owner="{{ app_user }}"
 - name: key 
