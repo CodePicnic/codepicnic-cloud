@@ -7,7 +7,7 @@
 - name: docker dir
   file: path=/home/codepicnic/.ssh state=directory mode=700 owner=app
 - name: key 
-  copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner=app mode=600
+  copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner="{{ app_user }}" mode=600
 - name: clone  
   git: repo=git@github.com:CodePicnic/CodePicnic.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
   become: yes
