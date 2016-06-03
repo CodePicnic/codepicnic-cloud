@@ -5,7 +5,7 @@
 - name: Add app user 
   action: user name={{ app_user }}
 - name: docker dir
-  file: path=/home/codepicnic/.ssh state=directory mode=700 owner=app
+  file: path=/home/codepicnic/.ssh state=directory mode=700 owner="{{ app_user }}"
 - name: key 
   copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner="{{ app_user }}" mode=600
 - name: clone  
