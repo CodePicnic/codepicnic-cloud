@@ -96,3 +96,6 @@ codepicnic_db_privs:
 deployment_user: ubuntu
 deployment_dir: /home/app/app
 deployment_home: /home/ubuntu
+
+app_user: codepicnic
+app_branch: new-aws

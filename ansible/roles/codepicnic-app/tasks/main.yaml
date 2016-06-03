@@ -1,7 +1,13 @@
 - name: codepicnic conf
   template: src=codepicnic.conf dest=/etc/nginx/sites-enabled/codepicnic.conf
   notify:
-  - restart nginx    
+  - restart nginx 
+- name: Add app user 
+  action: user name={{ app_user }}
+- name: key 
+  copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner=app mode=600
+- name: clone  
+  git: repo=git@github.com:CodePicnic/CodePicnic.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
 - name: upstart workers 
   template: src=workers.conf dest=/etc/init/workers.conf
   notify:
