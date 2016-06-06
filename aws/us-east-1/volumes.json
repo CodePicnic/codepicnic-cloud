@@ -37,7 +37,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-3ed370e0",
       "State": "in-use",
-      "Iops": 60,
+      "Iops": 100,
       "SnapshotId": "snap-f70deff0",
       "CreateTime": "2016-03-11T14:18:38.734Z",
       "Size": 20
@@ -88,7 +88,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-9525b44b",
       "State": "in-use",
-      "Iops": 60,
+      "Iops": 100,
       "SnapshotId": "",
       "CreateTime": "2016-03-18T09:15:19.903Z",
       "Size": 20
@@ -109,7 +109,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-4f25b491",
       "State": "in-use",
-      "Iops": 24,
+      "Iops": 100,
       "SnapshotId": "snap-3993de76",
       "CreateTime": "2016-03-18T09:15:22.519Z",
       "Size": 8
@@ -157,7 +157,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-15350bcb",
       "State": "in-use",
-      "Iops": 24,
+      "Iops": 100,
       "SnapshotId": "snap-f70deff0",
       "CreateTime": "2016-04-01T21:41:57.561Z",
       "Size": 8
@@ -199,7 +199,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-c15a8d10",
       "State": "in-use",
-      "Iops": 24,
+      "Iops": 100,
       "SnapshotId": "snap-a7d5dfb3",
       "CreateTime": "2016-04-13T20:48:06.510Z",
       "Size": 8
@@ -481,7 +481,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-129727c2",
       "State": "in-use",
-      "Iops": 30,
+      "Iops": 100,
       "SnapshotId": "",
       "CreateTime": "2016-05-25T19:33:28.164Z",
       "Size": 10
@@ -513,7 +513,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-2c61f3fc",
       "State": "in-use",
-      "Iops": 24,
+      "Iops": 100,
       "SnapshotId": "snap-a7d5dfb3",
       "CreateTime": "2016-05-31T08:32:23.996Z",
       "Size": 8
@@ -554,7 +554,7 @@
       "VolumeType": "gp2",
       "VolumeId": "vol-ce69fb1e",
       "State": "in-use",
-      "Iops": 24,
+      "Iops": 100,
       "SnapshotId": "snap-f515f711",
       "CreateTime": "2016-05-31T08:37:53.290Z",
       "Size": 8
