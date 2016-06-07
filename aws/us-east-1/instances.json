@@ -932,7 +932,7 @@
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-06-07T03:29:39.000Z",
-          "PublicIpAddress": "52.201.225.201",
+          "PublicIpAddress": "52.203.4.226",
           "PrivateIpAddress": "172.21.4.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -958,16 +958,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
               "Association": {
-                "PublicIp": "52.201.225.201",
+                "PublicIp": "52.203.4.226",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-72131f55",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "52.201.225.201",
+                    "PublicIp": "52.203.4.226",
                     "PublicDnsName": "",
-                    "IpOwnerId": "amazon"
+                    "IpOwnerId": "740698317528"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.52"
