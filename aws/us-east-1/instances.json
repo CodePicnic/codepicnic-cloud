@@ -883,6 +883,15 @@
                 "VolumeId": "vol-129727c2",
                 "AttachTime": "2016-05-25T19:33:28.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/xvdh",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-490f4f99",
+                "AttachTime": "2016-06-07T04:52:59.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
