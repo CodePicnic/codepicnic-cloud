@@ -788,9 +788,9 @@
             "Code": 16,
             "Name": "running"
           },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-25T19:33:27.000Z",
-          "PublicIpAddress": "54.227.214.129",
+          "EbsOptimized": true,
+          "LaunchTime": "2016-06-07T03:29:49.000Z",
+          "PublicIpAddress": "52.207.215.30",
           "PrivateIpAddress": "172.21.4.34",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -807,7 +807,7 @@
           ],
           "ClientToken": "",
           "SubnetId": "subnet-04b7cb2e",
-          "InstanceType": "t2.micro",
+          "InstanceType": "m4.xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -816,14 +816,14 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
               "Association": {
-                "PublicIp": "54.227.214.129",
+                "PublicIp": "52.207.215.30",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-66232f41",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "54.227.214.129",
+                    "PublicIp": "52.207.215.30",
                     "PublicDnsName": "",
                     "IpOwnerId": "amazon"
                   },
@@ -921,9 +921,9 @@
             "Code": 16,
             "Name": "running"
           },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-05-25T19:32:55.000Z",
-          "PublicIpAddress": "52.207.212.156",
+          "EbsOptimized": true,
+          "LaunchTime": "2016-06-07T03:29:39.000Z",
+          "PublicIpAddress": "52.201.225.201",
           "PrivateIpAddress": "172.21.4.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -940,7 +940,7 @@
           ],
           "ClientToken": "",
           "SubnetId": "subnet-04b7cb2e",
-          "InstanceType": "t2.micro",
+          "InstanceType": "m4.xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -949,14 +949,14 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
               "Association": {
-                "PublicIp": "52.207.212.156",
+                "PublicIp": "52.201.225.201",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-72131f55",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "52.207.212.156",
+                    "PublicIp": "52.201.225.201",
                     "PublicDnsName": "",
                     "IpOwnerId": "amazon"
                   },
