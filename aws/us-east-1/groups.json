@@ -1180,7 +1180,11 @@
         {
           "PrefixListIds": [],
           "FromPort": 80,
-          "IpRanges": [],
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
           "ToPort": 80,
           "IpProtocol": "tcp",
           "UserIdGroupPairs": [
@@ -1189,6 +1193,18 @@
               "GroupId": "sg-9fa20be4"
             }
           ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
         }
       ],
       "GroupName": "sg_codepicnic_app",
