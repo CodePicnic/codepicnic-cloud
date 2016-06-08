@@ -65,6 +65,9 @@
               "CidrIp": "190.234.105.205/32"
             },
             {
+              "CidrIp": "190.234.105.209/32"
+            },
+            {
               "CidrIp": "190.234.105.212/32"
             },
             {
@@ -371,6 +374,9 @@
           "IpRanges": [
             {
               "CidrIp": "190.234.105.199/32"
+            },
+            {
+              "CidrIp": "190.234.105.209/32"
             },
             {
               "CidrIp": "190.234.105.238/32"
@@ -1170,6 +1176,9 @@
           "FromPort": 22,
           "IpRanges": [
             {
+              "CidrIp": "0.0.0.0/0"
+            },
+            {
               "CidrIp": "10.1.0.84/32"
             }
           ],
@@ -1180,7 +1189,11 @@
         {
           "PrefixListIds": [],
           "FromPort": 80,
-          "IpRanges": [],
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
           "ToPort": 80,
           "IpProtocol": "tcp",
           "UserIdGroupPairs": [
@@ -1189,6 +1202,18 @@
               "GroupId": "sg-9fa20be4"
             }
           ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 443,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 443,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
         }
       ],
       "GroupName": "sg_codepicnic_app",
