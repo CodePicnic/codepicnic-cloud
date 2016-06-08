@@ -1,0 +1,4 @@
+- hosts: all 
+  connection: local
+  roles:
+      - ruby22
