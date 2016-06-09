@@ -33,3 +33,20 @@
 * Swarm Nginx
 * Tuna
 * Docker Containers
+
+## Codepicnic Architecture
+
+![CodePicnic Architecture](codepicnic_architecture.png)
+
+### Components
+
+* ELB codepicnic.com, assets
+* Codepicnic APP Server
+** Rails: codepicnic.com (nginx + passenger + rails)
+** Assets: assets01.codepicnic.com, assets02.codepicnic.com, assets03.codepicnic.com (nginx)
+** Nodejs: share.codepicnic.com, brie.codepicnic.com (nginx + nodejs)
+* Codepicnic DB Server
+** MariaDB
+** Redis
+* Cloudfront cdn.codepicnic.com
+* S3 Backups
