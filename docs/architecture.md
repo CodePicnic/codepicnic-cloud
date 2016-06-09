@@ -42,11 +42,17 @@
 
 * ELB codepicnic.com, assets
 * Codepicnic APP Server
-** Rails: codepicnic.com (nginx + passenger + rails)
-** Assets: assets01.codepicnic.com, assets02.codepicnic.com, assets03.codepicnic.com (nginx)
-** Nodejs: share.codepicnic.com, brie.codepicnic.com (nginx + nodejs)
+    - Rails: codepicnic.com (nginx + passenger + rails)
+    - Assets: assets01.codepicnic.com, assets02.codepicnic.com, assets03.codepicnic.com (nginx)
+    - Nodejs: share.codepicnic.com, brie.codepicnic.com (nginx + nodejs)
 * Codepicnic DB Server
-** MariaDB
-** Redis
+    - MariaDB
+    - Redis
 * Cloudfront cdn.codepicnic.com
 * S3 Backups
+    - Daily Snapshots: A Jenkins Job launch an AMI backup (no reboot) of all production instances
+    - Daily Backups: A scheduled job launch a rails task which uses the backup utility to dump the mariadb and redis databases. The utility also send the dumps to S3.
+* Deployment
+    Deployment is made through Jenkins (job codepicnic.com) which in turn uses recap/capistrano to deploy the rails application. "ubuntu" is the deployment user, and "codepicnic" is the application user.
+
+
