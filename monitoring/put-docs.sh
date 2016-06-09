@@ -32,7 +32,8 @@ aws ec2 describe-instances --region us-east-1 --filters "Name=tag:Project,Values
 echo "## Codepicnic Production" >> $md_file
 echo "|  Name | Internal IP  | Public IP  | Instance ID |" >> $md_file
 echo "|---|---|---|---|" >> $md_file
-while read public_ip private_ip instance_id name 
+while read public_ip private_ip instance_id name
+echo $name 
 do
     echo "| xxxx  | $private_ip  |  $public_ip  | $instance_id" >> $md_file
 done < $tmp_file 
