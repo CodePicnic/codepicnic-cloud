@@ -28,12 +28,11 @@ do
     echo "| Swarm Master  | $private_ip  |  $public_ip  | $instance_id" >> $md_file
 done < $tmp_file 
 
-aws ec2 describe-instances --region us-east-1 --filters "Name=tag:Project,Values=codepicnic-prod" "Name=instance-state-name,Values=running"  --query 'Reservations[].Instances[].[PublicIpAddress,PrivateIpAddress,InstanceId,Tags[?Key==`Name`].Value[]]' --output text > $tmp_file 
+aws ec2 describe-instances --region us-east-1 --filters "Name=tag:Project,Values=codepicnic-prod" "Name=instance-state-name,Values=running"  --query 'Reservations[].Instances[].[PublicIpAddress,PrivateIpAddress,InstanceId,Tags[?Key==`Name`].Value | [0]]' --output text > $tmp_file 
 echo "## Codepicnic Production" >> $md_file
 echo "|  Name | Internal IP  | Public IP  | Instance ID |" >> $md_file
 echo "|---|---|---|---|" >> $md_file
 while read public_ip private_ip instance_id name
-echo $name 
 do
     echo "| xxxx  | $private_ip  |  $public_ip  | $instance_id" >> $md_file
 done < $tmp_file 
