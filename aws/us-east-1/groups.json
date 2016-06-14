@@ -176,6 +176,18 @@
         },
         {
           "PrefixListIds": [],
+          "FromPort": 8086,
+          "IpRanges": [
+            {
+              "CidrIp": "172.21.0.0/16"
+            }
+          ],
+          "ToPort": 8086,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
           "FromPort": 8089,
           "IpRanges": [
             {
