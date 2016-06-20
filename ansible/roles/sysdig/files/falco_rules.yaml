@@ -297,7 +297,7 @@
 
 - rule: system_binaries_network_activity_container
   desc: any network activity performed by system binaries that are not expected to send or receive any network traffic in a container
-  condition: ((inbound or outbound) and (fd.sockfamily = ip)) and (fd.name != '' and container) and proc.name != 'nginx'
+  condition: ((inbound or outbound) and (fd.sockfamily = ip)) and (fd.name != '' and container) and not proc.name in ('nginx' , 'swarm' , 'node')
   output: "Suspicious binary sent/received network traffic from container=%container.id (user=%user.name command=%proc.cmdline connection=%fd.name type=%evt.type)"
   priority: WARNING
 
