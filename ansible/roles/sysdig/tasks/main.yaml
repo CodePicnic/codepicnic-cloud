@@ -18,7 +18,10 @@
 
   - name: add falco rules 
     copy: src=falco_rules.yaml dest=/etc/falco_rules.yaml
+ 
+  - name: add falco config 
+    copy: src=falco.yaml dest=/etc/falco.yaml
 
   - name: start falco 
-    service: name=falco enabled=yes state=started
+    service: name=falco enabled=yes state=restarted
 
