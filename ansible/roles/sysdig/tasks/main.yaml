@@ -9,3 +9,16 @@
 
   - name: Install Sysdig 
     apt: name=sysdig update_cache=yes
+
+  - name: /var/log/falco 
+    file: path=/var/log/falco state=directory mode=0755
+
+  - name: Install Sysdig Falco 
+    apt: name=falco update_cache=yes
+
+  - name: add falco rules 
+    copy: src=falco_rules.yaml dest=/etc/falco_rules.yaml
+
+  - name: start falco 
+    service: name=falco enabled=yes state=started
+
