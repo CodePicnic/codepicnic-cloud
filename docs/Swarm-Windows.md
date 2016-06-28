@@ -51,6 +51,13 @@ Execute all commands below using PowerShell
 
     	docker -H :4000 info
 
+* To create new containers you need to add a constraint (Ubuntu or Windows) to where the container will be created.
+
+         time docker -H :4000 run -d -e constraint:operatingsystem==Ubuntu* --expose 15000 --net net-swarm-micro codepicnic/base_20160523
+         
+         time docker -H :4000 run -d -e constraint:operatingsystem==Windows* --expose 15000 --net net-swarm-micro codepicnic/base_20160523
+         
+  The same applies to the docker remote API.
 
 
 
