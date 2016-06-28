@@ -1,15 +1,13 @@
-- hosts: ansible
-  connection: local
-  tasks:
+- hosts: app 
   roles:
-- hosts: app
-  roles:
-      #- base
-      - nginx
-      #- ruby 
-      #- nodejs
-  remote_user: ubuntu 
+      - codepicnic-base
+      - base
+      - sysdig
+      - newrelic
+      - ruby22
+      - passenger
+        #- codepicnic-app
+  remote_user: ubuntu
   become: yes
   become_user: root
   become_method: sudo
-

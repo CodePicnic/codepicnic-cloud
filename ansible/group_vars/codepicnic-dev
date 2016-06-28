@@ -1,0 +1,8 @@
+---
+
+deployment_user: ubuntu
+deployment_dir: /home/codepicnic/app
+deployment_home: /home/ubuntu
+
+app_user: codepicnic
+app_branch: staging 
