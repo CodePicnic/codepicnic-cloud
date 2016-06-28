@@ -1,11 +1,11 @@
 - hosts: app 
   roles:
       #- codepicnic-base
-      - base
-      - sysdig
+      #- base
+      #- sysdig
         #- newrelic
-      - ruby22
-      - passenger
+        #- ruby22
+        #- passenger
       - codepicnic-app
   remote_user: ubuntu
   become: yes
