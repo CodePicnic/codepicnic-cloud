@@ -1,6 +1,6 @@
 - hosts: app 
   roles:
-      - codepicnic-base
+      #- codepicnic-base
       - base
       - sysdig
       - newrelic
