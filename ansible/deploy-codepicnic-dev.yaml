@@ -3,7 +3,7 @@
       #- codepicnic-base
       - base
       - sysdig
-      - newrelic
+        #- newrelic
       - ruby22
       - passenger
         #- codepicnic-app
