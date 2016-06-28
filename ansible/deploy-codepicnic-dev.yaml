@@ -6,7 +6,7 @@
         #- newrelic
       - ruby22
       - passenger
-        #- codepicnic-app
+      - codepicnic-app
   remote_user: ubuntu
   become: yes
   become_user: root
