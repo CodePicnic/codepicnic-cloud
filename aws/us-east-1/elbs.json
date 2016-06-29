@@ -95,7 +95,7 @@
       "HealthCheck": {
         "HealthyThreshold": 10,
         "Interval": 30,
-        "Target": "TCP:443",
+        "Target": "TCP:80",
         "Timeout": 5,
         "UnhealthyThreshold": 2
       },
