@@ -1362,12 +1362,6 @@
         }
       ],
       "Description": "Kubernetes security group applied to master nodes",
-      "Tags": [
-        {
-          "Value": "kubernetes",
-          "Key": "KubernetesCluster"
-        }
-      ],
       "IpPermissions": [
         {
           "IpProtocol": "-1",
@@ -1473,12 +1467,6 @@
         }
       ],
       "Description": "Kubernetes security group applied to minion nodes",
-      "Tags": [
-        {
-          "Value": "kubernetes",
-          "Key": "KubernetesCluster"
-        }
-      ],
       "IpPermissions": [
         {
           "IpProtocol": "-1",
