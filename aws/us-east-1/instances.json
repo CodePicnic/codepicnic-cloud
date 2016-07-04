@@ -551,7 +551,7 @@
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-04-27T15:50:50.000Z",
+          "LaunchTime": "2016-07-04T20:30:30.000Z",
           "PublicIpAddress": "52.73.90.228",
           "PrivateIpAddress": "10.1.0.124",
           "ProductCodes": [],
