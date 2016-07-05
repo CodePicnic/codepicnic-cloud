@@ -480,6 +480,10 @@
               "Key": "Name"
             },
             {
+              "Value": "jenkins",
+              "Key": "Service"
+            },
+            {
               "Value": "operations",
               "Key": "Project"
             }
