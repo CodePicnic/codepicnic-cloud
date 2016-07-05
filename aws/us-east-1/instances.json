@@ -546,9 +546,10 @@
             "State": "disabled"
           },
           "PublicDnsName": "ec2-52-73-90-228.compute-1.amazonaws.com",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 64,
+            "Name": "stopping"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-07-04T20:30:30.000Z",
@@ -556,7 +557,7 @@
           "PrivateIpAddress": "10.1.0.124",
           "ProductCodes": [],
           "VpcId": "vpc-6e685d0a",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2016-07-05 16:05:07 GMT)",
           "InstanceId": "i-a8db4b2b",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-10-1-0-124.ec2.internal",
@@ -641,7 +642,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
           "Tags": [
