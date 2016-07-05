@@ -568,6 +568,26 @@
       "SnapshotId": "",
       "CreateTime": "2016-06-07T04:52:06.607Z",
       "Size": 5
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-07-05T22:20:04.000Z",
+          "InstanceId": "i-9ad3b219",
+          "VolumeId": "vol-c31c9c10",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sdf"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "standard",
+      "VolumeId": "vol-c31c9c10",
+      "State": "in-use",
+      "SnapshotId": "",
+      "CreateTime": "2016-07-05T22:19:44.409Z",
+      "Size": 100
     }
   ]
 }

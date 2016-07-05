@@ -455,6 +455,15 @@
                 "VolumeId": "vol-d958ea07",
                 "AttachTime": "2016-03-14T15:53:16.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-c31c9c10",
+                "AttachTime": "2016-07-05T22:20:04.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
