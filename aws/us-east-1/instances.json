@@ -478,6 +478,10 @@
             {
               "Value": "aws-dep-002",
               "Key": "Name"
+            },
+            {
+              "Value": "operations",
+              "Key": "Project"
             }
           ],
           "AmiLaunchIndex": 0
