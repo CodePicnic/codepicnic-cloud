@@ -59,6 +59,9 @@
           "FromPort": 21,
           "IpRanges": [
             {
+              "CidrIp": "181.66.120.4/32"
+            },
+            {
               "CidrIp": "190.233.93.235/32"
             },
             {
@@ -411,6 +414,9 @@
           "PrefixListIds": [],
           "FromPort": 21,
           "IpRanges": [
+            {
+              "CidrIp": "181.66.120.4/32"
+            },
             {
               "CidrIp": "190.233.93.235/32"
             },
