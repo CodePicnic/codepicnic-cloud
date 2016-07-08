@@ -588,6 +588,26 @@
       "SnapshotId": "",
       "CreateTime": "2016-07-05T22:19:44.409Z",
       "Size": 100
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-07-08T15:07:52.000Z",
+          "InstanceId": "i-9ad3b219",
+          "VolumeId": "vol-baa33f69",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sdg"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "standard",
+      "VolumeId": "vol-baa33f69",
+      "State": "in-use",
+      "SnapshotId": "",
+      "CreateTime": "2016-07-08T15:07:32.304Z",
+      "Size": 15
     }
   ]
 }

@@ -464,6 +464,15 @@
                 "VolumeId": "vol-c31c9c10",
                 "AttachTime": "2016-07-05T22:20:04.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdg",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-baa33f69",
+                "AttachTime": "2016-07-08T15:07:52.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
