@@ -685,7 +685,7 @@
           "AttachTime": "2016-07-11T08:55:47.000Z",
           "InstanceId": "i-ccf11153",
           "VolumeId": "vol-2acfa2f9",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": true,
           "Device": "/dev/sda1"
         }
@@ -706,7 +706,7 @@
           "AttachTime": "2016-07-11T08:55:47.000Z",
           "InstanceId": "i-ccf11153",
           "VolumeId": "vol-5fcfa28c",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
         }
