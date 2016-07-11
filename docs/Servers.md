@@ -1,7 +1,9 @@
 ## Swarm Production
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
+| Swarm Node  | 172.21.0.218  |  54.87.129.181  | i-48eb0bd7
 | Swarm Node  | 172.21.2.225  |  52.87.228.211  | i-4e8e6ed1
+| Swarm Node  | 172.21.0.51  |  54.210.206.197  | i-ccf11153
 | Swarm Node  | 172.21.0.52  |  54.243.9.21  | i-be10de22
 | Swarm Node  | 172.21.0.74  |  54.224.147.18  | i-0195759e
 | Swarm Master  | 172.21.2.90  |  52.200.53.168  | i-0c525296

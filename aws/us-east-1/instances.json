@@ -909,6 +909,10 @@
             {
               "Value": "swarm-node-218",
               "Key": "Name"
+            },
+            {
+              "Value": "asg-swarm-01",
+              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
@@ -1144,6 +1148,10 @@
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
           "Tags": [
+            {
+              "Value": "asg-swarm-01",
+              "Key": "aws:autoscaling:groupName"
+            },
             {
               "Value": "swarm-node-051",
               "Key": "Name"
@@ -1714,58 +1722,6 @@
               "Value": "",
               "Key": "Name"
             },
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-b0323813",
-      "Groups": [],
-      "RequesterId": "226008221399",
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2016-05-31T08:32:23.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-07-11 08:24:33 GMT)",
-          "InstanceId": "i-bc17d920",
-          "ImageId": "ami-bed9cbd4",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "97612994-5886-4558-aecf-1f558074a669_subnet-5a9d2e70_1",
-          "InstanceType": "m4.xlarge",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
             {
               "Value": "asg-swarm-01",
               "Key": "aws:autoscaling:groupName"
