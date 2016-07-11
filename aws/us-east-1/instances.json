@@ -265,8 +265,8 @@
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-05-20T22:58:29.000Z",
-          "PublicIpAddress": "54.165.226.2",
+          "LaunchTime": "2016-07-11T20:13:46.000Z",
+          "PublicIpAddress": "54.172.69.105",
           "PrivateIpAddress": "172.21.3.210",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -292,14 +292,14 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.165.226.2",
+                "PublicIp": "54.172.69.105",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-6a83f84e",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "54.165.226.2",
+                    "PublicIp": "54.172.69.105",
                     "PublicDnsName": "",
                     "IpOwnerId": "amazon"
                   },
