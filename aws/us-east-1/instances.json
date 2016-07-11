@@ -378,8 +378,8 @@
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-05-21T01:54:03.000Z",
-          "PublicIpAddress": "54.173.126.11",
+          "LaunchTime": "2016-07-11T20:40:35.000Z",
+          "PublicIpAddress": "52.90.241.186",
           "PrivateIpAddress": "172.21.3.211",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -405,14 +405,14 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.173.126.11",
+                "PublicIp": "52.90.241.186",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-6b83f84f",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "54.173.126.11",
+                    "PublicIp": "52.90.241.186",
                     "PublicDnsName": "",
                     "IpOwnerId": "amazon"
                   },

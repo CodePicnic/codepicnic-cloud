@@ -10,7 +10,7 @@
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
 | Swarm Node  | 172.21.3.210  |  54.172.69.105  | i-099c3c94
-| Swarm Node  | 172.21.3.211  |  54.173.126.11  | i-0a9c3c97
+| Swarm Node  | 172.21.3.211  |  52.90.241.186  | i-0a9c3c97
 | Swarm Master  | 172.21.0.163  |  54.210.2.20  | i-5e9a3ac3
 ## CodePicnic Production
 |  Name | Internal IP  | Public IP  | Instance ID |
