@@ -242,12 +242,12 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "swarm-node-052",
-              "Key": "Name"
-            },
-            {
               "Value": "asg-swarm-01",
               "Key": "aws:autoscaling:groupName"
+            },
+            {
+              "Value": "",
+              "Key": "Name"
             }
           ],
           "AmiLaunchIndex": 0
@@ -1666,7 +1666,7 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "",
+              "Value": "swarm-node-052",
               "Key": "Name"
             },
             {
