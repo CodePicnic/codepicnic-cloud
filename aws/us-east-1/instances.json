@@ -171,12 +171,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "",
-              "Key": "Name"
-            }
-          ],
           "AmiLaunchIndex": 0
         }
       ]
