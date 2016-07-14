@@ -1647,65 +1647,6 @@
           "AmiLaunchIndex": 0
         }
       ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-f5f7805e",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-03-18T09:15:22.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-03-27 07:24:39 GMT)",
-          "InstanceId": "i-674f34e4",
-          "ImageId": "ami-f57b8f9e",
-          "PrivateDnsName": "",
-          "KeyName": "kubernetes-9b7c298c2bb3992e308e5fd180221c4b",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "kubernetes-master",
-              "Key": "Name"
-            },
-            {
-              "Value": "kubernetes-master",
-              "Key": "Role"
-            },
-            {
-              "Value": "kubernetes",
-              "Key": "KubernetesCluster"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
     }
   ]
 }
