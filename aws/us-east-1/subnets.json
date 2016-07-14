@@ -78,7 +78,7 @@
       "State": "available",
       "AvailabilityZone": "us-east-1a",
       "SubnetId": "subnet-b626919c",
-      "AvailableIpAddressCount": 250
+      "AvailableIpAddressCount": 251
     }
   ]
 }

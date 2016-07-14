@@ -770,15 +770,6 @@
                 "VolumeId": "vol-3ed370e0",
                 "AttachTime": "2016-03-11T14:18:38.000Z"
               }
-            },
-            {
-              "DeviceName": "/dev/sdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-a8d27176",
-                "AttachTime": "2016-03-11T14:18:38.000Z"
-              }
             }
           ],
           "Architecture": "x86_64",
@@ -1147,15 +1138,6 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-129727c2",
                 "AttachTime": "2016-05-25T19:33:28.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdh",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-490f4f99",
-                "AttachTime": "2016-06-07T04:52:59.000Z"
               }
             }
           ],
@@ -1675,110 +1657,35 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-87-111-19.compute-1.amazonaws.com",
+          "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 80,
-            "Name": "stopped"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-03-18T09:15:22.000Z",
-          "PublicIpAddress": "52.87.111.19",
-          "PrivateIpAddress": "172.20.0.9",
           "ProductCodes": [],
-          "VpcId": "vpc-f4dfe890",
           "StateTransitionReason": "User initiated (2016-03-27 07:24:39 GMT)",
           "InstanceId": "i-674f34e4",
           "ImageId": "ami-f57b8f9e",
-          "PrivateDnsName": "ip-172-20-0-9.ec2.internal",
+          "PrivateDnsName": "",
           "KeyName": "kubernetes-9b7c298c2bb3992e308e5fd180221c4b",
-          "SecurityGroups": [
-            {
-              "GroupName": "kubernetes-master-kubernetes",
-              "GroupId": "sg-9dd447e5"
-            }
-          ],
+          "SecurityGroups": [],
           "ClientToken": "",
-          "SubnetId": "subnet-b626919c",
           "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "MacAddress": "12:60:94:34:7a:23",
-              "SourceDestCheck": true,
-              "VpcId": "vpc-f4dfe890",
-              "Description": "",
-              "Association": {
-                "PublicIp": "52.87.111.19",
-                "PublicDnsName": "ec2-52-87-111-19.compute-1.amazonaws.com"
-              },
-              "NetworkInterfaceId": "eni-b196ef94",
-              "PrivateIpAddresses": [
-                {
-                  "PrivateDnsName": "ip-172-20-0-9.ec2.internal",
-                  "Association": {
-                    "PublicIp": "52.87.111.19",
-                    "PublicDnsName": "ec2-52-87-111-19.compute-1.amazonaws.com",
-                    "IpOwnerId": "740698317528"
-                  },
-                  "Primary": true,
-                  "PrivateIpAddress": "172.20.0.9"
-                }
-              ],
-              "PrivateDnsName": "ip-172-20-0-9.ec2.internal",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-ee8b6b1f",
-                "AttachTime": "2016-03-18T09:15:22.000Z"
-              },
-              "Groups": [
-                {
-                  "GroupName": "kubernetes-master-kubernetes",
-                  "GroupId": "sg-9dd447e5"
-                }
-              ],
-              "SubnetId": "subnet-b626919c",
-              "OwnerId": "740698317528",
-              "PrivateIpAddress": "172.20.0.9"
-            }
-          ],
-          "SourceDestCheck": true,
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": true,
-                "VolumeId": "vol-4f25b491",
-                "AttachTime": "2016-03-18T09:15:22.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/sdb",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-9525b44b",
-                "AttachTime": "2016-03-18T09:15:55.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAJVKRFK7JGMOHXUAHW",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/kubernetes-master"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",

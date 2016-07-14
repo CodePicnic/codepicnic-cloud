@@ -6,27 +6,6 @@
         {
           "AttachTime": "2016-03-11T14:18:38.000Z",
           "InstanceId": "i-a8db4b2b",
-          "VolumeId": "vol-a8d27176",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdf"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-a8d27176",
-      "State": "in-use",
-      "Iops": 120,
-      "SnapshotId": "",
-      "CreateTime": "2016-03-11T14:18:38.718Z",
-      "Size": 40
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-03-11T14:18:38.000Z",
-          "InstanceId": "i-a8db4b2b",
           "VolumeId": "vol-3ed370e0",
           "State": "attached",
           "DeleteOnTermination": true,
@@ -61,58 +40,6 @@
       "SnapshotId": "snap-6618acf0",
       "CreateTime": "2016-03-14T15:53:16.864Z",
       "Size": 20
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-03-18T09:15:55.000Z",
-          "InstanceId": "i-674f34e4",
-          "VolumeId": "vol-9525b44b",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdb"
-        }
-      ],
-      "Tags": [
-        {
-          "Value": "kubernetes",
-          "Key": "KubernetesCluster"
-        },
-        {
-          "Value": "kubernetes-master-pd",
-          "Key": "Name"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-9525b44b",
-      "State": "in-use",
-      "Iops": 100,
-      "SnapshotId": "",
-      "CreateTime": "2016-03-18T09:15:19.903Z",
-      "Size": 20
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-03-18T09:15:22.000Z",
-          "InstanceId": "i-674f34e4",
-          "VolumeId": "vol-4f25b491",
-          "State": "attached",
-          "DeleteOnTermination": true,
-          "Device": "/dev/sda1"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-4f25b491",
-      "State": "in-use",
-      "Iops": 100,
-      "SnapshotId": "snap-3993de76",
-      "CreateTime": "2016-03-18T09:15:22.519Z",
-      "Size": 8
     },
     {
       "AvailabilityZone": "us-east-1a",
@@ -468,20 +395,11 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-06-07T04:52:59.000Z",
-          "InstanceId": "i-bd08fc21",
-          "VolumeId": "vol-490f4f99",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/xvdh"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-490f4f99",
-      "State": "in-use",
+      "State": "available",
       "Iops": 100,
       "SnapshotId": "",
       "CreateTime": "2016-06-07T04:52:06.607Z",
