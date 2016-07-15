@@ -3,7 +3,7 @@
 |---|---|---|---|
 | Swarm Node  | 172.21.0.218  |  54.87.129.181  | i-48eb0bd7
 | Swarm Node  | 172.21.0.51  |  54.210.206.197  | i-ccf11153
-| Swarm Node  | 172.21.0.90  |  52.207.247.129  | i-1bbf4784
+| Swarm Node  | 172.21.0.52  |  52.23.196.88  | i-be10de22
 | Swarm Master  | 172.21.2.90  |  52.200.53.168  | i-0c525296
 ## Swarm Staging
 |  Name | Internal IP  | Public IP  | Instance ID |

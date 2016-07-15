@@ -1041,112 +1041,37 @@
             "State": "disabled"
           },
           "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-07-15T07:06:16.000Z",
-          "PublicIpAddress": "52.207.247.129",
-          "PrivateIpAddress": "172.21.0.90",
           "ProductCodes": [],
-          "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2016-07-15 08:34:14 GMT)",
           "InstanceId": "i-1bbf4784",
           "ImageId": "ami-f52dd598",
-          "PrivateDnsName": "ip-172-21-0-90.ec2.internal",
+          "PrivateDnsName": "",
           "KeyName": "key_swarm",
-          "SecurityGroups": [
-            {
-              "GroupName": "sg_swarm",
-              "GroupId": "sg-33871c4b"
-            }
-          ],
+          "SecurityGroups": [],
           "ClientToken": "1dcd82dd-3ae9-4425-bd7a-28781fe5e9f3_subnet-5a9d2e70_1",
-          "SubnetId": "subnet-5a9d2e70",
           "InstanceType": "m4.xlarge",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "MacAddress": "12:85:82:cf:db:a1",
-              "SourceDestCheck": true,
-              "VpcId": "vpc-bdfdf9d9",
-              "Description": "",
-              "Association": {
-                "PublicIp": "52.207.247.129",
-                "PublicDnsName": ""
-              },
-              "NetworkInterfaceId": "eni-a2585abc",
-              "PrivateIpAddresses": [
-                {
-                  "Association": {
-                    "PublicIp": "52.207.247.129",
-                    "PublicDnsName": "",
-                    "IpOwnerId": "amazon"
-                  },
-                  "Primary": true,
-                  "PrivateIpAddress": "172.21.0.90"
-                }
-              ],
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-9199254c",
-                "AttachTime": "2016-07-15T07:06:16.000Z"
-              },
-              "Groups": [
-                {
-                  "GroupName": "sg_swarm",
-                  "GroupId": "sg-33871c4b"
-                }
-              ],
-              "SubnetId": "subnet-5a9d2e70",
-              "OwnerId": "740698317528",
-              "PrivateIpAddress": "172.21.0.90"
-            }
-          ],
-          "SourceDestCheck": true,
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": true,
-                "VolumeId": "vol-4b6b2998",
-                "AttachTime": "2016-07-15T07:06:17.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-4a6b2999",
-                "AttachTime": "2016-07-15T07:06:17.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
-          "IamInstanceProfile": {
-            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
-            }
-          ],
           "AmiLaunchIndex": 0
         }
       ]
@@ -1531,6 +1456,10 @@
             {
               "Value": "swarm-node-052",
               "Key": "Name"
+            },
+            {
+              "Value": "asg-swarm-01",
+              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
