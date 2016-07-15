@@ -925,8 +925,8 @@
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-05-28T03:45:34.000Z",
-          "PublicIpAddress": "54.210.2.20",
+          "LaunchTime": "2016-07-15T19:30:38.000Z",
+          "PublicIpAddress": "54.224.148.193",
           "PrivateIpAddress": "172.21.0.163",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -943,7 +943,7 @@
           ],
           "ClientToken": "WUeZo1461006751215",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "t2.large",
+          "InstanceType": "t2.medium",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -952,14 +952,14 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.210.2.20",
+                "PublicIp": "54.224.148.193",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-6797ec43",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "54.210.2.20",
+                    "PublicIp": "54.224.148.193",
                     "PublicDnsName": "",
                     "IpOwnerId": "amazon"
                   },
