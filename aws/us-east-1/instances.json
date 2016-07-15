@@ -1432,8 +1432,8 @@
             "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2016-05-31T08:37:52.000Z",
-          "PublicIpAddress": "54.243.9.21",
+          "LaunchTime": "2016-07-15T07:43:58.000Z",
+          "PublicIpAddress": "52.23.196.88",
           "PrivateIpAddress": "172.21.0.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -1459,14 +1459,14 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.243.9.21",
+                "PublicIp": "52.23.196.88",
                 "PublicDnsName": ""
               },
               "NetworkInterfaceId": "eni-3d31ce1b",
               "PrivateIpAddresses": [
                 {
                   "Association": {
-                    "PublicIp": "54.243.9.21",
+                    "PublicIp": "52.23.196.88",
                     "PublicDnsName": "",
                     "IpOwnerId": "amazon"
                   },
@@ -1531,10 +1531,6 @@
             {
               "Value": "swarm-node-052",
               "Key": "Name"
-            },
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
