@@ -4,8 +4,7 @@
 ## Swarm Staging
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
+| Swarm Master  | 172.21.0.163  |  54.175.127.157  | i-5e9a3ac3
 ## CodePicnic Production
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
-| aws-codepicnic-app-01  | 172.21.4.52  |  52.203.4.226  | i-6c0efaf0
-| aws-codepicnic-db-01  | 172.21.4.34  |  52.207.215.30  | i-bd08fc21
