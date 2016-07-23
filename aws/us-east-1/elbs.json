@@ -18,6 +18,15 @@
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-swarm-01-1458637951288"
           ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "LoadBalancerPort": 80,
+            "Protocol": "HTTP",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": []
         }
       ],
       "HealthCheck": {
