@@ -18,6 +18,15 @@
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-swarm-01-1458637951288"
           ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "LoadBalancerPort": 80,
+            "Protocol": "HTTP",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": []
         }
       ],
       "HealthCheck": {
@@ -30,12 +39,6 @@
       "VPCId": "vpc-bdfdf9d9",
       "BackendServerDescriptions": [],
       "Instances": [
-        {
-          "InstanceId": "i-bc17d920"
-        },
-        {
-          "InstanceId": "i-32aa64af"
-        },
         {
           "InstanceId": "i-be10de22"
         }
@@ -72,11 +75,11 @@
       "ListenerDescriptions": [
         {
           "Listener": {
-            "InstancePort": 443,
+            "InstancePort": 80,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/f3a74070-a93f-46c0-ae32-e98ee67e87b9",
             "LoadBalancerPort": 443,
             "Protocol": "HTTPS",
-            "InstanceProtocol": "HTTPS"
+            "InstanceProtocol": "HTTP"
           },
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-codepicnic-01-1458678797591"
@@ -95,7 +98,7 @@
       "HealthCheck": {
         "HealthyThreshold": 10,
         "Interval": 30,
-        "Target": "TCP:443",
+        "Target": "TCP:80",
         "Timeout": 5,
         "UnhealthyThreshold": 2
       },
