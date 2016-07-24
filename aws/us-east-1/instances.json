@@ -93,15 +93,6 @@
               }
             },
             {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-72350bac",
-                "AttachTime": "2016-04-01T21:41:57.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/xvdg",
               "Ebs": {
                 "Status": "attached",
