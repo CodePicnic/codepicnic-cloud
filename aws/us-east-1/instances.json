@@ -577,7 +577,7 @@
             "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2016-07-11T08:48:13.000Z",
+          "LaunchTime": "2016-07-24T06:30:13.000Z",
           "PublicIpAddress": "54.87.129.181",
           "PrivateIpAddress": "172.21.0.218",
           "ProductCodes": [],
@@ -595,7 +595,7 @@
           ],
           "ClientToken": "toJKC1468226892857",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "m4.xlarge",
+          "InstanceType": "m4.2xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -676,10 +676,6 @@
             {
               "Value": "swarm-node-218",
               "Key": "Name"
-            },
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
