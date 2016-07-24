@@ -692,7 +692,7 @@
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-07-05T16:09:29.000Z",
+          "LaunchTime": "2016-07-24T08:25:09.000Z",
           "PublicIpAddress": "52.73.90.228",
           "PrivateIpAddress": "10.1.0.124",
           "ProductCodes": [],
@@ -710,7 +710,7 @@
           ],
           "ClientToken": "dGCAB1457705917743",
           "SubnetId": "subnet-7902a153",
-          "InstanceType": "t2.medium",
+          "InstanceType": "t2.small",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -1026,52 +1026,6 @@
               "Key": "Name"
             }
           ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-71bb99ce",
-      "Groups": [],
-      "RequesterId": "226008221399",
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2016-07-24T00:26:22.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-07-24 07:17:51 GMT)",
-          "InstanceId": "i-cafc6054",
-          "ImageId": "ami-f52dd598",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "439cd086-85c8-4526-882b-5a413d231ac0_subnet-5a9d2e70_1",
-          "InstanceType": "m4.xlarge",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
           "AmiLaunchIndex": 0
         }
       ]
