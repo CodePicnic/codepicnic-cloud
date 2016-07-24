@@ -538,6 +538,27 @@
       "SnapshotId": "snap-dd1decc8",
       "CreateTime": "2016-07-24T00:26:22.961Z",
       "Size": 400
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-07-24T06:21:34.000Z",
+          "InstanceId": "i-0c525296",
+          "VolumeId": "vol-b88b8f6b",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sdh"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-b88b8f6b",
+      "State": "in-use",
+      "Iops": 300,
+      "SnapshotId": "",
+      "CreateTime": "2016-07-24T06:20:25.120Z",
+      "Size": 100
     }
   ]
 }
