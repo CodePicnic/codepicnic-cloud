@@ -504,7 +504,7 @@
           "AttachTime": "2016-07-27T15:46:10.000Z",
           "InstanceId": "i-a1ee813f",
           "VolumeId": "vol-2ab5a7f9",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": true,
           "Device": "/dev/sda1"
         }
@@ -525,7 +525,7 @@
           "AttachTime": "2016-07-27T15:46:10.000Z",
           "InstanceId": "i-a1ee813f",
           "VolumeId": "vol-66b5a7b5",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
         }
