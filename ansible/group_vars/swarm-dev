@@ -60,27 +60,29 @@ sysctl_options:
    -
      name: net.ipv4.tcp_tw_reuse 
      value: 1
+## mysql db_codepicnic_prod -s  -e  " select distinct(image_name) from container_types where is_hidden=0"
+
 base_images:
-       - base_20160523
-       - mono_20160523
-       - elixir_20160523
-       - elixir12_20160523
-       - golang_20160523
-       - php_20160523
-       - php7_20160523
-       - python350_20160523
-       - ruby_20160523
-       - ruby23_20160523
-       - laravel_20160523
-       - phoenix_20160523
-       - rails_20160523
-       - mongodb_20160523
-       - redis_20160523
-       - r_20160523
-       - mysql_20160523
-       - mariadb_20160523
-       - netcore_20160523
-       - perfect_20160523
-       - django_20160523
-       - swift-dev_20160524
-       - tensorflow_20160523
+     - base_20160726
+     - mono_20160711
+     - elixir_20160711
+     - elixir12_20160711
+     - golang_20160711
+     - php_20160711
+     - php7_20160726
+     - python350_20160711
+     - ruby23_20160711
+     - laravel_20160711
+     - phoenix_20160523
+     - rails4_20160722
+     - mongodb_20160711
+     - redis_20160711
+     - tensorflow_20160711
+     - r_20160711
+     - netcore_20160711
+     - perfect_20160602
+     - swift-dev_20160524
+     - swift3_20160726
+     - java_20160726
+     - kotlin_20160726
+     - rails5_20160726
