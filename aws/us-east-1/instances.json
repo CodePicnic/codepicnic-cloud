@@ -898,10 +898,6 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
-            },
-            {
               "Value": "swarm-node-051",
               "Key": "Name"
             }
