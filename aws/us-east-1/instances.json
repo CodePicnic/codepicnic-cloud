@@ -947,12 +947,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-demo",
-              "Key": "Name"
-            }
-          ],
           "AmiLaunchIndex": 1
         },
         {
@@ -991,12 +985,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-demo",
-              "Key": "Name"
-            }
-          ],
           "AmiLaunchIndex": 2
         },
         {
@@ -1035,12 +1023,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-demo",
-              "Key": "Name"
-            }
-          ],
           "AmiLaunchIndex": 0
         }
       ]
