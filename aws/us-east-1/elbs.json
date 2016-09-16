@@ -395,6 +395,63 @@
         "OwnerAlias": "740698317528",
         "GroupName": "sg_codepicnic_web"
       }
+    },
+    {
+      "Subnets": [
+        "subnet-7902a153"
+      ],
+      "CanonicalHostedZoneNameID": "Z35SXDOTRQ7X7K",
+      "CanonicalHostedZoneName": "elb-devpad-01-376890435.us-east-1.elb.amazonaws.com",
+      "ListenerDescriptions": [
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/f3a74070-a93f-46c0-ae32-e98ee67e87b9",
+            "LoadBalancerPort": 443,
+            "Protocol": "SSL",
+            "InstanceProtocol": "TCP"
+          },
+          "PolicyNames": [
+            "AWSConsole-SSLNegotiationPolicy-elb-devpad-01-1474055235066"
+          ]
+        }
+      ],
+      "HealthCheck": {
+        "HealthyThreshold": 10,
+        "Interval": 30,
+        "Target": "TCP:80",
+        "Timeout": 5,
+        "UnhealthyThreshold": 2
+      },
+      "VPCId": "vpc-6e685d0a",
+      "BackendServerDescriptions": [],
+      "Instances": [
+        {
+          "InstanceId": "i-a8db4b2b"
+        }
+      ],
+      "DNSName": "elb-devpad-01-376890435.us-east-1.elb.amazonaws.com",
+      "SecurityGroups": [
+        "sg-59533721"
+      ],
+      "Policies": {
+        "LBCookieStickinessPolicies": [],
+        "AppCookieStickinessPolicies": [],
+        "OtherPolicies": [
+          "AWSConsole-SSLNegotiationPolicy-elb-devpad-01-1474055235066",
+          "ELBSecurityPolicy-2016-08"
+        ]
+      },
+      "LoadBalancerName": "elb-devpad-01",
+      "CreatedTime": "2016-09-16T19:47:13.150Z",
+      "AvailabilityZones": [
+        "us-east-1a"
+      ],
+      "Scheme": "internet-facing",
+      "SourceSecurityGroup": {
+        "OwnerAlias": "740698317528",
+        "GroupName": "sg_codepicnic_elb"
+      }
     }
   ]
 }
