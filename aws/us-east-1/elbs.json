@@ -414,6 +414,15 @@
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-devpad-01-1474055235066"
           ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 81,
+            "LoadBalancerPort": 80,
+            "Protocol": "HTTP",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": []
         }
       ],
       "HealthCheck": {

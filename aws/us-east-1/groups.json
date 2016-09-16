@@ -801,6 +801,18 @@
         },
         {
           "PrefixListIds": [],
+          "FromPort": 81,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 81,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
           "FromPort": 443,
           "IpRanges": [
             {
