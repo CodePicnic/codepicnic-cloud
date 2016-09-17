@@ -464,6 +464,15 @@
                 "VolumeId": "vol-baa33f69",
                 "AttachTime": "2016-07-08T15:07:52.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdh",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-038c34d6",
+                "AttachTime": "2016-09-17T04:10:05.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
