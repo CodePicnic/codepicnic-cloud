@@ -496,18 +496,6 @@
       "SnapshotId": "",
       "CreateTime": "2016-07-24T06:20:25.120Z",
       "Size": 100
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-747c9ea1",
-      "State": "available",
-      "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-09-02T09:32:26.776Z",
-      "Size": 400
     }
   ]
 }
