@@ -406,7 +406,7 @@
         {
           "Listener": {
             "InstancePort": 80,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/f3a74070-a93f-46c0-ae32-e98ee67e87b9",
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
             "LoadBalancerPort": 443,
             "Protocol": "SSL",
             "InstanceProtocol": "TCP"
