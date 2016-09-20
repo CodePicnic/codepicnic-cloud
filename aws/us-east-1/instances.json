@@ -701,7 +701,7 @@
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-07-24T08:25:09.000Z",
+          "LaunchTime": "2016-09-20T16:09:10.000Z",
           "PublicIpAddress": "52.73.90.228",
           "PrivateIpAddress": "10.1.0.124",
           "ProductCodes": [],
@@ -719,7 +719,7 @@
           ],
           "ClientToken": "dGCAB1457705917743",
           "SubnetId": "subnet-7902a153",
-          "InstanceType": "t2.small",
+          "InstanceType": "t2.large",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
