@@ -52,7 +52,12 @@
           ],
           "ToPort": 65535,
           "IpProtocol": "tcp",
-          "UserIdGroupPairs": []
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-59533721"
+            }
+          ]
         },
         {
           "PrefixListIds": [],

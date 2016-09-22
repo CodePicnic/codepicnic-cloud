@@ -471,6 +471,15 @@
       "ListenerDescriptions": [
         {
           "Listener": {
+            "InstancePort": 38854,
+            "LoadBalancerPort": 38854,
+            "Protocol": "TCP",
+            "InstanceProtocol": "TCP"
+          },
+          "PolicyNames": []
+        },
+        {
+          "Listener": {
             "InstancePort": 80,
             "LoadBalancerPort": 80,
             "Protocol": "HTTP",
