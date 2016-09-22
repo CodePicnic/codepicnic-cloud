@@ -62,7 +62,7 @@
       "State": "available",
       "AvailabilityZone": "us-east-1a",
       "SubnetId": "subnet-7902a153",
-      "AvailableIpAddressCount": 244
+      "AvailableIpAddressCount": 243
     },
     {
       "VpcId": "vpc-f4dfe890",
@@ -94,7 +94,7 @@
       "State": "available",
       "AvailabilityZone": "us-east-1b",
       "SubnetId": "subnet-eeef4fa7",
-      "AvailableIpAddressCount": 250
+      "AvailableIpAddressCount": 251
     }
   ]
 }
