@@ -62,7 +62,7 @@
       "State": "available",
       "AvailabilityZone": "us-east-1a",
       "SubnetId": "subnet-7902a153",
-      "AvailableIpAddressCount": 245
+      "AvailableIpAddressCount": 244
     },
     {
       "VpcId": "vpc-f4dfe890",
@@ -79,6 +79,22 @@
       "AvailabilityZone": "us-east-1a",
       "SubnetId": "subnet-b626919c",
       "AvailableIpAddressCount": 251
+    },
+    {
+      "VpcId": "vpc-6e685d0a",
+      "Tags": [
+        {
+          "Value": "aws-sn-02",
+          "Key": "Name"
+        }
+      ],
+      "CidrBlock": "10.1.1.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1b",
+      "SubnetId": "subnet-eeef4fa7",
+      "AvailableIpAddressCount": 250
     }
   ]
 }
