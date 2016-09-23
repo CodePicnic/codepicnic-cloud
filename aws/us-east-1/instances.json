@@ -371,14 +371,14 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-107-23-92-251.compute-1.amazonaws.com",
+          "PublicDnsName": "ec2-54-173-20-78.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2016-03-14T15:53:16.000Z",
-          "PublicIpAddress": "107.23.92.251",
+          "LaunchTime": "2016-09-23T08:29:50.000Z",
+          "PublicIpAddress": "54.173.20.78",
           "PrivateIpAddress": "10.1.0.84",
           "ProductCodes": [],
           "VpcId": "vpc-6e685d0a",
@@ -395,7 +395,7 @@
           ],
           "ClientToken": "GBGuQ1457970795942",
           "SubnetId": "subnet-7902a153",
-          "InstanceType": "t2.micro",
+          "InstanceType": "t2.small",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -404,16 +404,16 @@
               "VpcId": "vpc-6e685d0a",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "107.23.92.251",
-                "PublicDnsName": "ec2-107-23-92-251.compute-1.amazonaws.com"
+                "PublicIp": "54.173.20.78",
+                "PublicDnsName": "ec2-54-173-20-78.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-6fea754a",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-10-1-0-84.ec2.internal",
                   "Association": {
-                    "PublicIp": "107.23.92.251",
-                    "PublicDnsName": "ec2-107-23-92-251.compute-1.amazonaws.com",
+                    "PublicIp": "54.173.20.78",
+                    "PublicDnsName": "ec2-54-173-20-78.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
