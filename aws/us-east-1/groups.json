@@ -968,6 +968,18 @@
           "ToPort": 443,
           "IpProtocol": "tcp",
           "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 4430,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 4430,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
         }
       ],
       "GroupName": "sg_swarm_elb",
