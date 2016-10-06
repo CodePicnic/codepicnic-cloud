@@ -521,9 +521,9 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-10-06T20:41:14.000Z",
-          "InstanceId": "i-c4574af5",
-          "VolumeId": "vol-11557bc4",
+          "AttachTime": "2016-10-06T20:47:56.000Z",
+          "InstanceId": "i-66524f57",
+          "VolumeId": "vol-072d03d2",
           "State": "attached",
           "DeleteOnTermination": true,
           "Device": "/dev/sda1"
@@ -531,11 +531,11 @@
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-11557bc4",
+      "VolumeId": "vol-072d03d2",
       "State": "in-use",
       "Iops": 100,
       "SnapshotId": "snap-3067152d",
-      "CreateTime": "2016-10-06T20:41:14.156Z",
+      "CreateTime": "2016-10-06T20:47:56.713Z",
       "Size": 8
     }
   ]
