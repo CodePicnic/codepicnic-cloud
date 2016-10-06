@@ -1099,6 +1099,7 @@
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-10-06T20:47:56.000Z",
+          "PublicIpAddress": "52.45.136.234",
           "PrivateIpAddress": "172.21.2.237",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -1123,9 +1124,18 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
+              "Association": {
+                "PublicIp": "52.45.136.234",
+                "PublicDnsName": ""
+              },
               "NetworkInterfaceId": "eni-11795f03",
               "PrivateIpAddresses": [
                 {
+                  "Association": {
+                    "PublicIp": "52.45.136.234",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "740698317528"
+                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.2.237"
                 }
