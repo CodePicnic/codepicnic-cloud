@@ -1,7 +1,6 @@
-- name: Tag and push to local registry
+- name: Pull from registry
   docker_image:
      name: registry.codepicnic.com:5000/codepicnic/tuna_base
-     tag: tuna_base 
 #- name: run tuna
 #    docker:
 #      name: tuna 
