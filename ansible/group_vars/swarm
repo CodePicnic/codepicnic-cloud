@@ -51,4 +51,5 @@ sysctl_options:
    -
      name: net.ipv4.tcp_tw_reuse
      value: 1
+registry_ip: 172.21.2.90
 
