@@ -12,7 +12,7 @@
       - swarm-consul
       - swarm
       - swarm-manager
-        #- swarm-registry
+      #- swarm-registry
       #- tuna
   remote_user: ubuntu
   become: yes
