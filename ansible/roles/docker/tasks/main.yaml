@@ -34,6 +34,6 @@
   - name: add user
     shell: usermod -aG docker ubuntu 
   - name: install docker-py
-    pip: name=docker-py
+    pip: name=docker-py version=1.9
   - name: install docker compose
     get_url: url=https://github.com/docker/compose/releases/download/1.6.2/docker-compose-Linux-x86_64 dest=/usr/local/bin/docker-compose mode=0755 
