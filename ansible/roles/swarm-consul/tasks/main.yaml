@@ -10,7 +10,7 @@
       - "8500:8500"    
   - name: run consul network
     docker: 
-    name: consul-network
+      name: consul-network
       image: progrium/consul
       state: started
       command: "-server -bootstrap"
