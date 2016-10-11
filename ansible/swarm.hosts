@@ -1,9 +1,11 @@
 [ansible]
 127.0.0.1
 
-[master]
+[swarm-master]
 
-[node]
+[swarm-node]
 
 [swarm:children]
 ansible
+swarm-master
+swarm-node
