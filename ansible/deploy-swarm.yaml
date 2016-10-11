@@ -10,7 +10,7 @@
       - docker
       - newrelic
       - swarm-consul
-        #- swarm
+      - swarm
         #- swarm-manager
         #- swarm-registry
       #- tuna
