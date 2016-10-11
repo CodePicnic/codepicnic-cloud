@@ -15,7 +15,7 @@ volumes:
            volume_type: "standard"
            volume_size: "20"
     production:
-         - device_name: /dev/xvda
+         - device_name: /dev/sda1
            volume_size: "10"
            volume_type: "gp2"
          - device_name: /dev/xvdf
