@@ -7,7 +7,7 @@
       wait: yes
       wait_timeout: 500
       instance_tags:
-        Name: "{{ name_swarm_node }}"
+        Name: "{{ cluster_swarm }}-master"
         Cluster: "{{ cluster_swarm }}"
         Role: "swarm-demo"
       region: "{{ aws_region }}"
@@ -16,7 +16,7 @@
            "{{ volumes[item] }}"
       exact_count: "{{ count_swarm_nodes }}" 
       count_tag:
-        Name: "{{ name_swarm_node }}"
+        Name: "{{ cluster_swarm }}-master"
         Project: "{{ cluster_swarm }}"
         Role: "swarm-demo"
       vpc_subnet_id : "{{ subnet_swarm }}"
