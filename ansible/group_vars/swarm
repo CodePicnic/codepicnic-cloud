@@ -8,7 +8,7 @@ ec2_iam_role: swarm-node
 subnet_swarm: subnet-5a9d2e70
 volumes: 
     default:
-         - device_name: /dev/xvda
+         - device_name: /dev/sda1
            volume_size: "10"
            volume_type: "standard"
          - device_name: /dev/xvdf
