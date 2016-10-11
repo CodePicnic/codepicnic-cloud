@@ -1736,65 +1736,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-ad2e3913",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-10-11T00:53:59.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-10-11 01:03:20 GMT)",
-          "InstanceId": "i-5c8a676c",
-          "ImageId": "ami-2d39803a",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-swarm-master",
-              "Key": "Name"
-            },
-            {
-              "Value": "devpad-swarm",
-              "Key": "Cluster"
-            },
-            {
-              "Value": "swarm-demo",
-              "Key": "Role"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-b15ab341",
       "Groups": [],
       "Instances": [
@@ -2015,65 +1956,6 @@
             {
               "Value": "Recover",
               "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
-      "ReservationId": "r-cd2d3a73",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-10-11T00:55:08.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-10-11 01:03:20 GMT)",
-          "InstanceId": "i-30846900",
-          "ImageId": "ami-2d39803a",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-swarm",
-              "Key": "Cluster"
-            },
-            {
-              "Value": "devpad-swarm-master",
-              "Key": "Name"
-            },
-            {
-              "Value": "swarm-demo",
-              "Key": "Role"
             }
           ],
           "AmiLaunchIndex": 0
