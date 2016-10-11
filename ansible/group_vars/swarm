@@ -7,14 +7,14 @@ count_swarm_nodes: 1
 ec2_iam_role: swarm-node
 subnet_swarm: subnet-5a9d2e70
 volumes: 
-    - default:
+    default:
          - device_name: /dev/xvda
            volume_size: "10"
            volume_type: "standard"
          - device_name: /dev/xvdf
            volume_type: "standard"
            volume_size: "20"
-    - production:
+    production:
          - device_name: /dev/xvda
            volume_size: "10"
            volume_type: "gp2"
