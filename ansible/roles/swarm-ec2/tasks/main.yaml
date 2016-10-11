@@ -23,6 +23,6 @@
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
     register: ec2
-    with_items: env_type
+    with_items: cluster_type 
   - name: print ec2
     debug: var=ec2 

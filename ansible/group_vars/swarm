@@ -2,7 +2,6 @@
 aws_region: us-east-1
 key_swarm_name: key_swarm
 sg_swarm_name: sg_swarm
-aws_region: us-east-1
 ebs_optimized_swarm: yes
 count_swarm_nodes: 1
 ec2_iam_role: swarm-node
