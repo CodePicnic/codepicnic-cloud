@@ -11,7 +11,7 @@
       - newrelic
       - swarm-consul
       - swarm
-        #- swarm-manager
+      - swarm-manager
         #- swarm-registry
       #- tuna
   remote_user: ubuntu
