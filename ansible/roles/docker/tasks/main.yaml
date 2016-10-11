@@ -27,7 +27,7 @@
   - name: apt-get apparmor 
     apt: name=apparmor state=latest 
   - name: apt-get install docker 
-    apt: name="docker-engine={{ docker_engine }}" state=present
+    apt: name="docker-engine={{ docker_engine }}" state=present force=yes
     #apt: name=docker-engine state=present
   - name: start docker
     service: name=docker enabled=yes state=started
