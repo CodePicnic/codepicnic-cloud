@@ -9,8 +9,8 @@
       - sysdig
       - docker
       - newrelic
+      - swarm-consul
         #- swarm
-        #- swarm-consul
         #- swarm-manager
         #- swarm-registry
       #- tuna
