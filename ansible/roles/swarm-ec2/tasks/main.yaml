@@ -37,3 +37,5 @@
   - name: set fact
     set_fact: consul_network="{{ item.private_ip }}"
     with_items: ec2.results[0].tagged_instances
+  - name: print ec2
+    debug: var=consul_network
