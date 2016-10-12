@@ -3,7 +3,9 @@
   roles:
       - swarm-ec2 
 - hosts: swarm-master
-  tasks: [ ]
+  tasks:
+      - name: debug
+        debug: var="{{ groups['swarm-master'] }}" 
   remote_user: ubuntu
   become: yes
   become_user: root
