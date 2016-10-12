@@ -16,7 +16,7 @@
         register: stat_reboot
   roles:
       - base
-      - { role: reboot, when: stat_reboot.stat.exists == 'false' }  
+      - { role: reboot, when: stat_reboot.stat.exists == False }  
       - aws-monitoring-scripts
       - sysdig
       - docker
@@ -37,7 +37,7 @@
         register: stat_reboot
   roles:
       - base
-      - { role: reboot, when: stat_reboot.stat.exists == 'false' }  
+      - { role: reboot, when: stat_reboot.stat.exists == False }  
       - aws-monitoring-scripts
       - sysdig
       - docker
