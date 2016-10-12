@@ -23,7 +23,7 @@
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
     register: ec2
-    with_items: cluster_type 
+    with_items: ('{{cluster_type}}') 
   - name: print ec2
     debug: var=ec2.results[0]
   - name: Add new instance to host group
