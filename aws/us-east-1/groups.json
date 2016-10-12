@@ -537,6 +537,19 @@
           "ToPort": 5000,
           "IpProtocol": "tcp",
           "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 8080,
+          "IpRanges": [],
+          "ToPort": 8080,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-5e31ab26"
+            }
+          ]
         }
       ],
       "GroupName": "sg_swarm",
