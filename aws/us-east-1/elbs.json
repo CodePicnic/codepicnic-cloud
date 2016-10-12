@@ -559,7 +559,7 @@
       "ListenerDescriptions": [
         {
           "Listener": {
-            "InstancePort": 80,
+            "InstancePort": 8080,
             "LoadBalancerPort": 80,
             "Protocol": "HTTP",
             "InstanceProtocol": "HTTP"
@@ -568,7 +568,7 @@
         },
         {
           "Listener": {
-            "InstancePort": 80,
+            "InstancePort": 8080,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
             "LoadBalancerPort": 443,
             "Protocol": "HTTPS",
@@ -582,13 +582,17 @@
       "HealthCheck": {
         "HealthyThreshold": 10,
         "Interval": 30,
-        "Target": "TCP:80",
+        "Target": "TCP:8080",
         "Timeout": 5,
         "UnhealthyThreshold": 2
       },
       "VPCId": "vpc-bdfdf9d9",
       "BackendServerDescriptions": [],
-      "Instances": [],
+      "Instances": [
+        {
+          "InstanceId": "i-8b0affbb"
+        }
+      ],
       "DNSName": "elb-tuna-devpad-763538895.us-east-1.elb.amazonaws.com",
       "SecurityGroups": [
         "sg-5e31ab26"
