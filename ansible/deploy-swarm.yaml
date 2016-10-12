@@ -2,6 +2,8 @@
   connection: local
   roles:
       - swarm-ec2 
+- hosts: swarm-master
+  tasks: [ ]
 - hosts: swarm-node
   pre_tasks:
       - name: register reboot 
