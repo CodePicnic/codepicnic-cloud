@@ -5,6 +5,7 @@
 - hosts: swarm-master 
   roles:
       - base
+      - reboot
       - aws-monitoring-scripts
       - sysdig
       - docker
