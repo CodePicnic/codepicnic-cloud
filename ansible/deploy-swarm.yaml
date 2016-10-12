@@ -3,6 +3,7 @@
   roles:
       - swarm-ec2 
 - hosts: swarm-master
+  get_facts: true
   tasks:
       - name: debug
         debug: var="{{ hostvars[item] }}"
