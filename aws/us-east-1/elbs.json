@@ -549,6 +549,72 @@
         "OwnerAlias": "740698317528",
         "GroupName": "sg_codepicnic_elb"
       }
+    },
+    {
+      "Subnets": [
+        "subnet-5a9d2e70"
+      ],
+      "CanonicalHostedZoneNameID": "Z35SXDOTRQ7X7K",
+      "CanonicalHostedZoneName": "elb-tuna-devpad-763538895.us-east-1.elb.amazonaws.com",
+      "ListenerDescriptions": [
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "LoadBalancerPort": 80,
+            "Protocol": "HTTP",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": []
+        },
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
+            "LoadBalancerPort": 443,
+            "Protocol": "HTTPS",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": [
+            "AWSConsole-SSLNegotiationPolicy-elb-tuna-devpad-1476285550011"
+          ]
+        }
+      ],
+      "HealthCheck": {
+        "HealthyThreshold": 10,
+        "Interval": 30,
+        "Target": "TCP:80",
+        "Timeout": 5,
+        "UnhealthyThreshold": 2
+      },
+      "VPCId": "vpc-bdfdf9d9",
+      "BackendServerDescriptions": [],
+      "Instances": [
+        {
+          "InstanceId": "i-d4b045e4"
+        }
+      ],
+      "DNSName": "elb-tuna-devpad-763538895.us-east-1.elb.amazonaws.com",
+      "SecurityGroups": [
+        "sg-5e31ab26"
+      ],
+      "Policies": {
+        "LBCookieStickinessPolicies": [],
+        "AppCookieStickinessPolicies": [],
+        "OtherPolicies": [
+          "AWSConsole-SSLNegotiationPolicy-elb-tuna-devpad-1476285550011",
+          "ELBSecurityPolicy-2016-08"
+        ]
+      },
+      "LoadBalancerName": "elb-tuna-devpad",
+      "CreatedTime": "2016-10-12T15:19:08.150Z",
+      "AvailabilityZones": [
+        "us-east-1a"
+      ],
+      "Scheme": "internet-facing",
+      "SourceSecurityGroup": {
+        "OwnerAlias": "740698317528",
+        "GroupName": "sg_swarm_elb"
+      }
     }
   ]
 }
