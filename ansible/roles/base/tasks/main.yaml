@@ -9,4 +9,6 @@
     with_items: "{{ sysctl_options }}"
   - name: stat reboot.txt
     stat: path=/var/tmp/reboot.txt
-    register: stat_reboot 
+    register: stat_reboot
+  - name: set fact
+    set_fact: var_stat_reboot="{{ stat_reboot }}" 
