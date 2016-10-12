@@ -1,4 +1,4 @@
-  - name: run swarm node 
+  - name: run swarm master 
     ec2:
       key_name: "{{ key_swarm_name }}"
       group: "{{ sg_swarm_name }}"
@@ -14,7 +14,7 @@
       ebs_optimized: "{{ ebs_optimized_swarm }}"
       volumes:
            "{{ volumes[item] }}"
-      exact_count: "{{ count_swarm_nodes }}" 
+      exact_count: "{{ count_swarm_master }}" 
       count_tag:
         Name: "{{ cluster_swarm }}-master"
         Project: "{{ cluster_swarm }}"
@@ -34,3 +34,37 @@
     with_items: '{{ ec2.results[0].tagged_instances }}'
   - name: set fact
     set_fact: var_ec2_swarm_master="{{ ec2 }}"
+  - name: run swarm nodes 
+    ec2:
+      key_name: "{{ key_swarm_name }}"
+      group: "{{ sg_swarm_name }}"
+      instance_type: "{{ type_swarm_node }}"
+      image: "{{ ami_swarm }}"
+      wait: yes
+      wait_timeout: 500
+      instance_tags:
+        Name: "{{ cluster_swarm }}-node"
+        Project: "{{ cluster_swarm }}"
+        Role: "swarm-demo"
+      region: "{{ aws_region }}"
+      ebs_optimized: "{{ ebs_optimized_swarm }}"
+      volumes:
+           "{{ volumes[item] }}"
+      exact_count: "{{ count_swarm_nodes }}" 
+      count_tag:
+        Name: "{{ cluster_swarm }}-node"
+        Project: "{{ cluster_swarm }}"
+        Role: "swarm-demo"
+      vpc_subnet_id : "{{ subnet_swarm }}"
+      assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
+    register: ec2_nodes
+    with_items: '{{cluster_type}}'
+  - name: print ec2_nodes
+    debug: var=ec2_nodes.results[0]
+  - name: Add new instance to host group
+    add_host: hostname={{ item.private_ip }} groups=swarm-master ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_swarm_rsa
+    with_items: '{{ ec2.results[0].tagged_instances }}'
+  - name: Wait for SSH to come up
+    wait_for: host={{ item.private_ip }} port=22 delay=5 timeout=600 state=started
+    with_items: '{{ ec2.results[0].tagged_instances }}'
