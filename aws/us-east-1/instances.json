@@ -373,8 +373,8 @@
           },
           "PublicDnsName": "",
           "State": {
-            "Code": 0,
-            "Name": "pending"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-10-12T14:56:04.000Z",
@@ -420,7 +420,7 @@
                 }
               ],
               "Attachment": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeviceIndex": 0,
                 "DeleteOnTermination": true,
                 "AttachmentId": "eni-attach-b434981e",
@@ -448,7 +448,7 @@
             {
               "DeviceName": "/dev/sda1",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-4abab79f",
                 "AttachTime": "2016-10-12T14:56:04.000Z"
@@ -457,7 +457,7 @@
             {
               "DeviceName": "/dev/xvdf",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-eabab73f",
                 "AttachTime": "2016-10-12T14:56:04.000Z"
@@ -472,6 +472,20 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "devpad-swarm",
+              "Key": "Project"
+            },
+            {
+              "Value": "swarm-demo",
+              "Key": "Role"
+            },
+            {
+              "Value": "devpad-swarm-node",
+              "Key": "Name"
+            }
+          ],
           "AmiLaunchIndex": 0
         },
         {
@@ -480,8 +494,8 @@
           },
           "PublicDnsName": "",
           "State": {
-            "Code": 0,
-            "Name": "pending"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-10-12T14:56:04.000Z",
@@ -527,7 +541,7 @@
                 }
               ],
               "Attachment": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeviceIndex": 0,
                 "DeleteOnTermination": true,
                 "AttachmentId": "eni-attach-bb349811",
@@ -555,7 +569,7 @@
             {
               "DeviceName": "/dev/sda1",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-e0bab735",
                 "AttachTime": "2016-10-12T14:56:04.000Z"
@@ -564,7 +578,7 @@
             {
               "DeviceName": "/dev/xvdf",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-6fbab7ba",
                 "AttachTime": "2016-10-12T14:56:04.000Z"
@@ -579,6 +593,20 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "devpad-swarm-node",
+              "Key": "Name"
+            },
+            {
+              "Value": "swarm-demo",
+              "Key": "Role"
+            },
+            {
+              "Value": "devpad-swarm",
+              "Key": "Project"
+            }
+          ],
           "AmiLaunchIndex": 1
         }
       ]
