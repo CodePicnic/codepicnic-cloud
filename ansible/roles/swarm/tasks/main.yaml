@@ -1,5 +1,6 @@
   - name: debug consul
-    debug: var="{{ groups['swarm-master'] }}"
+    debug: var="{{ hostvars[item] }}"
+    with_items: groups['swarm-master']
   - name: set fact consul_ip
     set_fact: consul_ip="{{ hostvars[item]['ansible_eth0']['ipv4']['address'] }}"
     with_items: groups['swarm-master']
