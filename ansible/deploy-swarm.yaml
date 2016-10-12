@@ -19,7 +19,6 @@
   become: yes
   become_user: root
   become_method: sudo
-
 - hosts: swarm-master
   pre_tasks:
       - name: register reboot 
