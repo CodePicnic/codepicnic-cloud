@@ -25,7 +25,7 @@
       #- docker
       #- newrelic
       - swarm
-      - swrm-node
+      - swarm-node
   remote_user: ubuntu
   become: yes
   become_user: root
