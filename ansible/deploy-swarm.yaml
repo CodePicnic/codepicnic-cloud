@@ -3,7 +3,7 @@
   roles:
       - swarm-ec2 
 - hosts: swarm-master
-  tasks:
+  pre_tasks:
       - name: register reboot 
         stat: path=/var/tmp/reboot.txt
         register: stat_reboot
