@@ -7,6 +7,8 @@
       - name: register reboot 
         stat: path=/var/tmp/reboot.txt
         register: stat_reboot
+      - name: debug stat
+        debug: var=stat_reboot
   roles:
       - base
       - { role: reboot, when stat_reboot.stat.exists == False }  
