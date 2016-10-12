@@ -1,6 +1,6 @@
 - name: set fact consul_network
   set_fact: swarm_master_ip="{{ hostvars[item]['ansible_eth0']['ipv4']['address'] }}"
-  with_items: '{{ groups['swarm-master']  }}'
+  with_items: "{{ groups['swarm-master']  }}"
 - name: Pull from registry
   docker_image:
      name: registry.codepicnic.com:5000/codepicnic/tuna_base
