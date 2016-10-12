@@ -5,7 +5,8 @@
 - hosts: swarm-master
   tasks:
       - name: debug
-        debug: var="{{ groups['swarm-master'][0] }}" 
+        debug: var="{{ hostvars[item] }}"
+        with_items: groups['swarm-master'] 
   remote_user: ubuntu
   become: yes
   become_user: root
