@@ -2,10 +2,14 @@
   connection: local
   roles:
       - swarm-ec2 
-- hosts: swarm-master 
+- hosts: swarm-master
+  tasks:
+      - name: register reboot 
+        stat: path=/var/tmp/reboot.txt
+        register: stat_reboot
   roles:
       - base
-      - { role: reboot, when var_stat_reboot.stat.exists == False }  
+      - { role: reboot, when stat_reboot.stat.exists == False }  
       - aws-monitoring-scripts
       - sysdig
       - docker
