@@ -14,4 +14,4 @@
       ports:
       - "80:80"
       env:
-        DOCKER_HOST: "{{ swarm_master_ip:4000 }}"
+          DOCKER_HOST: "{{ swarm_master_ip }}:4000"
