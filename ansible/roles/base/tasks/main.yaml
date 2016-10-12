@@ -7,3 +7,5 @@
   - name: add sysctl 
     sysctl: name="{{ item.name }}" value="{{ item.value }}" state=present
     with_items: "{{ sysctl_options }}"
+  - name: stat reboot.txt
+    register: stat_reboot 
