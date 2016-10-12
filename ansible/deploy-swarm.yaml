@@ -2,6 +2,24 @@
   connection: local
   roles:
       - swarm-ec2 
+- hosts: swarm-node
+  pre_tasks:
+      - name: register reboot 
+        stat: path=/var/tmp/reboot.txt
+        register: stat_reboot
+  roles:
+      - base
+      - { role: reboot, when: stat_reboot.stat.exists == 'False' }  
+      - aws-monitoring-scripts
+      - sysdig
+      - docker
+      - newrelic
+      - swarm
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+
 - hosts: swarm-master
   pre_tasks:
       - name: register reboot 
@@ -19,24 +37,6 @@
       - swarm-manager
       #- swarm-registry
       - tuna
-  remote_user: ubuntu
-  become: yes
-  become_user: root
-  become_method: sudo
-
-- hosts: swarm-node
-  pre_tasks:
-      - name: register reboot 
-        stat: path=/var/tmp/reboot.txt
-        register: stat_reboot
-  roles:
-      - base
-      - { role: reboot, when: stat_reboot.stat.exists == 'False' }  
-      - aws-monitoring-scripts
-      - sysdig
-      - docker
-      - newrelic
-      - swarm
   remote_user: ubuntu
   become: yes
   become_user: root
