@@ -53,4 +53,10 @@ sysctl_options:
      name: net.ipv4.tcp_tw_reuse
      value: 1
 registry_ip: 172.21.2.90
+base_images:
+     - devpad/php_v5.6 
+     - devpad/node_v6.7.0
+     - devpad/python_v2.7
+     - devpad/ruby23_v2.3.1
+     - devpad/golang_v1.7.1
 

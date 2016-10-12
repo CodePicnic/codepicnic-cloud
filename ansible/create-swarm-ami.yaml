@@ -12,7 +12,7 @@
       - docker-apparmor
       - newrelic
       - swarm
-      - swarm-node
+      - swarm-node-ami
       - create-ami
   remote_user: ubuntu
   become: yes

@@ -1,0 +1,27 @@
+  - name: Gather facts
+    action: ec2_facts
+  - name: nginx conf dir 
+    file: path=/etc/nginx/conf.d state=directory mode=0755
+  - name: copy nginx conf 
+    copy: src="{{ item }}" dest=/etc/nginx/conf.d
+    with_items:
+       - backend.conf 
+       - nginx.crt
+       - nginx.key
+       - 502.html
+  - name: copy docker-compose.yaml 
+    copy: src="docker-compose.yaml" dest=/opt/docker-compose.yaml
+  - name: copy ipt.sh 
+    copy: src="ipt.sh" dest=/opt/ipt.sh
+  - name: pull images 
+    shell: docker pull registry.codepicnic.com:5000/codepicnic/{{ item }}
+    with_items: "{{ base_images }}"
+  - name: pull images 
+    shell: docker pull {{ item }}
+    with_items:
+       - nginx
+       - google/cadvisor
+       - swarm 
+  - name: tag images 
+    shell: docker tag registry.codepicnic.com:5000/codepicnic/{{ item }} codepicnic/{{ item }}
+    with_items: "{{ base_images }}"
