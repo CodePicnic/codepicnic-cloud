@@ -1,5 +1,7 @@
   - name: Gather facts
     action: ec2_facts
+  - name: set fact consul_ip
+    set_fact: consult_ip="{{ hostvars[groups['swarm-master'][0]]['ansible_eth0']['ipv4']['address'] }}"
   - name: copy ipt.sh
     copy: src="ipt.sh" dest=/opt/ipt.sh
   - name: pull images
