@@ -5,7 +5,7 @@
 - hosts: swarm-master 
   roles:
       - base
-      - { reboot stat_reboot.stat.exists == False }  
+      - { reboot, stat_reboot.stat.exists == False }  
       - aws-monitoring-scripts
       - sysdig
       - docker
