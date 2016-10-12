@@ -19,7 +19,7 @@
       name: consul-network
       image: progrium/consul
       state: started
-      command: "-server -bootstrap"
+      command: "-server -bootstrap -http-port 8501"
       detach: True
       restart_policy: always
       ports:
