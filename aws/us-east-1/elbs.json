@@ -588,11 +588,7 @@
       },
       "VPCId": "vpc-bdfdf9d9",
       "BackendServerDescriptions": [],
-      "Instances": [
-        {
-          "InstanceId": "i-d4b045e4"
-        }
-      ],
+      "Instances": [],
       "DNSName": "elb-tuna-devpad-763538895.us-east-1.elb.amazonaws.com",
       "SecurityGroups": [
         "sg-5e31ab26"
