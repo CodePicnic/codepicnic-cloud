@@ -7,8 +7,6 @@
   - name: add sysctl 
     sysctl: name="{{ item.name }}" value="{{ item.value }}" state=present
     with_items: "{{ sysctl_options }}"
-  - name: stat reboot.txt
-    stat: path=/var/tmp/reboot.txt
-    register: stat_reboot
-  - name: set fact
-    set_fact: var_stat_reboot="{{ stat_reboot }}" 
+  - name: debug stat
+    debug: var=stat_reboot.stat.exists
+
