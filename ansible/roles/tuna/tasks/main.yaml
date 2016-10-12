@@ -12,6 +12,6 @@
       detach: True
       restart_policy: always
       ports:
-      - "80:80"
+      - "8080:80"
       env:
           DOCKER_HOST: "{{ swarm_master_ip }}:4000"
