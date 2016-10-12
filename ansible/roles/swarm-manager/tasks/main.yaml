@@ -1,7 +1,5 @@
   - name: Gather facts
     action: ec2_facts
-  - name: set fact consul_network
-    set_fact: consult_ip="{{ hostvars[groups['swarm-master'][0]]['ansible_eth0']['ipv4']['address'] }}"
   - name: certs directory
     file: path=/certs state=directory mode=0755
   - name: copy certs
