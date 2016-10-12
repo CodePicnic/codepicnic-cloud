@@ -2,16 +2,13 @@
   connection: local
   roles:
       - swarm-ec2 
-- hosts: swarm-master
-  gather_facts: true
-  tasks:
-      - name: debug
-        debug: var=hostvars[item]
-        with_items: groups['swarm-master']
-  remote_user: ubuntu
-  become: yes
-  become_user: root
-  become_method: sudo
+#- hosts: swarm-master
+#  gather_facts: true
+#  tasks: [ ]
+#  remote_user: ubuntu
+#  become: yes
+#  become_user: root
+#  become_method: sudo
 - hosts: swarm-master
   pre_tasks:
       - name: register reboot 

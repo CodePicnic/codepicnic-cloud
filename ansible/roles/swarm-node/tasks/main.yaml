@@ -15,7 +15,7 @@
     shell: docker tag registry.codepicnic.com:5000/{{ item }} {{ item }}
     with_items: "{{ base_images }}"
   - name: run swarm node 
-    docker:
+    docker_container:
       name: swarm-{{ ansible_ec2_local_hostname }}
       image: swarm
       state: started
@@ -23,7 +23,7 @@
       detach: True
       restart_policy: always
   - name: run swarm cadvisor
-    docker:
+    docker_container:
       name: cadvisor-{{ ansible_ec2_local_hostname }}
       image: google/cadvisor:latest
       state: started
