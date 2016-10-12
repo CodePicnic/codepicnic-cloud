@@ -1,4 +1,4 @@
-  - name debug consul
+  - name: debug consul
     debug: var="{{ groups['swarm-master'] }}"
   - name: set fact consul_ip
     set_fact: consul_ip="{{ hostvars[item]['ansible_eth0']['ipv4']['address'] }}"
