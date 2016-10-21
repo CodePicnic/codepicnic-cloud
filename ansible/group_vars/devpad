@@ -1,0 +1,47 @@
+---
+aws_region: us-east-1
+key_name: key_codepicnic
+sg_name: sg_codepicnic_app
+ebs_optimized: yes 
+count_nodes: 2 
+ec2_iam_role: iam-codepicnic-node 
+subnet_swarm: subnet-04b7cb2e  
+disk_app: /dev/xvdf
+volumes: 
+    production:
+         - device_name: /dev/sda1
+           volume_size: "10"
+           volume_type: "gp2"
+         - device_name: /dev/xvdf
+           volume_type: "gp2"
+           volume_size: "20"
+newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
+sysctl_options:
+   -
+     name: net.core.somaxconn
+     value: 1000
+   -
+     name: net.core.netdev_max_backlog
+     value: 5000
+   -
+     name: net.core.rmem_max
+     value: 16777216
+   -
+     name: net.core.wmem_max
+     value: 16777216
+   -
+     name: net.ipv4.tcp_wmem
+     value: 4096 12582912 16777216
+   -
+     name: net.ipv4.tcp_rmem
+     value: 4096 12582912 16777216
+   -
+     name: net.ipv4.tcp_max_syn_backlog
+     value: 8096
+   -
+     name: net.ipv4.tcp_slow_start_after_idle
+     value: 0
+   -
+     name: net.ipv4.tcp_tw_reuse
+     value: 1
+

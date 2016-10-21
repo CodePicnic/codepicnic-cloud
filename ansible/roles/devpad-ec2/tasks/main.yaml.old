@@ -1,0 +1,33 @@
+  - name: run swarm node 
+    ec2:
+      key_name: "{{ key_swarm_name }}"
+      group: "{{ sg_swarm_name }}"
+      instance_type: "{{ type_swarm_node }}"
+      image: "{{ ami_swarm }}"
+      wait: yes
+      wait_timeout: 500
+      instance_tags:
+        Name: "{{ name_swarm_node }}"
+        Cluster: "{{ cluster_swarm }}"
+      region: "{{ aws_region }}"
+      ebs_optimized: "{{ ebs_optimized_swarm }}"
+      #user_data: |
+          #!/bin/sh
+          #docker run --name swarm-$(curl http://169.254.169.254/latest/meta-data/local-hostname) -d swarm join --advertise=$(curl http://169.254.169.254/latest/meta-data/local-ipv4):2375 consul://172.21.1.135:8500 
+          #docker run --name swarm-$(curl http://169.254.169.254/latest/meta-data/local-hostname) -d swarm join --advertise=$(curl http://169.254.169.254/latest/meta-data/local-ipv4):2375 consul://172.21.1.135:8500 
+      volumes:
+          #  - device_name: /dev/xvda
+          #    volume_size: "20"
+          - device_name: /dev/xvdf
+            volume_type: "gp2"
+            volume_size: "500"
+      exact_count: "{{ count_swarm_nodes }}" 
+      count_tag:
+        Name: "{{ name_swarm_node }}"
+        Project: "{{ cluster_swarm }}"
+      vpc_subnet_id : "{{ subnet_swarm }}"
+      assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
+    register: ec2
+  - name: print ec2
+    debug: var=ec2 

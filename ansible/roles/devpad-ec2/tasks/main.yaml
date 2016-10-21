@@ -1,0 +1,34 @@
+  - name: run  devpad_app 
+    ec2:
+      key_name: "{{ key_name }}"
+      group: "{{ sg_name }}"
+      instance_type: "{{ ec2_type }}"
+      image: "{{ ami }}"
+      wait: yes
+      wait_timeout: 500
+      instance_tags:
+        Name: "{{ cluster_name }}-master"
+        Project: "{{ cluster_name }}"
+        Role: "devpad-app"
+      region: "{{ aws_region }}"
+      ebs_optimized: "{{ ebs_optimized }}"
+      volumes:
+           "{{ volumes[item] }}"
+      exact_count: "{{ count_nodes }}" 
+      count_tag:
+        Name: "{{ cluster_name }}-master"
+        Project: "{{ cluster_name }}"
+        Role: "devpad-app"
+      vpc_subnet_id : "{{ subnet_app }}"
+      assign_public_ip: yes
+      instance_profile_name: "{{ ec2_iam_role }}"
+    register: ec2
+    with_items: '{{cluster_type}}'
+  - name: print ec2
+    debug: var=ec2.results[0]
+  - name: Add new instance to host group
+    add_host: hostname={{ item.private_ip }} groups=devpad-app ansible_ssh_private_key_file=/var/lib/jenkins/keys/key_codepicnic_rsa
+    with_items: '{{ ec2.results[0].tagged_instances }}'
+  - name: Wait for SSH to come up
+    wait_for: host={{ item.private_ip }} port=22 delay=5 timeout=600 state=started
+    with_items: '{{ ec2.results[0].tagged_instances }}'

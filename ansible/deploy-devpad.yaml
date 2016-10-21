@@ -1,0 +1,4 @@
+- hosts: ansible
+  connection: local
+  roles:
+      - devpad-ec2 

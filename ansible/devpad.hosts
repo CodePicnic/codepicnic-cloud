@@ -1,0 +1,7 @@
+[ansible]
+127.0.0.1
+
+[app]
+
+[devpad:children]
+app
