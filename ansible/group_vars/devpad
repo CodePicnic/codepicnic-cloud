@@ -5,7 +5,7 @@ sg_name: sg_codepicnic_app
 ebs_optimized: yes 
 count_nodes: 2 
 ec2_iam_role: iam-codepicnic-node 
-subnet_swarm: subnet-04b7cb2e  
+subnet_app: subnet-04b7cb2e  
 disk_app: /dev/xvdf
 volumes: 
     production:
