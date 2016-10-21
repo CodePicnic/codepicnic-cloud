@@ -7,7 +7,7 @@
         groups={{ app_user }}
         append=yes
 - name: devpad dir 
-  file: path="/home/{{ deployment_user }}/.ssh state=directory" mode=700 owner="{{ app_user }}"
+  file: path="/home/{{ app_user }}/.ssh" state="directory" mode=700 owner="{{ app_user }}"
 - name: key 
   copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner="{{ app_user }}" mode=600
 - name: clone  
