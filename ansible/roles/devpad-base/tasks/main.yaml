@@ -1,0 +1,6 @@
+  - name: format device
+    filesystem: fstype="xfs" dev="/dev/xvdf"
+  - name: mount device
+    mount: name="/home" src="/dev/xvdf" fstype="xfs" opts=defaults,noatime state=mounted
+  - name: add app user
+    user: name=devpad comment="Application"
