@@ -1,7 +1,7 @@
   - name: run  devpad_app 
     ec2:
       key_name: "{{ key_name }}"
-      group: "{{ sg_name }}"
+      #group: "{{ sg_name }}"
       instance_type: "{{ ec2_type }}"
       image: "{{ ami }}"
       wait: yes
