@@ -14,6 +14,8 @@
       - aws-monitoring-scripts
       - sysdig
       - newrelic
+      - ruby23
+      - passenger
   remote_user: ubuntu
   become: yes
   become_user: root

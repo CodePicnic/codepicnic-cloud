@@ -1,0 +1,18 @@
+- name: install dev-tools
+  apt: name=git,g++,libmysqlclient-dev,libmagick++-dev,libmagickcore-dev,imagemagick,libmagickwand-dev,libxml2-dev,libxslt1-dev,zlib1g-dev state=latest
+- name: enable ruby repo
+  apt_repository: repo='deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main' state=present
+- name: add key
+  apt_key: keyserver=keyserver.ubuntu.com id=C3173AA6
+- name: apt-get update
+  apt: update_cache=yes
+- name: install ruby
+  apt: name=ruby2.3,ruby2.3-dev state=latest
+- name: update alternatives
+  shell: update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.3 191
+#alternatives: name="{{ item.name }}" path="{{ item.path }}"
+#  with_items: "{{ alternatives }}"
+- name: update alternatives
+  shell: update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.3 61
+- name: install rake bundler
+  shell: gem2.3 install rake bundler --no-rdoc --no-ri
