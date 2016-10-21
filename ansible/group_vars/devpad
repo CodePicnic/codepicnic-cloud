@@ -7,6 +7,10 @@ count_nodes: 2
 ec2_iam_role: iam-codepicnic-node 
 subnet_app: subnet-04b7cb2e  
 disk_app: /dev/xvdf
+app_user: codepicnic
+deployment_user: ubuntu
+app_user: devpad
+
 volumes: 
     production:
          - device_name: /dev/sda1

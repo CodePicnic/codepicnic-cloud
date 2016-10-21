@@ -16,6 +16,7 @@
       - newrelic
       - ruby23
       - passenger
+      - devpad-app 
   remote_user: ubuntu
   become: yes
   become_user: root
