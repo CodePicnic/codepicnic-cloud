@@ -6,3 +6,5 @@
     mount: name="/home/devpad" src="/dev/xvdf" fstype="xfs" opts=defaults,noatime state=mounted
   - name: add app user
     user: name=devpad comment="Application"
+  - name: dir 
+    file: path=/home/devpad state=directory owner=devpad group=devpad
