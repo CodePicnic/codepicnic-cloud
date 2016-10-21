@@ -654,7 +654,14 @@
       },
       "VPCId": "vpc-bdfdf9d9",
       "BackendServerDescriptions": [],
-      "Instances": [],
+      "Instances": [
+        {
+          "InstanceId": "i-06d30c36"
+        },
+        {
+          "InstanceId": "i-07d30c37"
+        }
+      ],
       "DNSName": "elb-devpad-prod-01-1379656778.us-east-1.elb.amazonaws.com",
       "SecurityGroups": [
         "sg-9fa20be4"
