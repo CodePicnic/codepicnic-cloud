@@ -27,5 +27,7 @@
   git_config: name=user.name value="Jenkins" scope="local" repo="/home/devpad/app" 
   become: yes
   become_user: "{{ app_user }}"
+  vars:
+    ansible_ssh_pipelining: true
 - name: permissions
   file: path="/home/{{ app_user }}/app" owner="{{ deployment_user }}" group="{{ app_user }}" recurse=yes mode=775
