@@ -1,5 +1,5 @@
   - name: add app user
-    user: name=app comment="Application"
+    user: name=devpad comment="Application"
   - name: format device
     filesystem: fstype=xfs dev="{{ item.device }}"
     with_items: "{{ app_vols }}"
