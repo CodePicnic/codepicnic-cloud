@@ -7,7 +7,7 @@
       wait: yes
       wait_timeout: 500
       instance_tags:
-        Name: "{{ cluster_name }}-master"
+        Name: "{{ cluster_name }}-app"
         Project: "{{ cluster_name }}"
         Role: "devpad-app"
       region: "{{ aws_region }}"
@@ -16,7 +16,7 @@
            "{{ volumes[item] }}"
       exact_count: "{{ count_nodes }}" 
       count_tag:
-        Name: "{{ cluster_name }}-master"
+        Name: "{{ cluster_name }}-app"
         Project: "{{ cluster_name }}"
         Role: "devpad-app"
       vpc_subnet_id : "{{ subnet_app }}"

@@ -1,4 +1,20 @@
 - hosts: ansible
   connection: local
   roles:
-      - devpad-ec2 
+      - devpad-ec2
+- hosts: app 
+  pre_tasks:
+      - name: register reboot
+        stat: path=/var/tmp/reboot.txt
+        register: stat_reboot
+  roles:
+      - base
+      - { role: reboot, when: stat_reboot.stat.exists == False }
+      - aws-monitoring-scripts
+      - sysdig
+      - newrelic
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+ 
