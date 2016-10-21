@@ -10,6 +10,8 @@
   file: path="/home/{{ app_user }}/.ssh" state="directory" mode=700 owner="{{ app_user }}"
 - name: key 
   copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner="{{ app_user }}" mode=600
+- name: key 
+  copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ deployment_user }}/.ssh/id_rsa" owner="{{ deployment_user }}" mode=600
 - name: clone  
   git: repo=git@github.com:CodePicnic/devpad.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
   become: yes
