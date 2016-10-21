@@ -2033,6 +2033,255 @@
           "AmiLaunchIndex": 0
         }
       ]
+    },
+    {
+      "OwnerId": "740698317528",
+      "ReservationId": "r-df3bc66e",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": true,
+          "LaunchTime": "2016-10-21T17:14:47.000Z",
+          "PublicIpAddress": "54.164.227.79",
+          "PrivateIpAddress": "172.21.4.9",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-d2b26de2",
+          "ImageId": "ami-2d39803a",
+          "PrivateDnsName": "ip-172-21-4-9.ec2.internal",
+          "KeyName": "key_codepicnic",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_codepicnic_app",
+              "GroupId": "sg-9ca20be7"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-04b7cb2e",
+          "InstanceType": "m4.large",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:e2:4f:31:ee:8a",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.164.227.79",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-d083792c",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.164.227.79",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.4.9"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-33e6c482",
+                "AttachTime": "2016-10-21T17:14:47.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_codepicnic_app",
+                  "GroupId": "sg-9ca20be7"
+                }
+              ],
+              "SubnetId": "subnet-04b7cb2e",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.4.9"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-47609893",
+                "AttachTime": "2016-10-21T17:14:49.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-736098a7",
+                "AttachTime": "2016-10-21T17:14:49.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAIGSEJJ6DWKBJJ76CA",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "devpad-app",
+              "Key": "Role"
+            },
+            {
+              "Value": "devpad-app",
+              "Key": "Project"
+            },
+            {
+              "Value": "devpad-app-master",
+              "Key": "Name"
+            }
+          ],
+          "AmiLaunchIndex": 1
+        },
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": true,
+          "LaunchTime": "2016-10-21T17:14:47.000Z",
+          "PublicIpAddress": "54.147.242.127",
+          "PrivateIpAddress": "172.21.4.8",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-ddb26ded",
+          "ImageId": "ami-2d39803a",
+          "PrivateDnsName": "ip-172-21-4-8.ec2.internal",
+          "KeyName": "key_codepicnic",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_codepicnic_app",
+              "GroupId": "sg-9ca20be7"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-04b7cb2e",
+          "InstanceType": "m4.large",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:a0:9c:26:10:02",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.147.242.127",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-d183792d",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.147.242.127",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.4.8"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-32e6c483",
+                "AttachTime": "2016-10-21T17:14:47.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_codepicnic_app",
+                  "GroupId": "sg-9ca20be7"
+                }
+              ],
+              "SubnetId": "subnet-04b7cb2e",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.4.8"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-786f97ac",
+                "AttachTime": "2016-10-21T17:14:48.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-46609892",
+                "AttachTime": "2016-10-21T17:14:48.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAIGSEJJ6DWKBJJ76CA",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "devpad-app",
+              "Key": "Project"
+            },
+            {
+              "Value": "devpad-app-master",
+              "Key": "Name"
+            },
+            {
+              "Value": "devpad-app",
+              "Key": "Role"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
     }
   ]
 }
