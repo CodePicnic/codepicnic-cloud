@@ -10,17 +10,19 @@
   file: path="/home/{{ app_user }}/.ssh" state="directory" mode=700 owner="{{ app_user }}"
 - name: key 
   copy: src=key_codepicnic_deploy.id_rsa dest="/home/{{ app_user }}/.ssh/id_rsa" owner="{{ app_user }}" mode=600
-- name: clone  
-  git: repo=git@github.com:CodePicnic/devpad.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
-  become: yes
-  become_user: "{{ app_user }}"
-  ignore_errors: yes
-  vars:
-    ansible_ssh_pipelining: true
+#- name: clone  
+#  git: repo=git@github.com:CodePicnic/devpad.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
+#  become: yes
+#  become_user: "{{ app_user }}"
+#  ignore_errors: yes
+#  vars:
+#    ansible_ssh_pipelining: true
 - name: git config
   git_config: name=user.email value="jenkins@codepicnic.com" 
   become: yes
   become_user: "{{ app_user }}"
+  vars:
+    ansible_ssh_pipelining: true
 - name: git config
   git_config: name=user.name value="Jenkins" 
   become: yes
