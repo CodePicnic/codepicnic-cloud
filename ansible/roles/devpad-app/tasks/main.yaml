@@ -14,6 +14,7 @@
   git: repo=git@github.com:CodePicnic/devpad.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
   become: yes
   become_user: "{{ app_user }}"
+  ignore_errors: yes
   vars:
     ansible_ssh_pipelining: true
 - name: git config
