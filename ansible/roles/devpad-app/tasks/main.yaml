@@ -1,7 +1,7 @@
-#- name: codepicnic conf
-#  template: src=codepicnic.conf dest=/etc/nginx/sites-enabled/codepicnic.conf
-#  notify:
-#  - restart nginx 
+- name: codepicnic conf
+  template: src=devpad.conf dest=/etc/nginx/sites-enabled/devpad.conf
+  notify:
+  - restart nginx 
 - name: add ubuntu to main group
   user: name={{ deployment_user }} 
         groups={{ app_user }}
