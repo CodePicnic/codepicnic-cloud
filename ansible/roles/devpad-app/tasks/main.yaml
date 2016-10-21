@@ -14,5 +14,7 @@
   git: repo=git@github.com:CodePicnic/devpad.git clone=yes version="{{ app_branch }}" dest="/home/{{ app_user }}/app" accept_hostkey=True
   become: yes
   become_user: "{{ app_user }}"
+  vars:
+    ansible_ssh_pipelining: true
 - name: permissions
   file: path="/home/{{ app_user }}/app" owner="{{ deployment_user }}" group="{{ app_user }}" recurse=yes mode=775
