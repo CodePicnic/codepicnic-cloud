@@ -559,6 +559,18 @@
       "ListenerDescriptions": [
         {
           "Listener": {
+            "InstancePort": 4000,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
+            "LoadBalancerPort": 4430,
+            "Protocol": "SSL",
+            "InstanceProtocol": "TCP"
+          },
+          "PolicyNames": [
+            "ELBSecurityPolicy-2016-08"
+          ]
+        },
+        {
+          "Listener": {
             "InstancePort": 8080,
             "LoadBalancerPort": 80,
             "Protocol": "HTTP",
