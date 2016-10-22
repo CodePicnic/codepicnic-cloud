@@ -626,23 +626,23 @@
         {
           "Listener": {
             "InstancePort": 80,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
+            "LoadBalancerPort": 443,
+            "Protocol": "SSL",
+            "InstanceProtocol": "TCP"
+          },
+          "PolicyNames": [
+            "AWSConsole-SSLNegotiationPolicy-elb-devpad-prod-01-1477087550210"
+          ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 81,
             "LoadBalancerPort": 80,
             "Protocol": "HTTP",
             "InstanceProtocol": "HTTP"
           },
           "PolicyNames": []
-        },
-        {
-          "Listener": {
-            "InstancePort": 80,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
-            "LoadBalancerPort": 443,
-            "Protocol": "HTTPS",
-            "InstanceProtocol": "HTTP"
-          },
-          "PolicyNames": [
-            "AWSConsole-SSLNegotiationPolicy-elb-devpad-prod-01-1477087550210"
-          ]
         }
       ],
       "HealthCheck": {
