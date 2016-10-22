@@ -1320,6 +1320,19 @@
         },
         {
           "PrefixListIds": [],
+          "FromPort": 81,
+          "IpRanges": [],
+          "ToPort": 81,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9fa20be4"
+            }
+          ]
+        },
+        {
+          "PrefixListIds": [],
           "FromPort": 443,
           "IpRanges": [
             {
