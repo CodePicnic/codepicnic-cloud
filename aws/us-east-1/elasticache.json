@@ -9,17 +9,12 @@
       },
       "SnapshotRetentionLimit": 0,
       "CacheClusterId": "aws-redis-devpad-001",
-      "CacheSecurityGroups": [
-        {
-          "Status": "active",
-          "CacheSecurityGroupName": "default"
-        }
-      ],
+      "CacheSecurityGroups": [],
       "NumCacheNodes": 1,
       "CacheClusterCreateTime": "2016-10-24T22:29:33.069Z",
       "ReplicationGroupId": "aws-redis-devpad",
       "AutoMinorVersionUpgrade": true,
-      "CacheClusterStatus": "available",
+      "CacheClusterStatus": "deleting",
       "PreferredAvailabilityZone": "us-east-1b",
       "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
       "SnapshotWindow": "03:30-04:30",
@@ -37,17 +32,12 @@
       },
       "SnapshotRetentionLimit": 1,
       "CacheClusterId": "aws-redis-devpad-002",
-      "CacheSecurityGroups": [
-        {
-          "Status": "active",
-          "CacheSecurityGroupName": "default"
-        }
-      ],
+      "CacheSecurityGroups": [],
       "NumCacheNodes": 1,
       "CacheClusterCreateTime": "2016-10-24T22:33:29.108Z",
       "ReplicationGroupId": "aws-redis-devpad",
       "AutoMinorVersionUpgrade": true,
-      "CacheClusterStatus": "available",
+      "CacheClusterStatus": "deleting",
       "PreferredAvailabilityZone": "us-east-1a",
       "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
       "SnapshotWindow": "03:30-04:30",
@@ -65,23 +55,76 @@
       },
       "SnapshotRetentionLimit": 0,
       "CacheClusterId": "aws-redis-devpad-003",
-      "CacheSecurityGroups": [
-        {
-          "Status": "active",
-          "CacheSecurityGroupName": "default"
-        }
-      ],
+      "CacheSecurityGroups": [],
       "NumCacheNodes": 1,
       "CacheClusterCreateTime": "2016-10-24T22:33:25.754Z",
       "ReplicationGroupId": "aws-redis-devpad",
       "AutoMinorVersionUpgrade": true,
-      "CacheClusterStatus": "available",
+      "CacheClusterStatus": "deleting",
       "PreferredAvailabilityZone": "us-east-1e",
       "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
       "SnapshotWindow": "03:30-04:30",
       "EngineVersion": "3.2.4",
       "PendingModifiedValues": {},
       "PreferredMaintenanceWindow": "mon:05:00-mon:06:00",
+      "CacheNodeType": "cache.m3.medium"
+    },
+    {
+      "Engine": "redis",
+      "CacheParameterGroup": {
+        "CacheNodeIdsToReboot": [],
+        "CacheParameterGroupName": "default.redis3.2",
+        "ParameterApplyStatus": "in-sync"
+      },
+      "SnapshotRetentionLimit": 0,
+      "CacheClusterId": "aws-redis-dp-01-001",
+      "CacheSecurityGroups": [],
+      "NumCacheNodes": 1,
+      "SnapshotWindow": "04:00-05:00",
+      "ReplicationGroupId": "aws-redis-dp-01",
+      "AutoMinorVersionUpgrade": true,
+      "CacheClusterStatus": "creating",
+      "PreferredAvailabilityZone": "us-east-1a",
+      "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
+      "SecurityGroups": [
+        {
+          "Status": "active",
+          "SecurityGroupId": "sg-45d53638"
+        }
+      ],
+      "CacheSubnetGroupName": "sng-redis-01",
+      "EngineVersion": "3.2.4",
+      "PendingModifiedValues": {},
+      "PreferredMaintenanceWindow": "sun:10:00-sun:11:00",
+      "CacheNodeType": "cache.m3.medium"
+    },
+    {
+      "Engine": "redis",
+      "CacheParameterGroup": {
+        "CacheNodeIdsToReboot": [],
+        "CacheParameterGroupName": "default.redis3.2",
+        "ParameterApplyStatus": "in-sync"
+      },
+      "SnapshotRetentionLimit": 1,
+      "CacheClusterId": "aws-redis-dp-01-002",
+      "CacheSecurityGroups": [],
+      "NumCacheNodes": 1,
+      "SnapshotWindow": "04:00-05:00",
+      "ReplicationGroupId": "aws-redis-dp-01",
+      "AutoMinorVersionUpgrade": true,
+      "CacheClusterStatus": "creating",
+      "PreferredAvailabilityZone": "us-east-1a",
+      "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
+      "SecurityGroups": [
+        {
+          "Status": "active",
+          "SecurityGroupId": "sg-45d53638"
+        }
+      ],
+      "CacheSubnetGroupName": "sng-redis-01",
+      "EngineVersion": "3.2.4",
+      "PendingModifiedValues": {},
+      "PreferredMaintenanceWindow": "sun:10:00-sun:11:00",
       "CacheNodeType": "cache.m3.medium"
     }
   ]

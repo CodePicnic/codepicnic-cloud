@@ -851,6 +851,40 @@
           "PrefixListIds": []
         }
       ],
+      "Description": "sg_redis_01",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 6379,
+          "IpRanges": [],
+          "ToPort": 6379,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9ca20be7"
+            }
+          ]
+        }
+      ],
+      "GroupName": "sg_redis_01",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-45d53638"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
       "Description": "quick-create-1 created on Tuesday, March 22, 2016 at 3:30:40 PM UTC-5",
       "IpPermissions": [
         {
