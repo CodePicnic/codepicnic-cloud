@@ -1,3 +1,88 @@
 {
-  "CacheClusters": []
+  "CacheClusters": [
+    {
+      "Engine": "redis",
+      "CacheParameterGroup": {
+        "CacheNodeIdsToReboot": [],
+        "CacheParameterGroupName": "default.redis3.2",
+        "ParameterApplyStatus": "in-sync"
+      },
+      "SnapshotRetentionLimit": 0,
+      "CacheClusterId": "aws-redis-devpad-001",
+      "CacheSecurityGroups": [
+        {
+          "Status": "active",
+          "CacheSecurityGroupName": "default"
+        }
+      ],
+      "NumCacheNodes": 1,
+      "CacheClusterCreateTime": "2016-10-24T22:29:33.069Z",
+      "ReplicationGroupId": "aws-redis-devpad",
+      "AutoMinorVersionUpgrade": true,
+      "CacheClusterStatus": "available",
+      "PreferredAvailabilityZone": "us-east-1b",
+      "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
+      "SnapshotWindow": "03:30-04:30",
+      "EngineVersion": "3.2.4",
+      "PendingModifiedValues": {},
+      "PreferredMaintenanceWindow": "mon:05:00-mon:06:00",
+      "CacheNodeType": "cache.m3.medium"
+    },
+    {
+      "Engine": "redis",
+      "CacheParameterGroup": {
+        "CacheNodeIdsToReboot": [],
+        "CacheParameterGroupName": "default.redis3.2",
+        "ParameterApplyStatus": "in-sync"
+      },
+      "SnapshotRetentionLimit": 1,
+      "CacheClusterId": "aws-redis-devpad-002",
+      "CacheSecurityGroups": [
+        {
+          "Status": "active",
+          "CacheSecurityGroupName": "default"
+        }
+      ],
+      "NumCacheNodes": 1,
+      "CacheClusterCreateTime": "2016-10-24T22:33:29.108Z",
+      "ReplicationGroupId": "aws-redis-devpad",
+      "AutoMinorVersionUpgrade": true,
+      "CacheClusterStatus": "available",
+      "PreferredAvailabilityZone": "us-east-1a",
+      "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
+      "SnapshotWindow": "03:30-04:30",
+      "EngineVersion": "3.2.4",
+      "PendingModifiedValues": {},
+      "PreferredMaintenanceWindow": "mon:05:00-mon:06:00",
+      "CacheNodeType": "cache.m3.medium"
+    },
+    {
+      "Engine": "redis",
+      "CacheParameterGroup": {
+        "CacheNodeIdsToReboot": [],
+        "CacheParameterGroupName": "default.redis3.2",
+        "ParameterApplyStatus": "in-sync"
+      },
+      "SnapshotRetentionLimit": 0,
+      "CacheClusterId": "aws-redis-devpad-003",
+      "CacheSecurityGroups": [
+        {
+          "Status": "active",
+          "CacheSecurityGroupName": "default"
+        }
+      ],
+      "NumCacheNodes": 1,
+      "CacheClusterCreateTime": "2016-10-24T22:33:25.754Z",
+      "ReplicationGroupId": "aws-redis-devpad",
+      "AutoMinorVersionUpgrade": true,
+      "CacheClusterStatus": "available",
+      "PreferredAvailabilityZone": "us-east-1e",
+      "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
+      "SnapshotWindow": "03:30-04:30",
+      "EngineVersion": "3.2.4",
+      "PendingModifiedValues": {},
+      "PreferredMaintenanceWindow": "mon:05:00-mon:06:00",
+      "CacheNodeType": "cache.m3.medium"
+    }
+  ]
 }
