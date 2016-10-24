@@ -1298,17 +1298,17 @@
             "State": "disabled"
           },
           "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-10-21T17:54:44.000Z",
-          "PublicIpAddress": "54.161.60.61",
           "PrivateIpAddress": "172.21.4.27",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2016-10-22 05:01:34 GMT)",
           "InstanceId": "i-06d30c36",
           "ImageId": "ami-2d39803a",
           "PrivateDnsName": "ip-172-21-4-27.ec2.internal",
@@ -1329,18 +1329,9 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
-              "Association": {
-                "PublicIp": "54.161.60.61",
-                "PublicDnsName": ""
-              },
               "NetworkInterfaceId": "eni-ab25df57",
               "PrivateIpAddresses": [
                 {
-                  "Association": {
-                    "PublicIp": "54.161.60.61",
-                    "PublicDnsName": "",
-                    "IpOwnerId": "amazon"
-                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.27"
                 }
@@ -1391,7 +1382,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAIGSEJJ6DWKBJJ76CA",
             "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
@@ -1419,17 +1413,17 @@
             "State": "disabled"
           },
           "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-10-21T17:54:44.000Z",
-          "PublicIpAddress": "52.90.199.0",
           "PrivateIpAddress": "172.21.4.28",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2016-10-22 05:01:34 GMT)",
           "InstanceId": "i-07d30c37",
           "ImageId": "ami-2d39803a",
           "PrivateDnsName": "ip-172-21-4-28.ec2.internal",
@@ -1450,18 +1444,9 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
-              "Association": {
-                "PublicIp": "52.90.199.0",
-                "PublicDnsName": ""
-              },
               "NetworkInterfaceId": "eni-a425df58",
               "PrivateIpAddresses": [
                 {
-                  "Association": {
-                    "PublicIp": "52.90.199.0",
-                    "PublicDnsName": "",
-                    "IpOwnerId": "amazon"
-                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.28"
                 }
@@ -1512,7 +1497,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAIGSEJJ6DWKBJJ76CA",
             "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
