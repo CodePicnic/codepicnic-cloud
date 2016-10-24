@@ -1400,7 +1400,7 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "devpad",
+              "Value": "devpad-prod",
               "Key": "Project"
             },
             {
@@ -1521,16 +1521,16 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
+              "Value": "devpad-prod",
+              "Key": "Project"
+            },
+            {
               "Value": "devpad-app",
               "Key": "Name"
             },
             {
               "Value": "devpad-app",
               "Key": "Role"
-            },
-            {
-              "Value": "devpad",
-              "Key": "Project"
             }
           ],
           "AmiLaunchIndex": 1
