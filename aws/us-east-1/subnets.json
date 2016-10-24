@@ -14,7 +14,7 @@
       "State": "available",
       "AvailabilityZone": "us-east-1a",
       "SubnetId": "subnet-04b7cb2e",
-      "AvailableIpAddressCount": 243
+      "AvailableIpAddressCount": 242
     },
     {
       "VpcId": "vpc-bdfdf9d9",
@@ -63,6 +63,22 @@
       "AvailabilityZone": "us-east-1a",
       "SubnetId": "subnet-7902a153",
       "AvailableIpAddressCount": 243
+    },
+    {
+      "VpcId": "vpc-bdfdf9d9",
+      "Tags": [
+        {
+          "Value": "sn-codepicnic-02",
+          "Key": "Name"
+        }
+      ],
+      "CidrBlock": "172.21.16.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1b",
+      "SubnetId": "subnet-a235b8eb",
+      "AvailableIpAddressCount": 250
     },
     {
       "VpcId": "vpc-f4dfe890",
