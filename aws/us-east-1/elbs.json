@@ -569,7 +569,7 @@
         {
           "Listener": {
             "InstancePort": 8080,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/14e5a68e-7ffe-4154-8807-61eb6f88b422",
             "LoadBalancerPort": 443,
             "Protocol": "HTTPS",
             "InstanceProtocol": "HTTP"
