@@ -4,14 +4,14 @@
       - devpad-ec2
 - hosts: app 
   roles:
-      #- base
-      #- devpad-base
-      #- reboot 
-      #- aws-monitoring-scripts
-      #- sysdig
-      #- newrelic
-      #- ruby23
-      #- passenger
+      - base
+      - devpad-base
+      - reboot 
+      - aws-monitoring-scripts
+      - sysdig
+      - newrelic
+      - ruby23
+      - passenger
       #- devpad-app
       #- swarm
       #- swarm-node-ami
