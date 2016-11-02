@@ -849,20 +849,11 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-11-02T23:33:55.000Z",
-          "InstanceId": "i-b8de5cb6",
-          "VolumeId": "vol-9129a945",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sda1"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-9129a945",
-      "State": "in-use",
+      "State": "available",
       "Iops": 100,
       "SnapshotId": "snap-3067152d",
       "CreateTime": "2016-11-02T23:33:55.192Z",
@@ -870,11 +861,44 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
+      "Attachments": [],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-1e29a9ca",
+      "State": "available",
+      "Iops": 100,
+      "SnapshotId": "",
+      "CreateTime": "2016-11-02T23:33:55.506Z",
+      "Size": 20
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-02T23:33:55.000Z",
-          "InstanceId": "i-b8de5cb6",
-          "VolumeId": "vol-1e29a9ca",
+          "AttachTime": "2016-11-02T23:43:30.000Z",
+          "InstanceId": "i-cfe466c1",
+          "VolumeId": "vol-7c37b7a8",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sda1"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-7c37b7a8",
+      "State": "in-use",
+      "Iops": 100,
+      "SnapshotId": "snap-3067152d",
+      "CreateTime": "2016-11-02T23:43:30.010Z",
+      "Size": 10
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-11-02T23:43:30.000Z",
+          "InstanceId": "i-cfe466c1",
+          "VolumeId": "vol-0937b7dd",
           "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
@@ -882,11 +906,11 @@
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-1e29a9ca",
+      "VolumeId": "vol-0937b7dd",
       "State": "in-use",
       "Iops": 100,
       "SnapshotId": "",
-      "CreateTime": "2016-11-02T23:33:55.506Z",
+      "CreateTime": "2016-11-02T23:43:30.387Z",
       "Size": 20
     }
   ]
