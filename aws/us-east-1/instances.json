@@ -2057,6 +2057,134 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-9fa8092e",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2016-11-02T23:33:54.000Z",
+          "PublicIpAddress": "54.147.80.147",
+          "PrivateIpAddress": "172.21.4.215",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-b8de5cb6",
+          "ImageId": "ami-2d39803a",
+          "PrivateDnsName": "ip-172-21-4-215.ec2.internal",
+          "KeyName": "key_codepicnic",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_codepicnic_app",
+              "GroupId": "sg-9ca20be7"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-04b7cb2e",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:bc:9d:96:f4:f4",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.147.80.147",
+                "PublicDnsName": ""
+              },
+              "NetworkInterfaceId": "eni-e890b514",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "PublicIp": "54.147.80.147",
+                    "PublicDnsName": "",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.4.215"
+                }
+              ],
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-7c8635cc",
+                "AttachTime": "2016-11-02T23:33:54.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_codepicnic_app",
+                  "GroupId": "sg-9ca20be7"
+                }
+              ],
+              "SubnetId": "subnet-04b7cb2e",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.4.215"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-9129a945",
+                "AttachTime": "2016-11-02T23:33:55.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-1e29a9ca",
+                "AttachTime": "2016-11-02T23:33:55.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAIGSEJJ6DWKBJJ76CA",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "devpad-ami",
+              "Key": "Project"
+            },
+            {
+              "Value": "devpad-ami-app",
+              "Key": "Name"
+            },
+            {
+              "Value": "devpad-app",
+              "Key": "Role"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-a40cda15",
       "Groups": [],
       "Instances": [
