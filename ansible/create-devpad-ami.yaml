@@ -1,0 +1,23 @@
+- hosts: ansible
+  connection: local
+  roles:
+      - devpad-ec2
+- hosts: app 
+  roles:
+      #- base
+      #- devpad-base
+      #- reboot 
+      #- aws-monitoring-scripts
+      #- sysdig
+      #- newrelic
+      #- ruby23
+      #- passenger
+      #- devpad-app
+      #- swarm
+      #- swarm-node-ami
+      #- create-ami
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  become_method: sudo
+
