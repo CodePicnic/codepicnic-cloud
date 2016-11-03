@@ -2057,65 +2057,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-9fa8092e",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-11-02T23:33:54.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-11-02 23:40:48 GMT)",
-          "InstanceId": "i-b8de5cb6",
-          "ImageId": "ami-2d39803a",
-          "PrivateDnsName": "",
-          "KeyName": "key_codepicnic",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-ami",
-              "Key": "Project"
-            },
-            {
-              "Value": "devpad-ami-app",
-              "Key": "Name"
-            },
-            {
-              "Value": "devpad-app",
-              "Key": "Role"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-a40cda15",
       "Groups": [],
       "Instances": [
