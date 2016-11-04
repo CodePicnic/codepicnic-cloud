@@ -1354,58 +1354,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-754fe1c4",
-      "Groups": [],
-      "RequesterId": "226008221399",
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2016-11-04T21:29:21.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-11-04 21:37:42 GMT)",
-          "InstanceId": "i-0427b20a",
-          "ImageId": "ami-9b10368c",
-          "PrivateDnsName": "",
-          "KeyName": "key_codepicnic",
-          "SecurityGroups": [],
-          "ClientToken": "5d44bcbe-7db2-445b-9a8b-302499f41383_subnet-04b7cb2e_1",
-          "InstanceType": "m4.large",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "asg-devpad-app",
-              "Key": "aws:autoscaling:groupName"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-7a26dbcb",
       "Groups": [],
       "Instances": [
