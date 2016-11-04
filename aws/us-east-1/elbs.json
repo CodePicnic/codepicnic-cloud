@@ -618,68 +618,6 @@
     },
     {
       "Subnets": [
-        "subnet-04b7cb2e"
-      ],
-      "CanonicalHostedZoneNameID": "Z35SXDOTRQ7X7K",
-      "CanonicalHostedZoneName": "elb-devpad-prod-01-1379656778.us-east-1.elb.amazonaws.com",
-      "ListenerDescriptions": [
-        {
-          "Listener": {
-            "InstancePort": 80,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8efd4b25-b9af-47f2-804c-8af6788aa73c",
-            "LoadBalancerPort": 443,
-            "Protocol": "SSL",
-            "InstanceProtocol": "TCP"
-          },
-          "PolicyNames": [
-            "AWSConsole-SSLNegotiationPolicy-elb-devpad-prod-01-1477087550210"
-          ]
-        },
-        {
-          "Listener": {
-            "InstancePort": 81,
-            "LoadBalancerPort": 80,
-            "Protocol": "HTTP",
-            "InstanceProtocol": "HTTP"
-          },
-          "PolicyNames": []
-        }
-      ],
-      "HealthCheck": {
-        "HealthyThreshold": 10,
-        "Interval": 30,
-        "Target": "TCP:80",
-        "Timeout": 5,
-        "UnhealthyThreshold": 2
-      },
-      "VPCId": "vpc-bdfdf9d9",
-      "BackendServerDescriptions": [],
-      "Instances": [],
-      "DNSName": "elb-devpad-prod-01-1379656778.us-east-1.elb.amazonaws.com",
-      "SecurityGroups": [
-        "sg-9fa20be4"
-      ],
-      "Policies": {
-        "LBCookieStickinessPolicies": [],
-        "AppCookieStickinessPolicies": [],
-        "OtherPolicies": [
-          "AWSConsole-SSLNegotiationPolicy-elb-devpad-prod-01-1477087550210",
-          "ELBSecurityPolicy-2016-08"
-        ]
-      },
-      "LoadBalancerName": "elb-devpad-prod-01",
-      "CreatedTime": "2016-10-21T22:05:48.400Z",
-      "AvailabilityZones": [
-        "us-east-1a"
-      ],
-      "Scheme": "internet-facing",
-      "SourceSecurityGroup": {
-        "OwnerAlias": "740698317528",
-        "GroupName": "sg_codepicnic_web"
-      }
-    },
-    {
-      "Subnets": [
         "subnet-5a9d2e70"
       ],
       "CanonicalHostedZoneNameID": "Z35SXDOTRQ7X7K",

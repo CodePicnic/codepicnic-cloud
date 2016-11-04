@@ -849,50 +849,44 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
+      "Attachments": [
+        {
+          "AttachTime": "2016-11-04T19:22:49.000Z",
+          "InstanceId": "i-53b5205d",
+          "VolumeId": "vol-a98b1c7d",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sda1"
+        }
+      ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-9129a945",
-      "State": "available",
+      "VolumeId": "vol-a98b1c7d",
+      "State": "in-use",
       "Iops": 100,
-      "SnapshotId": "snap-3067152d",
-      "CreateTime": "2016-11-02T23:33:55.192Z",
+      "SnapshotId": "snap-7c0515cb",
+      "CreateTime": "2016-11-04T19:22:49.423Z",
       "Size": 10
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
+      "Attachments": [
+        {
+          "AttachTime": "2016-11-04T19:22:49.000Z",
+          "InstanceId": "i-53b5205d",
+          "VolumeId": "vol-c58a1d11",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/xvdf"
+        }
+      ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-1e29a9ca",
-      "State": "available",
+      "VolumeId": "vol-c58a1d11",
+      "State": "in-use",
       "Iops": 100,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-02T23:33:55.506Z",
-      "Size": 20
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-7c37b7a8",
-      "State": "available",
-      "Iops": 100,
-      "SnapshotId": "snap-3067152d",
-      "CreateTime": "2016-11-02T23:43:30.010Z",
-      "Size": 10
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-0937b7dd",
-      "State": "available",
-      "Iops": 100,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-02T23:43:30.387Z",
+      "SnapshotId": "snap-a06e514a",
+      "CreateTime": "2016-11-04T19:22:49.507Z",
       "Size": 20
     }
   ]
