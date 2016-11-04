@@ -1525,6 +1525,10 @@
               "Key": "Project"
             },
             {
+              "Value": "asg-devpad-app",
+              "Key": "aws:autoscaling:groupName"
+            },
+            {
               "Value": "devpad-app",
               "Key": "Name"
             },
@@ -1648,6 +1652,10 @@
             {
               "Value": "devpad-app",
               "Key": "Name"
+            },
+            {
+              "Value": "asg-devpad-app",
+              "Key": "aws:autoscaling:groupName"
             },
             {
               "Value": "devpad-app",
