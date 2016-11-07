@@ -166,6 +166,18 @@
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-tuna-01-1459061395736"
           ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 4430,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
+            "LoadBalancerPort": 4430,
+            "Protocol": "SSL",
+            "InstanceProtocol": "TCP"
+          },
+          "PolicyNames": [
+            "ELBSecurityPolicy-2016-08"
+          ]
         }
       ],
       "HealthCheck": {
@@ -191,7 +203,8 @@
         "AppCookieStickinessPolicies": [],
         "OtherPolicies": [
           "AWSConsole-SSLNegotiationPolicy-elb-tuna-01-1459061395736",
-          "ELBSecurityPolicy-2015-05"
+          "ELBSecurityPolicy-2015-05",
+          "ELBSecurityPolicy-2016-08"
         ]
       },
       "LoadBalancerName": "elb-tuna-01",
