@@ -12,9 +12,8 @@
       - newrelic
       - ruby23
       - passenger
-      #- devpad-app
-      #- swarm
-      #- swarm-node-ami
+      - devpad-app
+      - swarm-node-ami
       #- create-ami
   remote_user: ubuntu
   become: yes
