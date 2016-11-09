@@ -9,7 +9,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-52-200-53-168.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -43,20 +43,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "52.200.53.168",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-52-200-53-168.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-e021dcc4",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-2-90.ec2.internal",
                   "Association": {
                     "PublicIp": "52.200.53.168",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-52-200-53-168.compute-1.amazonaws.com",
                     "IpOwnerId": "740698317528"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.2.90"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-2-90.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -138,7 +140,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-172-69-105.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -172,20 +174,22 @@
               "Description": "Primary network interface",
               "Association": {
                 "PublicIp": "54.172.69.105",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-172-69-105.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-6a83f84e",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-3-210.ec2.internal",
                   "Association": {
                     "PublicIp": "54.172.69.105",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-172-69-105.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.210"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-3-210.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -251,7 +255,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-52-90-241-186.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -285,20 +289,22 @@
               "Description": "Primary network interface",
               "Association": {
                 "PublicIp": "52.90.241.186",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-52-90-241-186.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-6b83f84f",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
                   "Association": {
                     "PublicIp": "52.90.241.186",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-52-90-241-186.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.211"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -571,7 +577,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-87-129-181.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -605,20 +611,22 @@
               "Description": "Primary network interface",
               "Association": {
                 "PublicIp": "54.87.129.181",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-87-129-181.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-b6b6e9a8",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-0-218.ec2.internal",
                   "Association": {
                     "PublicIp": "54.87.129.181",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-87-129-181.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.0.218"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-0-218.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -804,7 +812,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-210-206-197.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -838,20 +846,22 @@
               "Description": "Primary network interface",
               "Association": {
                 "PublicIp": "54.210.206.197",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-210-206-197.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-05aef11b",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-0-51.ec2.internal",
                   "Association": {
                     "PublicIp": "54.210.206.197",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-210-206-197.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.0.51"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-0-51.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -928,7 +938,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-52-91-73-98.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -962,20 +972,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "52.91.73.98",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-52-91-73-98.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-2701e832",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-1-88.ec2.internal",
                   "Association": {
                     "PublicIp": "52.91.73.98",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-52-91-73-98.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.1.88"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-1-88.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1049,7 +1061,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-204-209-17.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1083,20 +1095,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "54.204.209.17",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-204-209-17.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-2401e831",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-1-87.ec2.internal",
                   "Association": {
                     "PublicIp": "54.204.209.17",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-204-209-17.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.1.87"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-1-87.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1177,7 +1191,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-88-32-109.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1211,20 +1225,22 @@
               "Description": "Primary network interface",
               "Association": {
                 "PublicIp": "54.88.32.109",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-88-32-109.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-6797ec43",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-0-163.ec2.internal",
                   "Association": {
                     "PublicIp": "54.88.32.109",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-88-32-109.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.0.163"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-0-163.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1297,7 +1313,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-221-160-245.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1331,20 +1347,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "54.221.160.245",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-221-160-245.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-ab25df57",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-4-27.ec2.internal",
                   "Association": {
                     "PublicIp": "54.221.160.245",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-221-160-245.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.27"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-4-27.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1422,7 +1440,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-166-220-255.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1456,20 +1474,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "54.166.220.255",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-166-220-255.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-a425df58",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-4-28.ec2.internal",
                   "Association": {
                     "PublicIp": "54.166.220.255",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-166-220-255.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.28"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-4-28.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1554,7 +1574,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-52-207-215-30.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1588,20 +1608,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "52.207.215.30",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-52-207-215-30.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-66232f41",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-4-34.ec2.internal",
                   "Association": {
                     "PublicIp": "52.207.215.30",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-52-207-215-30.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.34"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-4-34.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1687,7 +1709,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1721,20 +1743,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "52.203.4.226",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-72131f55",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
                   "Association": {
                     "PublicIp": "52.203.4.226",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
                     "IpOwnerId": "740698317528"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.4.52"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1820,7 +1844,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1854,20 +1878,22 @@
               "Description": "Primary network interface",
               "Association": {
                 "PublicIp": "52.23.196.88",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-3d31ce1b",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
                   "Association": {
                     "PublicIp": "52.23.196.88",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.0.52"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -1944,7 +1970,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-107-23-82-109.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -1978,20 +2004,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "107.23.82.109",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-107-23-82-109.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-6e0fe67b",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-3-152.ec2.internal",
                   "Association": {
                     "PublicIp": "107.23.82.109",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-107-23-82-109.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.152"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-3-152.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -2072,7 +2100,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-166-54-54.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -2106,20 +2134,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "54.166.54.54",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-166-54-54.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-9f69f163",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-0-221.ec2.internal",
                   "Association": {
                     "PublicIp": "54.166.54.54",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-166-54-54.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.0.221"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-0-221.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -2193,7 +2223,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-147-77-73.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -2227,20 +2257,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "54.147.77.73",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-147-77-73.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-9e69f162",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-0-220.ec2.internal",
                   "Association": {
                     "PublicIp": "54.147.77.73",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-147-77-73.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.0.220"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-0-220.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
@@ -2549,7 +2581,7 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
+          "PublicDnsName": "ec2-54-205-145-247.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
@@ -2583,20 +2615,22 @@
               "Description": "",
               "Association": {
                 "PublicIp": "54.205.145.247",
-                "PublicDnsName": ""
+                "PublicDnsName": "ec2-54-205-145-247.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-3d7ae2c1",
               "PrivateIpAddresses": [
                 {
+                  "PrivateDnsName": "ip-172-21-3-31.ec2.internal",
                   "Association": {
                     "PublicIp": "54.205.145.247",
-                    "PublicDnsName": "",
+                    "PublicDnsName": "ec2-54-205-145-247.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.31"
                 }
               ],
+              "PrivateDnsName": "ip-172-21-3-31.ec2.internal",
               "Attachment": {
                 "Status": "attached",
                 "DeviceIndex": 0,
