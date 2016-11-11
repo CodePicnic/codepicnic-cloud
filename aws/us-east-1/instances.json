@@ -2193,6 +2193,15 @@
                 "VolumeId": "vol-98832e4c",
                 "AttachTime": "2016-10-28T21:32:43.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdg",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-d2a2df06",
+                "AttachTime": "2016-11-11T16:43:30.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
@@ -2315,6 +2324,15 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-ed832e39",
                 "AttachTime": "2016-10-28T21:32:43.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdg",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-ec9de038",
+                "AttachTime": "2016-11-11T16:44:13.000Z"
               }
             }
           ],
