@@ -2202,6 +2202,15 @@
                 "VolumeId": "vol-d2a2df06",
                 "AttachTime": "2016-11-11T16:43:30.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdh",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-c9374c1d",
+                "AttachTime": "2016-11-12T22:38:51.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
@@ -2333,6 +2342,15 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-ec9de038",
                 "AttachTime": "2016-11-11T16:44:13.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdh",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-c5374c11",
+                "AttachTime": "2016-11-12T22:39:08.000Z"
               }
             }
           ],
