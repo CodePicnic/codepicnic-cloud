@@ -133,6 +133,128 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-0462e5b5",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "ec2-54-159-97-0.compute-1.amazonaws.com",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": true,
+          "LaunchTime": "2016-11-12T23:19:40.000Z",
+          "PublicIpAddress": "54.159.97.0",
+          "PrivateIpAddress": "172.21.0.192",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-85cfa58b",
+          "ImageId": "ami-808fa097",
+          "PrivateDnsName": "ip-172-21-0-192.ec2.internal",
+          "KeyName": "key_swarm",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_swarm",
+              "GroupId": "sg-33871c4b"
+            }
+          ],
+          "ClientToken": "Hdivj1478992779340",
+          "SubnetId": "subnet-5a9d2e70",
+          "InstanceType": "m4.large",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:7a:75:3a:a2:24",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "Primary network interface",
+              "Association": {
+                "PublicIp": "54.159.97.0",
+                "PublicDnsName": "ec2-54-159-97-0.compute-1.amazonaws.com"
+              },
+              "NetworkInterfaceId": "eni-3cf159c3",
+              "PrivateIpAddresses": [
+                {
+                  "PrivateDnsName": "ip-172-21-0-192.ec2.internal",
+                  "Association": {
+                    "PublicIp": "54.159.97.0",
+                    "PublicDnsName": "ec2-54-159-97-0.compute-1.amazonaws.com",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.0.192"
+                }
+              ],
+              "PrivateDnsName": "ip-172-21-0-192.ec2.internal",
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-66ba8ed6",
+                "AttachTime": "2016-11-12T23:19:40.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_swarm",
+                  "GroupId": "sg-33871c4b"
+                }
+              ],
+              "SubnetId": "subnet-5a9d2e70",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.0.192"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-8f1a615b",
+                "AttachTime": "2016-11-12T23:19:40.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-881a615c",
+                "AttachTime": "2016-11-12T23:19:40.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "devpad-swarm-prod-node",
+              "Key": "Name"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-0748e6a4",
       "Groups": [],
       "Instances": [
