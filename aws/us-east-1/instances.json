@@ -1679,7 +1679,7 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "",
+              "Value": "docker-swarm-prod-node",
               "Key": "Name"
             }
           ],
