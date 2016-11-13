@@ -933,20 +933,11 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-11-12T23:19:40.000Z",
-          "InstanceId": "i-85cfa58b",
-          "VolumeId": "vol-8f1a615b",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sda1"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-8f1a615b",
-      "State": "in-use",
+      "State": "available",
       "Iops": 100,
       "SnapshotId": "snap-2adefdcf",
       "CreateTime": "2016-11-12T23:19:40.555Z",
@@ -954,20 +945,11 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-11-12T23:19:40.000Z",
-          "InstanceId": "i-85cfa58b",
-          "VolumeId": "vol-881a615c",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/xvdf"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-881a615c",
-      "State": "in-use",
+      "State": "available",
       "Iops": 600,
       "SnapshotId": "snap-a81be023",
       "CreateTime": "2016-11-12T23:19:40.638Z",
