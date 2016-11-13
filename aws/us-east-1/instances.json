@@ -2395,44 +2395,6 @@
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
           "AmiLaunchIndex": 1
-        },
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-10-28T21:32:42.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-11-13 07:24:11 GMT)",
-          "InstanceId": "i-9171c9a1",
-          "ImageId": "ami-2d39803a",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "m4.large",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "AmiLaunchIndex": 0
         }
       ]
     },
