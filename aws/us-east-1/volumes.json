@@ -968,7 +968,7 @@
           "AttachTime": "2016-11-13T07:25:37.000Z",
           "InstanceId": "i-dd8bfed3",
           "VolumeId": "vol-e66a1032",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/sda1"
         }
@@ -989,7 +989,7 @@
           "AttachTime": "2016-11-13T07:25:37.000Z",
           "InstanceId": "i-dd8bfed3",
           "VolumeId": "vol-d66a1002",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
         }
