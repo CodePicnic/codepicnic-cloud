@@ -45,7 +45,7 @@
       "CacheClusterCreateTime": "2016-10-24T22:54:35.735Z",
       "ReplicationGroupId": "aws-redis-dp-01",
       "AutoMinorVersionUpgrade": true,
-      "CacheClusterStatus": "available",
+      "CacheClusterStatus": "snapshotting",
       "PreferredAvailabilityZone": "us-east-1a",
       "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
       "SecurityGroups": [
