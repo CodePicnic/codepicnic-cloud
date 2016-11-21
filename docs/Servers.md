@@ -26,4 +26,3 @@
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
 | devpad-app  | 172.21.4.27  |  54.221.160.245  | i-06d30c36
-| devpad-app  | 172.21.4.28  |  54.166.220.255  | i-07d30c37
