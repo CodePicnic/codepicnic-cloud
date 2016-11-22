@@ -1575,62 +1575,6 @@
             }
           ],
           "AmiLaunchIndex": 0
-        },
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2016-10-24T17:08:06.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2016-11-21 23:03:37 GMT)",
-          "InstanceId": "i-07d30c37",
-          "ImageId": "ami-2d39803a",
-          "PrivateDnsName": "",
-          "KeyName": "key_codepicnic",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "m4.large",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-prod",
-              "Key": "Project"
-            },
-            {
-              "Value": "devpad-app",
-              "Key": "Name"
-            },
-            {
-              "Value": "asg-devpad-app",
-              "Key": "aws:autoscaling:groupName"
-            },
-            {
-              "Value": "devpad-app",
-              "Key": "Role"
-            }
-          ],
-          "AmiLaunchIndex": 1
         }
       ]
     },
