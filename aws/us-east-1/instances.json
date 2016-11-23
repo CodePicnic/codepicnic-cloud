@@ -672,15 +672,6 @@
               }
             },
             {
-              "DeviceName": "/dev/sdg",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-646e14b0",
-                "AttachTime": "2016-11-13T07:40:00.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/sdh",
               "Ebs": {
                 "Status": "attached",
@@ -1679,15 +1670,6 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-cd0e7419",
                 "AttachTime": "2016-11-13T06:41:21.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/sdg",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-c56f1511",
-                "AttachTime": "2016-11-13T07:40:14.000Z"
               }
             },
             {
