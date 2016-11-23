@@ -308,7 +308,7 @@
         },
         {
           "Listener": {
-            "InstancePort": 80,
+            "InstancePort": 8090,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/702b4137-9c71-4280-a323-3c1016f4bf56",
             "LoadBalancerPort": 443,
             "Protocol": "HTTPS",

@@ -574,6 +574,19 @@
               "GroupId": "sg-5e31ab26"
             }
           ]
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 8090,
+          "IpRanges": [],
+          "ToPort": 8099,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-5e31ab26"
+            }
+          ]
         }
       ],
       "GroupName": "sg_swarm",
