@@ -746,27 +746,6 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-13T06:41:21.000Z",
-          "InstanceId": "i-4292e74c",
-          "VolumeId": "vol-cd0e7419",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/xvdf"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-cd0e7419",
-      "State": "in-use",
-      "Iops": 600,
-      "SnapshotId": "snap-99c1e32f",
-      "CreateTime": "2016-11-13T06:41:21.349Z",
-      "Size": 200
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
           "AttachTime": "2016-11-13T07:25:37.000Z",
           "InstanceId": "i-dd8bfed3",
           "VolumeId": "vol-e66a1032",
@@ -788,30 +767,18 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-13T07:25:37.000Z",
+          "AttachTime": "2016-11-24T16:03:19.000Z",
           "InstanceId": "i-dd8bfed3",
-          "VolumeId": "vol-d66a1002",
+          "VolumeId": "vol-25f50ab6",
           "State": "attached",
           "DeleteOnTermination": false,
-          "Device": "/dev/xvdf"
+          "Device": "/dev/sdh"
         }
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-d66a1002",
-      "State": "in-use",
-      "Iops": 600,
-      "SnapshotId": "snap-bea1d636",
-      "CreateTime": "2016-11-13T07:25:37.616Z",
-      "Size": 200
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
       "VolumeId": "vol-25f50ab6",
-      "State": "available",
+      "State": "in-use",
       "Iops": 150,
       "SnapshotId": "",
       "CreateTime": "2016-11-24T15:44:34.602Z",
@@ -819,11 +786,20 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
+      "Attachments": [
+        {
+          "AttachTime": "2016-11-24T16:03:34.000Z",
+          "InstanceId": "i-4292e74c",
+          "VolumeId": "vol-6bf50af8",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sdh"
+        }
+      ],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-6bf50af8",
-      "State": "available",
+      "State": "in-use",
       "Iops": 150,
       "SnapshotId": "",
       "CreateTime": "2016-11-24T15:44:44.198Z",

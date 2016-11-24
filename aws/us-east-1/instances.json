@@ -663,21 +663,21 @@
               }
             },
             {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-d66a1002",
-                "AttachTime": "2016-11-13T07:25:37.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/sdg",
               "Ebs": {
                 "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-67f30cf4",
                 "AttachTime": "2016-11-24T15:48:42.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdh",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-25f50ab6",
+                "AttachTime": "2016-11-24T16:03:19.000Z"
               }
             }
           ],
@@ -1664,21 +1664,21 @@
               }
             },
             {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-cd0e7419",
-                "AttachTime": "2016-11-13T06:41:21.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/sdg",
               "Ebs": {
                 "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-c2f20d51",
                 "AttachTime": "2016-11-24T15:48:55.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdh",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-6bf50af8",
+                "AttachTime": "2016-11-24T16:03:34.000Z"
               }
             }
           ],
