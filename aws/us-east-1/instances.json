@@ -509,6 +509,122 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-15b7d9a4",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "ec2-54-91-206-40.compute-1.amazonaws.com",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": true,
+          "LaunchTime": "2016-11-28T21:15:32.000Z",
+          "PublicIpAddress": "54.91.206.40",
+          "PrivateIpAddress": "172.21.0.96",
+          "ProductCodes": [],
+          "VpcId": "vpc-bdfdf9d9",
+          "StateTransitionReason": "",
+          "InstanceId": "i-0e143b00",
+          "ImageId": "ami-c8580bdf",
+          "PrivateDnsName": "ip-172-21-0-96.ec2.internal",
+          "KeyName": "key_swarm",
+          "SecurityGroups": [
+            {
+              "GroupName": "sg_swarm",
+              "GroupId": "sg-33871c4b"
+            }
+          ],
+          "ClientToken": "ORVvv1480367731251",
+          "SubnetId": "subnet-5a9d2e70",
+          "InstanceType": "c4.8xlarge",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "12:f1:a2:3f:ce:04",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-bdfdf9d9",
+              "Description": "Primary network interface",
+              "Association": {
+                "PublicIp": "54.91.206.40",
+                "PublicDnsName": "ec2-54-91-206-40.compute-1.amazonaws.com"
+              },
+              "NetworkInterfaceId": "eni-c3bd7a3d",
+              "PrivateIpAddresses": [
+                {
+                  "PrivateDnsName": "ip-172-21-0-96.ec2.internal",
+                  "Association": {
+                    "PublicIp": "54.91.206.40",
+                    "PublicDnsName": "ec2-54-91-206-40.compute-1.amazonaws.com",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "172.21.0.96"
+                }
+              ],
+              "PrivateDnsName": "ip-172-21-0-96.ec2.internal",
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-ff224b4c",
+                "AttachTime": "2016-11-28T21:15:32.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "sg_swarm",
+                  "GroupId": "sg-33871c4b"
+                }
+              ],
+              "SubnetId": "subnet-5a9d2e70",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "172.21.0.96"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-3dbd73ae",
+                "AttachTime": "2016-11-28T21:15:33.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdb",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-c2bd7351",
+                "AttachTime": "2016-11-28T21:15:33.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          },
+          "RootDeviceName": "/dev/sda1",
+          "VirtualizationType": "hvm",
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-174167ed",
       "Groups": [
         {
