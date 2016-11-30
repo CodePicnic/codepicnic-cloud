@@ -8,6 +8,7 @@ sg_swarm_name: sg_swarm
 lc_swarm_name: lc-swarm-01
 asg_swarm_name: asg-swarm-01
 
+
 ###node=m4.xlarge
 #type_swarm_node: m4.xlarge
 #type_swarm_node: r3.xlarge
@@ -86,3 +87,5 @@ base_images:
      - java_20160726
      - kotlin_20160726
      - rails5_20160726
+
+docker_engine: 1.10.3-0~trusty
