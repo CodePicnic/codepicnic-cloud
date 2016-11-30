@@ -1,0 +1,64 @@
+{
+  "Vpcs": [
+    {
+      "VpcId": "vpc-23663e46",
+      "InstanceTenancy": "default",
+      "Tags": [
+        {
+          "Value": "CodePicnic",
+          "Key": "Name"
+        }
+      ],
+      "State": "available",
+      "DhcpOptionsId": "dopt-51638f34",
+      "CidrBlock": "10.0.0.0/16",
+      "IsDefault": false
+    },
+    {
+      "VpcId": "vpc-6e685d0a",
+      "InstanceTenancy": "default",
+      "Tags": [
+        {
+          "Value": "aws-vpc-01",
+          "Key": "Name"
+        }
+      ],
+      "State": "available",
+      "DhcpOptionsId": "dopt-51638f34",
+      "CidrBlock": "10.1.0.0/16",
+      "IsDefault": false
+    },
+    {
+      "VpcId": "vpc-bdfdf9d9",
+      "InstanceTenancy": "default",
+      "Tags": [
+        {
+          "Value": "vpc-swarm-01",
+          "Key": "Name"
+        }
+      ],
+      "State": "available",
+      "DhcpOptionsId": "dopt-51638f34",
+      "CidrBlock": "172.21.0.0/16",
+      "IsDefault": false
+    },
+    {
+      "VpcId": "vpc-f4dfe890",
+      "InstanceTenancy": "default",
+      "Tags": [
+        {
+          "Value": "kubernetes",
+          "Key": "KubernetesCluster"
+        },
+        {
+          "Value": "kubernetes-vpc",
+          "Key": "Name"
+        }
+      ],
+      "State": "available",
+      "DhcpOptionsId": "dopt-bdc696d8",
+      "CidrBlock": "172.20.0.0/16",
+      "IsDefault": false
+    }
+  ]
+}
