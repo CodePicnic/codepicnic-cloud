@@ -907,7 +907,7 @@
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-fac91f69",
-      "State": "available",
+      "State": "deleting",
       "Iops": 1200,
       "SnapshotId": "",
       "CreateTime": "2016-11-30T08:31:40.430Z",
