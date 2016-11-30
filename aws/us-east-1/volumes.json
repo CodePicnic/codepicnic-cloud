@@ -894,18 +894,6 @@
       "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-01c91f92",
-      "State": "deleting",
-      "Iops": 100,
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-11-30T08:31:40.358Z",
-      "Size": 8
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
       "VolumeId": "vol-fac91f69",
       "State": "deleting",
       "Iops": 1200,
