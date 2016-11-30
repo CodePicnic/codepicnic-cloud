@@ -65,7 +65,6 @@ sysctl_options:
 
 base_images:
      - base_20160822
-     - js
      - mono_v4.8
      - elixir_20160711
      - elixir12_20160711
@@ -74,7 +73,6 @@ base_images:
      - php_20160916
      - php7_20160916
      - base_20160726
-     - python340_20160503
      - python350_20160711
      - ruby_20160711
      - ruby23_v2.3.1
@@ -96,7 +94,6 @@ base_images:
      - java_20160822
      - parse-server_20160601
      - drupal7_20160609
-     - drupal8_v8.1.10
      - lamp_20160822
      - kotlin_20160822
      - rails5_20160726
