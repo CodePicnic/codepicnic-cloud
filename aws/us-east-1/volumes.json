@@ -891,30 +891,6 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-abc31538",
-      "State": "available",
-      "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-30T08:15:50.866Z",
-      "Size": 400
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-e4c91f77",
-      "State": "available",
-      "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-30T08:31:07.111Z",
-      "Size": 400
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
           "AttachTime": "2016-11-30T08:31:40.000Z",
@@ -953,6 +929,48 @@
       "Iops": 1200,
       "SnapshotId": "",
       "CreateTime": "2016-11-30T08:31:40.430Z",
+      "Size": 400
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-11-30T08:45:45.000Z",
+          "InstanceId": "i-9782b799",
+          "VolumeId": "vol-59ff29ca",
+          "State": "attached",
+          "DeleteOnTermination": true,
+          "Device": "/dev/sda1"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-59ff29ca",
+      "State": "in-use",
+      "Iops": 100,
+      "SnapshotId": "snap-f70deff0",
+      "CreateTime": "2016-11-30T08:45:45.158Z",
+      "Size": 8
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-11-30T08:45:45.000Z",
+          "InstanceId": "i-9782b799",
+          "VolumeId": "vol-33ff29a0",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/xvdf"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-33ff29a0",
+      "State": "in-use",
+      "Iops": 1200,
+      "SnapshotId": "",
+      "CreateTime": "2016-11-30T08:45:45.242Z",
       "Size": 400
     }
   ]
