@@ -64,28 +64,65 @@ sysctl_options:
 ## mysql db_codepicnic_prod -s  -e  " select distinct(image_name) from container_types where is_hidden=0"
 
 base_images:
-     - base_20160726
-     - mono_20160711
+     - base_20160822
+     - js
+     - mono_v4.8
      - elixir_20160711
      - elixir12_20160711
-     - golang_20160711
-     - php_20160711
-     - php7_20160726
+     - golang_v1.7.3
+     - nodejs_v6.9.0
+     - php_20160916
+     - php7_20160916
+     - base_20160726
+     - python340_20160503
      - python350_20160711
-     - ruby23_20160711
-     - laravel_20160711
+     - ruby_20160711
+     - ruby23_v2.3.1
+     - dancer_v0.204000
+     - laravel_v5.3.10
      - phoenix_20160523
      - rails4_20160722
-     - mongodb_20160711
-     - redis_20160711
-     - tensorflow_20160711
+     - mongodb_v2.6.12
+     - redis_v3.2.4
+     - tensorflow_v0.11.0
      - r_20160711
+     - django_v1.9.10
+     - mariadb_20160822
+     - mysql_20160822
      - netcore_20160711
      - perfect_20160602
      - swift-dev_20160524
-     - swift3_20160726
-     - java_20160726
-     - kotlin_20160726
+     - swift3_20160914
+     - java_20160822
+     - parse-server_20160601
+     - drupal7_20160609
+     - drupal8_v8.1.10
+     - lamp_20160822
+     - kotlin_20160822
      - rails5_20160726
+     - php71_20160822
+     - powershell_v6.0.0-alpha.13
+     - ansible_20160822
+     - perl6_20160822
+     - cobol_20160822
+     - express_20160901
+     - react_v15.4.1
+     - elixir13_v1.3.3
+     - php56_v5.6.26
+     - ubuntu_v16.04
+     - rust_v1.12.0
+     - cakephp_v3.3
+     - sinatra_v1.4.7
+     - cuba_v3.8.0
+     - nodejs_v7.0.0
+     - php51_v5.1.6
+     - elm_v5.0.0
+     - angular_v2.1.2
+     - nodejs_v0.10.48
+     - nodejs_v0.12.17
+     - nodejs_v4.6.1
+     - mean_v0.5.5
+     - ember_v2.9.1
+     - perfect_v2.0.4
 
 docker_engine: 1.10.3-0~trusty
