@@ -891,18 +891,6 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-fac91f69",
-      "State": "deleting",
-      "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-30T08:31:40.430Z",
-      "Size": 400
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
           "AttachTime": "2016-11-30T09:47:49.000Z",
