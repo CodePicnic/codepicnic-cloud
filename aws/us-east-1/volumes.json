@@ -906,20 +906,20 @@
       "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-33ff29a0",
+      "VolumeId": "vol-31ef39a2",
       "State": "available",
       "Iops": 1200,
       "SnapshotId": "",
-      "CreateTime": "2016-11-30T08:45:45.242Z",
+      "CreateTime": "2016-11-30T09:08:29.127Z",
       "Size": 400
     },
     {
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-30T09:08:29.000Z",
-          "InstanceId": "i-ec7246e2",
-          "VolumeId": "vol-e9ef397a",
+          "AttachTime": "2016-11-30T09:33:09.000Z",
+          "InstanceId": "i-2162562f",
+          "VolumeId": "vol-7a1bcde9",
           "State": "attached",
           "DeleteOnTermination": true,
           "Device": "/dev/sda1"
@@ -927,20 +927,20 @@
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-e9ef397a",
+      "VolumeId": "vol-7a1bcde9",
       "State": "in-use",
       "Iops": 100,
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-11-30T09:08:29.092Z",
+      "SnapshotId": "snap-86c65490",
+      "CreateTime": "2016-11-30T09:33:09.243Z",
       "Size": 8
     },
     {
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-30T09:08:29.000Z",
-          "InstanceId": "i-ec7246e2",
-          "VolumeId": "vol-31ef39a2",
+          "AttachTime": "2016-11-30T09:33:09.000Z",
+          "InstanceId": "i-2162562f",
+          "VolumeId": "vol-f718ce64",
           "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
@@ -948,11 +948,11 @@
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-31ef39a2",
+      "VolumeId": "vol-f718ce64",
       "State": "in-use",
       "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-30T09:08:29.127Z",
+      "SnapshotId": "snap-c27fbe76",
+      "CreateTime": "2016-11-30T09:33:09.363Z",
       "Size": 400
     }
   ]
