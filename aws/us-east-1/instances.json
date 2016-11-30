@@ -591,15 +591,6 @@
                 "VolumeId": "vol-3dbd73ae",
                 "AttachTime": "2016-11-28T21:15:33.000Z"
               }
-            },
-            {
-              "DeviceName": "/dev/sdb",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-c2bd7351",
-                "AttachTime": "2016-11-28T21:15:33.000Z"
-              }
             }
           ],
           "Architecture": "x86_64",
@@ -788,6 +779,15 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-25f50ab6",
                 "AttachTime": "2016-11-24T16:03:19.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdi",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-c2bd7351",
+                "AttachTime": "2016-11-30T20:56:57.000Z"
               }
             }
           ],
