@@ -29,28 +29,6 @@
       "IsDefault": false
     },
     {
-      "VpcId": "vpc-b238fbd4",
-      "InstanceTenancy": "default",
-      "Tags": [
-        {
-          "Value": "Vpc",
-          "Key": "aws:cloudformation:logical-id"
-        },
-        {
-          "Value": "EC2ContainerService-default",
-          "Key": "aws:cloudformation:stack-name"
-        },
-        {
-          "Value": "arn:aws:cloudformation:us-east-1:740698317528:stack/EC2ContainerService-default/7ed33ee0-b81b-11e6-a079-500c2855d8d1",
-          "Key": "aws:cloudformation:stack-id"
-        }
-      ],
-      "State": "available",
-      "DhcpOptionsId": "dopt-51638f34",
-      "CidrBlock": "10.0.0.0/16",
-      "IsDefault": false
-    },
-    {
       "VpcId": "vpc-bdfdf9d9",
       "InstanceTenancy": "default",
       "Tags": [
