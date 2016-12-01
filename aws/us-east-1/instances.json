@@ -1547,6 +1547,145 @@
     },
     {
       "OwnerId": "740698317528",
+      "ReservationId": "r-582a97ee",
+      "Groups": [],
+      "RequesterId": "226008221399",
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "enabled"
+          },
+          "PublicDnsName": "ec2-54-242-57-156.compute-1.amazonaws.com",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2016-12-01T23:12:44.000Z",
+          "PublicIpAddress": "54.242.57.156",
+          "PrivateIpAddress": "10.0.1.77",
+          "ProductCodes": [],
+          "VpcId": "vpc-b238fbd4",
+          "StateTransitionReason": "",
+          "InstanceId": "i-dfd70c47",
+          "EnaSupport": true,
+          "ImageId": "ami-eca289fb",
+          "PrivateDnsName": "ip-10-0-1-77.ec2.internal",
+          "SecurityGroups": [
+            {
+              "GroupName": "EC2ContainerService-default-EcsSecurityGroup-991P8F4LNI8R",
+              "GroupId": "sg-bfbec0c2"
+            }
+          ],
+          "ClientToken": "9a859427-7593-4d6c-8767-fc4eacc40235_subnet-a2d2afeb_1",
+          "SubnetId": "subnet-a2d2afeb",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "0a:8c:20:9a:f7:a8",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-b238fbd4",
+              "Description": "",
+              "Association": {
+                "PublicIp": "54.242.57.156",
+                "PublicDnsName": "ec2-54-242-57-156.compute-1.amazonaws.com"
+              },
+              "NetworkInterfaceId": "eni-ccf96a20",
+              "PrivateIpAddresses": [
+                {
+                  "PrivateDnsName": "ip-10-0-1-77.ec2.internal",
+                  "Association": {
+                    "PublicIp": "54.242.57.156",
+                    "PublicDnsName": "ec2-54-242-57-156.compute-1.amazonaws.com",
+                    "IpOwnerId": "amazon"
+                  },
+                  "Primary": true,
+                  "PrivateIpAddress": "10.0.1.77"
+                }
+              ],
+              "PrivateDnsName": "ip-10-0-1-77.ec2.internal",
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-830e9107",
+                "AttachTime": "2016-12-01T23:12:44.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "EC2ContainerService-default-EcsSecurityGroup-991P8F4LNI8R",
+                  "GroupId": "sg-bfbec0c2"
+                }
+              ],
+              "SubnetId": "subnet-a2d2afeb",
+              "OwnerId": "740698317528",
+              "PrivateIpAddress": "10.0.1.77"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-east-1b"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/xvda",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-a8524834",
+                "AttachTime": "2016-12-01T23:12:44.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdcz",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-a9524835",
+                "AttachTime": "2016-12-01T23:12:44.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAJMIAWYFOWTLL5TKPS",
+            "Arn": "arn:aws:iam::740698317528:instance-profile/ecsInstanceRole"
+          },
+          "RootDeviceName": "/dev/xvda",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "arn:aws:cloudformation:us-east-1:740698317528:stack/EC2ContainerService-default/7ed33ee0-b81b-11e6-a079-500c2855d8d1",
+              "Key": "aws:cloudformation:stack-id"
+            },
+            {
+              "Value": "ECS Instance - EC2ContainerService-default",
+              "Key": "Name"
+            },
+            {
+              "Value": "EC2ContainerService-default",
+              "Key": "aws:cloudformation:stack-name"
+            },
+            {
+              "Value": "EC2ContainerService-default-EcsInstanceAsg-1WDUCNZZEEEOC",
+              "Key": "aws:autoscaling:groupName"
+            },
+            {
+              "Value": "EcsInstanceAsg",
+              "Key": "aws:cloudformation:logical-id"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    },
+    {
+      "OwnerId": "740698317528",
       "ReservationId": "r-7a26dbcb",
       "Groups": [],
       "Instances": [

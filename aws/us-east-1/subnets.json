@@ -81,6 +81,30 @@
       "AvailableIpAddressCount": 250
     },
     {
+      "VpcId": "vpc-b238fbd4",
+      "Tags": [
+        {
+          "Value": "EC2ContainerService-default",
+          "Key": "aws:cloudformation:stack-name"
+        },
+        {
+          "Value": "arn:aws:cloudformation:us-east-1:740698317528:stack/EC2ContainerService-default/7ed33ee0-b81b-11e6-a079-500c2855d8d1",
+          "Key": "aws:cloudformation:stack-id"
+        },
+        {
+          "Value": "PubSubnetAz2",
+          "Key": "aws:cloudformation:logical-id"
+        }
+      ],
+      "CidrBlock": "10.0.1.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1b",
+      "SubnetId": "subnet-a2d2afeb",
+      "AvailableIpAddressCount": 250
+    },
+    {
       "VpcId": "vpc-f4dfe890",
       "Tags": [
         {
@@ -110,6 +134,30 @@
       "State": "available",
       "AvailabilityZone": "us-east-1b",
       "SubnetId": "subnet-eeef4fa7",
+      "AvailableIpAddressCount": 251
+    },
+    {
+      "VpcId": "vpc-b238fbd4",
+      "Tags": [
+        {
+          "Value": "EC2ContainerService-default",
+          "Key": "aws:cloudformation:stack-name"
+        },
+        {
+          "Value": "arn:aws:cloudformation:us-east-1:740698317528:stack/EC2ContainerService-default/7ed33ee0-b81b-11e6-a079-500c2855d8d1",
+          "Key": "aws:cloudformation:stack-id"
+        },
+        {
+          "Value": "PubSubnetAz1",
+          "Key": "aws:cloudformation:logical-id"
+        }
+      ],
+      "CidrBlock": "10.0.0.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1a",
+      "SubnetId": "subnet-fcc24fd1",
       "AvailableIpAddressCount": 251
     }
   ]
