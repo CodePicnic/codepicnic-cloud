@@ -888,18 +888,6 @@
       "SnapshotId": "",
       "CreateTime": "2016-11-28T21:15:33.011Z",
       "Size": 500
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-6401d7f7",
-      "State": "available",
-      "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-30T09:47:49.628Z",
-      "Size": 400
     }
   ]
 }
