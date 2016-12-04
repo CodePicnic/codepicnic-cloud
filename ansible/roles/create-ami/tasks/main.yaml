@@ -12,6 +12,7 @@
       #  volume_type: gp2
       region: "{{ aws_region }}"
       wait: yes
+      wait_timeout: 600
       state: present
     register: swarm_ami
     #with_items: "{{ hostvars['127.0.0.1']['var_ec2'].instances }}"
