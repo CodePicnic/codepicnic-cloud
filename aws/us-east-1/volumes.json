@@ -872,12 +872,12 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-28T21:15:33.000Z",
-          "InstanceId": "i-0e143b00",
+          "AttachTime": "2016-11-30T20:56:57.000Z",
+          "InstanceId": "i-dd8bfed3",
           "VolumeId": "vol-c2bd7351",
           "State": "attached",
           "DeleteOnTermination": false,
-          "Device": "/dev/sdb"
+          "Device": "/dev/sdi"
         }
       ],
       "Encrypted": false,
@@ -893,42 +893,42 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-30T09:47:49.000Z",
-          "InstanceId": "i-df695dd1",
-          "VolumeId": "vol-7601d7e5",
-          "State": "attached",
+          "AttachTime": "2016-12-04T09:05:59.000Z",
+          "InstanceId": "i-8ae5239d",
+          "VolumeId": "vol-dd20824e",
+          "State": "attaching",
           "DeleteOnTermination": true,
           "Device": "/dev/sda1"
         }
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-7601d7e5",
+      "VolumeId": "vol-dd20824e",
       "State": "in-use",
       "Iops": 100,
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-11-30T09:47:49.574Z",
+      "SnapshotId": "snap-aae0d6d2",
+      "CreateTime": "2016-12-04T09:05:59.094Z",
       "Size": 8
     },
     {
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-30T09:47:49.000Z",
-          "InstanceId": "i-df695dd1",
-          "VolumeId": "vol-6401d7f7",
-          "State": "attached",
+          "AttachTime": "2016-12-04T09:05:59.000Z",
+          "InstanceId": "i-8ae5239d",
+          "VolumeId": "vol-92208201",
+          "State": "attaching",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
         }
       ],
       "Encrypted": false,
       "VolumeType": "gp2",
-      "VolumeId": "vol-6401d7f7",
+      "VolumeId": "vol-92208201",
       "State": "in-use",
       "Iops": 1200,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-30T09:47:49.628Z",
+      "SnapshotId": "snap-bd038a08",
+      "CreateTime": "2016-12-04T09:05:59.143Z",
       "Size": 400
     }
   ]
