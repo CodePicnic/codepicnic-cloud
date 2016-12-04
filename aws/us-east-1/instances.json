@@ -2353,8 +2353,8 @@
           "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 32,
-            "Name": "shutting-down"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-12-04T09:12:37.000Z",
@@ -2367,54 +2367,18 @@
           "SecurityGroups": [],
           "ClientToken": "",
           "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "OwnerId": "740698317528",
-              "NetworkInterfaceId": "eni-2422b2da",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-76b087c5",
-                "AttachTime": "2016-12-04T09:12:37.000Z"
-              }
-            }
-          ],
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": true,
-                "VolumeId": "vol-b6258725",
-                "AttachTime": "2016-12-04T09:12:38.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-87258714",
-                "AttachTime": "2016-12-04T09:12:38.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
