@@ -694,8 +694,8 @@
               "Ebs": {
                 "Status": "attached",
                 "DeleteOnTermination": false,
-                "VolumeId": "vol-6e6bc7fd",
-                "AttachTime": "2016-12-04T21:24:57.000Z"
+                "VolumeId": "vol-63bb13f0",
+                "AttachTime": "2016-12-05T16:52:43.000Z"
               }
             }
           ],
@@ -1704,8 +1704,8 @@
               "Ebs": {
                 "Status": "attached",
                 "DeleteOnTermination": false,
-                "VolumeId": "vol-776bc7e4",
-                "AttachTime": "2016-12-04T21:25:11.000Z"
+                "VolumeId": "vol-43bb13d0",
+                "AttachTime": "2016-12-05T16:52:54.000Z"
               }
             }
           ],
