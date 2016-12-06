@@ -166,7 +166,7 @@
           "FromPort": 3100,
           "IpRanges": [
             {
-              "CidrIp": "0.0.0.0/0"
+              "CidrIp": "201.230.178.36/32"
             }
           ],
           "ToPort": 3100,
@@ -383,6 +383,10 @@
             {
               "UserId": "740698317528",
               "GroupId": "sg-5e31ab26"
+            },
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-9ca20be7"
             }
           ]
         },
@@ -495,23 +499,8 @@
         },
         {
           "PrefixListIds": [],
-          "FromPort": 3200,
-          "IpRanges": [
-            {
-              "CidrIp": "0.0.0.0/0"
-            }
-          ],
-          "ToPort": 3200,
-          "IpProtocol": "tcp",
-          "UserIdGroupPairs": []
-        },
-        {
-          "PrefixListIds": [],
           "FromPort": 4000,
           "IpRanges": [
-            {
-              "CidrIp": "0.0.0.0/0"
-            },
             {
               "CidrIp": "162.243.136.160/32"
             },
