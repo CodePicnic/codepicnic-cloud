@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CodePicnic</title>
+  <title>CodePicnic - Error 500</title>
   <meta charset="utf-8"> 
 
   <style type="text/css">
-    body { background-color: #272822 !important; color: #FFF; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
+
+    body {  
+      font-family: "fira-sans", Helvetica, Arial, sans-serif;
+      background: #f5f5f5; 
+      text-align: center;
     }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-    #header h1 {
-      background: url("//codepicnic.com/images/background-message.png");
-      width: 345px;
-      height: 84px;
-      background-size: 340px;
+
+    h1, p, small{
+      display: inline-block;
+      font-weight: 100;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 3px auto;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #666;
+    }
+    p{
+      margin: 3px auto;
+      font-size: 16px;
+      color: #999;
+    }
+
+    small{
+      margin: 20px auto;
+      color: #999;
+    }
+
+    a {
+      color: #309dbf;
+    }
+
+    .square{
+      display: inline-block;
+      margin: 30px auto;
+      width: 150px;
+      height: 158px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' id='circle'><path d='M167.8,15.2c74.7-23.8,181.5-1.7,181.5-1.7v302.1l0,0H0l0,0V13.6C0,13.6,93.1,39,167.8,15.2z' style='fill:rgb(58, 174, 221)'/></svg>");
+      background-position: left -50px;
       background-repeat: no-repeat;
-      text-indent: -999em;
-      margin-bottom: 0px;margin: 110px auto;
-      margin-bottom: 0px;
+      background-size: 400px 600px;
+      -webkit-clip-path: url(#mask);
+      clip-path:url(#mask);
+      animation: example 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes example {
+      0% {background-position: right 200px;}
+      100% {background-position: left -50px;}
     }
   </style>
 </head>
 
 <body>
   <!-- This file lives in public/500.html -->
-  <header id="header" class="bg1">
-    <div class="wrapper menu_header">
-      <h1 class="wow fadeIn">CodePicnic</h1>
-      <!-- <p>Tranquilo, estamos esperando una conexión...</p> -->
-    </div>
-    
-  </header>
+  
+  <div class="square"></div>
+  <h1>Waiting for action</h1>
+  <p>Go to your terminal and launch your application server 🚀</p>
+  <small>If you need help launching your application server you can read more about it in our <a href="#">documentation</a></small>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 158" id="logo" width="0" height="0">
+    <defs>
+      <clippath id="mask">
+        <path d="M117.46,108.8a4.62,4.62,0,0,1-4.62-4.62V43.46a21.07,21.07,0,0,0-15-20.27L53.65,9.74A11.14,11.14,0,0,0,39.27,20.4V52l-4.47,3.23-4.77,1V20.4A20.39,20.39,0,0,1,56.34.9l44.17,13.44a30.27,30.27,0,0,1,21.57,29.11v60.72A4.62,4.62,0,0,1,117.46,108.8Z"/>
+        <path d="M150,57.58a2.58,2.58,0,0,1-1.32,2.25L126.14,72.67v31.5a8.67,8.67,0,0,1-17.35,0V82.57L84.11,96.64A21.75,21.75,0,0,1,67,98.56L1.85,78.74A2.57,2.57,0,0,1,.09,76.9H0v54.92c0,1.49,1.45,2.85,3.77,3.55l65.5,21.73a16.67,16.67,0,0,0,12.15-1l66.49-40a3.49,3.49,0,0,0,2.09-2.85V57.57Z"/>
+        <path d="M108.79,43.46a17.22,17.22,0,0,0-1.18-6.27L81.36,29.26a15.87,15.87,0,0,0-13.88,2.33L34.79,55.18,6.21,61A2.69,2.69,0,0,0,6,66.16L68.52,85a30.1,30.1,0,0,0,14.66.69l25.61-5.17Z"/>
+        <path d="M143.15,47.92l-17-5.15c0,.23,0,.45,0,.68V71.18l18.65-13.46A5.54,5.54,0,0,0,143.15,47.92Z"/>
+      </clippath>
+    </defs>
+  </svg>
+
+
+  <script src="https://use.typekit.net/pmh3adv.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </body>
 </html>
