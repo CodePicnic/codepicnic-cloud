@@ -2005,8 +2005,8 @@
           "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 320,
-            "Name": "stopping"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-06-07T03:29:39.000Z",
@@ -2054,7 +2054,7 @@
               ],
               "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
               "Attachment": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeviceIndex": 0,
                 "DeleteOnTermination": true,
                 "AttachmentId": "eni-attach-d2176509",
@@ -2082,7 +2082,7 @@
             {
               "DeviceName": "/dev/sda1",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-94972744",
                 "AttachTime": "2016-05-25T19:32:56.000Z"
@@ -2091,7 +2091,7 @@
             {
               "DeviceName": "/dev/xvdf",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-c7972717",
                 "AttachTime": "2016-05-25T19:32:56.000Z"
@@ -2100,7 +2100,7 @@
             {
               "DeviceName": "/dev/xvdg",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-95972745",
                 "AttachTime": "2016-05-25T19:32:56.000Z"

@@ -236,7 +236,7 @@
           "AttachTime": "2016-05-25T19:32:56.000Z",
           "InstanceId": "i-6c0efaf0",
           "VolumeId": "vol-94972744",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/sda1"
         }
@@ -256,7 +256,7 @@
           "AttachTime": "2016-05-25T19:32:56.000Z",
           "InstanceId": "i-6c0efaf0",
           "VolumeId": "vol-c7972717",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdf"
         }
@@ -276,7 +276,7 @@
           "AttachTime": "2016-05-25T19:32:56.000Z",
           "InstanceId": "i-6c0efaf0",
           "VolumeId": "vol-95972745",
-          "State": "attaching",
+          "State": "attached",
           "DeleteOnTermination": false,
           "Device": "/dev/xvdg"
         }
