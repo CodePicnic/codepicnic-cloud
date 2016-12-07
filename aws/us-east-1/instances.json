@@ -1464,8 +1464,8 @@
           },
           "PublicDnsName": "ec2-54-173-182-186.compute-1.amazonaws.com",
           "State": {
-            "Code": 0,
-            "Name": "pending"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-12-07T00:56:03.000Z",
@@ -1513,7 +1513,7 @@
               ],
               "PrivateDnsName": "ip-172-21-4-117.ec2.internal",
               "Attachment": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeviceIndex": 0,
                 "DeleteOnTermination": true,
                 "AttachmentId": "eni-attach-d8f5375b",
@@ -1541,7 +1541,7 @@
             {
               "DeviceName": "/dev/sda1",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-cfc7775c",
                 "AttachTime": "2016-12-07T00:56:08.000Z"
@@ -1550,7 +1550,7 @@
             {
               "DeviceName": "/dev/xvdf",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-06c77795",
                 "AttachTime": "2016-12-07T00:56:08.000Z"
@@ -1559,7 +1559,7 @@
             {
               "DeviceName": "/dev/xvdg",
               "Ebs": {
-                "Status": "attaching",
+                "Status": "attached",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-58c676cb",
                 "AttachTime": "2016-12-07T00:56:08.000Z"
@@ -1576,7 +1576,7 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "",
+              "Value": "aws-codepicnic-app-01",
               "Key": "Name"
             }
           ],
