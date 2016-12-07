@@ -2003,18 +2003,17 @@
             "State": "disabled"
           },
           "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
-          "RootDeviceType": "ebs",
           "State": {
-            "Code": 80,
-            "Name": "stopped"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2016-06-07T03:29:39.000Z",
+          "LaunchTime": "2016-12-07T01:40:09.000Z",
           "PublicIpAddress": "52.203.4.226",
           "PrivateIpAddress": "172.21.4.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "User initiated (2016-12-07 00:37:30 GMT)",
+          "StateTransitionReason": "",
           "InstanceId": "i-6c0efaf0",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
@@ -2108,10 +2107,7 @@
             }
           ],
           "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
+          "RootDeviceType": "ebs",
           "IamInstanceProfile": {
             "Id": "AIPAIGSEJJ6DWKBJJ76CA",
             "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
