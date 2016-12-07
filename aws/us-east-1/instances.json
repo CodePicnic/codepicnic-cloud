@@ -1576,6 +1576,10 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
+              "Value": "codepicnic-prod",
+              "Key": "Project"
+            },
+            {
               "Value": "aws-codepicnic-app-01",
               "Key": "Name"
             }
@@ -2003,9 +2007,10 @@
             "State": "disabled"
           },
           "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-12-07T01:40:09.000Z",
@@ -2013,7 +2018,7 @@
           "PrivateIpAddress": "172.21.4.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2016-12-07 04:20:49 GMT)",
           "InstanceId": "i-6c0efaf0",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
@@ -2107,7 +2112,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAIGSEJJ6DWKBJJ76CA",
             "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
