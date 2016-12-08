@@ -520,13 +520,13 @@
         },
         {
           "PrefixListIds": [],
-          "FromPort": 4430,
+          "FromPort": 4440,
           "IpRanges": [
             {
               "CidrIp": "0.0.0.0/0"
             }
           ],
-          "ToPort": 4430,
+          "ToPort": 4440,
           "IpProtocol": "tcp",
           "UserIdGroupPairs": []
         },
