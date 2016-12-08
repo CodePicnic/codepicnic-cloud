@@ -672,15 +672,6 @@
               }
             },
             {
-              "DeviceName": "/dev/sdi",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-c2bd7351",
-                "AttachTime": "2016-11-30T20:56:57.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/sdf",
               "Ebs": {
                 "Status": "attached",

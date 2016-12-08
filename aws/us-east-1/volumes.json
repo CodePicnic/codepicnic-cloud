@@ -809,27 +809,6 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-11-30T20:56:57.000Z",
-          "InstanceId": "i-dd8bfed3",
-          "VolumeId": "vol-c2bd7351",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdi"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-c2bd7351",
-      "State": "in-use",
-      "Iops": 1500,
-      "SnapshotId": "",
-      "CreateTime": "2016-11-28T21:15:33.011Z",
-      "Size": 500
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
           "AttachTime": "2016-12-05T16:52:54.000Z",
           "InstanceId": "i-4292e74c",
           "VolumeId": "vol-43bb13d0",
