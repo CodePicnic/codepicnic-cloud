@@ -765,20 +765,11 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-11-24T16:03:19.000Z",
-          "InstanceId": "i-dd8bfed3",
-          "VolumeId": "vol-25f50ab6",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdh"
-        }
-      ],
+      "Attachments": [],
       "Encrypted": false,
       "VolumeType": "gp2",
       "VolumeId": "vol-25f50ab6",
-      "State": "in-use",
+      "State": "available",
       "Iops": 150,
       "SnapshotId": "",
       "CreateTime": "2016-11-24T15:44:34.602Z",

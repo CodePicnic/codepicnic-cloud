@@ -672,15 +672,6 @@
               }
             },
             {
-              "DeviceName": "/dev/sdh",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-25f50ab6",
-                "AttachTime": "2016-11-24T16:03:19.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/sdi",
               "Ebs": {
                 "Status": "attached",
