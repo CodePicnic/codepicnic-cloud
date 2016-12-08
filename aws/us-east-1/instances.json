@@ -1817,15 +1817,6 @@
               }
             },
             {
-              "DeviceName": "/dev/sdh",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-6bf50af8",
-                "AttachTime": "2016-11-24T16:03:34.000Z"
-              }
-            },
-            {
               "DeviceName": "/dev/sdf",
               "Ebs": {
                 "Status": "attached",
