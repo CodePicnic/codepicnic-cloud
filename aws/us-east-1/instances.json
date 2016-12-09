@@ -370,59 +370,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-09f940f08bf24bff7",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "Platform": "windows",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-12-09T15:40:44.000Z",
-          "ProductCodes": [],
-          "Tags": [
-            {
-              "Value": "",
-              "Key": "Name"
-            }
-          ],
-          "InstanceId": "i-0be6eafcb3b8918b8",
-          "EnaSupport": true,
-          "ImageId": "ami-fc97a7eb",
-          "PrivateDnsName": "",
-          "KeyName": "codepicnic",
-          "SecurityGroups": [],
-          "ClientToken": "YsTtC1481298044034",
-          "InstanceType": "t2.medium",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "RootDeviceType": "ebs",
-          "StateTransitionReason": "User initiated (2016-12-09 15:42:35 GMT)",
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-0f58ae49b8dc9db1f",
       "Groups": [],
       "Instances": [
