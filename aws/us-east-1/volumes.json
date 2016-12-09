@@ -907,6 +907,27 @@
       "SnapshotId": "snap-47f39dcc",
       "CreateTime": "2016-12-07T00:56:08.435Z",
       "Size": 40
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2016-12-09T15:43:54.000Z",
+          "InstanceId": "i-0efe633fb0dd6f838",
+          "VolumeId": "vol-08ed5c7a803234485",
+          "State": "attached",
+          "DeleteOnTermination": true,
+          "Device": "/dev/sda1"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-08ed5c7a803234485",
+      "State": "in-use",
+      "Iops": 100,
+      "SnapshotId": "snap-0f7d578081a39849a",
+      "CreateTime": "2016-12-09T15:43:54.023Z",
+      "Size": 30
     }
   ]
 }
