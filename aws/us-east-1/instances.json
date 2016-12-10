@@ -370,59 +370,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-0f58ae49b8dc9db1f",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "Platform": "windows",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2016-12-09T15:43:53.000Z",
-          "ProductCodes": [],
-          "Tags": [
-            {
-              "Value": "aws-windows",
-              "Key": "Name"
-            }
-          ],
-          "InstanceId": "i-0efe633fb0dd6f838",
-          "EnaSupport": true,
-          "ImageId": "ami-fc97a7eb",
-          "PrivateDnsName": "",
-          "KeyName": "key-dep-001",
-          "SecurityGroups": [],
-          "ClientToken": "ySolY1481298232377",
-          "InstanceType": "t2.medium",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "RootDeviceType": "ebs",
-          "StateTransitionReason": "User initiated (2016-12-10 12:11:59 GMT)",
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-10086dbb",
       "Groups": [],
       "Instances": [
