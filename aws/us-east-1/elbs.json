@@ -228,23 +228,23 @@
         {
           "Listener": {
             "InstancePort": 80,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/702b4137-9c71-4280-a323-3c1016f4bf56",
+            "LoadBalancerPort": 443,
+            "Protocol": "SSL",
+            "InstanceProtocol": "TCP"
+          },
+          "PolicyNames": [
+            "AWSConsole-SSLNegotiationPolicy-elb-swarm-micro-1461010981063"
+          ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 80,
             "LoadBalancerPort": 80,
             "Protocol": "HTTP",
             "InstanceProtocol": "HTTP"
           },
           "PolicyNames": []
-        },
-        {
-          "Listener": {
-            "InstancePort": 443,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/702b4137-9c71-4280-a323-3c1016f4bf56",
-            "LoadBalancerPort": 443,
-            "Protocol": "SSL",
-            "InstanceProtocol": "SSL"
-          },
-          "PolicyNames": [
-            "AWSConsole-SSLNegotiationPolicy-elb-swarm-micro-1461010981063"
-          ]
         }
       ],
       "HealthCheck": {
@@ -273,7 +273,8 @@
         "AppCookieStickinessPolicies": [],
         "OtherPolicies": [
           "ELBSecurityPolicy-2015-05",
-          "AWSConsole-SSLNegotiationPolicy-elb-swarm-micro-1461010981063"
+          "AWSConsole-SSLNegotiationPolicy-elb-swarm-micro-1461010981063",
+          "ELBSecurityPolicy-2016-08"
         ]
       },
       "LoadBalancerName": "elb-swarm-micro",
