@@ -1979,119 +1979,35 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
+          "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 80,
-            "Name": "stopped"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-12-07T01:40:09.000Z",
-          "PublicIpAddress": "52.203.4.226",
-          "PrivateIpAddress": "172.21.4.52",
           "ProductCodes": [],
-          "VpcId": "vpc-bdfdf9d9",
           "StateTransitionReason": "User initiated (2016-12-07 04:20:49 GMT)",
           "InstanceId": "i-6c0efaf0",
           "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
+          "PrivateDnsName": "",
           "KeyName": "key_codepicnic",
-          "SecurityGroups": [
-            {
-              "GroupName": "sg_codepicnic_app",
-              "GroupId": "sg-9ca20be7"
-            }
-          ],
+          "SecurityGroups": [],
           "ClientToken": "",
-          "SubnetId": "subnet-04b7cb2e",
           "InstanceType": "m4.xlarge",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "MacAddress": "12:85:17:b8:d3:ef",
-              "SourceDestCheck": true,
-              "VpcId": "vpc-bdfdf9d9",
-              "Description": "",
-              "Association": {
-                "PublicIp": "52.203.4.226",
-                "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com"
-              },
-              "NetworkInterfaceId": "eni-72131f55",
-              "PrivateIpAddresses": [
-                {
-                  "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
-                  "Association": {
-                    "PublicIp": "52.203.4.226",
-                    "PublicDnsName": "ec2-52-203-4-226.compute-1.amazonaws.com",
-                    "IpOwnerId": "740698317528"
-                  },
-                  "Primary": true,
-                  "PrivateIpAddress": "172.21.4.52"
-                }
-              ],
-              "PrivateDnsName": "ip-172-21-4-52.ec2.internal",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-d2176509",
-                "AttachTime": "2016-05-25T19:32:55.000Z"
-              },
-              "Groups": [
-                {
-                  "GroupName": "sg_codepicnic_app",
-                  "GroupId": "sg-9ca20be7"
-                }
-              ],
-              "SubnetId": "subnet-04b7cb2e",
-              "OwnerId": "740698317528",
-              "PrivateIpAddress": "172.21.4.52"
-            }
-          ],
-          "SourceDestCheck": true,
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-94972744",
-                "AttachTime": "2016-05-25T19:32:56.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-c7972717",
-                "AttachTime": "2016-05-25T19:32:56.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdg",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-95972745",
-                "AttachTime": "2016-05-25T19:32:56.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAIGSEJJ6DWKBJJ76CA",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/iam-codepicnic-node"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
