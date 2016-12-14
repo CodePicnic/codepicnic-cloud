@@ -2011,16 +2011,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "aws-codepicnic-app-01",
-              "Key": "Name"
-            },
-            {
-              "Value": "codepicnic-prod",
-              "Key": "Project"
-            }
-          ],
           "AmiLaunchIndex": 0
         }
       ]
