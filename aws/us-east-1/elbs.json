@@ -9,11 +9,11 @@
       "ListenerDescriptions": [
         {
           "Listener": {
-            "InstancePort": 443,
+            "InstancePort": 80,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
             "LoadBalancerPort": 443,
             "Protocol": "SSL",
-            "InstanceProtocol": "SSL"
+            "InstanceProtocol": "TCP"
           },
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-swarm-01-1458637951288"
@@ -32,7 +32,7 @@
       "HealthCheck": {
         "HealthyThreshold": 10,
         "Interval": 30,
-        "Target": "TCP:443",
+        "Target": "TCP:80",
         "Timeout": 5,
         "UnhealthyThreshold": 2
       },
@@ -40,10 +40,7 @@
       "BackendServerDescriptions": [],
       "Instances": [
         {
-          "InstanceId": "i-be10de22"
-        },
-        {
-          "InstanceId": "i-ccf11153"
+          "InstanceId": "i-48eb0bd7"
         }
       ],
       "DNSName": "elb-swarm-01-1620764318.us-east-1.elb.amazonaws.com",
@@ -54,6 +51,7 @@
         "LBCookieStickinessPolicies": [],
         "AppCookieStickinessPolicies": [],
         "OtherPolicies": [
+          "ELBSecurityPolicy-2016-08",
           "AWSConsole-SSLNegotiationPolicy-elb-swarm-01-1458637951288",
           "ELBSecurityPolicy-2015-05"
         ]
