@@ -255,26 +255,6 @@
           "PrefixListIds": []
         }
       ],
-      "Description": "sg_lambda_demo",
-      "IpPermissions": [],
-      "GroupName": "sg_lambda_demo",
-      "VpcId": "vpc-bdfdf9d9",
-      "OwnerId": "740698317528",
-      "GroupId": "sg-1259576f"
-    },
-    {
-      "IpPermissionsEgress": [
-        {
-          "IpProtocol": "-1",
-          "IpRanges": [
-            {
-              "CidrIp": "0.0.0.0/0"
-            }
-          ],
-          "UserIdGroupPairs": [],
-          "PrefixListIds": []
-        }
-      ],
       "Description": "quick-create-1 created on Thursday, March 17, 2016 at 9:46:51 AM UTC-5",
       "IpPermissions": [
         {
@@ -1755,6 +1735,26 @@
       "VpcId": "vpc-bdfdf9d9",
       "OwnerId": "740698317528",
       "GroupId": "sg-ac4010d1"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "security group for external access",
+      "IpPermissions": [],
+      "GroupName": "sg_cp_external",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-ba545ac7"
     },
     {
       "IpPermissionsEgress": [
