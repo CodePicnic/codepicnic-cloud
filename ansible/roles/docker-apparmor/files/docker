@@ -10,6 +10,7 @@ profile docker-default flags=(attach_disconnected,mediate_deleted) {
   network inet tcp,
   network inet udp,
   network inet icmp,
+  network inet6 stream,
   capability,
   file,
   umount,
