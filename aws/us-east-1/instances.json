@@ -630,14 +630,14 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-54-175-7-94.compute-1.amazonaws.com",
+          "PublicDnsName": "ec2-52-207-232-205.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2017-01-27T01:10:22.000Z",
-          "PublicIpAddress": "54.175.7.94",
+          "LaunchTime": "2017-01-27T20:51:57.000Z",
+          "PublicIpAddress": "52.207.232.205",
           "PrivateIpAddress": "172.21.3.237",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -663,16 +663,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
               "Association": {
-                "PublicIp": "54.175.7.94",
-                "PublicDnsName": "ec2-54-175-7-94.compute-1.amazonaws.com"
+                "PublicIp": "52.207.232.205",
+                "PublicDnsName": "ec2-52-207-232-205.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-0dbd01fe",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-3-237.ec2.internal",
                   "Association": {
-                    "PublicIp": "54.175.7.94",
-                    "PublicDnsName": "ec2-54-175-7-94.compute-1.amazonaws.com",
+                    "PublicIp": "52.207.232.205",
+                    "PublicDnsName": "ec2-52-207-232-205.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
