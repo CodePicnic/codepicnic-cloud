@@ -1001,6 +1001,39 @@
           "PrefixListIds": []
         }
       ],
+      "Description": "launch-wizard-4 created 2017-01-26T19:49:33.407-05:00",
+      "IpPermissions": [
+        {
+          "PrefixListIds": [],
+          "FromPort": 22,
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "ToPort": 22,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "launch-wizard-4",
+      "VpcId": "vpc-bdfdf9d9",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-64ba0918"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
       "Description": "launch-wizard-1 created 2015-06-26T12:48:55.456-05:00",
       "IpPermissions": [
         {
