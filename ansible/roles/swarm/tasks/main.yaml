@@ -9,12 +9,12 @@
   - name: docker service
     template: src=docker.service dest=/lib/systemd/system/docker.service
     notify: 
-    - systemctl reload
-    - docker restart
+    - systemctl-reload
+    - docker-restart
   - name: docker configuration 
     template: src=daemon.json dest=/etc/docker/daemon.json
     notify: 
-    - docker restart
+    - docker-restart
   - name: hosts for registry 
     template: src=hosts dest=/etc/hosts
   - name: start docker
