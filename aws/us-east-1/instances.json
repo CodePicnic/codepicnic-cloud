@@ -396,8 +396,8 @@
           "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 32,
-            "Name": "shutting-down"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": false,
           "LaunchTime": "2017-01-27T21:41:31.000Z",
@@ -410,54 +410,18 @@
           "SecurityGroups": [],
           "ClientToken": "",
           "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "OwnerId": "740698317528",
-              "NetworkInterfaceId": "eni-497bfbba",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-33fab818",
-                "AttachTime": "2017-01-27T21:41:31.000Z"
-              }
-            }
-          ],
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-072990885277440a5",
-                "AttachTime": "2017-01-27T21:41:32.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-0681b864d0100cb2f",
-                "AttachTime": "2017-01-27T21:41:32.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
@@ -728,8 +692,8 @@
           "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 32,
-            "Name": "shutting-down"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": false,
           "LaunchTime": "2017-01-27T21:42:16.000Z",
@@ -742,54 +706,18 @@
           "SecurityGroups": [],
           "ClientToken": "",
           "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "OwnerId": "740698317528",
-              "NetworkInterfaceId": "eni-7e00808d",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-78fbb953",
-                "AttachTime": "2017-01-27T21:42:16.000Z"
-              }
-            }
-          ],
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-07458fbf56b10cee6",
-                "AttachTime": "2017-01-27T21:42:17.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-0b16c89c9dd334c69",
-                "AttachTime": "2017-01-27T21:42:17.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
@@ -816,8 +744,8 @@
           "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 32,
-            "Name": "shutting-down"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": false,
           "LaunchTime": "2017-01-27T21:42:16.000Z",
@@ -830,54 +758,18 @@
           "SecurityGroups": [],
           "ClientToken": "",
           "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "OwnerId": "740698317528",
-              "NetworkInterfaceId": "eni-7d00808e",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-7ffbb954",
-                "AttachTime": "2017-01-27T21:42:16.000Z"
-              }
-            }
-          ],
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-0a7f11bd31fbb6f5a",
-                "AttachTime": "2017-01-27T21:42:17.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/xvdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-0e225de89d450f384",
-                "AttachTime": "2017-01-27T21:42:17.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
