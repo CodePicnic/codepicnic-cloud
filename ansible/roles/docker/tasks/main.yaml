@@ -30,7 +30,8 @@
     apt: name="docker-engine={{ docker_engine }}" state=present force=yes
     #apt: name=docker-engine state=present
   - name: start docker
-    service: name=docker enabled=yes state=started
+    systemd: state=started daemon_reload=yes name=docker enabled=yes
+    #service: name=docker enabled=yes state=started
   - name: add user
     shell: usermod -aG docker ubuntu 
   - name: install docker-py
