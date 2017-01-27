@@ -24,11 +24,11 @@
 #      restart_policy: always
 #      ports:
 #      - "8501:8501"
-   - name: check consul download 
-     stat: path=/opt/consul_0.7.3_linux_amd64.zip
-     register: consul_zip_stat
-   - name: download consul
-     get_url: url=https://releases.hashicorp.com/consul/0.7.3/consul_0.7.3_linux_amd64.zip dest=/opt/consul_0.7.3_linux_amd64.zip mode=0755
-     when: consul_zip_stat.stat.exists == False
-   - name: copy and unpack
-     unarchive: src=/opt/consul_0.7.3_linux_amd64.zip dest=/usr/local/bin copy=no
+  - name: check consul download 
+    stat: path=/opt/consul_0.7.3_linux_amd64.zip
+    register: consul_zip_stat
+  - name: download consul
+    get_url: url=https://releases.hashicorp.com/consul/0.7.3/consul_0.7.3_linux_amd64.zip dest=/opt/consul_0.7.3_linux_amd64.zip mode=0755
+    when: consul_zip_stat.stat.exists == False
+  - name: copy and unpack
+    unarchive: src=/opt/consul_0.7.3_linux_amd64.zip dest=/usr/local/bin copy=no
