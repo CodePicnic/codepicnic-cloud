@@ -11,7 +11,8 @@
       - docker
       - docker-apparmor
       - newrelic
-      - swarm
+      #change to swarm-common because conflicts with swarm (consul_ip)
+      - swarm-common
       - swarm-node-ami
       - create-ami
   remote_user: ubuntu
