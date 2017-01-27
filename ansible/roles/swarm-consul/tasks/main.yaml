@@ -1,6 +1,6 @@
   - name: print consult_network 
     debug: var=hostvars[item]
-    with_items: "{{groups['swarm-master']"}}
+    with_items: "{{groups['swarm-master']}}"
   - name: set fact consul_network
     set_fact: consul_network="{{ hostvars[item]['ansible_eth0']['ipv4']['address'] }}"
     with_items: "{{groups['swarm-master']}}"
