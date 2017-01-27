@@ -9,7 +9,7 @@
 #  become: yes
 #  become_user: root
 #  become_method: sudo
-- hosts: swarm-master:swarm-node 
+- hosts: all 
   gather_facts: False
   tasks:
   - name: install python 2
