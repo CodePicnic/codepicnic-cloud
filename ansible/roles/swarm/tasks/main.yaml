@@ -18,4 +18,4 @@
   - name: hosts for registry 
     template: src=hosts dest=/etc/hosts
   - name: start docker
-    service: name=docker enabled=yes state=restarted
+    systemd: state=started daemon_reload=yes name=docker enabled=yes
