@@ -2,6 +2,7 @@
     "cluster-advertise": "eth0:2375", 
     "cluster-store": "consul://{{ consul_network }}:8501", 
     "hosts": [
-        "tcp://0.0.0.0:2375"
+        "tcp://0.0.0.0:2375",
+        "unix:///var/run/docker.sock"
     ]
 }
