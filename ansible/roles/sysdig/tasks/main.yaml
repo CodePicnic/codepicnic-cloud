@@ -22,6 +22,6 @@
   - name: add falco config 
     copy: src=falco.yaml dest=/etc/falco.yaml
 
-  - name: start falco 
-    service: name=falco enabled=yes state=restarted
+#  - name: start falco 
+#    service: name=falco enabled=yes state=restarted
 
