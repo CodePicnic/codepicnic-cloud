@@ -53,6 +53,7 @@
       - newrelic
       - swarm
       - swarm-node
+      - { role: swarm-devpad, when: swarm_app == "devpad" }  
   remote_user: ubuntu
   become: yes
   become_user: root
