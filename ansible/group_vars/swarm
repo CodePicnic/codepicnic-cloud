@@ -57,6 +57,6 @@ base_images:
      - devpad/php_v5.6 
      - devpad/nodejs_v6.7.0
      - devpad/python_v2.7
-     - devpad/ruby23_v2.3.1
+     - devpad/ruby_v2.3.1
      - devpad/golang_v1.7.1
 
