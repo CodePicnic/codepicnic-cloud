@@ -9,7 +9,7 @@
       name: "{{ ansible_ec2_instance_id }}-{{ansible_date_time.date}}"
       region: "{{ aws_region }}"
       wait: yes
-      wait_timeout: 600
+      wait_timeout: 3000
       state: present
       no_reboot: yes
   register: swarm_ami
