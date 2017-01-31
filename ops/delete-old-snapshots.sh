@@ -1,4 +1,5 @@
 #!/bin/bash
+aws ec2 describe-instances --region us-east-1 --query 'Reservations[].Instances[].[InstanceId]' --output text > /tmp/ec2.instances
 while read instance_id 
 do
     ami_name="$instance_id"-$(date +%Y-%m-%d --date '7 days ago')
