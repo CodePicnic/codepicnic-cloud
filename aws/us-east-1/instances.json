@@ -1480,20 +1480,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-swarm-node",
-              "Key": "Name"
-            },
-            {
-              "Value": "swarm-demo",
-              "Key": "Role"
-            },
-            {
-              "Value": "devpad-swarm",
-              "Key": "Project"
-            }
-          ],
           "AmiLaunchIndex": 0
         },
         {
@@ -1532,20 +1518,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-swarm-node",
-              "Key": "Name"
-            },
-            {
-              "Value": "swarm-demo",
-              "Key": "Role"
-            },
-            {
-              "Value": "devpad-swarm",
-              "Key": "Project"
-            }
-          ],
           "AmiLaunchIndex": 1
         }
       ]
@@ -2374,20 +2346,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "devpad-swarm",
-              "Key": "Project"
-            },
-            {
-              "Value": "devpad-swarm-master",
-              "Key": "Name"
-            },
-            {
-              "Value": "swarm-demo",
-              "Key": "Role"
-            }
-          ],
           "AmiLaunchIndex": 0
         }
       ]
