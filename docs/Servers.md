@@ -13,9 +13,6 @@
 ## Swarm Devpad Staging
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
-| Swarm Node  | 172.21.1.88  |  52.91.73.98  | i-f27580c2
-| Swarm Node  | 172.21.1.87  |  54.204.209.17  | i-f37580c3
-| Swarm Master  | 172.21.3.152  |  107.23.82.109  | i-8b0affbb
 ## CodePicnic Production
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
