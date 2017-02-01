@@ -2105,19 +2105,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com",
-          "RootDeviceType": "ebs",
+          "PublicDnsName": "ec2-52-204-63-157.compute-1.amazonaws.com",
           "State": {
-            "Code": 64,
-            "Name": "stopping"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2016-07-15T07:43:58.000Z",
-          "PublicIpAddress": "52.23.196.88",
+          "LaunchTime": "2017-02-01T04:59:23.000Z",
+          "PublicIpAddress": "52.204.63.157",
           "PrivateIpAddress": "172.21.0.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "User initiated (2017-02-01 04:55:49 GMT)",
+          "StateTransitionReason": "",
           "InstanceId": "i-be10de22",
           "ImageId": "ami-e614e68b",
           "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
@@ -2130,7 +2129,7 @@
           ],
           "ClientToken": "NsJlg1464683872248",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "m4.2xlarge",
+          "InstanceType": "r4.xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -2139,16 +2138,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "52.23.196.88",
-                "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com"
+                "PublicIp": "52.204.63.157",
+                "PublicDnsName": "ec2-52-204-63-157.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-3d31ce1b",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
                   "Association": {
-                    "PublicIp": "52.23.196.88",
-                    "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com",
+                    "PublicIp": "52.204.63.157",
+                    "PublicDnsName": "ec2-52-204-63-157.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
@@ -2202,10 +2201,7 @@
             }
           ],
           "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
+          "RootDeviceType": "ebs",
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
