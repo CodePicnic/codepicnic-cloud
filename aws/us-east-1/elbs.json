@@ -40,9 +40,6 @@
       "BackendServerDescriptions": [],
       "Instances": [
         {
-          "InstanceId": "i-be10de22"
-        },
-        {
           "InstanceId": "i-48eb0bd7"
         },
         {

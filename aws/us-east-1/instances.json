@@ -2106,9 +2106,10 @@
             "State": "disabled"
           },
           "PublicDnsName": "ec2-52-23-196-88.compute-1.amazonaws.com",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 64,
+            "Name": "stopping"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-07-15T07:43:58.000Z",
@@ -2116,7 +2117,7 @@
           "PrivateIpAddress": "172.21.0.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-02-01 04:55:49 GMT)",
           "InstanceId": "i-be10de22",
           "ImageId": "ami-e614e68b",
           "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
@@ -2201,7 +2202,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
@@ -2212,10 +2216,6 @@
             {
               "Value": "swarm-node-052",
               "Key": "Name"
-            },
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
