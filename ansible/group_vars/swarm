@@ -22,7 +22,7 @@ volumes:
            volume_type: "gp2"
          - device_name: /dev/xvdf
            volume_type: "gp2"
-           volume_size: "200"
+           volume_size: "75"
 newrelic_license: 8d8f4152e18341c09e274737c8c57737ec1132d1
 sysctl_options:
    -
