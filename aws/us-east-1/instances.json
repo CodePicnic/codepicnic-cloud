@@ -1871,12 +1871,6 @@
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "docker-swarm-prod-node",
-              "Key": "Name"
-            }
-          ],
           "AmiLaunchIndex": 0
         }
       ]
