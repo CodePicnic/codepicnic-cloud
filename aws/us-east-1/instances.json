@@ -2105,14 +2105,14 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-54-175-88-171.compute-1.amazonaws.com",
+          "PublicDnsName": "ec2-54-144-75-232.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2017-02-01T05:43:26.000Z",
-          "PublicIpAddress": "54.175.88.171",
+          "LaunchTime": "2017-02-01T05:55:43.000Z",
+          "PublicIpAddress": "54.144.75.232",
           "PrivateIpAddress": "172.21.0.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -2138,16 +2138,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.175.88.171",
-                "PublicDnsName": "ec2-54-175-88-171.compute-1.amazonaws.com"
+                "PublicIp": "54.144.75.232",
+                "PublicDnsName": "ec2-54-144-75-232.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-3d31ce1b",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
                   "Association": {
-                    "PublicIp": "54.175.88.171",
-                    "PublicDnsName": "ec2-54-175-88-171.compute-1.amazonaws.com",
+                    "PublicIp": "54.144.75.232",
+                    "PublicDnsName": "ec2-54-144-75-232.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
@@ -2197,6 +2197,15 @@
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-cc5a8d1d",
                 "AttachTime": "2016-05-31T08:48:57.000Z"
+              }
+            },
+            {
+              "DeviceName": "/dev/sdf",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-0cb807c0598cfc366",
+                "AttachTime": "2017-02-01T05:48:04.000Z"
               }
             }
           ],

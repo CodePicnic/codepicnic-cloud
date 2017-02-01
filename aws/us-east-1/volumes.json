@@ -852,6 +852,27 @@
       "SnapshotId": "",
       "CreateTime": "2017-01-29T08:58:55.936Z",
       "Size": 200
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2017-02-01T05:48:04.000Z",
+          "InstanceId": "i-be10de22",
+          "VolumeId": "vol-0cb807c0598cfc366",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sdf"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-0cb807c0598cfc366",
+      "State": "in-use",
+      "Iops": 1800,
+      "SnapshotId": "snap-0f9bb0794599ecea7",
+      "CreateTime": "2017-02-01T05:47:17.626Z",
+      "Size": 600
     }
   ]
 }
