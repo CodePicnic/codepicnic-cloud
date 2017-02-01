@@ -1198,6 +1198,10 @@
             {
               "Value": "swarm-node-218",
               "Key": "Name"
+            },
+            {
+              "Value": "asg-swarm-01",
+              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
@@ -1426,10 +1430,6 @@
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
           "Tags": [
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
-            },
             {
               "Value": "swarm-node-051",
               "Key": "Name"
