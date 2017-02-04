@@ -960,115 +960,35 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-87-180-133.compute-1.amazonaws.com",
+          "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": true,
           "LaunchTime": "2016-11-13T07:25:36.000Z",
-          "PublicIpAddress": "52.87.180.133",
-          "PrivateIpAddress": "172.21.0.123",
           "ProductCodes": [],
-          "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-02-04 15:57:48 GMT)",
           "InstanceId": "i-dd8bfed3",
           "ImageId": "ami-ae2907b9",
-          "PrivateDnsName": "ip-172-21-0-123.ec2.internal",
+          "PrivateDnsName": "",
           "KeyName": "key_swarm",
-          "SecurityGroups": [
-            {
-              "GroupName": "sg_swarm",
-              "GroupId": "sg-33871c4b"
-            }
-          ],
+          "SecurityGroups": [],
           "ClientToken": "TmlhB1479021935190",
-          "SubnetId": "subnet-5a9d2e70",
           "InstanceType": "m4.large",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "MacAddress": "12:47:98:25:97:34",
-              "SourceDestCheck": true,
-              "VpcId": "vpc-bdfdf9d9",
-              "Description": "Primary network interface",
-              "Association": {
-                "PublicIp": "52.87.180.133",
-                "PublicDnsName": "ec2-52-87-180-133.compute-1.amazonaws.com"
-              },
-              "NetworkInterfaceId": "eni-c41aaf3b",
-              "PrivateIpAddresses": [
-                {
-                  "PrivateDnsName": "ip-172-21-0-123.ec2.internal",
-                  "Association": {
-                    "PublicIp": "52.87.180.133",
-                    "PublicDnsName": "ec2-52-87-180-133.compute-1.amazonaws.com",
-                    "IpOwnerId": "amazon"
-                  },
-                  "Primary": true,
-                  "PrivateIpAddress": "172.21.0.123"
-                }
-              ],
-              "PrivateDnsName": "ip-172-21-0-123.ec2.internal",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-b2546402",
-                "AttachTime": "2016-11-13T07:25:36.000Z"
-              },
-              "Groups": [
-                {
-                  "GroupName": "sg_swarm",
-                  "GroupId": "sg-33871c4b"
-                }
-              ],
-              "SubnetId": "subnet-5a9d2e70",
-              "OwnerId": "740698317528",
-              "PrivateIpAddress": "172.21.0.123"
-            }
-          ],
-          "SourceDestCheck": true,
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-e66a1032",
-                "AttachTime": "2016-11-13T07:25:37.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/sdg",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-67f30cf4",
-                "AttachTime": "2016-11-24T15:48:42.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/sdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-63bb13f0",
-                "AttachTime": "2016-12-05T16:52:43.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
-          "IamInstanceProfile": {
-            "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
