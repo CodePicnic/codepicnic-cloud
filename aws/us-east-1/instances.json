@@ -953,57 +953,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-1e9214af",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2016-11-13T07:25:36.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2017-02-04 15:57:48 GMT)",
-          "InstanceId": "i-dd8bfed3",
-          "ImageId": "ami-ae2907b9",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "TmlhB1479021935190",
-          "InstanceType": "m4.large",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "docker-swarm-prod-node",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-20f4869f",
       "Groups": [],
       "Instances": [
