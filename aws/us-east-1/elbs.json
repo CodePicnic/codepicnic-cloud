@@ -104,7 +104,14 @@
         "UnhealthyThreshold": 2
       },
       "VPCId": "vpc-6e685d0a",
-      "BackendServerDescriptions": [],
+      "BackendServerDescriptions": [
+        {
+          "InstancePort": 80,
+          "PolicyNames": [
+            "pol-proxy-elb-codepicnic-01"
+          ]
+        }
+      ],
       "Instances": [
         {
           "InstanceId": "i-a8db4b2b"
@@ -120,6 +127,7 @@
         "OtherPolicies": [
           "ELBSecurityPolicy-2015-05",
           "AWSConsole-SSLNegotiationPolicy-elb-codepicnic-01-1458678797591",
+          "pol-proxy-elb-codepicnic-01",
           "ELBSecurityPolicy-2016-08"
         ]
       },
