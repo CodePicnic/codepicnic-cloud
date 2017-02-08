@@ -77,15 +77,6 @@
         {
           "Listener": {
             "InstancePort": 80,
-            "LoadBalancerPort": 80,
-            "Protocol": "HTTP",
-            "InstanceProtocol": "HTTP"
-          },
-          "PolicyNames": []
-        },
-        {
-          "Listener": {
-            "InstancePort": 80,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/f3a74070-a93f-46c0-ae32-e98ee67e87b9",
             "LoadBalancerPort": 443,
             "Protocol": "HTTPS",
@@ -94,6 +85,15 @@
           "PolicyNames": [
             "AWSConsole-SSLNegotiationPolicy-elb-codepicnic-01-1458678797591"
           ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 80,
+            "LoadBalancerPort": 80,
+            "Protocol": "HTTP",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": []
         }
       ],
       "HealthCheck": {
