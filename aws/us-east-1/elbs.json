@@ -463,7 +463,14 @@
         "UnhealthyThreshold": 2
       },
       "VPCId": "vpc-6e685d0a",
-      "BackendServerDescriptions": [],
+      "BackendServerDescriptions": [
+        {
+          "InstancePort": 80,
+          "PolicyNames": [
+            "pol-proxy-elb-devpad-01"
+          ]
+        }
+      ],
       "Instances": [
         {
           "InstanceId": "i-a8db4b2b"
