@@ -477,6 +477,7 @@
         "LBCookieStickinessPolicies": [],
         "AppCookieStickinessPolicies": [],
         "OtherPolicies": [
+          "pol-proxy-elb-devpad-01",
           "AWSConsole-SSLNegotiationPolicy-elb-devpad-01-1474055235066",
           "ELBSecurityPolicy-2016-08"
         ]
