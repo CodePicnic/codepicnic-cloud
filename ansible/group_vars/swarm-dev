@@ -129,10 +129,10 @@ base_images:
      - drupal8_v8.2.6
      - wordpress_v4.7.2
      - laravel_v5.3.30
-     - php_v7.0.15
-     - php_v7.1.1
+     - php7_v7.0.15
+     - php71_v7.1.1
      - laravel_v5.4.9
-     - php_v5.6.30
+     - php56_v5.6.30
      - clojure_v1.8.0
      - jekyll_v3.4.0
      - angular_v2.3.1
