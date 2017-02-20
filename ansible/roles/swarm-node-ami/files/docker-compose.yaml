@@ -19,13 +19,15 @@ services:
     restart: always
   nginx:
     container_name: nginx-${NODE_NAME}
-    image: nginx
+    image: openresty/openresty:trusty 
     restart: always
     ports:
     - "80:80"
-    - "443:443"
     volumes:
-    - "/etc/nginx/conf.d:/etc/nginx/conf.d"
+    - "/usr/local/openresty/nginx:/usr/local/openresty/nginx"
+    - "/usr/local/openresty/nginx-lua:/usr/local/openresty/nginx-lua"
+    environment:
+    - JWT_SECRET=e7b3b5c7f422a4abdee2bb648224104823e5acd6779c50f9005c7613e168288024e1dc98260e03f29b6558ba8fb0b8b9ba1a9f4a6fad0425c286bdcfbf8b35a1
 networks:
   default:
     external:

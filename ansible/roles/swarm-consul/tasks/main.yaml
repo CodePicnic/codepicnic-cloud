@@ -32,3 +32,4 @@
     when: consul_zip_stat.stat.exists == False
   - name: copy and unpack
     unarchive: src=/opt/consul_0.7.3_linux_amd64.zip dest=/usr/local/bin copy=no
+#/usr/local/bin/consul agent -server -http-port 8501 -data-dir /var/lib/consul/ -bind 172.21.3.31 -bootstrap -client 172.21.3.31 &

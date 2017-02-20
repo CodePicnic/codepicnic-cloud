@@ -1,18 +1,34 @@
   - name: Gather facts
     action: ec2_facts
-  - name: nginx conf dir 
-    file: path=/etc/nginx/conf.d state=directory mode=0755
-  - name: copy nginx conf 
-    copy: src="{{ item }}" dest=/etc/nginx/conf.d
+  - name: opentrusty conf dir 
+    file: path=/usr/local/openresty/nginx/conf state=directory mode=0755
+  - name: opentrusty conf.d dir 
+    file: path=/usr/local/openresty/nginx/conf.d state=directory mode=0755
+  - name: opentrusty lua dir 
+    file: path=/usr/local/openresty/nginx-lua state=directory mode=0755
+  - name: copy nginx config files 
+    copy: src="{{ item }}" dest=/usr/local/openresty/nginx/conf
+    with_items:
+       - nginx.conf 
+  - name: copy nginx config files 
+    copy: src="{{ item }}" dest=/usr/local/openresty/nginx/conf.d
     with_items:
        - backend.conf 
        - nginx.crt
        - nginx.key
        - 502.html
+       - 401.html
+  - name: Get redis
+    get_url: url="https://github.com/auth0/nginx-jwt/releases/download/v1.0.1/nginx-jwt.tar.gz"  dest=/opt/nginx-jwt.tar.gz mode=0644
+  - name: unzip nginx-jwt-lua 
+    unarchive: src=/opt/nginx-jwt.tar.gz dest=/usr/local/openresty/nginx-lua/ copy=no
   - name: copy docker-compose.yaml 
     copy: src="docker-compose.yaml" dest=/opt/docker-compose.yaml
   - name: copy ipt.sh 
-    copy: src="ipt.sh" dest=/opt/ipt.sh
+    copy: src="{{ item }}" dest=/opt
+    with_items:
+       - ipt.sh
+       - ipt_docker.sh
   - name: pull images 
     shell: docker pull registry.codepicnic.com:5000/codepicnic/{{ item }}
     with_items: "{{ base_images }}"
@@ -21,7 +37,8 @@
     with_items:
        - nginx
        - google/cadvisor
-       - swarm 
+       - swarm
+       - openresty/openresty:trusty 
   - name: tag images 
     shell: docker tag registry.codepicnic.com:5000/codepicnic/{{ item }} codepicnic/{{ item }}
     with_items: "{{ base_images }}"

@@ -121,5 +121,40 @@ base_images:
      - mean_v0.5.5
      - ember_v2.9.1
      - perfect_v2.0.4
+     - golang_v1.8
+     - tensorflow_v1.0.0
+     - cakephp_v3.4.0
+     - lamp_v5.6.30
+     - rust_v1.15.1
+     - drupal8_v8.2.6
+     - wordpress_v4.7.2
+     - laravel_v5.3.30
+     - php_v7.0.15
+     - php_v7.1.1
+     - laravel_v5.4.9
+     - php_v5.6.30
+     - clojure_v1.8.0
+     - jekyll_v3.4.0
+     - angular_v2.3.1
+     - elixir_v1.4.0
+     - dancer_v0.204004
+     - powershell_v6.0.0-alpha.15
+     - postgresql_v9.6
+     - haskell_v1.3.2
+     - mongodb3_v3.4
+     - ruby_20160711
+     - flask_v0.12
+     - lua_v5.2
+     - rails5_v5.0.1
+     - symfony_v3.2.1
+     - ubuntu_v16.04
+     - rust_v1.12.0
+     - cakephp_v3.3
+     - ember_v2.10.0
+     - sinatra_v1.4.7
+     - cuba_v3.8.0
+     - angular_v2.1.2
+     - base_node_v6.9.2
+     - elm_v0.18.0
 
 docker_engine: 1.10.3-0~trusty

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ERROR 401 - Unauthorized</title>
+  <meta charset="utf-8"> 
+
+  <style type="text/css">
+
+    body {  
+      font-family: "fira-sans", Helvetica, Arial, sans-serif;
+      background: #f5f5f5; 
+      text-align: center;
+    }
+
+    h1, p, small{
+      display: inline-block;
+      font-weight: 100;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 3px auto;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #666;
+    }
+    p{
+      margin: 3px auto;
+      font-size: 16px;
+      color: #999;
+    }
+
+    small{
+      margin: 20px auto;
+      color: #999;
+    }
+
+    a {
+      color: #309dbf;
+    }
+
+    .square{
+      display: inline-block;
+      margin: 30px auto;
+      width: 165px;
+      height: 240px;
+      fill: #2caee0;
+      animation: appear 1.5s cubic-bezier(0.755, 0.900, 0.855, 1.000);
+      transform: scale(1);
+      transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    .square:hover{
+      transform: scale(1.1);
+      fill: #a30e0e;
+      animation: reset;
+    }
+
+    @keyframes appear {
+      from {
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+
+        10%, 20% {
+          -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+          transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        }
+
+        30%, 50%, 70%, 90% {
+          -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        }
+
+        40%, 60%, 80% {
+          -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        }
+
+        to {
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+      }
+    }
+
+
+  </style>
+
+  <script type="text/javascript">
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+    analytics.load("u4ZlxoTKd0bm5CWOaDsHaH24CIPngH8W");
+    analytics.page(document.title);
+  </script>
+   
+</head>
+
+<body>
+  <!-- This file lives in public/500.html -->
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 240" id="logo" width="0" height="0" class="square">
+    <path d="M132.25,81.13V50.65a50.65,50.65,0,0,0-101.3,0V81.13a51.71,51.71,0,0,0-31,47.3v59.93A51.7,51.7,0,0,0,51.64,240h59.93a51.7,51.7,0,0,0,51.64-51.64V128.43A51.71,51.71,0,0,0,132.25,81.13ZM45,50.65a36.61,36.61,0,0,1,73.22,0V77.24a51.83,51.83,0,0,0-6.64-.44H51.64a51.83,51.83,0,0,0-6.64.44ZM149.17,188.36a37.64,37.64,0,0,1-37.6,37.6H51.64A37.64,37.64,0,0,1,14,188.36V128.43a37.64,37.64,0,0,1,37.6-37.6h59.93a37.64,37.64,0,0,1,37.6,37.6Z"/><path d="M87.31,139.62a7,7,0,0,0,.17-1.51V119.39a7,7,0,1,0-14,0v18.72a7,7,0,0,0,.35,2.09,25.12,25.12,0,1,0,13.52-.58Zm-5.71,35.5a11.07,11.07,0,1,1,11.07-11.07A11.08,11.08,0,0,1,81.6,175.12Z"/>
+  </svg>
+
+  <h1>ERROR 401 - This is not the page you are looking for 🙃</h1>
+  <p>Maybe you tried to do something you were unauthorized to!</p>
+  <small>You can check our <a href="http://codepicnic.com/blog">Blog</a>, our <a href="http://codepicnic.com/docs">Documentation</a> or go <a href="http://codepicnic.com">Home</a></small>
+
+
+  <script src="https://use.typekit.net/pmh3adv.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</body>
+</html>
