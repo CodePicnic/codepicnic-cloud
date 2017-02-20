@@ -158,3 +158,4 @@ base_images:
      - elm_v0.18.0
 
 docker_engine: 1.10.3-0~trusty
+docker_repo: ubuntu-trusty 

@@ -3,7 +3,7 @@
       - base
       - aws-monitoring-scripts
       - sysdig
-      - docker
+      - docker-xenial
       - newrelic
       - swarm
       - swarm-consul
@@ -29,7 +29,7 @@
       - ssh-keys
       - aws-monitoring-scripts
       - sysdig
-      - docker
+      - docker-xenial
       - newrelic
       - swarm
       - swarm-node 
