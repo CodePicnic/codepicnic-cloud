@@ -379,8 +379,8 @@
             "InstancePort": 80,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/990bd3a5-2b34-4b41-8b9f-609ee34ef41e",
             "LoadBalancerPort": 443,
-            "Protocol": "HTTPS",
-            "InstanceProtocol": "HTTP"
+            "Protocol": "SSL",
+            "InstanceProtocol": "TCP"
           },
           "PolicyNames": [
             "ELBSecurityPolicy-2015-05"
@@ -404,7 +404,14 @@
         "UnhealthyThreshold": 2
       },
       "VPCId": "vpc-bdfdf9d9",
-      "BackendServerDescriptions": [],
+      "BackendServerDescriptions": [
+        {
+          "InstancePort": 80,
+          "PolicyNames": [
+            "pol-proxy-elb-codepicnic-prod-01"
+          ]
+        }
+      ],
       "Instances": [
         {
           "InstanceId": "i-c42ee6d3"
@@ -418,6 +425,8 @@
         "LBCookieStickinessPolicies": [],
         "AppCookieStickinessPolicies": [],
         "OtherPolicies": [
+          "ELBSecurityPolicy-2016-08",
+          "pol-proxy-elb-codepicnic-prod-01",
           "ELBSecurityPolicy-2015-05"
         ]
       },
