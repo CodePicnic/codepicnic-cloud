@@ -271,9 +271,10 @@
             "State": "disabled"
           },
           "PublicDnsName": "ec2-54-172-69-105.compute-1.amazonaws.com",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 64,
+            "Name": "stopping"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-07-11T20:13:46.000Z",
@@ -281,7 +282,7 @@
           "PrivateIpAddress": "172.21.3.210",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-02-24 21:46:19 GMT)",
           "InstanceId": "i-099c3c94",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-3-210.ec2.internal",
@@ -366,7 +367,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
@@ -386,9 +390,10 @@
             "State": "disabled"
           },
           "PublicDnsName": "ec2-54-221-91-181.compute-1.amazonaws.com",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 64,
+            "Name": "stopping"
           },
           "EbsOptimized": false,
           "LaunchTime": "2016-11-10T05:03:03.000Z",
@@ -396,7 +401,7 @@
           "PrivateIpAddress": "172.21.3.211",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-02-24 21:46:19 GMT)",
           "InstanceId": "i-0a9c3c97",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
@@ -481,7 +486,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
