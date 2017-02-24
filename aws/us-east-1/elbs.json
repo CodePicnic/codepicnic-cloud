@@ -376,24 +376,24 @@
       "ListenerDescriptions": [
         {
           "Listener": {
+            "InstancePort": 80,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/990bd3a5-2b34-4b41-8b9f-609ee34ef41e",
+            "LoadBalancerPort": 443,
+            "Protocol": "HTTPS",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": [
+            "ELBSecurityPolicy-2015-05"
+          ]
+        },
+        {
+          "Listener": {
             "InstancePort": 81,
             "LoadBalancerPort": 80,
             "Protocol": "HTTP",
             "InstanceProtocol": "HTTP"
           },
           "PolicyNames": []
-        },
-        {
-          "Listener": {
-            "InstancePort": 80,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/990bd3a5-2b34-4b41-8b9f-609ee34ef41e",
-            "LoadBalancerPort": 443,
-            "Protocol": "SSL",
-            "InstanceProtocol": "TCP"
-          },
-          "PolicyNames": [
-            "ELBSecurityPolicy-2015-05"
-          ]
         }
       ],
       "HealthCheck": {
