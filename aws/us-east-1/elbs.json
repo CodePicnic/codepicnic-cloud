@@ -118,11 +118,7 @@
           ]
         }
       ],
-      "Instances": [
-        {
-          "InstanceId": "i-a8db4b2b"
-        }
-      ],
+      "Instances": [],
       "DNSName": "elb-codepicnic-01-1526630007.us-east-1.elb.amazonaws.com",
       "SecurityGroups": [
         "sg-59533721"
