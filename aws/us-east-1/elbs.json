@@ -91,18 +91,6 @@
         },
         {
           "Listener": {
-            "InstancePort": 80,
-            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
-            "LoadBalancerPort": 443,
-            "Protocol": "HTTPS",
-            "InstanceProtocol": "HTTP"
-          },
-          "PolicyNames": [
-            "AWSConsole-SSLNegotiationPolicy-elb-tuna-01-1459061395736"
-          ]
-        },
-        {
-          "Listener": {
             "InstancePort": 4430,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
             "LoadBalancerPort": 4430,
@@ -112,12 +100,24 @@
           "PolicyNames": [
             "ELBSecurityPolicy-2016-08"
           ]
+        },
+        {
+          "Listener": {
+            "InstancePort": 8080,
+            "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
+            "LoadBalancerPort": 443,
+            "Protocol": "HTTPS",
+            "InstanceProtocol": "HTTP"
+          },
+          "PolicyNames": [
+            "AWSConsole-SSLNegotiationPolicy-elb-tuna-01-1459061395736"
+          ]
         }
       ],
       "HealthCheck": {
         "HealthyThreshold": 10,
         "Interval": 30,
-        "Target": "TCP:80",
+        "Target": "TCP:8080",
         "Timeout": 5,
         "UnhealthyThreshold": 2
       },
