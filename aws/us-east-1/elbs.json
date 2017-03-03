@@ -103,7 +103,7 @@
         },
         {
           "Listener": {
-            "InstancePort": 8080,
+            "InstancePort": 80,
             "SSLCertificateId": "arn:aws:acm:us-east-1:740698317528:certificate/8b251a96-8440-455e-b0c5-02ca024a968a",
             "LoadBalancerPort": 443,
             "Protocol": "HTTPS",
@@ -117,7 +117,7 @@
       "HealthCheck": {
         "HealthyThreshold": 10,
         "Interval": 30,
-        "Target": "TCP:8080",
+        "Target": "TCP:80",
         "Timeout": 5,
         "UnhealthyThreshold": 2
       },
