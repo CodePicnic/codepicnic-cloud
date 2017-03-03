@@ -493,9 +493,6 @@
           "FromPort": 80,
           "IpRanges": [
             {
-              "CidrIp": "0.0.0.0/0"
-            },
-            {
               "CidrIp": "190.234.105.223/32"
             },
             {
@@ -503,18 +500,6 @@
             }
           ],
           "ToPort": 80,
-          "IpProtocol": "tcp",
-          "UserIdGroupPairs": []
-        },
-        {
-          "PrefixListIds": [],
-          "FromPort": 443,
-          "IpRanges": [
-            {
-              "CidrIp": "0.0.0.0/0"
-            }
-          ],
-          "ToPort": 443,
           "IpProtocol": "tcp",
           "UserIdGroupPairs": []
         },
