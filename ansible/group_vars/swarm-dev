@@ -64,6 +64,18 @@ sysctl_options:
 ## mysql db_codepicnic_prod -s  -e  " select distinct(image_name) from container_types where is_hidden=0"
 
 base_images:
+     - preact_v7.1.0
+     - phoenix_v1.2.1
+     - phoenix_v1.1.4
+     - elixir_v1.0.5
+     - netcore_v1.0.4
+     - netcore_v1.1.1
+     - nodejs_v7.7.1
+     - mern_v3.0.1
+     - kotlin_v1.1
+     - mono_v4.8.0
+     - laravel_v4.2.11
+     - rails5_v5.0.1
      - base_20160822
      - mono_v4.8
      - elixir_20160711
@@ -145,7 +157,6 @@ base_images:
      - ruby_20160711
      - flask_v0.12
      - lua_v5.2
-     - rails5_v5.0.1
      - symfony_v3.2.1
      - ubuntu_v16.04
      - rust_v1.12.0
