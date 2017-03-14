@@ -140,14 +140,14 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-34-207-164-97.compute-1.amazonaws.com",
+          "PublicDnsName": "ec2-107-22-94-21.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
           },
-          "EbsOptimized": false,
-          "LaunchTime": "2017-03-14T09:22:51.000Z",
-          "PublicIpAddress": "34.207.164.97",
+          "EbsOptimized": true,
+          "LaunchTime": "2017-03-14T11:00:14.000Z",
+          "PublicIpAddress": "107.22.94.21",
           "PrivateIpAddress": "172.21.3.72",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -164,7 +164,7 @@
           ],
           "ClientToken": "",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "t2.micro",
+          "InstanceType": "r4.2xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -173,16 +173,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
               "Association": {
-                "PublicIp": "34.207.164.97",
-                "PublicDnsName": "ec2-34-207-164-97.compute-1.amazonaws.com"
+                "PublicIp": "107.22.94.21",
+                "PublicDnsName": "ec2-107-22-94-21.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-086b5afd",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-3-72.ec2.internal",
                   "Association": {
-                    "PublicIp": "34.207.164.97",
-                    "PublicDnsName": "ec2-34-207-164-97.compute-1.amazonaws.com",
+                    "PublicIp": "107.22.94.21",
+                    "PublicDnsName": "ec2-107-22-94-21.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
@@ -254,7 +254,7 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "swarm-ami",
+              "Value": "swarm-node-72",
               "Key": "Name"
             }
           ],
