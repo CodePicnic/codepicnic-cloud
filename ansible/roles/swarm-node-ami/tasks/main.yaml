@@ -1,5 +1,9 @@
   - name: Gather facts
     action: ec2_facts
+  - name: basket dir
+    file: path=/mnt/basket state=directory
+  - name: mount device
+    mount: name="/mnt/basket" src="/dev/xvdg" fstype="xfs" opts=defaults,noatime state=mounted
   - name: opentrusty conf dir 
     file: path=/usr/local/openresty/nginx/conf state=directory mode=0755
   - name: opentrusty conf.d dir 

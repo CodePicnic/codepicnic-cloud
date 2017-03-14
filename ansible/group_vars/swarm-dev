@@ -61,8 +61,7 @@ sysctl_options:
    -
      name: net.ipv4.tcp_tw_reuse 
      value: 1
-## mysql db_codepicnic_prod -s  -e  " select distinct(image_name) from container_types where is_hidden=0"
-
+## mysql db_codepicnic_prod -r -s -e "select image_name from container_types order by updated_at DESC"
 base_images:
      - preact_v7.1.0
      - phoenix_v1.2.1

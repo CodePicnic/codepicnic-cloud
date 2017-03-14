@@ -14,6 +14,10 @@
         - device_name: /dev/xvdf
           volume_type: "gp2"
           volume_size: "200"
+        - device_name: /dev/xvdg
+          volume_type: "gp2"
+          volume_size: "1"
+          snapshot: snap-0a93d36c86e3674c5    
       vpc_subnet_id : "{{ subnet_swarm }}"
       assign_public_ip: yes
       instance_profile_name: "{{ ec2_iam_role }}"
