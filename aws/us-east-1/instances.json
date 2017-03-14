@@ -507,18 +507,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-55-19-159.compute-1.amazonaws.com",
+          "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": false,
           "LaunchTime": "2017-03-14T05:21:41.000Z",
-          "PublicIpAddress": "52.55.19.159",
           "PrivateIpAddress": "172.21.1.22",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-03-14 08:34:16 GMT)",
           "InstanceId": "i-073f4ee433f3fb0ee",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-1-22.ec2.internal",
@@ -539,19 +539,10 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
-              "Association": {
-                "PublicIp": "52.55.19.159",
-                "PublicDnsName": "ec2-52-55-19-159.compute-1.amazonaws.com"
-              },
               "NetworkInterfaceId": "eni-136354e6",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-1-22.ec2.internal",
-                  "Association": {
-                    "PublicIp": "52.55.19.159",
-                    "PublicDnsName": "ec2-52-55-19-159.compute-1.amazonaws.com",
-                    "IpOwnerId": "amazon"
-                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.1.22"
                 }
@@ -612,7 +603,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
             "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
