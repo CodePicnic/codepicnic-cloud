@@ -600,6 +600,15 @@
                 "VolumeId": "vol-06ec70d39660d901c",
                 "AttachTime": "2017-03-14T05:21:42.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/sdg",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-0bd3198d1552a5d16",
+                "AttachTime": "2017-03-14T06:55:50.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",
