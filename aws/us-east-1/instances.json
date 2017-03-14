@@ -513,7 +513,7 @@
             "Code": 80,
             "Name": "stopped"
           },
-          "EbsOptimized": false,
+          "EbsOptimized": true,
           "LaunchTime": "2017-03-14T05:21:41.000Z",
           "PrivateIpAddress": "172.21.1.22",
           "ProductCodes": [],
@@ -531,7 +531,7 @@
           ],
           "ClientToken": "",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "t2.micro",
+          "InstanceType": "r4.2xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -615,7 +615,7 @@
           "VirtualizationType": "hvm",
           "Tags": [
             {
-              "Value": "swarm-ami",
+              "Value": "swarm-node-22",
               "Key": "Name"
             }
           ],
