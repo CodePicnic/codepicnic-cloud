@@ -638,18 +638,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
+          "PublicDnsName": "ec2-54-174-240-185.compute-1.amazonaws.com",
           "State": {
-            "Code": 80,
-            "Name": "stopped"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2017-03-14T05:21:41.000Z",
+          "LaunchTime": "2017-03-14T10:01:00.000Z",
+          "PublicIpAddress": "54.174.240.185",
           "PrivateIpAddress": "172.21.1.22",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "User initiated (2017-03-14 08:34:16 GMT)",
+          "StateTransitionReason": "",
           "InstanceId": "i-073f4ee433f3fb0ee",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-1-22.ec2.internal",
@@ -670,10 +670,19 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
+              "Association": {
+                "PublicIp": "54.174.240.185",
+                "PublicDnsName": "ec2-54-174-240-185.compute-1.amazonaws.com"
+              },
               "NetworkInterfaceId": "eni-136354e6",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-1-22.ec2.internal",
+                  "Association": {
+                    "PublicIp": "54.174.240.185",
+                    "PublicDnsName": "ec2-54-174-240-185.compute-1.amazonaws.com",
+                    "IpOwnerId": "amazon"
+                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.1.22"
                 }
@@ -734,10 +743,7 @@
             }
           ],
           "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
+          "RootDeviceType": "ebs",
           "IamInstanceProfile": {
             "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
             "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
