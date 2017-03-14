@@ -643,30 +643,6 @@
       "SnapshotId": "",
       "CreateTime": "2017-02-01T06:31:59.552Z",
       "Size": 75
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-0a54f42805cfefa56",
-      "State": "available",
-      "Iops": 600,
-      "SnapshotId": "",
-      "CreateTime": "2017-02-20T08:59:22.138Z",
-      "Size": 200
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-0f33ee2bc82aa75a5",
-      "State": "available",
-      "Iops": 600,
-      "SnapshotId": "",
-      "CreateTime": "2017-02-20T09:16:43.931Z",
-      "Size": 200
     }
   ]
 }
