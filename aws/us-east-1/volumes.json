@@ -685,6 +685,27 @@
       "SnapshotId": "",
       "CreateTime": "2017-03-14T05:21:42.754Z",
       "Size": 200
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2017-03-14T06:45:14.000Z",
+          "InstanceId": "i-48eb0bd7",
+          "VolumeId": "vol-0114b76fd613df27a",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/sdk"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "gp2",
+      "VolumeId": "vol-0114b76fd613df27a",
+      "State": "in-use",
+      "Iops": 100,
+      "SnapshotId": "",
+      "CreateTime": "2017-03-14T06:44:25.891Z",
+      "Size": 1
     }
   ]
 }
