@@ -646,18 +646,6 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-06ec70d39660d901c",
-      "State": "available",
-      "Iops": 600,
-      "SnapshotId": "",
-      "CreateTime": "2017-03-14T05:21:42.754Z",
-      "Size": 200
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
           "AttachTime": "2017-03-14T06:45:14.000Z",
@@ -675,18 +663,6 @@
       "Iops": 100,
       "SnapshotId": "",
       "CreateTime": "2017-03-14T06:44:25.891Z",
-      "Size": 1
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-0bd3198d1552a5d16",
-      "State": "available",
-      "Iops": 100,
-      "SnapshotId": "snap-0a93d36c86e3674c5",
-      "CreateTime": "2017-03-14T06:55:31.703Z",
       "Size": 1
     },
     {
