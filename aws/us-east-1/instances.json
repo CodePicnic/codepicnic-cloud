@@ -631,57 +631,6 @@
     },
     {
       "OwnerId": "740698317528",
-      "ReservationId": "r-0d78d1dbc69b339a9",
-      "Groups": [],
-      "Instances": [
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": true,
-          "LaunchTime": "2017-03-14T10:01:00.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2017-03-14 23:22:16 GMT)",
-          "InstanceId": "i-073f4ee433f3fb0ee",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "",
-          "InstanceType": "r4.2xlarge",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-node-22",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 0
-        }
-      ]
-    },
-    {
-      "OwnerId": "740698317528",
       "ReservationId": "r-0fdbc0c19e3ede6b6",
       "Groups": [],
       "Instances": [
