@@ -1000,15 +1000,6 @@
                 "VolumeId": "vol-86f19c55",
                 "AttachTime": "2016-07-11T08:48:14.000Z"
               }
-            },
-            {
-              "DeviceName": "/dev/sdk",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-0114b76fd613df27a",
-                "AttachTime": "2017-03-14T06:45:14.000Z"
-              }
             }
           ],
           "Architecture": "x86_64",
