@@ -907,14 +907,14 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-54-87-129-181.compute-1.amazonaws.com",
+          "PublicDnsName": "ec2-107-23-99-103.compute-1.amazonaws.com",
           "State": {
             "Code": 16,
             "Name": "running"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2016-07-24T06:30:13.000Z",
-          "PublicIpAddress": "54.87.129.181",
+          "LaunchTime": "2017-03-19T09:24:28.000Z",
+          "PublicIpAddress": "107.23.99.103",
           "PrivateIpAddress": "172.21.0.218",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
@@ -931,7 +931,7 @@
           ],
           "ClientToken": "toJKC1468226892857",
           "SubnetId": "subnet-5a9d2e70",
-          "InstanceType": "m4.2xlarge",
+          "InstanceType": "r4.xlarge",
           "NetworkInterfaces": [
             {
               "Status": "in-use",
@@ -940,16 +940,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.87.129.181",
-                "PublicDnsName": "ec2-54-87-129-181.compute-1.amazonaws.com"
+                "PublicIp": "107.23.99.103",
+                "PublicDnsName": "ec2-107-23-99-103.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-b6b6e9a8",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-0-218.ec2.internal",
                   "Association": {
-                    "PublicIp": "54.87.129.181",
-                    "PublicDnsName": "ec2-54-87-129-181.compute-1.amazonaws.com",
+                    "PublicIp": "107.23.99.103",
+                    "PublicDnsName": "ec2-107-23-99-103.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
@@ -1790,18 +1790,19 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-54-224-236-208.compute-1.amazonaws.com",
+          "PublicDnsName": "ec2-52-55-239-43.compute-1.amazonaws.com",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 64,
+            "Name": "stopping"
           },
           "EbsOptimized": true,
-          "LaunchTime": "2017-02-01T06:01:51.000Z",
-          "PublicIpAddress": "54.224.236.208",
+          "LaunchTime": "2017-03-19T09:25:28.000Z",
+          "PublicIpAddress": "52.55.239.43",
           "PrivateIpAddress": "172.21.0.52",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-03-19 09:26:40 GMT)",
           "InstanceId": "i-be10de22",
           "ImageId": "ami-e614e68b",
           "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
@@ -1823,16 +1824,16 @@
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
               "Association": {
-                "PublicIp": "54.224.236.208",
-                "PublicDnsName": "ec2-54-224-236-208.compute-1.amazonaws.com"
+                "PublicIp": "52.55.239.43",
+                "PublicDnsName": "ec2-52-55-239-43.compute-1.amazonaws.com"
               },
               "NetworkInterfaceId": "eni-3d31ce1b",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-0-52.ec2.internal",
                   "Association": {
-                    "PublicIp": "54.224.236.208",
-                    "PublicDnsName": "ec2-54-224-236-208.compute-1.amazonaws.com",
+                    "PublicIp": "52.55.239.43",
+                    "PublicDnsName": "ec2-52-55-239-43.compute-1.amazonaws.com",
                     "IpOwnerId": "amazon"
                   },
                   "Primary": true,
@@ -1886,7 +1887,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
@@ -1897,10 +1901,6 @@
             {
               "Value": "swarm-node-052",
               "Key": "Name"
-            },
-            {
-              "Value": "asg-swarm-01",
-              "Key": "aws:autoscaling:groupName"
             }
           ],
           "AmiLaunchIndex": 0
