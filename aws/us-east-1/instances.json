@@ -272,7 +272,7 @@
           },
           "PublicDnsName": "ec2-54-164-20-149.compute-1.amazonaws.com",
           "State": {
-            "Code": 16,
+            "Code": 272,
             "Name": "running"
           },
           "EbsOptimized": false,
