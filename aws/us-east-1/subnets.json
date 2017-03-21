@@ -110,7 +110,7 @@
       "State": "available",
       "AvailabilityZone": "us-east-1b",
       "SubnetId": "subnet-eeef4fa7",
-      "AvailableIpAddressCount": 250
+      "AvailableIpAddressCount": 249
     }
   ]
 }
