@@ -14,6 +14,7 @@
     copy: src="{{ item }}" dest=/usr/local/openresty/nginx/conf
     with_items:
        - nginx.conf 
+       - mime.types
   - name: copy nginx config files 
     copy: src="{{ item }}" dest=/usr/local/openresty/nginx/conf.d
     with_items:
