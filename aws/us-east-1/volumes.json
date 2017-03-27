@@ -646,30 +646,6 @@
     },
     {
       "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-015feff065e0f6ca2",
-      "State": "available",
-      "Iops": 600,
-      "SnapshotId": "",
-      "CreateTime": "2017-03-14T09:22:51.830Z",
-      "Size": 200
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-05c58e97cc84957a8",
-      "State": "available",
-      "Iops": 100,
-      "SnapshotId": "snap-0a93d36c86e3674c5",
-      "CreateTime": "2017-03-14T09:22:51.926Z",
-      "Size": 1
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
           "AttachTime": "2017-03-21T06:49:18.000Z",
