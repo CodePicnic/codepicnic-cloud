@@ -1,3 +1,5 @@
+
+
 #include <tunables/global>
 
 
@@ -5,8 +7,10 @@ profile docker-default flags=(attach_disconnected,mediate_deleted) {
 
   #include <abstractions/base>
 
-
-  network,
+  network inet tcp,
+  network inet udp,
+  network inet icmp,
+  network inet6 stream,
   capability,
   file,
   umount,
@@ -33,11 +37,67 @@ profile docker-default flags=(attach_disconnected,mediate_deleted) {
 
   deny /**/pro-cli mrwklx,
 
+
+  deny /boot/** wl,
+  #needed to avoid errors when forkpty
+  #deny /dev/** wl,
+  #deny /home/** wl,
+  deny /media/** wl,
+  deny /mnt/** wl,
+  #deny /opt/** wl,
+  deny /root/[^.]** wl,
+  deny /sbin/** wl,
+  deny /srv/** wl,
+  #needed to install software with apt-get
+  #deny /usr/** wl,
+  deny /basket/** wl,
+  deny /basket/.** r,
+  #audit /** w,
+  /var/run/** w,
+
   # suppress ptrace denials when using 'docker ps' or using 'ps' inside a container
   ptrace (trace,read) peer=docker-default,
 
 
-  # docker daemon confinement requires explict allow rule for signal
-  signal (receive) set=(kill,term) peer=/usr/bin/docker,
+
+
+  capability,
+  #some applications use their own user to run
+  #deny capability chown,
+  #deny capability dac_override,
+  deny capability dac_read_search,
+  #deny capability fowner,
+  #deny capability fsetid,
+  #deny capability kill,
+  #deny capability setgid,
+  #deny capability setuid,
+  #deny capability linux_immutable,
+  deny capability setpcap,
+  #needed por basketrunner cx with nginx
+  #deny capability net_bind_service,
+  #deny capability net_broadcast,
+  #deny capability net_raw,
+  deny capability net_admin,
+  deny capability ipc_lock,
+  deny capability ipc_owner,
+  deny capability sys_module,
+  deny capability sys_rawio,
+  deny capability sys_chroot,
+  deny capability sys_ptrace,
+  deny capability sys_pacct,
+  deny capability sys_admin,
+  deny capability sys_boot,
+  deny capability sys_nice,
+  deny capability sys_resource,
+  deny capability sys_time,
+  #deny capability sys_tty_config,
+  deny capability mknod,
+  deny capability lease,
+  #deny capability audit_write,
+  #deny capability audit_control,
+  deny capability setfcap,
+  deny capability mac_override,
+  deny capability mac_admin,
 
 }
+
