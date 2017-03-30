@@ -40,10 +40,7 @@
       "BackendServerDescriptions": [],
       "Instances": [
         {
-          "InstanceId": "i-be10de22"
-        },
-        {
-          "InstanceId": "i-ccf11153"
+          "InstanceId": "i-48eb0bd7"
         }
       ],
       "DNSName": "elb-swarm-01-1620764318.us-east-1.elb.amazonaws.com",
