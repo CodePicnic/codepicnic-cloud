@@ -17,6 +17,22 @@
       "AvailableIpAddressCount": 245
     },
     {
+      "VpcId": "vpc-08a0bd6e",
+      "Tags": [
+        {
+          "Value": "697148468905",
+          "Key": "AWSServiceAccount"
+        }
+      ],
+      "CidrBlock": "172.16.0.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1c",
+      "SubnetId": "subnet-4616f51c",
+      "AvailableIpAddressCount": 250
+    },
+    {
       "VpcId": "vpc-bdfdf9d9",
       "Tags": [
         {
@@ -79,6 +95,22 @@
       "AvailabilityZone": "us-east-1b",
       "SubnetId": "subnet-a235b8eb",
       "AvailableIpAddressCount": 248
+    },
+    {
+      "VpcId": "vpc-08a0bd6e",
+      "Tags": [
+        {
+          "Value": "697148468905",
+          "Key": "AWSServiceAccount"
+        }
+      ],
+      "CidrBlock": "172.16.1.0/24",
+      "MapPublicIpOnLaunch": false,
+      "DefaultForAz": false,
+      "State": "available",
+      "AvailabilityZone": "us-east-1b",
+      "SubnetId": "subnet-b1cd6bf9",
+      "AvailableIpAddressCount": 250
     },
     {
       "VpcId": "vpc-f4dfe890",

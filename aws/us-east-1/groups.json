@@ -956,6 +956,243 @@
       "IpPermissionsEgress": [
         {
           "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-470e1d38"
+            }
+          ],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "AWS created security group for d-9067242866 directory controllers",
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-470e1d38"
+            }
+          ],
+          "PrefixListIds": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": -1,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": -1,
+          "IpProtocol": "icmp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 53,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 53,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 53,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 53,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 88,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 88,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 88,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 88,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 123,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 123,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 135,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 135,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 138,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 138,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 389,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 389,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 389,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 389,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 445,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 445,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 445,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 445,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 464,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 464,
+          "IpProtocol": "udp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 464,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 464,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 636,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 636,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 1024,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 65535,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        },
+        {
+          "PrefixListIds": [],
+          "FromPort": 3268,
+          "IpRanges": [
+            {
+              "CidrIp": "172.16.0.0/16"
+            }
+          ],
+          "ToPort": 3269,
+          "IpProtocol": "tcp",
+          "UserIdGroupPairs": []
+        }
+      ],
+      "GroupName": "d-9067242866_controllers",
+      "VpcId": "vpc-08a0bd6e",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-470e1d38"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
           "IpRanges": [
             {
               "CidrIp": "0.0.0.0/0"
@@ -1290,6 +1527,64 @@
       "VpcId": "vpc-6e685d0a",
       "OwnerId": "740698317528",
       "GroupId": "sg-7552e00d"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "Amazon WorkSpaces Security Group",
+      "Tags": [
+        {
+          "Value": "Amazon WorkSpaces",
+          "Key": "Created by Amazon WorkSpaces"
+        }
+      ],
+      "IpPermissions": [],
+      "GroupName": "d-9067242866_workspacesMembers",
+      "VpcId": "vpc-08a0bd6e",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-7e312201"
+    },
+    {
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "UserIdGroupPairs": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Description": "default VPC security group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "UserIdGroupPairs": [
+            {
+              "UserId": "740698317528",
+              "GroupId": "sg-8c0417f3"
+            }
+          ],
+          "PrefixListIds": []
+        }
+      ],
+      "GroupName": "default",
+      "VpcId": "vpc-08a0bd6e",
+      "OwnerId": "740698317528",
+      "GroupId": "sg-8c0417f3"
     },
     {
       "IpPermissionsEgress": [

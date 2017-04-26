@@ -1,6 +1,20 @@
 {
   "Vpcs": [
     {
+      "VpcId": "vpc-08a0bd6e",
+      "InstanceTenancy": "default",
+      "Tags": [
+        {
+          "Value": "697148468905",
+          "Key": "AWSServiceAccount"
+        }
+      ],
+      "State": "available",
+      "DhcpOptionsId": "dopt-51638f34",
+      "CidrBlock": "172.16.0.0/16",
+      "IsDefault": false
+    },
+    {
       "VpcId": "vpc-23663e46",
       "InstanceTenancy": "default",
       "Tags": [
