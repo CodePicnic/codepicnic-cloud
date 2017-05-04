@@ -270,18 +270,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
+          "PublicDnsName": "ec2-52-71-21-132.compute-1.amazonaws.com",
           "State": {
-            "Code": 80,
-            "Name": "stopped"
+            "Code": 16,
+            "Name": "running"
           },
           "EbsOptimized": false,
-          "LaunchTime": "2017-02-25T13:10:11.000Z",
+          "LaunchTime": "2017-05-04T23:24:08.000Z",
+          "PublicIpAddress": "52.71.21.132",
           "PrivateIpAddress": "172.21.3.210",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "User initiated (2017-05-04 22:59:35 GMT)",
+          "StateTransitionReason": "",
           "InstanceId": "i-099c3c94",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-3-210.ec2.internal",
@@ -302,10 +302,19 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
+              "Association": {
+                "PublicIp": "52.71.21.132",
+                "PublicDnsName": "ec2-52-71-21-132.compute-1.amazonaws.com"
+              },
               "NetworkInterfaceId": "eni-6a83f84e",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-3-210.ec2.internal",
+                  "Association": {
+                    "PublicIp": "52.71.21.132",
+                    "PublicDnsName": "ec2-52-71-21-132.compute-1.amazonaws.com",
+                    "IpOwnerId": "amazon"
+                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.210"
                 }
@@ -357,10 +366,7 @@
             }
           ],
           "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
+          "RootDeviceType": "ebs",
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
