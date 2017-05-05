@@ -140,18 +140,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-207-58-222.compute-1.amazonaws.com",
+          "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": true,
           "LaunchTime": "2017-02-01T06:31:58.000Z",
-          "PublicIpAddress": "52.207.58.222",
           "PrivateIpAddress": "172.21.3.157",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-05-05 23:08:25 GMT)",
           "InstanceId": "i-0e4cd10a8956c6334",
           "ImageId": "ami-e13739f6",
           "PrivateDnsName": "ip-172-21-3-157.ec2.internal",
@@ -172,19 +172,10 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
-              "Association": {
-                "PublicIp": "52.207.58.222",
-                "PublicDnsName": "ec2-52-207-58-222.compute-1.amazonaws.com"
-              },
               "NetworkInterfaceId": "eni-a9793e5a",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-3-157.ec2.internal",
-                  "Association": {
-                    "PublicIp": "52.207.58.222",
-                    "PublicDnsName": "ec2-52-207-58-222.compute-1.amazonaws.com",
-                    "IpOwnerId": "amazon"
-                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.157"
                 }
@@ -236,7 +227,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
             "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
@@ -632,18 +626,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-54-174-27-6.compute-1.amazonaws.com",
+          "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": true,
           "LaunchTime": "2017-02-01T06:31:19.000Z",
-          "PublicIpAddress": "54.174.27.6",
           "PrivateIpAddress": "172.21.2.86",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-05-05 23:08:05 GMT)",
           "InstanceId": "i-0327969c3520be415",
           "ImageId": "ami-e13739f6",
           "PrivateDnsName": "ip-172-21-2-86.ec2.internal",
@@ -664,19 +658,10 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "",
-              "Association": {
-                "PublicIp": "54.174.27.6",
-                "PublicDnsName": "ec2-54-174-27-6.compute-1.amazonaws.com"
-              },
               "NetworkInterfaceId": "eni-ed86c11e",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-2-86.ec2.internal",
-                  "Association": {
-                    "PublicIp": "54.174.27.6",
-                    "PublicDnsName": "ec2-54-174-27-6.compute-1.amazonaws.com",
-                    "IpOwnerId": "amazon"
-                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.2.86"
                 }
@@ -728,7 +713,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAJ7YTVFYVLDOIAJ2HC",
             "Arn": "arn:aws:iam::740698317528:instance-profile/swarm-node"
