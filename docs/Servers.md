@@ -8,7 +8,6 @@
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
 | Swarm Node  | 172.21.3.210  |  52.71.21.132  | i-099c3c94
-| Swarm Node  | 172.21.3.211  |  52.91.20.152  | i-0a9c3c97
 | Swarm Master  | 172.21.0.163  |  34.203.190.128  | i-5e9a3ac3
 ## Swarm Devpad Staging
 |  Name | Internal IP  | Public IP  | Instance ID |

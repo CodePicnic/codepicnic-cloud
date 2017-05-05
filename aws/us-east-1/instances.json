@@ -385,18 +385,18 @@
           "Monitoring": {
             "State": "disabled"
           },
-          "PublicDnsName": "ec2-52-91-20-152.compute-1.amazonaws.com",
+          "PublicDnsName": "",
+          "RootDeviceType": "ebs",
           "State": {
-            "Code": 16,
-            "Name": "running"
+            "Code": 80,
+            "Name": "stopped"
           },
           "EbsOptimized": false,
           "LaunchTime": "2017-05-04T23:07:56.000Z",
-          "PublicIpAddress": "52.91.20.152",
           "PrivateIpAddress": "172.21.3.211",
           "ProductCodes": [],
           "VpcId": "vpc-bdfdf9d9",
-          "StateTransitionReason": "",
+          "StateTransitionReason": "User initiated (2017-05-05 21:02:41 GMT)",
           "InstanceId": "i-0a9c3c97",
           "ImageId": "ami-fce3c696",
           "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
@@ -417,19 +417,10 @@
               "SourceDestCheck": true,
               "VpcId": "vpc-bdfdf9d9",
               "Description": "Primary network interface",
-              "Association": {
-                "PublicIp": "52.91.20.152",
-                "PublicDnsName": "ec2-52-91-20-152.compute-1.amazonaws.com"
-              },
               "NetworkInterfaceId": "eni-6b83f84f",
               "PrivateIpAddresses": [
                 {
                   "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
-                  "Association": {
-                    "PublicIp": "52.91.20.152",
-                    "PublicDnsName": "ec2-52-91-20-152.compute-1.amazonaws.com",
-                    "IpOwnerId": "amazon"
-                  },
                   "Primary": true,
                   "PrivateIpAddress": "172.21.3.211"
                 }
@@ -481,7 +472,10 @@
             }
           ],
           "Architecture": "x86_64",
-          "RootDeviceType": "ebs",
+          "StateReason": {
+            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+            "Code": "Client.UserInitiatedShutdown"
+          },
           "IamInstanceProfile": {
             "Id": "AIPAI5KUFAN2AQQI6HG5S",
             "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
