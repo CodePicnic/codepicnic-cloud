@@ -154,26 +154,6 @@
       "Attachments": [
         {
           "AttachTime": "2016-04-18T19:14:48.000Z",
-          "InstanceId": "i-0a9c3c97",
-          "VolumeId": "vol-4ace7e9b",
-          "State": "attached",
-          "DeleteOnTermination": true,
-          "Device": "/dev/sda1"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "standard",
-      "VolumeId": "vol-4ace7e9b",
-      "State": "in-use",
-      "SnapshotId": "snap-f70deff0",
-      "CreateTime": "2016-04-18T19:14:48.527Z",
-      "Size": 8
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-04-18T19:14:48.000Z",
           "InstanceId": "i-099c3c94",
           "VolumeId": "vol-4dce7e9c",
           "State": "attached",
@@ -187,26 +167,6 @@
       "State": "in-use",
       "SnapshotId": "",
       "CreateTime": "2016-04-18T19:14:48.572Z",
-      "Size": 40
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
-          "AttachTime": "2016-04-18T19:14:48.000Z",
-          "InstanceId": "i-0a9c3c97",
-          "VolumeId": "vol-4cce7e9d",
-          "State": "attached",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdf"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "standard",
-      "VolumeId": "vol-4cce7e9d",
-      "State": "in-use",
-      "SnapshotId": "",
-      "CreateTime": "2016-04-18T19:14:48.629Z",
       "Size": 40
     },
     {
@@ -435,30 +395,6 @@
       "SnapshotId": "",
       "CreateTime": "2016-09-17T04:09:33.078Z",
       "Size": 100
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-63bb40b7",
-      "State": "available",
-      "Iops": 100,
-      "SnapshotId": "snap-3067152d",
-      "CreateTime": "2016-10-21T17:54:45.096Z",
-      "Size": 10
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [],
-      "Encrypted": false,
-      "VolumeType": "gp2",
-      "VolumeId": "vol-15ba41c1",
-      "State": "available",
-      "Iops": 100,
-      "SnapshotId": "",
-      "CreateTime": "2016-10-21T17:54:45.173Z",
-      "Size": 20
     },
     {
       "AvailabilityZone": "us-east-1a",

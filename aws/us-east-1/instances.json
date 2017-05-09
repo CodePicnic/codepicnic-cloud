@@ -258,97 +258,32 @@
           "PublicDnsName": "",
           "RootDeviceType": "ebs",
           "State": {
-            "Code": 80,
-            "Name": "stopped"
+            "Code": 48,
+            "Name": "terminated"
           },
           "EbsOptimized": false,
           "LaunchTime": "2017-05-04T23:07:56.000Z",
-          "PrivateIpAddress": "172.21.3.211",
           "ProductCodes": [],
-          "VpcId": "vpc-bdfdf9d9",
           "StateTransitionReason": "User initiated (2017-05-05 21:02:41 GMT)",
           "InstanceId": "i-0a9c3c97",
           "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
+          "PrivateDnsName": "",
           "KeyName": "key_swarm",
-          "SecurityGroups": [
-            {
-              "GroupName": "sg_swarm",
-              "GroupId": "sg-33871c4b"
-            }
-          ],
+          "SecurityGroups": [],
           "ClientToken": "vvqqd1461006887500",
-          "SubnetId": "subnet-5a9d2e70",
           "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-            {
-              "Status": "in-use",
-              "MacAddress": "12:2d:d9:1d:e7:25",
-              "SourceDestCheck": true,
-              "VpcId": "vpc-bdfdf9d9",
-              "Description": "Primary network interface",
-              "NetworkInterfaceId": "eni-6b83f84f",
-              "PrivateIpAddresses": [
-                {
-                  "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
-                  "Primary": true,
-                  "PrivateIpAddress": "172.21.3.211"
-                }
-              ],
-              "PrivateDnsName": "ip-172-21-3-211.ec2.internal",
-              "Attachment": {
-                "Status": "attached",
-                "DeviceIndex": 0,
-                "DeleteOnTermination": true,
-                "AttachmentId": "eni-attach-843a0275",
-                "AttachTime": "2016-04-18T19:14:48.000Z"
-              },
-              "Groups": [
-                {
-                  "GroupName": "sg_swarm",
-                  "GroupId": "sg-33871c4b"
-                }
-              ],
-              "SubnetId": "subnet-5a9d2e70",
-              "OwnerId": "740698317528",
-              "PrivateIpAddress": "172.21.3.211"
-            }
-          ],
-          "SourceDestCheck": true,
+          "NetworkInterfaces": [],
           "Placement": {
             "Tenancy": "default",
             "GroupName": "",
             "AvailabilityZone": "us-east-1a"
           },
           "Hypervisor": "xen",
-          "BlockDeviceMappings": [
-            {
-              "DeviceName": "/dev/sda1",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": true,
-                "VolumeId": "vol-4ace7e9b",
-                "AttachTime": "2016-04-18T19:14:48.000Z"
-              }
-            },
-            {
-              "DeviceName": "/dev/sdf",
-              "Ebs": {
-                "Status": "attached",
-                "DeleteOnTermination": false,
-                "VolumeId": "vol-4cce7e9d",
-                "AttachTime": "2016-04-18T19:14:48.000Z"
-              }
-            }
-          ],
+          "BlockDeviceMappings": [],
           "Architecture": "x86_64",
           "StateReason": {
             "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
             "Code": "Client.UserInitiatedShutdown"
-          },
-          "IamInstanceProfile": {
-            "Id": "AIPAI5KUFAN2AQQI6HG5S",
-            "Arn": "arn:aws:iam::740698317528:instance-profile/docker-swam-node"
           },
           "RootDeviceName": "/dev/sda1",
           "VirtualizationType": "hvm",
