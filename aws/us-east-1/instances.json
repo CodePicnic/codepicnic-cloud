@@ -250,50 +250,6 @@
             }
           ],
           "AmiLaunchIndex": 0
-        },
-        {
-          "Monitoring": {
-            "State": "disabled"
-          },
-          "PublicDnsName": "",
-          "RootDeviceType": "ebs",
-          "State": {
-            "Code": 48,
-            "Name": "terminated"
-          },
-          "EbsOptimized": false,
-          "LaunchTime": "2017-05-04T23:07:56.000Z",
-          "ProductCodes": [],
-          "StateTransitionReason": "User initiated (2017-05-05 21:02:41 GMT)",
-          "InstanceId": "i-0a9c3c97",
-          "ImageId": "ami-fce3c696",
-          "PrivateDnsName": "",
-          "KeyName": "key_swarm",
-          "SecurityGroups": [],
-          "ClientToken": "vvqqd1461006887500",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [],
-          "Placement": {
-            "Tenancy": "default",
-            "GroupName": "",
-            "AvailabilityZone": "us-east-1a"
-          },
-          "Hypervisor": "xen",
-          "BlockDeviceMappings": [],
-          "Architecture": "x86_64",
-          "StateReason": {
-            "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
-            "Code": "Client.UserInitiatedShutdown"
-          },
-          "RootDeviceName": "/dev/sda1",
-          "VirtualizationType": "hvm",
-          "Tags": [
-            {
-              "Value": "swarm-micro-node",
-              "Key": "Name"
-            }
-          ],
-          "AmiLaunchIndex": 1
         }
       ]
     },
