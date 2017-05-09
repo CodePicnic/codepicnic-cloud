@@ -1238,6 +1238,10 @@
               "Key": "Project"
             },
             {
+              "Value": "prod",
+              "Key": "DevPad"
+            },
+            {
               "Value": "aws-codepicnic-app-01",
               "Key": "Name"
             }
