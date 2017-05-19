@@ -505,25 +505,13 @@
         },
         {
           "PrefixListIds": [],
-          "FromPort": 1025,
-          "IpRanges": [
-            {
-              "CidrIp": "190.234.105.205/32"
-            },
-            {
-              "CidrIp": "190.234.105.212/32"
-            }
-          ],
-          "ToPort": 65535,
-          "IpProtocol": "tcp",
-          "UserIdGroupPairs": []
-        },
-        {
-          "PrefixListIds": [],
           "FromPort": 2374,
           "IpRanges": [
             {
               "CidrIp": "104.238.136.194/32"
+            },
+            {
+              "CidrIp": "104.238.159.87/32"
             },
             {
               "CidrIp": "198.27.83.55/32"
@@ -533,6 +521,9 @@
             },
             {
               "CidrIp": "45.32.74.41/32"
+            },
+            {
+              "CidrIp": "45.63.29.207/32"
             },
             {
               "CidrIp": "45.76.104.117/32"
