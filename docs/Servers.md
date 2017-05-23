@@ -15,8 +15,6 @@
 ## CodePicnic Production
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
-| aws-codepicnic-app-01  | 172.21.4.117  |  54.173.182.186  | i-c42ee6d3
-| aws-codepicnic-db-01  | 172.21.4.34  |  52.207.215.30  | i-bd08fc21
 ## DevPad Production
 |  Name | Internal IP  | Public IP  | Instance ID |
 |---|---|---|---|
