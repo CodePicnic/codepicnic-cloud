@@ -495,6 +495,15 @@
                 "VolumeId": "vol-038c34d6",
                 "AttachTime": "2016-09-17T04:10:05.000Z"
               }
+            },
+            {
+              "DeviceName": "/dev/xvdi",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": false,
+                "VolumeId": "vol-0985f82a6d7a9f442",
+                "AttachTime": "2017-05-25T04:59:53.000Z"
+              }
             }
           ],
           "Architecture": "x86_64",

@@ -540,6 +540,26 @@
       "SnapshotId": "snap-02a11cf17b7484a81",
       "CreateTime": "2017-03-21T06:49:18.816Z",
       "Size": 1
+    },
+    {
+      "AvailabilityZone": "us-east-1a",
+      "Attachments": [
+        {
+          "AttachTime": "2017-05-25T04:59:53.000Z",
+          "InstanceId": "i-9ad3b219",
+          "VolumeId": "vol-0985f82a6d7a9f442",
+          "State": "attached",
+          "DeleteOnTermination": false,
+          "Device": "/dev/xvdi"
+        }
+      ],
+      "Encrypted": false,
+      "VolumeType": "standard",
+      "VolumeId": "vol-0985f82a6d7a9f442",
+      "State": "in-use",
+      "SnapshotId": "",
+      "CreateTime": "2017-05-25T04:59:19.790Z",
+      "Size": 50
     }
   ]
 }
