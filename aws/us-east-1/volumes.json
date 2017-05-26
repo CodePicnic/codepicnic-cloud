@@ -380,26 +380,6 @@
       "AvailabilityZone": "us-east-1a",
       "Attachments": [
         {
-          "AttachTime": "2016-09-17T04:10:05.000Z",
-          "InstanceId": "i-9ad3b219",
-          "VolumeId": "vol-038c34d6",
-          "State": "busy",
-          "DeleteOnTermination": false,
-          "Device": "/dev/sdh"
-        }
-      ],
-      "Encrypted": false,
-      "VolumeType": "standard",
-      "VolumeId": "vol-038c34d6",
-      "State": "in-use",
-      "SnapshotId": "",
-      "CreateTime": "2016-09-17T04:09:33.078Z",
-      "Size": 100
-    },
-    {
-      "AvailabilityZone": "us-east-1a",
-      "Attachments": [
-        {
           "AttachTime": "2016-12-07T00:56:08.000Z",
           "InstanceId": "i-c42ee6d3",
           "VolumeId": "vol-cfc7775c",
