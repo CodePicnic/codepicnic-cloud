@@ -383,7 +383,7 @@
           "AttachTime": "2016-09-17T04:10:05.000Z",
           "InstanceId": "i-9ad3b219",
           "VolumeId": "vol-038c34d6",
-          "State": "attached",
+          "State": "busy",
           "DeleteOnTermination": false,
           "Device": "/dev/sdh"
         }

@@ -490,7 +490,7 @@
             {
               "DeviceName": "/dev/sdh",
               "Ebs": {
-                "Status": "attached",
+                "Status": "busy",
                 "DeleteOnTermination": false,
                 "VolumeId": "vol-038c34d6",
                 "AttachTime": "2016-09-17T04:10:05.000Z"
